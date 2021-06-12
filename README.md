@@ -3,7 +3,7 @@
 ## lunatalk Shop Front-End Source.
 
 ---
-## Local Develop Server.
+## First Make Local Env file.
 ```bash
 # cp project/develop.env project/local.env
 ```
