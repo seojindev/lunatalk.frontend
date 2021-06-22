@@ -1,9 +1,45 @@
 import React from 'react';
 import { HeaderContainer, FooterContainer } from '@Src/Styles/CommonStyles';
+import { MainBannerContainer, CategoryContainer, BestItemContainer } from '@Src/Styles/MainStyles';
+
+interface itemProps {
+    img: string;
+    title: string;
+    price: number;
+}
+
+const item: itemProps[] = [
+    {
+        img: 'https://kblog-storage-s3.s3.ap-northeast-2.amazonaws.com/uploads/1622559197044%20-%20200302-title.jpeg',
+        title: '가방',
+        price: 3000,
+    },
+    {
+        img: 'https://kblog-storage-s3.s3.ap-northeast-2.amazonaws.com/uploads/1622559197044%20-%20200302-title.jpeg',
+        title: '가방',
+        price: 3000,
+    },
+    {
+        img: 'https://kblog-storage-s3.s3.ap-northeast-2.amazonaws.com/uploads/1622559197044%20-%20200302-title.jpeg',
+        title: '가방',
+        price: 3000,
+    },
+    {
+        img: 'https://kblog-storage-s3.s3.ap-northeast-2.amazonaws.com/uploads/1622559197044%20-%20200302-title.jpeg',
+        title: '가방',
+        price: 3000,
+    },
+    {
+        img: 'https://kblog-storage-s3.s3.ap-northeast-2.amazonaws.com/uploads/1622559197044%20-%20200302-title.jpeg',
+        title: '가방',
+        price: 3000,
+    },
+];
 
 export default function MainPage() {
     return (
         <>
+            {/* Header */}
             <HeaderContainer>
                 <div className="header">
                     <h1>lunatalk</h1>
@@ -31,6 +67,72 @@ export default function MainPage() {
                     </div>
                 </div>
             </HeaderContainer>
+            {/* //Header */}
+            {/* Main Banner */}
+            <MainBannerContainer>
+                <div className="main_banner">banner1</div>
+            </MainBannerContainer>
+            {/* // Main Banner */}
+            {/* Category */}
+            <CategoryContainer>
+                <div className="category">
+                    <ul>
+                        <li>
+                            <p>ACC</p>
+                        </li>
+                        <li>
+                            <p>CUSTOM GIFT</p>
+                        </li>
+                        <li>
+                            <p>Bag</p>
+                        </li>
+                        <li>
+                            <p>Stationery</p>
+                        </li>
+                        <li>
+                            <p>Walert</p>
+                        </li>
+                    </ul>
+                </div>
+            </CategoryContainer>
+            {/* // Category */}
+            {/* Best Item */}
+            <BestItemContainer>
+                <div className="best_item">
+                    <h3>Best Item</h3>
+                    <div className="item_container">
+                        {item.map((v, i) => (
+                            <div className="item" key={i}>
+                                <img src={v.img} alt="item_logo" />
+                                <div className="item_description">
+                                    <p className="title">{v.title}</p>
+                                    <p className="price">{v.price}원</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </BestItemContainer>
+            {/* // Best Item */}
+            {/* Hot Item */}
+            <BestItemContainer>
+                <div className="best_item">
+                    <h3>Hot Item</h3>
+                    <div className="item_container">
+                        {item.map((v, i) => (
+                            <div className="item" key={i}>
+                                <img src={v.img} alt="item_logo" />
+                                <div className="item_description">
+                                    <p className="title">{v.title}</p>
+                                    <p className="price">{v.price}원</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </BestItemContainer>
+            {/* // Best Item */}
+            {/* Footer */}
             <FooterContainer>
                 <div className="footer">
                     <div className="footer_content">
@@ -42,6 +144,7 @@ export default function MainPage() {
                     </div>
                 </div>
             </FooterContainer>
+            {/* // Footer */}
         </>
     );
 }
