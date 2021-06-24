@@ -25,6 +25,7 @@
                 "endOfLine":"auto"
             }
         ],
+        // FIXME : 빌드 창에 경고 메시지 안나옴.
         "@typescript-eslint/camelcase": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/no-explicit-any": "off",
