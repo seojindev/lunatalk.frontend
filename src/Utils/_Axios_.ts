@@ -21,7 +21,7 @@ export const axiosDefaultHeader: AxiosRequestConfig = {
     headers: {
         'Content-Type': 'application/json;charset=UTF-8',
         'Access-Control-Allow-Origin': '*',
-        'Request-Client-Type': 'S01010',
+        'Request-Client-Type': process.env.REACT_APP_CLIENT_CODE,
         Accept: 'application/json',
         Authorization: '',
     },
