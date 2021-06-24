@@ -5,8 +5,12 @@ declare module 'StoreTypes' {
         message: string;
     }
 
+    export interface AppState {
+        loading: boolean;
+    }
+
     export interface RootState {
         router: RouterState;
-
+        app: AppState;
     }
 }

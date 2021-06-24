@@ -2,6 +2,8 @@
 	"compilerOptions": {
 		"paths": {
             "@Src/*": ["./*"],
+            "@Hook/*": ["Hooks/*"],
+            "@Hooks": ["Hooks"],
             "@Page/*": ["Pages/*"],
             "@Pages": ["Pages"],
             "@Store/*": ["Store/*"],
@@ -10,7 +12,9 @@
             "@Module/*": ["Modules/*"],
             "@API": ["Modules/API"],
             "@Utils": ["Utils"],
-            "@Util/*": ["Utils/*"]
+            "@Util/*": ["Utils/*"],
+            "@Helper": ["Utils/Helper"],
+            "@_Alert_": ["Utils/_Alert_"]
 		}
 	}
 }
