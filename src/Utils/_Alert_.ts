@@ -23,6 +23,7 @@ interface alertTypeInterface {
         | 'bottom-left'
         | 'bottom-right'
         | undefined;
+    // eslint-disable-next-line no-unused-vars
     callBack?: (result: { isConfirmed: boolean; isDenied: boolean; isDismissed: boolean; value: boolean }) => any;
 }
 
