@@ -1,7 +1,7 @@
 import { createReducer } from 'typesafe-actions';
-import { SagaAction } from 'CommonTypes';
+// import { SagaAction } from 'CommonTypes';
 import produce from 'immer';
-import { ErrorMessage } from 'StoreTypes';
+// import { ErrorMessage } from 'StoreTypes';
 import { AppState } from 'StoreTypes';
 import {} from './actions';
 

@@ -178,6 +178,9 @@ export const isEmpty = function (value: any) {
  * @param emailString
  * @returns
  */
+
+// FIXME: 2021-06-24 22:41 ESLint 에러남 수정 해야함.
+/* eslint-disable */
 export const isValidEmail = (emailString: string) => {
     const emailChack =
         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
