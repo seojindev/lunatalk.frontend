@@ -1,9 +1,13 @@
 {
-	"compilerOptions": {
-		"paths": {
+    "compilerOptions": {
+        "paths": {
             "@Src/*": ["./*"],
             "@Hook/*": ["Hooks/*"],
             "@Hooks": ["Hooks"],
+            "@Element/*": ["Components/Elements/*"],
+            "@Elements": ["Components/Elements"],
+            "@Layouts": ["Components/Layouts"],
+            "@CommonLayouts": ["Components/Layouts/Commons"],
             "@Page/*": ["Pages/*"],
             "@Pages": ["Pages"],
             "@Store/*": ["Store/*"],
@@ -15,6 +19,6 @@
             "@Util/*": ["Utils/*"],
             "@Helper": ["Utils/Helper"],
             "@_Alert_": ["Utils/_Alert_"]
-		}
-	}
+        }
+    }
 }
