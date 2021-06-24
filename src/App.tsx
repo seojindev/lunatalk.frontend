@@ -26,13 +26,14 @@ function App() {
     return (
         <React.StrictMode>
             <Provider store={store}>
-                {(function () {
+                <Routes Routerhistory={History} />
+                {/* {(function () {
                     if (AppLoading === true) {
                         return <SplashComponent appLoading={handleAppLoading} />;
                     } else {
                         return <Routes Routerhistory={History} />;
                     }
-                })()}
+                })()} */}
             </Provider>
         </React.StrictMode>
     );
