@@ -9,7 +9,7 @@ import SplashComponent from '@Src/Components/SplashComponent';
 const history = createBrowserHistory();
 
 declare let window: any;
-const initialState = window.INITIAL_REDUX_STATE;
+const initialState = window.INITIAL_REDUX_STATE || {};
 const store = configureStore(history, initialState);
 
 function App() {

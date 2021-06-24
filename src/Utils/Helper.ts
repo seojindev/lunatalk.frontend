@@ -146,15 +146,12 @@ export function getRefreshToken() {
  * @param payload
  */
 export function saveRefreshToken({
-    expires_in,
     access_token,
     refresh_token,
 }: {
-    expires_in: number;
     access_token: string;
     refresh_token: string;
 }): void {
-    storageManager.set('login_expires_in', expires_in);
     storageManager.set('login_access_token', access_token);
     storageManager.set('login_refresh_token', refresh_token);
 }

@@ -7,4 +7,12 @@ declare module 'CommonTypes' {
         type: SagaTypes;
         payload: T;
     }
+
+    export type AccessTokenType = string;
+
+
+    export interface LocalTokenInterface {
+        access_token: string;
+        refresh_token: string;
+    }
 }

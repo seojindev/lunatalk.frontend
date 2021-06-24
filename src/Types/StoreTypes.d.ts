@@ -10,7 +10,7 @@ declare module 'StoreTypes' {
     }
 
     export interface RootState {
-        router: RouterState;
+        // router: RouterState;
         app: AppState;
     }
 }

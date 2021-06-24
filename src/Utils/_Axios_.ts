@@ -28,9 +28,8 @@ export const axiosDefaultHeader: AxiosRequestConfig = {
 };
 
 // const setTokenData = (tokenData: AccessTokenType, axiosClient: AxiosInstance): void => {
-const setTokenData = ({ expires_in, access_token, refresh_token }: LocalTokenInterface): void => {
+const setTokenData = ({ access_token, refresh_token }: LocalTokenInterface): void => {
     Helper.saveRefreshToken({
-        expires_in,
         access_token,
         refresh_token,
     });
@@ -52,7 +51,6 @@ const handleTokenRefresh = (): Promise<LocalTokenInterface> => {
                 resolve({
                     access_token: data.access_token,
                     refresh_token: data.refresh_token,
-                    expires_in: data.expires_in,
                 });
             })
             .catch(() => {
@@ -60,7 +58,6 @@ const handleTokenRefresh = (): Promise<LocalTokenInterface> => {
                 reject({
                     access_token: '',
                     refresh_token: '',
-                    expires_in: '',
                 });
             });
     });
