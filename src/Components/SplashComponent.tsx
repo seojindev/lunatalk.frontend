@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { useRoot } from '@Hooks';
+import PulseLoader from 'react-spinners/PulseLoader';
+import { PageSpinnerStyle } from '@Src/Styles/SpinnersStyles';
 
 export default function SplashComponent({ appLoading }: { appLoading: () => void }) {
     const { AppBaseCheckState } = useRoot();
@@ -15,8 +17,9 @@ export default function SplashComponent({ appLoading }: { appLoading: () => void
     }, [AppBaseCheckState]);
 
     return (
-        <React.Fragment>
-            <>로딩중...</>
-        </React.Fragment>
+        <PageSpinnerStyle>
+            {/* <>로딩중...</> */}
+            <PulseLoader color="#ddd" size="15" />
+        </PageSpinnerStyle>
     );
 }
