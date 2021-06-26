@@ -3,7 +3,7 @@ import React from 'react';
 import { CheckboxData, RegisterData } from 'RegisterTypes';
 
 interface RegisterFormProps {
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => void;
     onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
     checkboxOnChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     registerCheckbox: CheckboxData;
@@ -17,6 +17,7 @@ export default function RegisterForm({
     registerCheckbox,
     checkboxOnChange,
 }: RegisterFormProps) {
+    console.debug(data);
     return (
         <RegisterStyle>
             <div className="join__column">
