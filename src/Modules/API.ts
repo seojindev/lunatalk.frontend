@@ -1,7 +1,7 @@
 import { _Axios_ } from '@Utils';
 import { RegisterData } from 'RegisterTypes';
 import { ServiceResponse } from 'ServiceTypes';
-import { AppBase } from 'ServiceTypes';
+import { AppBase, Login } from 'ServiceTypes';
 
 // 서버 공지 사항 체크.
 export function checkServerNotice(): Promise<ServiceResponse<{ notice: string }>> {
