@@ -1,10 +1,12 @@
 import { LoginStyle } from '@Src/Styles/LoginStyles';
 import React, { useState } from 'react';
 import { login } from '@API';
+import { useHistory } from 'react-router-dom';
 
 export default function LoginForm() {
     const [inputUserName, setInputUserName] = useState('');
     const [inputUserPassWord, setInputUserPassWord] = useState('');
+    const history = useHistory();
 
     const handleSubmitButton = async (e: any) => {
         e.preventDefault();
@@ -22,6 +24,14 @@ export default function LoginForm() {
 
         let response = await login({ login_id: inputUserName, login_password: inputUserPassWord });
         console.debug(response);
+
+        if (response.status === false) {
+            alert(response.message);
+            return;
+        } else {
+            // TODO: 로그인처리 정해지면 추가하기
+            history.push('/');
+        }
     };
 
     const handleChangeInputUsername = (e: any) => {
