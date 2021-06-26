@@ -120,34 +120,34 @@ export default ({ method = 'post', url, payload }: serviceInterface): any => {
             if (status === 503) {
                 // 서버 에러
                 _Alert_.serverStatusError({
-                    text: error.response.data.error.error_message,
+                    text: error.response.data.error_message,
                 });
                 return Promise.resolve({
                     status: false,
-                    message: error.response?.data.error.error_message,
+                    message: error.response?.data.error_message,
                 });
             } else if (status === 412) {
                 // 헤더 체크 에러.
                 _Alert_.error({
-                    text: error.response.data.error.error_message,
+                    text: error.response.data.error_message,
                 });
                 return Promise.resolve({
                     status: false,
-                    message: error.response?.data.error.error_message,
+                    message: error.response?.data.error_message,
                 });
             } else if (status === 429) {
                 // 너무 많은 요청 일때.
                 _Alert_.serverStatusError({
-                    text: error.response.data.error.error_message,
+                    text: error.response.data.error_message,
                 });
                 return Promise.resolve({
                     status: false,
-                    message: error.response?.data.error.error_message,
+                    message: error.response?.data.error_message,
                 });
             } else {
                 return Promise.resolve({
                     status: false,
-                    message: error.response?.data.error.error_message,
+                    message: error.response?.data.error_message,
                 });
             }
         }
@@ -203,7 +203,7 @@ export default ({ method = 'post', url, payload }: serviceInterface): any => {
         } else if (status === 401) {
             return Promise.resolve({
                 status: false,
-                message: error.response?.data.error.error_message,
+                message: error.response?.data.error_message,
             });
         }
     };
