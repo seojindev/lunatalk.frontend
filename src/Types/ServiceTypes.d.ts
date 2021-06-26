@@ -11,4 +11,11 @@ declare module 'ServiceTypes' {
     export interface AppBase {
         codes: Codes[];
     }
+
+
+    export interface Login {
+        access_token: string
+        refresh_token: string
+    }
+
 }
