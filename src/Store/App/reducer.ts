@@ -13,7 +13,20 @@ const initialState: AppState = {
     status: false,
     service_message: '',
     common: {
-        codes: [],
+        codes: {
+            code_name: '',
+            code_group: {
+                S01: [],
+                S02: [],
+                S03: [],
+                S04: [],
+                G01: [],
+                P01: [],
+                O10: [],
+                O20: [],
+                E01: [],
+            },
+        },
     },
 };
 
@@ -28,7 +41,7 @@ export const AppSagaReducer = createReducer<AppState>(initialState, {
             draft.loading = false;
         });
     },
-    [COMMON_DATA]: (state: AppState, action: SagaAction<{ codes: Codes[] }>) => {
+    [COMMON_DATA]: (state: AppState, action: SagaAction<{ codes: Codes }>) => {
         return produce(state, draft => {
             draft.common.codes = action.payload.codes;
         });
