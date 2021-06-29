@@ -1,65 +1,31 @@
+/* eslint-disable no-unused-vars */
 import { LoginStyle } from '@Src/Styles/LoginStyles';
-import React, { useState } from 'react';
-import { login } from '@API';
-import { useHistory } from 'react-router-dom';
+import React from 'react';
 
-export default function LoginForm() {
-    const [inputUserName, setInputUserName] = useState('');
-    const [inputUserPassWord, setInputUserPassWord] = useState('');
-    const history = useHistory();
+interface LoginFormProps {
+    usernameHandleChanage: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    userpasswordHandleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    onSumbit: (e: React.FormEvent<HTMLFormElement>) => void;
+}
 
-    const handleSubmitButton = async (e: any) => {
-        e.preventDefault();
-
-        // if (inputUserName == '') {
-        //     alert('아이디를 입력해주세요');
-        //     return;
-        // }
-        // if (inputUserPassWord == '') {
-        //     alert('비밀번호를 입력해주세요');
-        //     return;
-        // }
-
-        // alert('로그인 성공했습니다');
-
-        let response = await login({ login_id: inputUserName, login_password: inputUserPassWord });
-        console.debug(response);
-
-        if (response.status === false) {
-            alert(response.message);
-            return;
-        } else {
-            // TODO: 로그인처리 정해지면 추가하기
-            history.push('/');
-        }
-    };
-
-    const handleChangeInputUsername = (e: any) => {
-        setInputUserName(e.target.value);
-        // console.debug(inputUserName);
-    };
-
-    const handleChangeInputPassword = (e: any) => {
-        setInputUserPassWord(e.target.value);
-    };
-
+export default function LoginForm({ usernameHandleChanage, userpasswordHandleChange, onSumbit }: LoginFormProps) {
     return (
         <LoginStyle>
             <div className="login__column">
                 <h2>로그인</h2>
                 <div className="login__box">
-                    <form id="customer_login" onSubmit={e => handleSubmitButton(e)}>
+                    <form id="customer_login" onSubmit={e => onSumbit(e)}>
                         <input
                             type="id"
                             id="customer_id"
                             placeholder="아이디"
-                            onChange={e => handleChangeInputUsername(e)}
+                            onChange={e => usernameHandleChanage(e)}
                         />
                         <input
                             type="password"
                             id="customer_pw"
                             placeholder="비밀번호"
-                            onChange={e => handleChangeInputPassword(e)}
+                            onChange={e => userpasswordHandleChange(e)}
                         />
                         <button className="btn_login" type="submit">
                             로그인
