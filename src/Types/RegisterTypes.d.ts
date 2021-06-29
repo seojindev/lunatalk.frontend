@@ -7,6 +7,12 @@ declare module 'RegisterTypes' {
         user_nickname: string;
         user_email: string;
         user_email_select: string;
+        first: string;
+        second: string;
+        third: string;
+        auth_code: string;
+        auth_confirm: boolean;
+        index: any;
     }
     export interface CheckboxData {
         checkbox1: boolean;

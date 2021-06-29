@@ -1,13 +1,17 @@
 import { RegisterStyle } from '@Src/Styles/RegisterStyles';
+import { CodeItem } from 'CommonTypes';
 import React from 'react';
 import { CheckboxData, RegisterData } from 'RegisterTypes';
 
 interface RegisterFormProps {
     onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => void;
     onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+    onPhoneAuth: () => void;
+    onPhoneAuthConfirm: () => void;
     checkboxOnChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     registerCheckbox: CheckboxData;
     data: RegisterData;
+    emailAddress: CodeItem[];
 }
 
 export default function RegisterForm({
@@ -16,8 +20,10 @@ export default function RegisterForm({
     data,
     registerCheckbox,
     checkboxOnChange,
+    emailAddress,
+    onPhoneAuth,
+    onPhoneAuthConfirm,
 }: RegisterFormProps) {
-    console.debug(data);
     return (
         <RegisterStyle>
             <div className="join__column">
@@ -70,28 +76,55 @@ export default function RegisterForm({
                             <select
                                 className="email_select select"
                                 title="이메일 서비스 선택"
-                                name="email_select"
+                                name="user_email_select"
                                 // eslint-disable-next-line prettier/prettier
                                 onChange={e => onChange(e)}
                                 value={data.user_email_select}>
                                 <option value="">선택해 주세요</option>
-                                <option value="@gmail.com">gmail.com</option>
+                                {/* <option value="@gmail.com">gmail.com</option> */}
+                                {emailAddress.map(address => (
+                                    <option value={address.code_name} key={address.code_id}>
+                                        {address.code_name}
+                                    </option>
+                                ))}
                             </select>
                         </div>
-                        {/* <!-- 휴대폰인증 --> */}
-                        <div className="phone">
-                            <input type="text" placeholder="휴대폰" />
-                            <span className="phone_t">-</span>
-                            <input type="text" />
-                            <span className="phone_t">-</span>
-                            <input type="text" />
-                            <button className="number_send">인증번호 발송</button>
-                        </div>
-                        {/* <!-- 인증번호 입력 --> */}
-                        <div className="number__check">
-                            <input type="text" placeholder="SMS로 발송된 인증번호 입력하세요" />
-                            <button className="phone_check">확인</button>
-                        </div>
+                        {data.auth_confirm ? (
+                            <p className="authConfirmText">인증이 완료되었습니다.</p>
+                        ) : (
+                            <>
+                                {/* <!-- 휴대폰인증 --> */}
+                                <div className="phone">
+                                    <input
+                                        type="text"
+                                        placeholder="휴대폰"
+                                        name="first"
+                                        onChange={e => onChange(e)}
+                                        value={data.first}
+                                    />
+                                    <span className="phone_t">-</span>
+                                    <input type="text" name="second" onChange={e => onChange(e)} value={data.second} />
+                                    <span className="phone_t">-</span>
+                                    <input type="text" name="third" onChange={e => onChange(e)} value={data.third} />
+                                    <button className="number_send" type="button" onClick={onPhoneAuth}>
+                                        {data.index !== null ? '재전송' : '인증번호 발송'}
+                                    </button>
+                                </div>
+                                {/* <!-- 인증번호 입력 --> */}
+                                <div className="number__check">
+                                    <input
+                                        type="text"
+                                        placeholder="SMS로 발송된 인증번호 입력하세요"
+                                        onChange={e => onChange(e)}
+                                        value={data.auth_code}
+                                        name="auth_code"
+                                    />
+                                    <button className="phone_check" type="button" onClick={onPhoneAuthConfirm}>
+                                        확인
+                                    </button>
+                                </div>
+                            </>
+                        )}
 
                         {/* <!-- 약관전체동의 --> */}
                         <div className="agreement">

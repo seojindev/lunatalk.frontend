@@ -7,6 +7,10 @@ export const RegisterStyle = styled.main`
     display: flex;
     justify-content: space-around;
 
+    button {
+        cursor: pointer;
+    }
+
     .join__column h2 {
         padding: 30px 0 20px 0;
         font-size: 20px;
@@ -159,5 +163,11 @@ export const RegisterStyle = styled.main`
         font-weight: bold;
         border: 0;
         font-size: 15px;
+    }
+    .authConfirmText {
+        text-align: center;
+        padding: 2rem;
+        box-sizing: border-box;
+        font-size: 1.2rem;
     }
 `;
