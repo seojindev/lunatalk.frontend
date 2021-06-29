@@ -1,12 +1,21 @@
 import { takeLatest, fork, put, call } from 'redux-saga/effects';
 import _Alert_ from '@_Alert_';
 import { checkServerNotice, getBaseData } from '@API';
-import { COLORLOG } from '@Helper';
+import { COLORLOG, getLocalToken } from '@Helper';
 import { axiosDefaultHeader } from '@Util/_Axios_';
 import axios from 'axios';
 import { ServiceResponse, AppBase } from 'ServiceTypes';
 
-import { START_APP_LOADING, END_APP_LOADING, APP_INIT_START, APP_INIT_END, APP_ERROR, COMMON_DATA } from './actions';
+import {
+    START_APP_LOADING,
+    END_APP_LOADING,
+    APP_INIT_START,
+    APP_INIT_END,
+    APP_ERROR,
+    COMMON_DATA,
+    LOGIN_SET_START,
+    LOGIN_SET_END,
+} from './actions';
 
 // 서버 통신 체크만 따로 뺴서..
 const checkServerStatus = async () => {
@@ -32,6 +41,8 @@ function* appInitSaga() {
                 codes: serverBaseData.payload.codes,
             },
         });
+        //  로그인후 데이터 저장
+        yield put({ type: LOGIN_SET_START });
 
         yield put({ type: APP_INIT_END });
     } catch (error) {
@@ -47,8 +58,27 @@ function* appInitSaga() {
     yield put({ type: END_APP_LOADING }); // 공통 로딩 끝.
 }
 
+// function* loginCheckSaga() {
+// TODO: api 완성시 추가해야함.
+// }
+
+function* loginSetSaga() {
+    const localToken = getLocalToken();
+    const { login_access_token, login_refresh_token } = localToken;
+
+    yield put({
+        type: LOGIN_SET_END,
+        payload: {
+            access_token: login_access_token,
+            refresh_token: login_refresh_token,
+        },
+    });
+}
+
 function* onBaseSagaWatcher() {
     yield takeLatest(APP_INIT_START as any, appInitSaga);
+    // yield takeLatest(CHECK_LOGIN_START as any, checkLoginSaga);
+    yield takeLatest(LOGIN_SET_START as any, loginSetSaga);
 }
 
 export default [fork(onBaseSagaWatcher)];
