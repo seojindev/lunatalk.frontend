@@ -1,5 +1,4 @@
 import { _Axios_ } from '@Utils';
-import { RegisterData } from 'RegisterTypes';
 import { PhoneAuth, Register, ServiceResponse } from 'ServiceTypes';
 import { AppBase, Login } from 'ServiceTypes';
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { RegisterStyle } from '@Src/Styles/RegisterStyles';
 import { CodeItem } from 'CommonTypes';
 import React from 'react';
