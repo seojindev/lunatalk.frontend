@@ -127,3 +127,86 @@ export const BoardListBox = styled.div`
         color: inherit;
     }
 `;
+
+export const BoardDetailBox = styled.div`
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    border-top-color: #788598;
+
+    border-top: 2px solid #12b5bb;
+    border-bottom: 1px solid #dedede;
+    font-size: 13px;
+    margin-top: 18px;
+
+    .top-box {
+        border-bottom: 1px solid #dedede;
+    }
+
+    .title-box {
+        width: 100%;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .info-box {
+        border-bottom: 1px solid #dedede;
+    }
+
+    .date-wrapper {
+        width: 50%;
+        float: left;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .view-wrapper {
+        width: 50%;
+        float: right;
+        text-align: right;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .notice-title-content {
+        color: #000000;
+        font-size: 22px;
+    }
+
+    span.notice-title {
+        color: #000000;
+        font-size: 22px;
+    }
+
+    span.notice-date,
+    span.notice-view {
+        color: #000000;
+        font-size: 14px;
+    }
+
+    .content-box {
+    }
+
+    .content-wrapper {
+        border-top: 1px solid #dedede;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .notice-content {
+        overflow: hidden;
+        position: relative;
+        padding: 16px 0 16px 10px;
+        border-bottom: 1px solid #e5e5e5;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .bottom-button {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+`;

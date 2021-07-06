@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { BoardWrapper, BoardListBox } from '@Style/BoardStyle';
 
 export default function BoardList() {
@@ -18,7 +19,9 @@ export default function BoardList() {
                         <div className="board-list-item">
                             <div className="number">5</div>
                             <div className="title">
-                                <a href="#">오늘부터 가방은 10% 할인 입니다.</a>
+                                <Link to={process.env.PUBLIC_URL + '/help/notice/123123/detail'}>
+                                    오늘부터 가방은 10% 할인 입니다.
+                                </Link>
                             </div>
                             <div className="writer">관리자</div>
                             <div className="date">2021-11-20</div>
@@ -27,7 +30,9 @@ export default function BoardList() {
                         <div className="board-list-item">
                             <div className="number">4</div>
                             <div className="title">
-                                <a href="#">오늘부터 지갑은 30% 할인입니다.</a>
+                                <Link to={process.env.PUBLIC_URL + '/help/notice/123123/detail'}>
+                                    오늘부터 지갑은 30% 할인입니다.
+                                </Link>
                             </div>
                             <div className="writer">관리자</div>
                             <div className="date">2020-11-12</div>
@@ -36,7 +41,9 @@ export default function BoardList() {
                         <div className="board-list-item">
                             <div className="number">3</div>
                             <div className="title">
-                                <a href="#">오늘부터 환불은 일절 없습니다.</a>
+                                <Link to={process.env.PUBLIC_URL + '/help/notice/123123/detail'}>
+                                    오늘부터 환불은 일절 없습니다.
+                                </Link>
                             </div>
                             <div className="writer">관리자</div>
                             <div className="date">2020-11-02</div>
@@ -45,7 +52,9 @@ export default function BoardList() {
                         <div className="board-list-item">
                             <div className="number">2</div>
                             <div className="title">
-                                <a href="#">오전에 구입하면 10% 할인 입니다.</a>
+                                <Link to={process.env.PUBLIC_URL + '/help/notice/123123/detail'}>
+                                    오전에 구입하면 10% 할인 입니다.
+                                </Link>
                             </div>
                             <div className="writer">관리자</div>
                             <div className="date">2019-10-28</div>
@@ -54,7 +63,9 @@ export default function BoardList() {
                         <div className="board-list-item">
                             <div className="number">1</div>
                             <div className="title">
-                                <a href="#">가방 재고 입고 되었습니다.</a>
+                                <Link to={process.env.PUBLIC_URL + '/help/notice/123123/detail'}>
+                                    가방 재고 입고 되었습니다.
+                                </Link>
                             </div>
                             <div className="writer">관리자</div>
                             <div className="date">2019-10-24</div>
