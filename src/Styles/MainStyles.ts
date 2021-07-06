@@ -7,8 +7,28 @@ export const MainBannerContainer = styled.div`
     .main_banner {
         width: 1200px;
         height: 570px;
-        background: #eee;
+        // background: #eee;
         margin: 0 auto;
+    }
+    .slick-next {
+        width: 50px;
+        height: 50px;
+        right: 20px;
+        z-index: 1;
+        &:before {
+            font-size: 50px;
+            color: #333;
+        }
+    }
+    .slick-prev {
+        width: 50px;
+        height: 50px;
+        left: 20px;
+        z-index: 1;
+        &:before {
+            font-size: 50px;
+            color: #333;
+        }
     }
 `;
 

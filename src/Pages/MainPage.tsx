@@ -1,42 +1,14 @@
 import React from 'react';
 import { MainLayout } from '@Src/Components/Layouts/MainLayouts';
 import { MainSlider, CategoryList, BestItem } from '@Elements';
-
-interface itemProps {
-    img: string;
-    title: string;
-    price: number;
-}
-
-const item: itemProps[] = [
-    {
-        img: 'https://kblog-storage-s3.s3.ap-northeast-2.amazonaws.com/uploads/1622559197044%20-%20200302-title.jpeg',
-        title: '가방',
-        price: 3000,
-    },
-    {
-        img: 'https://kblog-storage-s3.s3.ap-northeast-2.amazonaws.com/uploads/1622559197044%20-%20200302-title.jpeg',
-        title: '가방',
-        price: 3000,
-    },
-    {
-        img: 'https://kblog-storage-s3.s3.ap-northeast-2.amazonaws.com/uploads/1622559197044%20-%20200302-title.jpeg',
-        title: '가방',
-        price: 3000,
-    },
-    {
-        img: 'https://kblog-storage-s3.s3.ap-northeast-2.amazonaws.com/uploads/1622559197044%20-%20200302-title.jpeg',
-        title: '가방',
-        price: 3000,
-    },
-    {
-        img: 'https://kblog-storage-s3.s3.ap-northeast-2.amazonaws.com/uploads/1622559197044%20-%20200302-title.jpeg',
-        title: '가방',
-        price: 3000,
-    },
-];
+import { RootState } from 'StoreTypes';
+import { useSelector } from 'react-redux';
 
 export default function MainPage() {
+    const { best_item, hot_item } = useSelector((store: RootState) => ({
+        best_item: store.main.best_item,
+        hot_item: store.main.hot_item,
+    }));
     return (
         <MainLayout>
             {/* 메인 배너 */}
@@ -44,9 +16,9 @@ export default function MainPage() {
             {/* 카테고리 리스트 */}
             <CategoryList />
             {/* 베스트 아이템 */}
-            <BestItem item={item} name="Best Item" />
+            <BestItem item={best_item} name="Best Item" />
             {/* 핫 아이템 */}
-            <BestItem item={item} name="Hot Item" />
+            <BestItem item={hot_item} name="Hot Item" />
         </MainLayout>
     );
 }
