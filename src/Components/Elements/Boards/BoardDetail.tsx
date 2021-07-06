@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { BoardWrapper, BoardDetailBox } from '@Style/BoardStyle';
 
 export default function NoticeDetail() {
@@ -47,7 +48,9 @@ export default function NoticeDetail() {
                     </div>
                 </div>
                 <div className="bottom-button">
-                    <button>목록</button>
+                    <Link to={process.env.PUBLIC_URL + '/help/notice/notice-list'}>
+                        <button>목록</button>
+                    </Link>
                 </div>
             </BoardDetailBox>
         </BoardWrapper>
