@@ -3,19 +3,56 @@ import { SagaAction } from 'CommonTypes';
 import produce from 'immer';
 // import { ErrorMessage } from 'StoreTypes';
 import { MainState } from 'StoreTypes';
-import { GET_MAIN_HOTITEM_SUCCESS } from './actions';
+import { GET_MAIN_CATEGORY_SUCCESS, GET_MAIN_HOTITEM_SUCCESS } from './actions';
 
 import { GET_MAIN_BANNER_SUCCESS, GET_MAIN_BESTITEM_SUCCESS } from './actions';
-import { Banner, BestItem } from 'MainTypes';
+import { Banner, BestItem, Categories } from 'MainTypes';
 
 // 스토어 init.
 const initialState: MainState = {
     banner: [],
     best_item: [],
     hot_item: [],
+    categories: {
+        acc: {
+            click_code: '',
+            product_name: '',
+            product_uuid: '',
+            product_image: '',
+            product_thumb_image: '',
+        },
+        bag: {
+            click_code: '',
+            product_name: '',
+            product_uuid: '',
+            product_image: '',
+            product_thumb_image: '',
+        },
+        stationery: {
+            click_code: '',
+            product_name: '',
+            product_uuid: '',
+            product_image: '',
+            product_thumb_image: '',
+        },
+        wallet: {
+            click_code: '',
+            product_name: '',
+            product_uuid: '',
+            product_image: '',
+            product_thumb_image: '',
+        },
+        CUSTOM_ITEM: {
+            click_code: '',
+            product_name: '',
+            product_uuid: '',
+            product_image: '',
+            product_thumb_image: '',
+        },
+    },
 };
 
-export const AppSagaReducer = createReducer<MainState>(initialState, {
+export const MainSagaReducer = createReducer<MainState>(initialState, {
     // TODO: 로딩 어떻게 할지 고민
     // [GET_MAIN_BANNER_START]: (state: MainState) => {
     //     return produce(state, draft => {
@@ -37,5 +74,10 @@ export const AppSagaReducer = createReducer<MainState>(initialState, {
             draft.hot_item = action.payload.hot_item;
         });
     },
+    [GET_MAIN_CATEGORY_SUCCESS]: (state: MainState, action: SagaAction<{ categories: Categories }>) => {
+        return produce(state, draft => {
+            draft.categories = action.payload.categories;
+        });
+    },
 });
-export default AppSagaReducer;
+export default MainSagaReducer;
