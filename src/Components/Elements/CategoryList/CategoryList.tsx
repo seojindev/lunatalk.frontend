@@ -14,8 +14,7 @@ export default function CategoryList({ list }: CategoryProps) {
                 <ul>
                     <li
                         style={{
-                            background: `url(${list.acc.product_thumb_image}) no-repeat`,
-                            backgroundSize: 'cover',
+                            backgroundImage: `url(${list.acc.product_thumb_image})`,
                         }}>
                         <p>ACC</p>
                     </li>
@@ -24,22 +23,19 @@ export default function CategoryList({ list }: CategoryProps) {
                     </li>
                     <li
                         style={{
-                            background: `url(${list.bag.product_thumb_image}) no-repeat`,
-                            backgroundSize: 'cover',
+                            backgroundImage: `url(${list.bag.product_thumb_image})`,
                         }}>
                         <p>Bag</p>
                     </li>
                     <li
                         style={{
-                            background: `url(${list.stationery.product_thumb_image}) no-repeat`,
-                            backgroundSize: 'cover',
+                            backgroundImage: `url(${list.stationery.product_thumb_image})`,
                         }}>
                         <p>Stationery</p>
                     </li>
                     <li
                         style={{
-                            background: `url(${list.wallet.product_thumb_image}) no-repeat`,
-                            backgroundSize: 'cover',
+                            backgroundImage: `url(${list.wallet.product_thumb_image})`,
                         }}>
                         <p>Walert</p>
                     </li>
