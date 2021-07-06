@@ -47,6 +47,7 @@ export const CategoryContainer = styled.div`
                 height: 250px;
                 background: #eee;
                 position: relative;
+                background-size: cover;
                 p {
                     position: absolute;
                     width: 100%;

@@ -4,7 +4,12 @@ import { COLORLOG } from '@Helper';
 import { appInitAction } from '@Store/App';
 import { RootState } from 'StoreTypes';
 import _Alert_ from '@_Alert_';
-import { getMainBannerAction, getMainBestItemAction, getMainhotItemAction } from '@Src/Store/Main';
+import {
+    getMainBannerAction,
+    getMainBestItemAction,
+    getMainCategoriesAction,
+    getMainhotItemAction,
+} from '@Src/Store/Main';
 
 export default function useRoot() {
     const dispatch = useDispatch();
@@ -35,6 +40,7 @@ export default function useRoot() {
             dispatch(getMainBannerAction());
             dispatch(getMainBestItemAction());
             dispatch(getMainhotItemAction());
+            dispatch(getMainCategoriesAction());
         } else if (appStatus === false) {
             // 상태가 false 일떄.
             if (appErrorMessage) {

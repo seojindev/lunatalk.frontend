@@ -1,7 +1,7 @@
 import { _Axios_ } from '@Utils';
 import { PhoneAuth, Register, ServiceResponse } from 'ServiceTypes';
 import { AppBase, Login } from 'ServiceTypes';
-import { Banner, BestItem } from 'MainTypes';
+import { Banner, BestItem, Category } from 'MainTypes';
 
 // 서버 공지 사항 체크.
 export function checkServerNotice(): Promise<ServiceResponse<{ notice: string }>> {
@@ -56,4 +56,9 @@ export function getMainBestItem(): Promise<ServiceResponse<BestItem>> {
 // 메인 핫 아이템
 export function getMainHotItem(): Promise<ServiceResponse<BestItem>> {
     return _Axios_({ method: 'get', url: '/api/v1/pages/tabs/main-products-hot-items', payload: { data: {} } });
+}
+
+// 메인 카테고리
+export function getMainCategoies(): Promise<ServiceResponse<Category>> {
+    return _Axios_({ method: 'get', url: '/api/v1/pages/tabs/main-products-category', payload: { data: {} } });
 }

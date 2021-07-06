@@ -2,7 +2,7 @@ declare module 'StoreTypes' {
     import { RouterState } from 'connected-react-router';
     import { Codes } from 'CommonTypes';
     import { Login } from 'ServiceTypes';
-    import { Banner, BestItem } from 'MainTypes';
+    import { Banner, BestItem, Category } from 'MainTypes';
 
     // App Store
     export interface AppState {
@@ -21,6 +21,7 @@ declare module 'StoreTypes' {
         banner: Banner[];
         best_item: BestItem[];
         hot_item: BestItem[];
+        categories: Categories;
     }
 
     // store 인터페이스.
