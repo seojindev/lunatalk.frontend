@@ -6,11 +6,15 @@ export default function Header() {
     return (
         <HeaderContainer>
             <div className="header">
-                <h1>lunatalk</h1>
+                <h1>
+                    <Link to={process.env.PUBLIC_URL + '/'}>lunatalk</Link>
+                </h1>
                 <div className="nav_container">
                     <div className="nav">
                         <ul>
-                            <li>HOME</li>
+                            <li>
+                                <Link to={process.env.PUBLIC_URL + '/'}>HOME</Link>
+                            </li>
                             <li>SHOP</li>
                             <li>PRODUCTS</li>
                             <li>PAGES</li>
