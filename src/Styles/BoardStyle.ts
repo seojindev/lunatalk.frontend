@@ -127,3 +127,108 @@ export const BoardListBox = styled.div`
         color: inherit;
     }
 `;
+
+export const BoardDetailBox = styled.table`
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    border-top-color: #788598;
+
+    border-top: 2px solid #12b5bb;
+    border-bottom: 1px solid #dedede;
+    font-size: 13px;
+    margin-top: 18px;
+
+    .blind {
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    .caption {
+        display: table-caption;
+        text-align: -webkit-center;
+    }
+
+    .colgroup {
+        display: table-column-group;
+    }
+
+    .tbody {
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit;
+    }
+
+    tr {
+        display: table-row;
+        vertical-align: inherit;
+        border-color: inherit;
+    }
+
+    table.horizon > tbody > tr > th {
+        text-align: left;
+    }
+
+    table > tbody > tr > td {
+        padding: 4px 30px;
+        height: 46px;
+        padding: 0 30px;
+    }
+
+    table > tbody > tr {
+        display: table-row;
+        vertical-align: inherit;
+        border-color: inherit;
+    }
+
+    .tbody-title-tr {
+        border-bottom: 1px solid #dedede;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .tbody-contents-tr {
+    }
+
+    .tbody-title {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    span.view-bbs-title {
+        color: #000000;
+        font-size: 22px;
+    }
+
+    table.table td.view-bbs-contents {
+        border-top: 1px solid #dedede;
+        padding: 30px;
+    }
+
+    table.table > tbody + tbody > tr > th,
+    table.table > tbody + tbody > tr > td,
+    table.table > tbody > tr + tr > th,
+    table.table > tbody > tr + tr > td {
+        border-top: 1px solid #ebebea;
+    }
+
+    .mrs2 {
+        overflow: hidden;
+        position: relative;
+        // margin: -40px 0 50px;
+        padding: 16px 0 16px 10px;
+        border-bottom: 1px solid #e5e5e5;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .detail-list-button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+`;

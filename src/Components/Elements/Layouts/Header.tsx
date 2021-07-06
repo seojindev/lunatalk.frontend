@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { HeaderContainer } from '@Src/Styles/CommonStyles';
 
 export default function Header() {
@@ -20,6 +21,11 @@ export default function Header() {
                 <div className="icon_container">
                     <div className="search">
                         <p>검색</p>
+                    </div>
+                    <div className="my_page">
+                        <p>
+                            <Link to={process.env.PUBLIC_URL + '/help/notice/notice-list'}>공지사항</Link>
+                        </p>
                     </div>
                     <div className="my_page">
                         <p>my</p>
