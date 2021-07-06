@@ -1,7 +1,7 @@
 import { _Axios_ } from '@Utils';
 import { PhoneAuth, Register, ServiceResponse } from 'ServiceTypes';
 import { AppBase, Login } from 'ServiceTypes';
-import { Banner } from 'MainTypes';
+import { Banner, BestItem } from 'MainTypes';
 
 // 서버 공지 사항 체크.
 export function checkServerNotice(): Promise<ServiceResponse<{ notice: string }>> {
@@ -47,4 +47,13 @@ export function phoneAuthConfirm(payload: { auth_code: string; auth_index: numbe
 // 메인 배너
 export function getMainBanner(): Promise<ServiceResponse<Banner>> {
     return _Axios_({ method: 'get', url: '/api/v1/pages/tabs/main-top', payload: { data: {} } });
+}
+
+// 메인 베스트 아이템
+export function getMainBestItem(): Promise<ServiceResponse<BestItem>> {
+    return _Axios_({ method: 'get', url: '/api/v1/pages/tabs/main-products-best-items', payload: { data: {} } });
+}
+// 메인 핫 아이템
+export function getMainHotItem(): Promise<ServiceResponse<BestItem>> {
+    return _Axios_({ method: 'get', url: '/api/v1/pages/tabs/main-products-hot-items', payload: { data: {} } });
 }
