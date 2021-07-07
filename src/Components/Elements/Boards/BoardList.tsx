@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BoardWrapper, BoardListBox } from '@Style/BoardStyle';
+import { BoardWrapper, BoardListBox } from '@Style/ElementsStyle';
 
 export default function BoardList() {
     return (

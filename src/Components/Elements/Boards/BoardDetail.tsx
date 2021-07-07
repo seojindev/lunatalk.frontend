@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BoardWrapper, BoardDetailBox } from '@Style/BoardStyle';
+import { BoardWrapper, BoardDetailBox } from '@Style/ElementsStyle';
 
 export default function NoticeDetail() {
     return (
