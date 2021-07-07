@@ -32,6 +32,11 @@ export default function Header() {
                         </p>
                     </div>
                     <div className="my_page">
+                        <p>
+                            <Link to={process.env.PUBLIC_URL + '/help/faq'}>Faq</Link>
+                        </p>
+                    </div>
+                    <div className="my_page">
                         <p>my</p>
                     </div>
                     <div className="cart">
