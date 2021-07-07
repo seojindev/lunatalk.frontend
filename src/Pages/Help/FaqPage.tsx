@@ -8,6 +8,7 @@ export default function NoticeListPage() {
             <MainLayout>
                 <FaqWrapper>
                     <FaqListBox>
+                        <div className="faq-title">FAQ</div>
                         <details>
                             <summary>
                                 <span className="summary-title">상품을 구입하는 방법은</span>

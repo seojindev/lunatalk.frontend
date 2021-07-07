@@ -229,6 +229,13 @@ export const FaqListBox = styled.div`
     font-size: 13px;
     margin-top: 18px;
 
+    .faq-title {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
     details {
         font-size: 1rem;
         margin: 2em auto;
