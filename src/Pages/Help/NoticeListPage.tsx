@@ -1,7 +1,7 @@
 import React from 'react';
 import { MainLayout } from '@Src/Components/Layouts/MainLayouts';
 import { Link } from 'react-router-dom';
-import { BoardWrapper, BoardListBox } from '@Style/ElementsStyle';
+import { BoardWrapper, BoardListBox } from '@Src/Styles/HelpStyle';
 
 export default function NoticeListPage() {
     return (

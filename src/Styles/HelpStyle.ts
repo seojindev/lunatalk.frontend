@@ -210,3 +210,93 @@ export const BoardDetailBox = styled.div`
         text-align: center;
     }
 `;
+
+export const FaqWrapper = styled.div`
+    width: 1200px;
+    min-height: 570px;
+    height: 100%;
+    margin: 0 auto;
+`;
+
+export const FaqListBox = styled.div`
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    border-top-color: #788598;
+
+    border-top: 2px solid #12b5bb;
+    font-size: 13px;
+    margin-top: 18px;
+
+    details {
+        font-size: 1rem;
+        margin: 2em auto;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        width: 100%;
+        background: #ffffff;
+        border-radius: 8px;
+        position: relative;
+        width: 80%;
+
+        .summary-title {
+            user-select: none;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .summary-content {
+            border-top: 1px solid #e2e8f0;
+            cursor: default;
+            padding: 1rem;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        summary {
+            list-style: none;
+            padding: 1rem;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover .summary-chevron-up svg {
+                opacity: 1;
+            }
+        }
+
+        .content-wrapper {
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+
+        .notice-content {
+            overflow: hidden;
+            position: relative;
+            padding: 16px 0 16px 10px;
+            border-bottom: 1px solid #e5e5e5;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        .summary-chevron-up svg {
+            opacity: 0.5;
+        }
+
+        .summary-chevron-up,
+        .summary-chevron-down {
+            pointer-events: none;
+            position: absolute;
+            top: 0.75em;
+            right: 1rem;
+            background: #ffffff;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+    }
+`;

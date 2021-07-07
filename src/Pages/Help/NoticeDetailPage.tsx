@@ -1,6 +1,6 @@
 import React from 'react';
 import { MainLayout } from '@Src/Components/Layouts/MainLayouts';
-import { BoardWrapper, BoardDetailBox } from '@Style/ElementsStyle';
+import { BoardWrapper, BoardDetailBox } from '@Src/Styles/HelpStyle';
 import { Link } from 'react-router-dom';
 
 export default function NoticeDetailPage() {
