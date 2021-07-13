@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { RegisterStyle } from '@Src/Styles/RegisterStyles';
 import { CodeItem } from 'CommonTypes';
 import React from 'react';
@@ -78,7 +77,6 @@ export default function RegisterForm({
                                 className="email_select select"
                                 title="이메일 서비스 선택"
                                 name="user_email_select"
-                                // eslint-disable-next-line prettier/prettier
                                 onChange={e => onChange(e)}
                                 value={data.user_email_select}
                             >
