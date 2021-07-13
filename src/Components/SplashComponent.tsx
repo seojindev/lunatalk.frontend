@@ -17,8 +17,8 @@ export default function SplashComponent({ appLoading }: { appLoading: () => void
     }, [AppBaseCheckState]);
 
     return (
-        // <PageSpinnerStyle>
-        <PulseLoader color="#ddd" size="15" />
-        // </PageSpinnerStyle>
+        <div className="page-spinner">
+            <PulseLoader color="#ddd" size="15" />
+        </div>
     );
 }
