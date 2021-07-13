@@ -18,7 +18,6 @@ export default function SplashComponent({ appLoading }: { appLoading: () => void
 
     return (
         <PageSpinnerStyle>
-            {/* <>로딩중...</> */}
             <PulseLoader color="#ddd" size="15" />
         </PageSpinnerStyle>
     );

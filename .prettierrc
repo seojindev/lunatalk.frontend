@@ -6,7 +6,7 @@
     "bracketSpacing": true,
     "htmlWhitespaceSensitivity": "css",
     "insertPragma": false,
-    "jsxBracketSameLine": true,
+    "jsxBracketSameLine": false,
     "jsxSingleQuote": false,
     "proseWrap": "preserve",
     "quoteProps": "as-needed",
@@ -15,7 +15,6 @@
     "trailingComma": "es5",
     "useTabs": false,
     "vueIndentScriptAndStyle": false,
-    "endOfLine": "auto",
     "overrides": [
         {
           "files": "*.css",

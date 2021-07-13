@@ -80,7 +80,8 @@ export default function RegisterForm({
                                 name="user_email_select"
                                 // eslint-disable-next-line prettier/prettier
                                 onChange={e => onChange(e)}
-                                value={data.user_email_select}>
+                                value={data.user_email_select}
+                            >
                                 <option value="">선택해 주세요</option>
                                 {/* <option value="@gmail.com">gmail.com</option> */}
                                 {emailAddress.map(address => (

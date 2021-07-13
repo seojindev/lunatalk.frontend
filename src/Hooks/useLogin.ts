@@ -11,7 +11,7 @@ export default function useLogin() {
     const handleSubmitButton = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        let response = await login({ login_id: inputUserName, login_password: inputUserPassWord });
+        const response = await login({ login_id: inputUserName, login_password: inputUserPassWord });
         console.debug(response);
 
         if (response.status === false) {
