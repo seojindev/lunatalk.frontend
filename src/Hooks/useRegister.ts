@@ -1,11 +1,25 @@
 import { phoneAuth, phoneAuthConfirm, register } from '@Src/Modules/API';
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { CheckboxData, RegisterData } from 'RegisterTypes';
+// import { CheckboxData, RegisterData } from 'RegisterTypes';
 
 export default function useRegister() {
     const history = useHistory();
-    const [registerData, setRegisterData] = useState<RegisterData>({
+    const [registerData, setRegisterData] = useState<{
+        auth_id: string;
+        user_id: string;
+        user_password: string;
+        user_password_confirm: string;
+        user_nickname: string;
+        user_email: string;
+        user_email_select: string;
+        first: string;
+        second: string;
+        third: string;
+        auth_code: string;
+        auth_confirm: boolean;
+        index: any;
+    }>({
         auth_id: '',
         user_id: '',
         user_password: '',
@@ -20,7 +34,11 @@ export default function useRegister() {
         index: null,
         auth_confirm: false,
     });
-    const [registerCheckbox, setRegisterCheckbox] = useState<CheckboxData>({
+    const [registerCheckbox, setRegisterCheckbox] = useState<{
+        checkbox1: boolean;
+        checkbox2: boolean;
+        checkbox3: boolean;
+    }>({
         checkbox1: false,
         checkbox2: false,
         checkbox3: false,

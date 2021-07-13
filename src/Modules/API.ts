@@ -1,7 +1,7 @@
 import { _Axios_ } from '@Utils';
 import { PhoneAuth, Register, ServiceResponse } from 'ServiceTypes';
 import { AppBase, Login } from 'ServiceTypes';
-import { Banner, BestItem, Category } from 'MainTypes';
+import { Banner, BestItem, Category } from 'ServiceTypes';
 
 // 서버 공지 사항 체크.
 export function checkServerNotice(): Promise<ServiceResponse<{ notice: string }>> {

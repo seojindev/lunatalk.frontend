@@ -1,6 +1,7 @@
 import { takeLatest, fork, put, call } from 'redux-saga/effects';
 import { getMainBanner, getMainBestItem, getMainCategoies, getMainHotItem } from '@API';
 import { ServiceResponse } from 'ServiceTypes';
+import { Banner, BestItem, Categories } from 'ServiceTypes';
 
 import {
     GET_MAIN_BANNER_START,
@@ -16,7 +17,6 @@ import {
     GET_MAIN_CATEGORY_FAILURE,
     GET_MAIN_CATEGORY_START,
 } from './actions';
-import { Banner, BestItem, Categories } from 'MainTypes';
 
 function* getMainBannerSaga() {
     try {
