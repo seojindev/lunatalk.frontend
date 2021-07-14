@@ -1,12 +1,11 @@
 import { createReducer } from 'typesafe-actions';
 import { SagaAction } from 'CommonTypes';
 import produce from 'immer';
-// import { ErrorMessage } from 'StoreTypes';
+import { Banner, BestItem, Categories } from 'ServiceTypes';
 import { MainState } from 'StoreTypes';
 import { GET_MAIN_CATEGORY_SUCCESS, GET_MAIN_HOTITEM_SUCCESS } from './actions';
 
 import { GET_MAIN_BANNER_SUCCESS, GET_MAIN_BESTITEM_SUCCESS } from './actions';
-import { Banner, BestItem, Categories } from 'MainTypes';
 
 // 스토어 init.
 const initialState: MainState = {
