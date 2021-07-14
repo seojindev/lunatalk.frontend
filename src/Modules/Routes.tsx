@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 import { TestPage, DefaultPage, PublishPage } from '@Pages';
-import { MainPublish } from '@Publishs';
+
+// TODO : 퍼블리싱 동적으로 보여 주기 위해. 개발 끝나면 삭제 해야 함.
+import publishList from '@Src/Data/publish-list';
+const routeMap: any = publishList.map(route => {
+    return {
+        name: route.name,
+        comoonent: lazy(() => import(`../Publishs/${route.component}`)),
+    };
+});
 
 const Routes = ({ Routerhistory }: { Routerhistory: any }) => {
     return (
@@ -16,11 +24,20 @@ const Routes = ({ Routerhistory }: { Routerhistory: any }) => {
                     <Route path={process.env.PUBLIC_URL + '/publish'} component={PublishPage} exact />
                     {/* </Route> */}
 
-                    <Route path={['/publishs/:page_name']}>
-                        <Switch>
-                            <Route path={process.env.PUBLIC_URL + '/publishs/:page_name'} component={MainPublish} />
-                        </Switch>
-                    </Route>
+                    <Switch>
+                        {/* // TODO : 퍼블리싱 동적으로 보여 주기 위해. 개발 끝나면 삭제 해야 함. */}
+                        <Suspense fallback={<div>Loading...</div>}>
+                            {routeMap.map((item: any, n: any) => {
+                                return (
+                                    <Route
+                                        path={process.env.PUBLIC_URL + `/publishs/${item.name}`}
+                                        component={item.comoonent}
+                                        key={n}
+                                    />
+                                );
+                            })}
+                        </Suspense>
+                    </Switch>
                 </Switch>
             </ConnectedRouter>
         </BrowserRouter>
