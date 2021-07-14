@@ -1082,7 +1082,7 @@ export default function BlogRightSidebarPublish() {
                                         <ul>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" value="" />{' '}
+                                                    <input type="checkbox" />{' '}
                                                     <a href="#">
                                                         Women <span>4</span>{' '}
                                                     </a>
@@ -1091,7 +1091,7 @@ export default function BlogRightSidebarPublish() {
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" value="" />{' '}
+                                                    <input type="checkbox" />{' '}
                                                     <a href="#">
                                                         Men <span>4</span>{' '}
                                                     </a>
@@ -1100,7 +1100,7 @@ export default function BlogRightSidebarPublish() {
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" value="" />{' '}
+                                                    <input type="checkbox" />{' '}
                                                     <a href="#">
                                                         Bags <span>4</span>{' '}
                                                     </a>
@@ -1109,7 +1109,7 @@ export default function BlogRightSidebarPublish() {
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" value="" />{' '}
+                                                    <input type="checkbox" />{' '}
                                                     <a href="#">
                                                         Accessories <span>4</span>{' '}
                                                     </a>
@@ -1251,10 +1251,9 @@ export default function BlogRightSidebarPublish() {
                                                     type="email"
                                                     placeholder="Enter your email here.."
                                                     name="EMAIL"
-                                                    value=""
                                                 />
                                                 <div className="mc-news" aria-hidden="true">
-                                                    <input type="text" value="" tabIndex={-1} name="hidden-field" />
+                                                    <input type="text" tabIndex={-1} name="hidden-field" />
                                                 </div>
                                                 <div className="clear">
                                                     <input

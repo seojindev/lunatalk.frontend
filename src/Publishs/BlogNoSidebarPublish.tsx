@@ -1401,10 +1401,9 @@ export default function BlogNoSidebarPublish() {
                                                     type="email"
                                                     placeholder="Enter your email here.."
                                                     name="EMAIL"
-                                                    value=""
                                                 />
                                                 <div className="mc-news" aria-hidden="true">
-                                                    <input type="text" value="" tabIndex={-1} name="hidden-field" />
+                                                    <input type="text" tabIndex={-1} name="hidden-field" />
                                                 </div>
                                                 <div className="clear">
                                                     <input

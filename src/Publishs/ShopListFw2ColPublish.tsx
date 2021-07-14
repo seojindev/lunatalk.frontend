@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function CartPagePublish() {
+export default function ShopListFw2ColPublish() {
     return (
         <>
             <header className="header-area header-in-container clearfix">
@@ -736,222 +736,479 @@ export default function CartPagePublish() {
                             <li>
                                 <a href="index.html">Home</a>
                             </li>
-                            <li className="active">Cart Page </li>
+                            <li className="active">Shop </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div className="cart-main-area pt-90 pb-100">
-                <div className="container">
-                    <h3 className="cart-page-title">Your cart items</h3>
+            <div className="shop-area pt-95 pb-100 section-padding-1 list2-col-style">
+                <div className="container-fluid">
                     <div className="row">
-                        <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                            <form action="#">
-                                <div className="table-content table-responsive cart-table-content">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Image</th>
-                                                <th>Product Name</th>
-                                                <th>Until Price</th>
-                                                <th>Qty</th>
-                                                <th>Subtotal</th>
-                                                <th>action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td className="product-thumbnail">
-                                                    <a href="#">
-                                                        <img src="/assets/img/cart/cart-1.png" alt="" />
-                                                    </a>
-                                                </td>
-                                                <td className="product-name">
-                                                    <a href="#">Product Name</a>
-                                                </td>
-                                                <td className="product-price-cart">
-                                                    <span className="amount">$260.00</span>
-                                                </td>
-                                                <td className="product-quantity">
-                                                    <div className="cart-plus-minus">
-                                                        <input
-                                                            className="cart-plus-minus-box"
-                                                            type="text"
-                                                            name="qtybutton"
-                                                        />
-                                                    </div>
-                                                </td>
-                                                <td className="product-subtotal">$110.00</td>
-                                                <td className="product-remove">
-                                                    <a href="#">
-                                                        <i className="fa fa-pencil"></i>
-                                                    </a>
-                                                    <a href="#">
-                                                        <i className="fa fa-times"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td className="product-thumbnail">
-                                                    <a href="#">
-                                                        <img src="/assets/img/cart/cart-2.png" alt="" />
-                                                    </a>
-                                                </td>
-                                                <td className="product-name">
-                                                    <a href="#">Product Name</a>
-                                                </td>
-                                                <td className="product-price-cart">
-                                                    <span className="amount">$150.00</span>
-                                                </td>
-                                                <td className="product-quantity">
-                                                    <div className="cart-plus-minus">
-                                                        <input
-                                                            className="cart-plus-minus-box"
-                                                            type="text"
-                                                            name="qtybutton"
-                                                        />
-                                                    </div>
-                                                </td>
-                                                <td className="product-subtotal">$150.00</td>
-                                                <td className="product-remove">
-                                                    <a href="#">
-                                                        <i className="fa fa-pencil"></i>
-                                                    </a>
-                                                    <a href="#">
-                                                        <i className="fa fa-times"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td className="product-thumbnail">
-                                                    <a href="#">
-                                                        <img src="/assets/img/cart/cart-1.png" alt="" />
-                                                    </a>
-                                                </td>
-                                                <td className="product-name">
-                                                    <a href="#">Product Name </a>
-                                                </td>
-                                                <td className="product-price-cart">
-                                                    <span className="amount">$170.00</span>
-                                                </td>
-                                                <td className="product-quantity">
-                                                    <div className="cart-plus-minus">
-                                                        <input
-                                                            className="cart-plus-minus-box"
-                                                            type="text"
-                                                            name="qtybutton"
-                                                        />
-                                                    </div>
-                                                </td>
-                                                <td className="product-subtotal">$170.00</td>
-                                                <td className="product-remove">
-                                                    <a href="#">
-                                                        <i className="fa fa-pencil"></i>
-                                                    </a>
-                                                    <a href="#">
-                                                        <i className="fa fa-times"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                        <div className="col-lg-12">
+                            <div className="shop-top-bar mb-35">
+                                <div className="select-shoing-wrap">
+                                    <div className="shop-select">
+                                        <select>
+                                            <option>Sort by newness</option>
+                                            <option>A to Z</option>
+                                            <option> Z to A</option>
+                                            <option>In stock</option>
+                                        </select>
+                                    </div>
+                                    <p>Showing 1–12 of 20 result</p>
                                 </div>
+                                <div className="filter-active">
+                                    <a href="#">
+                                        <i className="fa fa-plus"></i> filter
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="product-filter-wrapper">
                                 <div className="row">
-                                    <div className="col-lg-12">
-                                        <div className="cart-shiping-update-wrapper">
-                                            <div className="cart-shiping-update">
-                                                <a href="#">Continue Shopping</a>
-                                            </div>
-                                            <div className="cart-clear">
-                                                <button>Update Shopping Cart</button>
-                                                <a href="#">Clear Shopping Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                            <div className="row">
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="cart-tax">
-                                        <div className="title-wrap">
-                                            <h4 className="cart-bottom-title section-bg-gray">
-                                                Estimate Shipping And Tax
-                                            </h4>
-                                        </div>
-                                        <div className="tax-wrapper">
-                                            <p>Enter your destination to get a shipping estimate.</p>
-                                            <div className="tax-select-wrapper">
-                                                <div className="tax-select">
-                                                    <label>* Country</label>
-                                                    <select className="email s-email s-wid">
-                                                        <option>Bangladesh</option>
-                                                        <option>Albania</option>
-                                                        <option>Åland Islands</option>
-                                                        <option>Afghanistan</option>
-                                                        <option>Belgium</option>
-                                                    </select>
-                                                </div>
-                                                <div className="tax-select">
-                                                    <label>* Region / State</label>
-                                                    <select className="email s-email s-wid">
-                                                        <option>Bangladesh</option>
-                                                        <option>Albania</option>
-                                                        <option>Åland Islands</option>
-                                                        <option>Afghanistan</option>
-                                                        <option>Belgium</option>
-                                                    </select>
-                                                </div>
-                                                <div className="tax-select">
-                                                    <label>* Zip/Postal Code</label>
-                                                    <input type="text" />
-                                                </div>
-                                                <button className="cart-btn-2" type="submit">
-                                                    Get A Quote
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="discount-code-wrapper">
-                                        <div className="title-wrap">
-                                            <h4 className="cart-bottom-title section-bg-gray">Use Coupon Code</h4>
-                                        </div>
-                                        <div className="discount-code">
-                                            <p>Enter your coupon code if you have one.</p>
-                                            <form>
-                                                <input type="text" name="name" />
-                                                <button className="cart-btn-2" type="submit">
-                                                    Apply Coupon
-                                                </button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-12">
-                                    <div className="grand-totall">
-                                        <div className="title-wrap">
-                                            <h4 className="cart-bottom-title section-bg-gary-cart">Cart Total</h4>
-                                        </div>
-                                        <h5>
-                                            Total products <span>$260.00</span>
-                                        </h5>
-                                        <div className="total-shipping">
-                                            <h5>Total shipping</h5>
-                                            <ul>
+                                    {/* <!-- Product Filter --> */}
+                                    <div className="col-md-3 col-sm-6 col-xs-12 mb-30">
+                                        <div className="product-filter">
+                                            <h5>Sort by</h5>
+                                            <ul className="sort-by">
                                                 <li>
-                                                    <input type="checkbox" /> Standard <span>$20.00</span>
+                                                    <a href="#">Default</a>
                                                 </li>
                                                 <li>
-                                                    <input type="checkbox" /> Express <span>$30.00</span>
+                                                    <a href="#">Popularity</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Average rating</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Newness</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Price: Low to High</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Price: High to Low</a>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <h4 className="grand-totall-title">
-                                            Grand Total <span>$260.00</span>
-                                        </h4>
-                                        <a href="#">Proceed to Checkout</a>
                                     </div>
+                                    {/* <!-- Product Filter --> */}
+                                    <div className="col-md-3 col-sm-6 col-xs-12 mb-30">
+                                        <div className="product-filter">
+                                            <h5>color filters</h5>
+                                            <ul className="color-filter">
+                                                <li>
+                                                    <input type="checkbox" /> <a href="#">Black</a>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" /> <a href="#">Brown</a>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" /> <a href="#">Orange</a>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" /> <a href="#">red</a>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" /> <a href="#">Yellow</a>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" /> <a href="#">purple</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    {/* <!-- Product Filter --> */}
+                                    <div className="col-md-3 col-sm-6 col-xs-12 mb-30">
+                                        <div className="product-filter">
+                                            <h5>product tags</h5>
+                                            <div className="product-tags">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">New</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">brand</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">black</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">white</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">chire</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">table</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/* <!-- Product Filter --> */}
+                                    <div className="col-md-3 col-sm-6 col-xs-12 mb-30">
+                                        <div className="product-filter">
+                                            <h5>Filter by price</h5>
+                                            <div className="price-filter mt-25">
+                                                <div className="price-slider-amount">
+                                                    <input
+                                                        type="text"
+                                                        id="amount"
+                                                        name="price"
+                                                        placeholder="Add Your Price"
+                                                    />
+                                                </div>
+                                                <div id="slider-range"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="shop-bottom-area">
+                                <div className="row">
+                                    <div className="col-lg-6 col-md-12 col-12">
+                                        <div className="shop-list-wrap mb-30 scroll-zoom">
+                                            <div className="row">
+                                                <div className="col-xl-4 col-lg-5 col-md-5 col-sm-6">
+                                                    <div className="product-wrap">
+                                                        <div className="product-img">
+                                                            <a href="product-details.html">
+                                                                <img
+                                                                    className="default-img"
+                                                                    src="/assets/img/product/pro-1.jpg"
+                                                                    alt=""
+                                                                />
+                                                                <img
+                                                                    className="hover-img"
+                                                                    src="/assets/img/product/pro-1-1.jpg"
+                                                                    alt=""
+                                                                />
+                                                            </a>
+                                                            <span className="pink">-10%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="col-xl-8 col-lg-7 col-md-7 col-sm-6">
+                                                    <div className="shop-list-content">
+                                                        <h3>
+                                                            <a href="product-details.html">Products Name Here</a>
+                                                        </h3>
+                                                        <div className="product-list-price">
+                                                            <span>$ 60.00</span>
+                                                            <span className="old">$ 90.00</span>
+                                                        </div>
+                                                        <div className="rating-review">
+                                                            <div className="product-list-rating">
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                            </div>
+                                                            <a href="#">3 Reviews</a>
+                                                        </div>
+                                                        <p>
+                                                            There are many variations of passages of Lorem Ipsum
+                                                            available, but the majority have suffered alteration in some
+                                                            form, by injected.{' '}
+                                                        </p>
+                                                        <div className="shop-list-btn btn-hover">
+                                                            <a href="#">ADD TO CART</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6 col-md-12 col-12">
+                                        <div className="shop-list-wrap mb-30 scroll-zoom">
+                                            <div className="row">
+                                                <div className="col-xl-4 col-lg-5 col-md-5 col-sm-6">
+                                                    <div className="product-wrap">
+                                                        <div className="product-img">
+                                                            <a href="product-details.html">
+                                                                <img
+                                                                    className="default-img"
+                                                                    src="/assets/img/product/pro-2.jpg"
+                                                                    alt=""
+                                                                />
+                                                                <img
+                                                                    className="hover-img"
+                                                                    src="/assets/img/product/pro-2-1.jpg"
+                                                                    alt=""
+                                                                />
+                                                            </a>
+                                                            <span className="purple">New</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="col-xl-8 col-lg-7 col-md-7 col-sm-6">
+                                                    <div className="shop-list-content">
+                                                        <h3>
+                                                            <a href="product-details.html">Products Name Here</a>
+                                                        </h3>
+                                                        <div className="product-list-price">
+                                                            <span>$ 60.00</span>
+                                                        </div>
+                                                        <div className="rating-review">
+                                                            <div className="product-list-rating">
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                            </div>
+                                                            <a href="#">3 Reviews</a>
+                                                        </div>
+                                                        <p>
+                                                            There are many variations of passages of Lorem Ipsum
+                                                            available, but the majority have suffered alteration in some
+                                                            form, by injected.{' '}
+                                                        </p>
+                                                        <div className="shop-list-btn btn-hover">
+                                                            <a href="#">ADD TO CART</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6 col-md-12 col-12">
+                                        <div className="shop-list-wrap mb-30 scroll-zoom">
+                                            <div className="row">
+                                                <div className="col-xl-4 col-lg-5 col-md-5 col-sm-6">
+                                                    <div className="product-wrap">
+                                                        <div className="product-img">
+                                                            <a href="product-details.html">
+                                                                <img
+                                                                    className="default-img"
+                                                                    src="/assets/img/product/pro-3.jpg"
+                                                                    alt=""
+                                                                />
+                                                                <img
+                                                                    className="hover-img"
+                                                                    src="/assets/img/product/pro-3-1.jpg"
+                                                                    alt=""
+                                                                />
+                                                            </a>
+                                                            <span className="pink">-20%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="col-xl-8 col-lg-7 col-md-7 col-sm-6">
+                                                    <div className="shop-list-content">
+                                                        <h3>
+                                                            <a href="product-details.html">Products Name Here</a>
+                                                        </h3>
+                                                        <div className="product-list-price">
+                                                            <span>$ 30.00</span>
+                                                            <span className="old">$ 50.00</span>
+                                                        </div>
+                                                        <div className="rating-review">
+                                                            <div className="product-list-rating">
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                            </div>
+                                                            <a href="#">3 Reviews</a>
+                                                        </div>
+                                                        <p>
+                                                            There are many variations of passages of Lorem Ipsum
+                                                            available, but the majority have suffered alteration in some
+                                                            form, by injected.{' '}
+                                                        </p>
+                                                        <div className="shop-list-btn btn-hover">
+                                                            <a href="#">ADD TO CART</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6 col-md-12 col-12">
+                                        <div className="shop-list-wrap mb-30 scroll-zoom">
+                                            <div className="row">
+                                                <div className="col-xl-4 col-lg-5 col-md-5 col-sm-6">
+                                                    <div className="product-wrap">
+                                                        <div className="product-img">
+                                                            <a href="product-details.html">
+                                                                <img
+                                                                    className="default-img"
+                                                                    src="/assets/img/product/pro-7.jpg"
+                                                                    alt=""
+                                                                />
+                                                                <img
+                                                                    className="hover-img"
+                                                                    src="/assets/img/product/pro-4-1.jpg"
+                                                                    alt=""
+                                                                />
+                                                            </a>
+                                                            <span className="purple">New</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="col-xl-8 col-lg-7 col-md-7 col-sm-6">
+                                                    <div className="shop-list-content">
+                                                        <h3>
+                                                            <a href="product-details.html">Products Name Here</a>
+                                                        </h3>
+                                                        <div className="product-list-price">
+                                                            <span>$ 70.00</span>
+                                                        </div>
+                                                        <div className="rating-review">
+                                                            <div className="product-list-rating">
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                            </div>
+                                                            <a href="#">3 Reviews</a>
+                                                        </div>
+                                                        <p>
+                                                            There are many variations of passages of Lorem Ipsum
+                                                            available, but the majority have suffered alteration in some
+                                                            form, by injected.{' '}
+                                                        </p>
+                                                        <div className="shop-list-btn btn-hover">
+                                                            <a href="#">ADD TO CART</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6 col-md-12 col-12">
+                                        <div className="shop-list-wrap mb-30 scroll-zoom">
+                                            <div className="row">
+                                                <div className="col-xl-4 col-lg-5 col-md-5 col-sm-6">
+                                                    <div className="product-wrap">
+                                                        <div className="product-img">
+                                                            <a href="product-details.html">
+                                                                <img
+                                                                    className="default-img"
+                                                                    src="/assets/img/product/pro-4.jpg"
+                                                                    alt=""
+                                                                />
+                                                                <img
+                                                                    className="hover-img"
+                                                                    src="/assets/img/product/pro-4-1.jpg"
+                                                                    alt=""
+                                                                />
+                                                            </a>
+                                                            <span className="purple">New</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="col-xl-8 col-lg-7 col-md-7 col-sm-6">
+                                                    <div className="shop-list-content">
+                                                        <h3>
+                                                            <a href="product-details.html">Products Name Here</a>
+                                                        </h3>
+                                                        <div className="product-list-price">
+                                                            <span>$ 70.00</span>
+                                                        </div>
+                                                        <div className="rating-review">
+                                                            <div className="product-list-rating">
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                            </div>
+                                                            <a href="#">3 Reviews</a>
+                                                        </div>
+                                                        <p>
+                                                            There are many variations of passages of Lorem Ipsum
+                                                            available, but the majority have suffered alteration in some
+                                                            form, by injected.{' '}
+                                                        </p>
+                                                        <div className="shop-list-btn btn-hover">
+                                                            <a href="#">ADD TO CART</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6 col-md-12 col-12">
+                                        <div className="shop-list-wrap mb-30 scroll-zoom">
+                                            <div className="row">
+                                                <div className="col-xl-4 col-lg-5 col-md-5 col-sm-6">
+                                                    <div className="product-wrap">
+                                                        <div className="product-img">
+                                                            <a href="product-details.html">
+                                                                <img
+                                                                    className="default-img"
+                                                                    src="/assets/img/product/pro-5.jpg"
+                                                                    alt=""
+                                                                />
+                                                                <img
+                                                                    className="hover-img"
+                                                                    src="/assets/img/product/pro-5-1.jpg"
+                                                                    alt=""
+                                                                />
+                                                            </a>
+                                                            <span className="pink">-30%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="col-xl-8 col-lg-7 col-md-7 col-sm-6">
+                                                    <div className="shop-list-content">
+                                                        <h3>
+                                                            <a href="product-details.html">Products Name Here</a>
+                                                        </h3>
+                                                        <div className="product-list-price">
+                                                            <span>$ 40.00</span>
+                                                            <span className="old">$ 70.00</span>
+                                                        </div>
+                                                        <div className="rating-review">
+                                                            <div className="product-list-rating">
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                            </div>
+                                                            <a href="#">3 Reviews</a>
+                                                        </div>
+                                                        <p>
+                                                            There are many variations of passages of Lorem Ipsum
+                                                            available, but the majority have suffered alteration in some
+                                                            form, by injected.{' '}
+                                                        </p>
+                                                        <div className="shop-list-btn btn-hover">
+                                                            <a href="#">ADD TO CART</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="pro-pagination-style text-center mt-30">
+                                    <ul>
+                                        <li>
+                                            <a className="prev" href="#">
+                                                <i className="fa fa-angle-double-left"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a className="active" href="#">
+                                                1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">2</a>
+                                        </li>
+                                        <li>
+                                            <a className="next" href="#">
+                                                <i className="fa fa-angle-double-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -1084,6 +1341,203 @@ export default function CartPagePublish() {
                     </div>
                 </div>
             </footer>
+
+            {/* <!-- Modal --> */}
+            <div className="modal fade" id="exampleModal" tabIndex={-1} role="dialog">
+                <div className="modal-dialog" role="document">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">x</span>
+                            </button>
+                        </div>
+                        <div className="modal-body">
+                            <div className="row">
+                                <div className="col-md-5 col-sm-12 col-xs-12">
+                                    <div className="tab-content quickview-big-img">
+                                        <div id="pro-1" className="tab-pane fade show active">
+                                            <img src="/assets/img/product/quickview-l1.jpg" alt="" />
+                                        </div>
+                                        <div id="pro-2" className="tab-pane fade">
+                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
+                                        </div>
+                                        <div id="pro-3" className="tab-pane fade">
+                                            <img src="/assets/img/product/quickview-l3.jpg" alt="" />
+                                        </div>
+                                        <div id="pro-4" className="tab-pane fade">
+                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    {/* <!-- Thumbnail Large Image End --> */}
+                                    {/* <!-- Thumbnail Image End --> */}
+                                    <div className="quickview-wrap mt-15">
+                                        <div
+                                            className="quickview-slide-active owl-carousel nav nav-style-1"
+                                            role="tablist"
+                                        >
+                                            <a className="active" data-toggle="tab" href="#pro-1">
+                                                <img src="/assets/img/product/quickview-s1.jpg" alt="" />
+                                            </a>
+                                            <a data-toggle="tab" href="#pro-2">
+                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
+                                            </a>
+                                            <a data-toggle="tab" href="#pro-3">
+                                                <img src="/assets/img/product/quickview-s3.jpg" alt="" />
+                                            </a>
+                                            <a data-toggle="tab" href="#pro-4">
+                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-7 col-sm-12 col-xs-12">
+                                    <div className="product-details-content quickview-content">
+                                        <h2>Products Name Here</h2>
+                                        <div className="product-details-price">
+                                            <span>$18.00 </span>
+                                            <span className="old">$20.00 </span>
+                                        </div>
+                                        <div className="pro-details-rating-wrap">
+                                            <div className="pro-details-rating">
+                                                <i className="fa fa-star-o yellow"></i>
+                                                <i className="fa fa-star-o yellow"></i>
+                                                <i className="fa fa-star-o yellow"></i>
+                                                <i className="fa fa-star-o"></i>
+                                                <i className="fa fa-star-o"></i>
+                                            </div>
+                                            <span>3 Reviews</span>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid
+                                            ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud
+                                            exercitation ullamco
+                                        </p>
+                                        <div className="pro-details-list">
+                                            <ul>
+                                                <li>- 0.5 mm Dail</li>
+                                                <li>- Inspired vector icons</li>
+                                                <li>- Very modern style </li>
+                                            </ul>
+                                        </div>
+                                        <div className="pro-details-size-color">
+                                            <div className="pro-details-color-wrap">
+                                                <span>Color</span>
+                                                <div className="pro-details-color-content">
+                                                    <ul>
+                                                        <li className="blue"></li>
+                                                        <li className="maroon active"></li>
+                                                        <li className="gray"></li>
+                                                        <li className="green"></li>
+                                                        <li className="yellow"></li>
+                                                        <li className="white"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div className="pro-details-size">
+                                                <span>Size</span>
+                                                <div className="pro-details-size-content">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">s</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">m</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">l</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">xl</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">xxl</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="pro-details-quality">
+                                            <div className="cart-plus-minus">
+                                                <input className="cart-plus-minus-box" type="text" name="qtybutton" />
+                                            </div>
+                                            <div className="pro-details-cart btn-hover">
+                                                <a href="#">Add To Cart</a>
+                                            </div>
+                                            <div className="pro-details-wishlist">
+                                                <a href="#">
+                                                    <i className="fa fa-heart-o"></i>
+                                                </a>
+                                            </div>
+                                            <div className="pro-details-compare">
+                                                <a href="#">
+                                                    <i className="pe-7s-shuffle"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div className="pro-details-meta">
+                                            <span>Categories :</span>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Minimal,</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Furniture,</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Electronic</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="pro-details-meta">
+                                            <span>Tag :</span>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Fashion, </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Furniture,</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Electronic</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="pro-details-social">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-dribbble"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-pinterest-p"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-linkedin"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }

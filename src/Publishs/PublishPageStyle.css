@@ -1,7 +1,8 @@
 /* Table Styles */
 
 
-.title-wrapper{
+.title-wrapper {
+    margin-top: 1rem;
     text-align: center;
 }
 

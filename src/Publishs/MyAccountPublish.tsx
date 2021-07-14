@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function CartPagePublish() {
+export default function MyAccountPublish() {
     return (
         <>
             <header className="header-area header-in-container clearfix">
@@ -736,221 +736,180 @@ export default function CartPagePublish() {
                             <li>
                                 <a href="index.html">Home</a>
                             </li>
-                            <li className="active">Cart Page </li>
+                            <li className="active">My Account </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div className="cart-main-area pt-90 pb-100">
+            <div className="checkout-area pb-80 pt-100">
                 <div className="container">
-                    <h3 className="cart-page-title">Your cart items</h3>
                     <div className="row">
-                        <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                            <form action="#">
-                                <div className="table-content table-responsive cart-table-content">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Image</th>
-                                                <th>Product Name</th>
-                                                <th>Until Price</th>
-                                                <th>Qty</th>
-                                                <th>Subtotal</th>
-                                                <th>action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td className="product-thumbnail">
-                                                    <a href="#">
-                                                        <img src="/assets/img/cart/cart-1.png" alt="" />
-                                                    </a>
-                                                </td>
-                                                <td className="product-name">
-                                                    <a href="#">Product Name</a>
-                                                </td>
-                                                <td className="product-price-cart">
-                                                    <span className="amount">$260.00</span>
-                                                </td>
-                                                <td className="product-quantity">
-                                                    <div className="cart-plus-minus">
-                                                        <input
-                                                            className="cart-plus-minus-box"
-                                                            type="text"
-                                                            name="qtybutton"
-                                                        />
+                        <div className="ml-auto mr-auto col-lg-9">
+                            <div className="checkout-wrapper">
+                                <div id="faq" className="panel-group">
+                                    <div className="panel panel-default single-my-account">
+                                        <div className="panel-heading my-account-title">
+                                            <h3 className="panel-title">
+                                                <span>1 .</span>{' '}
+                                                <a data-toggle="collapse" data-parent="#faq" href="#my-account-1">
+                                                    Edit your account information{' '}
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div id="my-account-1" className="panel-collapse collapse show">
+                                            <div className="panel-body">
+                                                <div className="myaccount-info-wrapper">
+                                                    <div className="account-info-wrapper">
+                                                        <h4>My Account Information</h4>
+                                                        <h5>Your Personal Details</h5>
                                                     </div>
-                                                </td>
-                                                <td className="product-subtotal">$110.00</td>
-                                                <td className="product-remove">
-                                                    <a href="#">
-                                                        <i className="fa fa-pencil"></i>
-                                                    </a>
-                                                    <a href="#">
-                                                        <i className="fa fa-times"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td className="product-thumbnail">
-                                                    <a href="#">
-                                                        <img src="/assets/img/cart/cart-2.png" alt="" />
-                                                    </a>
-                                                </td>
-                                                <td className="product-name">
-                                                    <a href="#">Product Name</a>
-                                                </td>
-                                                <td className="product-price-cart">
-                                                    <span className="amount">$150.00</span>
-                                                </td>
-                                                <td className="product-quantity">
-                                                    <div className="cart-plus-minus">
-                                                        <input
-                                                            className="cart-plus-minus-box"
-                                                            type="text"
-                                                            name="qtybutton"
-                                                        />
+                                                    <div className="row">
+                                                        <div className="col-lg-6 col-md-6">
+                                                            <div className="billing-info">
+                                                                <label>First Name</label>
+                                                                <input type="text" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-6 col-md-6">
+                                                            <div className="billing-info">
+                                                                <label>Last Name</label>
+                                                                <input type="text" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 col-md-12">
+                                                            <div className="billing-info">
+                                                                <label>Email Address</label>
+                                                                <input type="email" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-6 col-md-6">
+                                                            <div className="billing-info">
+                                                                <label>Telephone</label>
+                                                                <input type="text" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-6 col-md-6">
+                                                            <div className="billing-info">
+                                                                <label>Fax</label>
+                                                                <input type="text" />
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </td>
-                                                <td className="product-subtotal">$150.00</td>
-                                                <td className="product-remove">
-                                                    <a href="#">
-                                                        <i className="fa fa-pencil"></i>
-                                                    </a>
-                                                    <a href="#">
-                                                        <i className="fa fa-times"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td className="product-thumbnail">
-                                                    <a href="#">
-                                                        <img src="/assets/img/cart/cart-1.png" alt="" />
-                                                    </a>
-                                                </td>
-                                                <td className="product-name">
-                                                    <a href="#">Product Name </a>
-                                                </td>
-                                                <td className="product-price-cart">
-                                                    <span className="amount">$170.00</span>
-                                                </td>
-                                                <td className="product-quantity">
-                                                    <div className="cart-plus-minus">
-                                                        <input
-                                                            className="cart-plus-minus-box"
-                                                            type="text"
-                                                            name="qtybutton"
-                                                        />
+                                                    <div className="billing-back-btn">
+                                                        <div className="billing-back">
+                                                            <a href="#">
+                                                                <i className="fa fa-arrow-up"></i> back
+                                                            </a>
+                                                        </div>
+                                                        <div className="billing-btn">
+                                                            <button type="submit">Continue</button>
+                                                        </div>
                                                     </div>
-                                                </td>
-                                                <td className="product-subtotal">$170.00</td>
-                                                <td className="product-remove">
-                                                    <a href="#">
-                                                        <i className="fa fa-pencil"></i>
-                                                    </a>
-                                                    <a href="#">
-                                                        <i className="fa fa-times"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div className="row">
-                                    <div className="col-lg-12">
-                                        <div className="cart-shiping-update-wrapper">
-                                            <div className="cart-shiping-update">
-                                                <a href="#">Continue Shopping</a>
-                                            </div>
-                                            <div className="cart-clear">
-                                                <button>Update Shopping Cart</button>
-                                                <a href="#">Clear Shopping Cart</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </form>
-                            <div className="row">
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="cart-tax">
-                                        <div className="title-wrap">
-                                            <h4 className="cart-bottom-title section-bg-gray">
-                                                Estimate Shipping And Tax
-                                            </h4>
+                                    <div className="panel panel-default single-my-account">
+                                        <div className="panel-heading my-account-title">
+                                            <h3 className="panel-title">
+                                                <span>2 .</span>{' '}
+                                                <a data-toggle="collapse" data-parent="#faq" href="#my-account-2">
+                                                    Change your password{' '}
+                                                </a>
+                                            </h3>
                                         </div>
-                                        <div className="tax-wrapper">
-                                            <p>Enter your destination to get a shipping estimate.</p>
-                                            <div className="tax-select-wrapper">
-                                                <div className="tax-select">
-                                                    <label>* Country</label>
-                                                    <select className="email s-email s-wid">
-                                                        <option>Bangladesh</option>
-                                                        <option>Albania</option>
-                                                        <option>Åland Islands</option>
-                                                        <option>Afghanistan</option>
-                                                        <option>Belgium</option>
-                                                    </select>
+                                        <div id="my-account-2" className="panel-collapse collapse">
+                                            <div className="panel-body">
+                                                <div className="myaccount-info-wrapper">
+                                                    <div className="account-info-wrapper">
+                                                        <h4>Change Password</h4>
+                                                        <h5>Your Password</h5>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-lg-12 col-md-12">
+                                                            <div className="billing-info">
+                                                                <label>Password</label>
+                                                                <input type="password" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-12 col-md-12">
+                                                            <div className="billing-info">
+                                                                <label>Password Confirm</label>
+                                                                <input type="password" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="billing-back-btn">
+                                                        <div className="billing-back">
+                                                            <a href="#">
+                                                                <i className="fa fa-arrow-up"></i> back
+                                                            </a>
+                                                        </div>
+                                                        <div className="billing-btn">
+                                                            <button type="submit">Continue</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div className="tax-select">
-                                                    <label>* Region / State</label>
-                                                    <select className="email s-email s-wid">
-                                                        <option>Bangladesh</option>
-                                                        <option>Albania</option>
-                                                        <option>Åland Islands</option>
-                                                        <option>Afghanistan</option>
-                                                        <option>Belgium</option>
-                                                    </select>
-                                                </div>
-                                                <div className="tax-select">
-                                                    <label>* Zip/Postal Code</label>
-                                                    <input type="text" />
-                                                </div>
-                                                <button className="cart-btn-2" type="submit">
-                                                    Get A Quote
-                                                </button>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="discount-code-wrapper">
-                                        <div className="title-wrap">
-                                            <h4 className="cart-bottom-title section-bg-gray">Use Coupon Code</h4>
+                                    <div className="panel panel-default single-my-account">
+                                        <div className="panel-heading my-account-title">
+                                            <h3 className="panel-title">
+                                                <span>3 .</span>{' '}
+                                                <a data-toggle="collapse" data-parent="#faq" href="#my-account-3">
+                                                    Modify your address book entries{' '}
+                                                </a>
+                                            </h3>
                                         </div>
-                                        <div className="discount-code">
-                                            <p>Enter your coupon code if you have one.</p>
-                                            <form>
-                                                <input type="text" name="name" />
-                                                <button className="cart-btn-2" type="submit">
-                                                    Apply Coupon
-                                                </button>
-                                            </form>
+                                        <div id="my-account-3" className="panel-collapse collapse">
+                                            <div className="panel-body">
+                                                <div className="myaccount-info-wrapper">
+                                                    <div className="account-info-wrapper">
+                                                        <h4>Address Book Entries</h4>
+                                                    </div>
+                                                    <div className="entries-wrapper">
+                                                        <div className="row">
+                                                            <div className="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+                                                                <div className="entries-info text-center">
+                                                                    <p>Farhana hayder (shuvo) </p>
+                                                                    <p>hastech </p>
+                                                                    <p> Road#1 , Block#c </p>
+                                                                    <p> Rampura. </p>
+                                                                    <p>Dhaka </p>
+                                                                    <p>Bangladesh </p>
+                                                                </div>
+                                                            </div>
+                                                            <div className="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+                                                                <div className="entries-edit-delete text-center">
+                                                                    <a className="edit" href="#">
+                                                                        Edit
+                                                                    </a>
+                                                                    <a href="#">Delete</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="billing-back-btn">
+                                                        <div className="billing-back">
+                                                            <a href="#">
+                                                                <i className="fa fa-arrow-up"></i> back
+                                                            </a>
+                                                        </div>
+                                                        <div className="billing-btn">
+                                                            <button type="submit">Continue</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="col-lg-4 col-md-12">
-                                    <div className="grand-totall">
-                                        <div className="title-wrap">
-                                            <h4 className="cart-bottom-title section-bg-gary-cart">Cart Total</h4>
+                                    <div className="panel panel-default single-my-account">
+                                        <div className="panel-heading my-account-title">
+                                            <h3 className="panel-title">
+                                                <span>4 .</span> <a href="wishlist.html">Modify your wish list </a>
+                                            </h3>
                                         </div>
-                                        <h5>
-                                            Total products <span>$260.00</span>
-                                        </h5>
-                                        <div className="total-shipping">
-                                            <h5>Total shipping</h5>
-                                            <ul>
-                                                <li>
-                                                    <input type="checkbox" /> Standard <span>$20.00</span>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" /> Express <span>$30.00</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h4 className="grand-totall-title">
-                                            Grand Total <span>$260.00</span>
-                                        </h4>
-                                        <a href="#">Proceed to Checkout</a>
                                     </div>
                                 </div>
                             </div>
@@ -1084,6 +1043,203 @@ export default function CartPagePublish() {
                     </div>
                 </div>
             </footer>
+
+            {/* <!-- Modal --> */}
+            <div className="modal fade" id="exampleModal" tabIndex={-1} role="dialog">
+                <div className="modal-dialog" role="document">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">x</span>
+                            </button>
+                        </div>
+                        <div className="modal-body">
+                            <div className="row">
+                                <div className="col-md-5 col-sm-12 col-xs-12">
+                                    <div className="tab-content quickview-big-img">
+                                        <div id="pro-1" className="tab-pane fade show active">
+                                            <img src="/assets/img/product/quickview-l1.jpg" alt="" />
+                                        </div>
+                                        <div id="pro-2" className="tab-pane fade">
+                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
+                                        </div>
+                                        <div id="pro-3" className="tab-pane fade">
+                                            <img src="/assets/img/product/quickview-l3.jpg" alt="" />
+                                        </div>
+                                        <div id="pro-4" className="tab-pane fade">
+                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    {/* <!-- Thumbnail Large Image End --> */}
+                                    {/* <!-- Thumbnail Image End --> */}
+                                    <div className="quickview-wrap mt-15">
+                                        <div
+                                            className="quickview-slide-active owl-carousel nav nav-style-1"
+                                            role="tablist"
+                                        >
+                                            <a className="active" data-toggle="tab" href="#pro-1">
+                                                <img src="/assets/img/product/quickview-s1.jpg" alt="" />
+                                            </a>
+                                            <a data-toggle="tab" href="#pro-2">
+                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
+                                            </a>
+                                            <a data-toggle="tab" href="#pro-3">
+                                                <img src="/assets/img/product/quickview-s3.jpg" alt="" />
+                                            </a>
+                                            <a data-toggle="tab" href="#pro-4">
+                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-7 col-sm-12 col-xs-12">
+                                    <div className="product-details-content quickview-content">
+                                        <h2>Products Name Here</h2>
+                                        <div className="product-details-price">
+                                            <span>$18.00 </span>
+                                            <span className="old">$20.00 </span>
+                                        </div>
+                                        <div className="pro-details-rating-wrap">
+                                            <div className="pro-details-rating">
+                                                <i className="fa fa-star-o yellow"></i>
+                                                <i className="fa fa-star-o yellow"></i>
+                                                <i className="fa fa-star-o yellow"></i>
+                                                <i className="fa fa-star-o"></i>
+                                                <i className="fa fa-star-o"></i>
+                                            </div>
+                                            <span>3 Reviews</span>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid
+                                            ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud
+                                            exercitation ullamco
+                                        </p>
+                                        <div className="pro-details-list">
+                                            <ul>
+                                                <li>- 0.5 mm Dail</li>
+                                                <li>- Inspired vector icons</li>
+                                                <li>- Very modern style </li>
+                                            </ul>
+                                        </div>
+                                        <div className="pro-details-size-color">
+                                            <div className="pro-details-color-wrap">
+                                                <span>Color</span>
+                                                <div className="pro-details-color-content">
+                                                    <ul>
+                                                        <li className="blue"></li>
+                                                        <li className="maroon active"></li>
+                                                        <li className="gray"></li>
+                                                        <li className="green"></li>
+                                                        <li className="yellow"></li>
+                                                        <li className="white"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div className="pro-details-size">
+                                                <span>Size</span>
+                                                <div className="pro-details-size-content">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">s</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">m</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">l</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">xl</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">xxl</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="pro-details-quality">
+                                            <div className="cart-plus-minus">
+                                                <input className="cart-plus-minus-box" type="text" name="qtybutton" />
+                                            </div>
+                                            <div className="pro-details-cart btn-hover">
+                                                <a href="#">Add To Cart</a>
+                                            </div>
+                                            <div className="pro-details-wishlist">
+                                                <a href="#">
+                                                    <i className="fa fa-heart-o"></i>
+                                                </a>
+                                            </div>
+                                            <div className="pro-details-compare">
+                                                <a href="#">
+                                                    <i className="pe-7s-shuffle"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div className="pro-details-meta">
+                                            <span>Categories :</span>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Minimal,</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Furniture,</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Electronic</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="pro-details-meta">
+                                            <span>Tag :</span>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Fashion, </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Furniture,</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Electronic</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="pro-details-social">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-dribbble"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-pinterest-p"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-linkedin"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }

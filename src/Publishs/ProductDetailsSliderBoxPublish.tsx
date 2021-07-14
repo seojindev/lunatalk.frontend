@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function CartPagePublish() {
+export default function ProductDetailsSliderBoxPublish() {
     return (
         <>
             <header className="header-area header-in-container clearfix">
@@ -736,222 +736,564 @@ export default function CartPagePublish() {
                             <li>
                                 <a href="index.html">Home</a>
                             </li>
-                            <li className="active">Cart Page </li>
+                            <li className="active">Shop Details </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div className="cart-main-area pt-90 pb-100">
+            <div className="shop-area pt-100 pb-100">
                 <div className="container">
-                    <h3 className="cart-page-title">Your cart items</h3>
                     <div className="row">
-                        <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                            <form action="#">
-                                <div className="table-content table-responsive cart-table-content">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Image</th>
-                                                <th>Product Name</th>
-                                                <th>Until Price</th>
-                                                <th>Qty</th>
-                                                <th>Subtotal</th>
-                                                <th>action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td className="product-thumbnail">
-                                                    <a href="#">
-                                                        <img src="/assets/img/cart/cart-1.png" alt="" />
-                                                    </a>
-                                                </td>
-                                                <td className="product-name">
-                                                    <a href="#">Product Name</a>
-                                                </td>
-                                                <td className="product-price-cart">
-                                                    <span className="amount">$260.00</span>
-                                                </td>
-                                                <td className="product-quantity">
-                                                    <div className="cart-plus-minus">
-                                                        <input
-                                                            className="cart-plus-minus-box"
-                                                            type="text"
-                                                            name="qtybutton"
-                                                        />
-                                                    </div>
-                                                </td>
-                                                <td className="product-subtotal">$110.00</td>
-                                                <td className="product-remove">
-                                                    <a href="#">
-                                                        <i className="fa fa-pencil"></i>
-                                                    </a>
-                                                    <a href="#">
-                                                        <i className="fa fa-times"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td className="product-thumbnail">
-                                                    <a href="#">
-                                                        <img src="/assets/img/cart/cart-2.png" alt="" />
-                                                    </a>
-                                                </td>
-                                                <td className="product-name">
-                                                    <a href="#">Product Name</a>
-                                                </td>
-                                                <td className="product-price-cart">
-                                                    <span className="amount">$150.00</span>
-                                                </td>
-                                                <td className="product-quantity">
-                                                    <div className="cart-plus-minus">
-                                                        <input
-                                                            className="cart-plus-minus-box"
-                                                            type="text"
-                                                            name="qtybutton"
-                                                        />
-                                                    </div>
-                                                </td>
-                                                <td className="product-subtotal">$150.00</td>
-                                                <td className="product-remove">
-                                                    <a href="#">
-                                                        <i className="fa fa-pencil"></i>
-                                                    </a>
-                                                    <a href="#">
-                                                        <i className="fa fa-times"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td className="product-thumbnail">
-                                                    <a href="#">
-                                                        <img src="/assets/img/cart/cart-1.png" alt="" />
-                                                    </a>
-                                                </td>
-                                                <td className="product-name">
-                                                    <a href="#">Product Name </a>
-                                                </td>
-                                                <td className="product-price-cart">
-                                                    <span className="amount">$170.00</span>
-                                                </td>
-                                                <td className="product-quantity">
-                                                    <div className="cart-plus-minus">
-                                                        <input
-                                                            className="cart-plus-minus-box"
-                                                            type="text"
-                                                            name="qtybutton"
-                                                        />
-                                                    </div>
-                                                </td>
-                                                <td className="product-subtotal">$170.00</td>
-                                                <td className="product-remove">
-                                                    <a href="#">
-                                                        <i className="fa fa-pencil"></i>
-                                                    </a>
-                                                    <a href="#">
-                                                        <i className="fa fa-times"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                        <div className="col-lg-12 col-md-12">
+                            <div className="product-details-slider-active nav-style-1 owl-carousel owl-dot-none">
+                                <div className="dec-img-wrap">
+                                    <a className="img-popup" href="/assets/img/product-details/product-detalis-bl1.jpg">
+                                        <img src="/assets/img/product-details/product-detalis-l1.jpg" alt="" />
+                                    </a>
+                                    <span>-29%</span>
                                 </div>
-                                <div className="row">
-                                    <div className="col-lg-12">
-                                        <div className="cart-shiping-update-wrapper">
-                                            <div className="cart-shiping-update">
-                                                <a href="#">Continue Shopping</a>
-                                            </div>
-                                            <div className="cart-clear">
-                                                <button>Update Shopping Cart</button>
-                                                <a href="#">Clear Shopping Cart</a>
-                                            </div>
+                                <div className="dec-img-wrap">
+                                    <a className="img-popup" href="/assets/img/product-details/product-detalis-bl2.jpg">
+                                        <img src="/assets/img/product-details/product-detalis-l2.jpg" alt="" />
+                                    </a>
+                                    <span>-29%</span>
+                                </div>
+                                <div className="dec-img-wrap">
+                                    <a className="img-popup" href="/assets/img/product-details/product-detalis-bl5.jpg">
+                                        <img src="/assets/img/product-details/product-detalis-l5.jpg" alt="" />
+                                    </a>
+                                    <span>-29%</span>
+                                </div>
+                                <div className="dec-img-wrap">
+                                    <a className="img-popup" href="/assets/img/product-details/product-detalis-bl3.jpg">
+                                        <img src="/assets/img/product-details/product-detalis-l3.jpg" alt="" />
+                                    </a>
+                                    <span>-29%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-12 col-md-12">
+                            <div className="product-details-content pro-details-slider-content mt-50 text-center">
+                                <h2>Products Name Here</h2>
+                                <div className="product-details-price">
+                                    <span>$18.00 </span>
+                                    <span className="old">$20.00 </span>
+                                </div>
+                                <div className="pro-details-rating-wrap">
+                                    <div className="pro-details-rating">
+                                        <i className="fa fa-star-o yellow"></i>
+                                        <i className="fa fa-star-o yellow"></i>
+                                        <i className="fa fa-star-o yellow"></i>
+                                        <i className="fa fa-star-o"></i>
+                                        <i className="fa fa-star-o"></i>
+                                    </div>
+                                    <span>
+                                        <a href="#">3 Reviews</a>
+                                    </span>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est
+                                    tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis
+                                    justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id
+                                    nulla.
+                                </p>
+                                <div className="pro-details-list">
+                                    <ul>
+                                        <li>- 0.5 mm Dail</li>
+                                        <li>- Inspired vector icons</li>
+                                        <li>- Very modern style </li>
+                                    </ul>
+                                </div>
+                                <div className="pro-details-size-color">
+                                    <div className="pro-details-color-wrap">
+                                        <span>Color</span>
+                                        <div className="pro-details-color-content">
+                                            <ul>
+                                                <li className="blue"></li>
+                                                <li className="maroon active"></li>
+                                                <li className="gray"></li>
+                                                <li className="green"></li>
+                                                <li className="yellow"></li>
+                                            </ul>
                                         </div>
                                     </div>
-                                </div>
-                            </form>
-                            <div className="row">
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="cart-tax">
-                                        <div className="title-wrap">
-                                            <h4 className="cart-bottom-title section-bg-gray">
-                                                Estimate Shipping And Tax
-                                            </h4>
-                                        </div>
-                                        <div className="tax-wrapper">
-                                            <p>Enter your destination to get a shipping estimate.</p>
-                                            <div className="tax-select-wrapper">
-                                                <div className="tax-select">
-                                                    <label>* Country</label>
-                                                    <select className="email s-email s-wid">
-                                                        <option>Bangladesh</option>
-                                                        <option>Albania</option>
-                                                        <option>Åland Islands</option>
-                                                        <option>Afghanistan</option>
-                                                        <option>Belgium</option>
-                                                    </select>
-                                                </div>
-                                                <div className="tax-select">
-                                                    <label>* Region / State</label>
-                                                    <select className="email s-email s-wid">
-                                                        <option>Bangladesh</option>
-                                                        <option>Albania</option>
-                                                        <option>Åland Islands</option>
-                                                        <option>Afghanistan</option>
-                                                        <option>Belgium</option>
-                                                    </select>
-                                                </div>
-                                                <div className="tax-select">
-                                                    <label>* Zip/Postal Code</label>
-                                                    <input type="text" />
-                                                </div>
-                                                <button className="cart-btn-2" type="submit">
-                                                    Get A Quote
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="discount-code-wrapper">
-                                        <div className="title-wrap">
-                                            <h4 className="cart-bottom-title section-bg-gray">Use Coupon Code</h4>
-                                        </div>
-                                        <div className="discount-code">
-                                            <p>Enter your coupon code if you have one.</p>
-                                            <form>
-                                                <input type="text" name="name" />
-                                                <button className="cart-btn-2" type="submit">
-                                                    Apply Coupon
-                                                </button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-12">
-                                    <div className="grand-totall">
-                                        <div className="title-wrap">
-                                            <h4 className="cart-bottom-title section-bg-gary-cart">Cart Total</h4>
-                                        </div>
-                                        <h5>
-                                            Total products <span>$260.00</span>
-                                        </h5>
-                                        <div className="total-shipping">
-                                            <h5>Total shipping</h5>
+                                    <div className="pro-details-size">
+                                        <span>Size</span>
+                                        <div className="pro-details-size-content">
                                             <ul>
                                                 <li>
-                                                    <input type="checkbox" /> Standard <span>$20.00</span>
+                                                    <a href="#">s</a>
                                                 </li>
                                                 <li>
-                                                    <input type="checkbox" /> Express <span>$30.00</span>
+                                                    <a href="#">m</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">l</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">xl</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">xxl</a>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <h4 className="grand-totall-title">
-                                            Grand Total <span>$260.00</span>
-                                        </h4>
-                                        <a href="#">Proceed to Checkout</a>
                                     </div>
+                                </div>
+                                <div className="pro-details-quality">
+                                    <div className="cart-plus-minus">
+                                        <input className="cart-plus-minus-box" type="text" name="qtybutton" />
+                                    </div>
+                                    <div className="pro-details-cart btn-hover">
+                                        <a href="#">Add To Cart</a>
+                                    </div>
+                                    <div className="pro-details-wishlist">
+                                        <a href="#">
+                                            <i className="fa fa-heart-o"></i>
+                                        </a>
+                                    </div>
+                                    <div className="pro-details-compare">
+                                        <a href="#">
+                                            <i className="pe-7s-shuffle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="pro-details-meta">
+                                    <span>Categories :</span>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Minimal,</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Furniture,</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Fashion</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="pro-details-meta">
+                                    <span>Tag :</span>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Fashion, </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Furniture,</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Electronic</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="pro-details-social">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i className="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i className="fa fa-dribbble"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i className="fa fa-pinterest-p"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i className="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i className="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="description-review-area pb-90">
+                <div className="container">
+                    <div className="description-review-wrapper">
+                        <div className="description-review-topbar nav">
+                            <a data-toggle="tab" href="#des-details1">
+                                Additional information
+                            </a>
+                            <a className="active" data-toggle="tab" href="#des-details2">
+                                Description
+                            </a>
+                            <a data-toggle="tab" href="#des-details3">
+                                Reviews (2)
+                            </a>
+                        </div>
+                        <div className="tab-content description-review-bottom">
+                            <div id="des-details2" className="tab-pane active">
+                                <div className="product-description-wrapper">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt
+                                    </p>
+                                    <p>
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commo consequat. Duis aute
+                                        irure dolor in reprehend in voluptate velit esse cillum dolore eu fugiat nulla
+                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                        officia deserunt{' '}
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="des-details1" className="tab-pane ">
+                                <div className="product-anotherinfo-wrapper">
+                                    <ul>
+                                        <li>
+                                            <span>Weight</span> 400 g
+                                        </li>
+                                        <li>
+                                            <span>Dimensions</span>10 x 10 x 15 cm{' '}
+                                        </li>
+                                        <li>
+                                            <span>Materials</span> 60% cotton, 40% polyester
+                                        </li>
+                                        <li>
+                                            <span>Other Info</span> American heirloom jean shorts pug seitan letterpress
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="des-details3" className="tab-pane">
+                                <div className="row">
+                                    <div className="col-lg-7">
+                                        <div className="review-wrapper">
+                                            <div className="single-review">
+                                                <div className="review-img">
+                                                    <img src="/assets/img/testimonial/1.jpg" alt="" />
+                                                </div>
+                                                <div className="review-content">
+                                                    <div className="review-top-wrap">
+                                                        <div className="review-left">
+                                                            <div className="review-name">
+                                                                <h4>White Lewis</h4>
+                                                            </div>
+                                                            <div className="review-rating">
+                                                                <i className="fa fa-star"></i>
+                                                                <i className="fa fa-star"></i>
+                                                                <i className="fa fa-star"></i>
+                                                                <i className="fa fa-star"></i>
+                                                                <i className="fa fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div className="review-left">
+                                                            <a href="#">Reply</a>
+                                                        </div>
+                                                    </div>
+                                                    <div className="review-bottom">
+                                                        <p>
+                                                            Vestibulum ante ipsum primis aucibus orci luctustrices
+                                                            posuere cubilia Curae Suspendisse viverra ed viverra. Mauris
+                                                            ullarper euismod vehicula. Phasellus quam nisi, congue id
+                                                            nulla.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="single-review child-review">
+                                                <div className="review-img">
+                                                    <img src="/assets/img/testimonial/2.jpg" alt="" />
+                                                </div>
+                                                <div className="review-content">
+                                                    <div className="review-top-wrap">
+                                                        <div className="review-left">
+                                                            <div className="review-name">
+                                                                <h4>White Lewis</h4>
+                                                            </div>
+                                                            <div className="review-rating">
+                                                                <i className="fa fa-star"></i>
+                                                                <i className="fa fa-star"></i>
+                                                                <i className="fa fa-star"></i>
+                                                                <i className="fa fa-star"></i>
+                                                                <i className="fa fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div className="review-left">
+                                                            <a href="#">Reply</a>
+                                                        </div>
+                                                    </div>
+                                                    <div className="review-bottom">
+                                                        <p>
+                                                            Vestibulum ante ipsum primis aucibus orci luctustrices
+                                                            posuere cubilia Curae Sus pen disse viverra ed viverra.
+                                                            Mauris ullarper euismod vehicula.{' '}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-5">
+                                        <div className="ratting-form-wrapper pl-50">
+                                            <h3>Add a Review</h3>
+                                            <div className="ratting-form">
+                                                <form action="#">
+                                                    <div className="star-box">
+                                                        <span>Your rating:</span>
+                                                        <div className="ratting-star">
+                                                            <i className="fa fa-star"></i>
+                                                            <i className="fa fa-star"></i>
+                                                            <i className="fa fa-star"></i>
+                                                            <i className="fa fa-star"></i>
+                                                            <i className="fa fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-md-6">
+                                                            <div className="rating-form-style mb-10">
+                                                                <input placeholder="Name" type="text" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-md-6">
+                                                            <div className="rating-form-style mb-10">
+                                                                <input placeholder="Email" type="email" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-md-12">
+                                                            <div className="rating-form-style form-submit">
+                                                                <textarea
+                                                                    name="Your Review"
+                                                                    placeholder="Message"
+                                                                ></textarea>
+                                                                <input type="submit" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="related-product-area pb-95">
+                <div className="container">
+                    <div className="section-title text-center mb-50">
+                        <h2>Related products</h2>
+                    </div>
+                    <div className="related-product-active owl-carousel owl-dot-none">
+                        <div className="product-wrap">
+                            <div className="product-img">
+                                <a href="product-details-slider-box.html">
+                                    <img className="default-img" src="/assets/img/product/pro-1.jpg" alt="" />
+                                    <img className="hover-img" src="/assets/img/product/pro-1-1.jpg" alt="" />
+                                </a>
+                                <span className="pink">-10%</span>
+                                <div className="product-action">
+                                    <div className="pro-same-action pro-wishlist">
+                                        <a title="Wishlist" href="#">
+                                            <i className="pe-7s-like"></i>
+                                        </a>
+                                    </div>
+                                    <div className="pro-same-action pro-cart">
+                                        <a title="Add To Cart" href="#">
+                                            <i className="pe-7s-cart"></i> Add to cart
+                                        </a>
+                                    </div>
+                                    <div className="pro-same-action pro-quickview">
+                                        <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal">
+                                            <i className="pe-7s-look"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="product-content text-center">
+                                <h3>
+                                    <a href="product-details-slider-box.html">T- Shirt And Jeans</a>
+                                </h3>
+                                <div className="product-rating">
+                                    <i className="fa fa-star-o yellow"></i>
+                                    <i className="fa fa-star-o yellow"></i>
+                                    <i className="fa fa-star-o yellow"></i>
+                                    <i className="fa fa-star-o"></i>
+                                    <i className="fa fa-star-o"></i>
+                                </div>
+                                <div className="product-price">
+                                    <span>$ 60.00</span>
+                                    <span className="old">$ 60.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="product-wrap">
+                            <div className="product-img">
+                                <a href="product-details-slider-box.html">
+                                    <img className="default-img" src="/assets/img/product/pro-2.jpg" alt="" />
+                                    <img className="hover-img" src="/assets/img/product/pro-2-1.jpg" alt="" />
+                                </a>
+                                <span className="purple">New</span>
+                                <div className="product-action">
+                                    <div className="pro-same-action pro-wishlist">
+                                        <a title="Wishlist" href="#">
+                                            <i className="pe-7s-like"></i>
+                                        </a>
+                                    </div>
+                                    <div className="pro-same-action pro-cart">
+                                        <a title="Add To Cart" href="#">
+                                            <i className="pe-7s-cart"></i> Add to cart
+                                        </a>
+                                    </div>
+                                    <div className="pro-same-action pro-quickview">
+                                        <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal">
+                                            <i className="pe-7s-look"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="product-content text-center">
+                                <h3>
+                                    <a href="product-details-slider-box.html">T- Shirt And Jeans</a>
+                                </h3>
+                                <div className="product-rating">
+                                    <i className="fa fa-star-o yellow"></i>
+                                    <i className="fa fa-star-o yellow"></i>
+                                    <i className="fa fa-star-o yellow"></i>
+                                    <i className="fa fa-star-o"></i>
+                                    <i className="fa fa-star-o"></i>
+                                </div>
+                                <div className="product-price">
+                                    <span>$ 60.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="product-wrap">
+                            <div className="product-img">
+                                <a href="product-details-slider-box.html">
+                                    <img className="default-img" src="/assets/img/product/pro-3.jpg" alt="" />
+                                    <img className="hover-img" src="/assets/img/product/pro-3-1.jpg" alt="" />
+                                </a>
+                                <span className="pink">-10%</span>
+                                <div className="product-action">
+                                    <div className="pro-same-action pro-wishlist">
+                                        <a title="Wishlist" href="#">
+                                            <i className="pe-7s-like"></i>
+                                        </a>
+                                    </div>
+                                    <div className="pro-same-action pro-cart">
+                                        <a title="Add To Cart" href="#">
+                                            <i className="pe-7s-cart"></i> Add to cart
+                                        </a>
+                                    </div>
+                                    <div className="pro-same-action pro-quickview">
+                                        <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal">
+                                            <i className="pe-7s-look"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="product-content text-center">
+                                <h3>
+                                    <a href="product-details-slider-box.html">T- Shirt And Jeans</a>
+                                </h3>
+                                <div className="product-rating">
+                                    <i className="fa fa-star-o yellow"></i>
+                                    <i className="fa fa-star-o yellow"></i>
+                                    <i className="fa fa-star-o yellow"></i>
+                                    <i className="fa fa-star-o"></i>
+                                    <i className="fa fa-star-o"></i>
+                                </div>
+                                <div className="product-price">
+                                    <span>$ 60.00</span>
+                                    <span className="old">$ 60.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="product-wrap">
+                            <div className="product-img">
+                                <a href="product-details-slider-box.html">
+                                    <img className="default-img" src="/assets/img/product/pro-4.jpg" alt="" />
+                                    <img className="hover-img" src="/assets/img/product/pro-4-1.jpg" alt="" />
+                                </a>
+                                <span className="purple">New</span>
+                                <div className="product-action">
+                                    <div className="pro-same-action pro-wishlist">
+                                        <a title="Wishlist" href="#">
+                                            <i className="pe-7s-like"></i>
+                                        </a>
+                                    </div>
+                                    <div className="pro-same-action pro-cart">
+                                        <a title="Add To Cart" href="#">
+                                            <i className="pe-7s-cart"></i> Add to cart
+                                        </a>
+                                    </div>
+                                    <div className="pro-same-action pro-quickview">
+                                        <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal">
+                                            <i className="pe-7s-look"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="product-content text-center">
+                                <h3>
+                                    <a href="product-details-slider-box.html">T- Shirt And Jeans</a>
+                                </h3>
+                                <div className="product-rating">
+                                    <i className="fa fa-star-o yellow"></i>
+                                    <i className="fa fa-star-o yellow"></i>
+                                    <i className="fa fa-star-o yellow"></i>
+                                    <i className="fa fa-star-o"></i>
+                                    <i className="fa fa-star-o"></i>
+                                </div>
+                                <div className="product-price">
+                                    <span>$ 60.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="product-wrap">
+                            <div className="product-img">
+                                <a href="product-details-slider-box.html">
+                                    <img className="default-img" src="/assets/img/product/pro-5.jpg" alt="" />
+                                    <img className="hover-img" src="/assets/img/product/pro-5-1.jpg" alt="" />
+                                </a>
+                                <span className="pink">-10%</span>
+                                <div className="product-action">
+                                    <div className="pro-same-action pro-wishlist">
+                                        <a title="Wishlist" href="#">
+                                            <i className="pe-7s-like"></i>
+                                        </a>
+                                    </div>
+                                    <div className="pro-same-action pro-cart">
+                                        <a title="Add To Cart" href="#">
+                                            <i className="pe-7s-cart"></i> Add to cart
+                                        </a>
+                                    </div>
+                                    <div className="pro-same-action pro-quickview">
+                                        <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal">
+                                            <i className="pe-7s-look"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="product-content text-center">
+                                <h3>
+                                    <a href="product-details-slider-box.html">T- Shirt And Jeans</a>
+                                </h3>
+                                <div className="product-rating">
+                                    <i className="fa fa-star-o yellow"></i>
+                                    <i className="fa fa-star-o yellow"></i>
+                                    <i className="fa fa-star-o yellow"></i>
+                                    <i className="fa fa-star-o"></i>
+                                    <i className="fa fa-star-o"></i>
+                                </div>
+                                <div className="product-price">
+                                    <span>$ 60.00</span>
+                                    <span className="old">$ 60.00</span>
                                 </div>
                             </div>
                         </div>
@@ -1084,6 +1426,202 @@ export default function CartPagePublish() {
                     </div>
                 </div>
             </footer>
+
+            {/* <!-- Modal --> */}
+            <div className="modal fade" id="exampleModal" tabIndex={-1} role="dialog">
+                <div className="modal-dialog" role="document">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">x</span>
+                            </button>
+                        </div>
+                        <div className="modal-body">
+                            <div className="row">
+                                <div className="col-md-5 col-sm-12 col-xs-12">
+                                    <div className="tab-content quickview-big-img">
+                                        <div id="pro-1" className="tab-pane fade show active">
+                                            <img src="/assets/img/product/quickview-l1.jpg" alt="" />
+                                        </div>
+                                        <div id="pro-2" className="tab-pane fade">
+                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
+                                        </div>
+                                        <div id="pro-3" className="tab-pane fade">
+                                            <img src="/assets/img/product/quickview-l3.jpg" alt="" />
+                                        </div>
+                                        <div id="pro-4" className="tab-pane fade">
+                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    {/* <!-- Thumbnail Large Image End --> */}
+                                    {/* <!-- Thumbnail Image End --> */}
+                                    <div className="quickview-wrap mt-15">
+                                        <div
+                                            className="quickview-slide-active owl-carousel nav nav-style-1"
+                                            role="tablist"
+                                        >
+                                            <a className="active" data-toggle="tab" href="#pro-1">
+                                                <img src="/assets/img/product/quickview-s1.jpg" alt="" />
+                                            </a>
+                                            <a data-toggle="tab" href="#pro-2">
+                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
+                                            </a>
+                                            <a data-toggle="tab" href="#pro-3">
+                                                <img src="/assets/img/product/quickview-s3.jpg" alt="" />
+                                            </a>
+                                            <a data-toggle="tab" href="#pro-4">
+                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-7 col-sm-12 col-xs-12">
+                                    <div className="product-details-content quickview-content">
+                                        <h2>Products Name Here</h2>
+                                        <div className="product-details-price">
+                                            <span>$18.00 </span>
+                                            <span className="old">$20.00 </span>
+                                        </div>
+                                        <div className="pro-details-rating-wrap">
+                                            <div className="pro-details-rating">
+                                                <i className="fa fa-star-o yellow"></i>
+                                                <i className="fa fa-star-o yellow"></i>
+                                                <i className="fa fa-star-o yellow"></i>
+                                                <i className="fa fa-star-o"></i>
+                                                <i className="fa fa-star-o"></i>
+                                            </div>
+                                            <span>3 Reviews</span>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid
+                                            ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud
+                                            exercitation ullamco
+                                        </p>
+                                        <div className="pro-details-list">
+                                            <ul>
+                                                <li>- 0.5 mm Dail</li>
+                                                <li>- Inspired vector icons</li>
+                                                <li>- Very modern style </li>
+                                            </ul>
+                                        </div>
+                                        <div className="pro-details-size-color">
+                                            <div className="pro-details-color-wrap">
+                                                <span>Color</span>
+                                                <div className="pro-details-color-content">
+                                                    <ul>
+                                                        <li className="blue"></li>
+                                                        <li className="maroon active"></li>
+                                                        <li className="gray"></li>
+                                                        <li className="green"></li>
+                                                        <li className="yellow"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div className="pro-details-size">
+                                                <span>Size</span>
+                                                <div className="pro-details-size-content">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">s</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">m</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">l</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">xl</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">xxl</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="pro-details-quality">
+                                            <div className="cart-plus-minus">
+                                                <input className="cart-plus-minus-box" type="text" name="qtybutton" />
+                                            </div>
+                                            <div className="pro-details-cart btn-hover">
+                                                <a href="#">Add To Cart</a>
+                                            </div>
+                                            <div className="pro-details-wishlist">
+                                                <a href="#">
+                                                    <i className="fa fa-heart-o"></i>
+                                                </a>
+                                            </div>
+                                            <div className="pro-details-compare">
+                                                <a href="#">
+                                                    <i className="pe-7s-shuffle"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div className="pro-details-meta">
+                                            <span>Categories :</span>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Minimal,</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Furniture,</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Electronic</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="pro-details-meta">
+                                            <span>Tag :</span>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Fashion, </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Furniture,</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Electronic</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="pro-details-social">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-dribbble"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-pinterest-p"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-linkedin"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function BlogPublish() {
+export default function ShopGrid2ColPublish() {
     return (
         <>
             <header className="header-area header-in-container clearfix">
@@ -205,8 +205,7 @@ export default function BlogPublish() {
                                             </li>
                                             <li>
                                                 <a href="shop.html">
-                                                    {' '}
-                                                    Shop <i className="fa fa-angle-down"></i>{' '}
+                                                    Shop <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="mega-menu">
                                                     <li>
@@ -299,7 +298,6 @@ export default function BlogPublish() {
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    {' '}
                                                     Pages <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="submenu">
@@ -736,245 +734,470 @@ export default function BlogPublish() {
                             <li>
                                 <a href="index.html">Home</a>
                             </li>
-                            <li className="active">Blog Page </li>
+                            <li className="active">Shop </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div className="Blog-area pt-100 pb-100">
+            <div className="shop-area pt-95 pb-100">
                 <div className="container">
                     <div className="row flex-row-reverse">
                         <div className="col-lg-9">
-                            <div className="ml-20">
-                                <div className="row">
-                                    <div className="col-lg-6 col-md-6 col-sm-12">
-                                        <div className="blog-wrap-2 mb-30">
-                                            <div className="blog-img-2">
-                                                <a href="blog-details.html">
-                                                    <img src="/assets/img/blog/blog-9.jpg" alt="" />
-                                                </a>
-                                            </div>
-                                            <div className="blog-content-2">
-                                                <div className="blog-meta-2">
-                                                    <ul>
-                                                        <li>22 April, 2018</li>
-                                                        <li>
-                                                            <a href="#">
-                                                                4 <i className="fa fa-comments-o"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <h4>
-                                                    <a href="blog-details.html">New shop collection our shop</a>
-                                                </h4>
-                                                <p>
-                                                    Aenean sollicitudin, lorem quis on endum uctor nisi elitod the cona
-                                                    sequat ipsum, necas sagittis sem natoque nibh id penatibus
-                                                </p>
-                                                <div className="blog-share-comment">
-                                                    <div className="blog-btn-2">
-                                                        <a href="blog-details.html">read more</a>
+                            <div className="shop-top-bar">
+                                <div className="select-shoing-wrap">
+                                    <div className="shop-select">
+                                        <select>
+                                            <option>Sort by newness</option>
+                                            <option>A to Z</option>
+                                            <option> Z to A</option>
+                                            <option>In stock</option>
+                                        </select>
+                                    </div>
+                                    <p>Showing 1–12 of 20 result</p>
+                                </div>
+                                <div className="shop-tab nav">
+                                    <a className="active" href="#shop-1" data-toggle="tab">
+                                        <i className="fa fa-table"></i>
+                                    </a>
+                                    <a href="#shop-2" data-toggle="tab">
+                                        <i className="fa fa-list-ul"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="shop-bottom-area mt-35">
+                                <div className="tab-content jump">
+                                    <div id="shop-1" className="tab-pane active">
+                                        <div className="row">
+                                            <div className="col-xl-6 col-md-6 col-lg-6 col-sm-6">
+                                                <div className="product-wrap mb-25 scroll-zoom">
+                                                    <div className="product-img">
+                                                        <a href="product-details.html">
+                                                            <img
+                                                                className="default-img"
+                                                                src="/assets/img/product/pro-1.jpg"
+                                                                alt=""
+                                                            />
+                                                            <img
+                                                                className="hover-img"
+                                                                src="/assets/img/product/pro-1-1.jpg"
+                                                                alt=""
+                                                            />
+                                                        </a>
+                                                        <span className="pink">-10%</span>
+                                                        <div className="product-action">
+                                                            <div className="pro-same-action pro-wishlist">
+                                                                <a title="Wishlist" href="#">
+                                                                    <i className="pe-7s-like"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div className="pro-same-action pro-cart">
+                                                                <a title="Add To Cart" href="#">
+                                                                    <i className="pe-7s-cart"></i> Add to cart
+                                                                </a>
+                                                            </div>
+                                                            <div className="pro-same-action pro-quickview">
+                                                                <a
+                                                                    title="Quick View"
+                                                                    href="#"
+                                                                    data-toggle="modal"
+                                                                    data-target="#exampleModal"
+                                                                >
+                                                                    <i className="pe-7s-look"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div className="blog-share">
-                                                        <span>share :</span>
-                                                        <div className="share-social">
-                                                            <ul>
-                                                                <li>
-                                                                    <a className="facebook" href="#">
-                                                                        <i className="fa fa-facebook"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a className="twitter" href="#">
-                                                                        <i className="fa fa-twitter"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a className="instagram" href="#">
-                                                                        <i className="fa fa-instagram"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
+                                                    <div className="product-content text-center">
+                                                        <h3>
+                                                            <a href="product-details.html">T- Shirt And Jeans</a>
+                                                        </h3>
+                                                        <div className="product-rating">
+                                                            <i className="fa fa-star-o yellow"></i>
+                                                            <i className="fa fa-star-o yellow"></i>
+                                                            <i className="fa fa-star-o yellow"></i>
+                                                            <i className="fa fa-star-o"></i>
+                                                            <i className="fa fa-star-o"></i>
+                                                        </div>
+                                                        <div className="product-price">
+                                                            <span>$ 60.00</span>
+                                                            <span className="old">$ 60.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-xl-6 col-md-6 col-lg-6 col-sm-6">
+                                                <div className="product-wrap mb-25 scroll-zoom">
+                                                    <div className="product-img">
+                                                        <a href="product-details.html">
+                                                            <img
+                                                                className="default-img"
+                                                                src="/assets/img/product/pro-2.jpg"
+                                                                alt=""
+                                                            />
+                                                            <img
+                                                                className="hover-img"
+                                                                src="/assets/img/product/pro-2-1.jpg"
+                                                                alt=""
+                                                            />
+                                                        </a>
+                                                        <span className="purple">New</span>
+                                                        <div className="product-action">
+                                                            <div className="pro-same-action pro-wishlist">
+                                                                <a title="Wishlist" href="#">
+                                                                    <i className="pe-7s-like"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div className="pro-same-action pro-cart">
+                                                                <a title="Add To Cart" href="#">
+                                                                    <i className="pe-7s-cart"></i> Add to cart
+                                                                </a>
+                                                            </div>
+                                                            <div className="pro-same-action pro-quickview">
+                                                                <a
+                                                                    title="Quick View"
+                                                                    href="#"
+                                                                    data-toggle="modal"
+                                                                    data-target="#exampleModal"
+                                                                >
+                                                                    <i className="pe-7s-look"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="product-content text-center">
+                                                        <h3>
+                                                            <a href="product-details.html">T- Shirt And Jeans</a>
+                                                        </h3>
+                                                        <div className="product-rating">
+                                                            <i className="fa fa-star-o yellow"></i>
+                                                            <i className="fa fa-star-o yellow"></i>
+                                                            <i className="fa fa-star-o yellow"></i>
+                                                            <i className="fa fa-star-o"></i>
+                                                            <i className="fa fa-star-o"></i>
+                                                        </div>
+                                                        <div className="product-price">
+                                                            <span>$ 60.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-xl-6 col-md-6 col-lg-6 col-sm-6">
+                                                <div className="product-wrap mb-25 scroll-zoom">
+                                                    <div className="product-img">
+                                                        <a href="product-details.html">
+                                                            <img
+                                                                className="default-img"
+                                                                src="/assets/img/product/pro-3.jpg"
+                                                                alt=""
+                                                            />
+                                                            <img
+                                                                className="hover-img"
+                                                                src="/assets/img/product/pro-3-1.jpg"
+                                                                alt=""
+                                                            />
+                                                        </a>
+                                                        <span className="pink">-10%</span>
+                                                        <div className="product-action">
+                                                            <div className="pro-same-action pro-wishlist">
+                                                                <a title="Wishlist" href="#">
+                                                                    <i className="pe-7s-like"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div className="pro-same-action pro-cart">
+                                                                <a title="Add To Cart" href="#">
+                                                                    <i className="pe-7s-cart"></i> Add to cart
+                                                                </a>
+                                                            </div>
+                                                            <div className="pro-same-action pro-quickview">
+                                                                <a
+                                                                    title="Quick View"
+                                                                    href="#"
+                                                                    data-toggle="modal"
+                                                                    data-target="#exampleModal"
+                                                                >
+                                                                    <i className="pe-7s-look"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="product-content text-center">
+                                                        <h3>
+                                                            <a href="product-details.html">T- Shirt And Jeans</a>
+                                                        </h3>
+                                                        <div className="product-rating">
+                                                            <i className="fa fa-star-o yellow"></i>
+                                                            <i className="fa fa-star-o yellow"></i>
+                                                            <i className="fa fa-star-o yellow"></i>
+                                                            <i className="fa fa-star-o"></i>
+                                                            <i className="fa fa-star-o"></i>
+                                                        </div>
+                                                        <div className="product-price">
+                                                            <span>$ 60.00</span>
+                                                            <span className="old">$ 60.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-xl-6 col-md-6 col-lg-6 col-sm-6">
+                                                <div className="product-wrap mb-25 scroll-zoom">
+                                                    <div className="product-img">
+                                                        <a href="product-details.html">
+                                                            <img
+                                                                className="default-img"
+                                                                src="/assets/img/product/pro-4.jpg"
+                                                                alt=""
+                                                            />
+                                                            <img
+                                                                className="hover-img"
+                                                                src="/assets/img/product/pro-4-1.jpg"
+                                                                alt=""
+                                                            />
+                                                        </a>
+                                                        <span className="purple">New</span>
+                                                        <div className="product-action">
+                                                            <div className="pro-same-action pro-wishlist">
+                                                                <a title="Wishlist" href="#">
+                                                                    <i className="pe-7s-like"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div className="pro-same-action pro-cart">
+                                                                <a title="Add To Cart" href="#">
+                                                                    <i className="pe-7s-cart"></i> Add to cart
+                                                                </a>
+                                                            </div>
+                                                            <div className="pro-same-action pro-quickview">
+                                                                <a
+                                                                    title="Quick View"
+                                                                    href="#"
+                                                                    data-toggle="modal"
+                                                                    data-target="#exampleModal"
+                                                                >
+                                                                    <i className="pe-7s-look"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="product-content text-center">
+                                                        <h3>
+                                                            <a href="product-details.html">T- Shirt And Jeans</a>
+                                                        </h3>
+                                                        <div className="product-rating">
+                                                            <i className="fa fa-star-o yellow"></i>
+                                                            <i className="fa fa-star-o yellow"></i>
+                                                            <i className="fa fa-star-o yellow"></i>
+                                                            <i className="fa fa-star-o"></i>
+                                                            <i className="fa fa-star-o"></i>
+                                                        </div>
+                                                        <div className="product-price">
+                                                            <span>$ 60.00</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-6 col-md-6 col-sm-12">
-                                        <div className="blog-wrap-2 mb-30">
-                                            <div className="blog-img-2">
-                                                <a href="blog-details.html">
-                                                    <img src="/assets/img/blog/blog-4.jpg" alt="" />
-                                                </a>
-                                                <div className="video-icon">
-                                                    <a
-                                                        className="video-popup"
-                                                        href="https://www.youtube.com/watch?v=6Tc7LBx7XzE"
-                                                    >
-                                                        <i className="fa fa-play"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div className="blog-content-2">
-                                                <div className="blog-meta-2">
-                                                    <ul>
-                                                        <li>22 April, 2018</li>
-                                                        <li>
-                                                            <a href="#">
-                                                                4 <i className="fa fa-comments-o"></i>
+                                    <div id="shop-2" className="tab-pane">
+                                        <div className="shop-list-wrap mb-30">
+                                            <div className="row">
+                                                <div className="col-xl-4 col-lg-5 col-md-5 col-sm-6">
+                                                    <div className="product-wrap">
+                                                        <div className="product-img">
+                                                            <a href="product-details.html">
+                                                                <img
+                                                                    className="default-img"
+                                                                    src="/assets/img/product/pro-1.jpg"
+                                                                    alt=""
+                                                                />
+                                                                <img
+                                                                    className="hover-img"
+                                                                    src="/assets/img/product/pro-1-1.jpg"
+                                                                    alt=""
+                                                                />
                                                             </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <h4>
-                                                    <a href="blog-details.html">New shop collection our shop</a>
-                                                </h4>
-                                                <p>
-                                                    Aenean sollicitudin, lorem quis on endum uctor nisi elitod the cona
-                                                    sequat ipsum, necas sagittis sem natoque nibh id penatibus
-                                                </p>
-                                                <div className="blog-share-comment">
-                                                    <div className="blog-btn-2">
-                                                        <a href="blog-details.html">read more</a>
+                                                            <span className="pink">-10%</span>
+                                                        </div>
                                                     </div>
-                                                    <div className="blog-share">
-                                                        <span>share :</span>
-                                                        <div className="share-social">
-                                                            <ul>
-                                                                <li>
-                                                                    <a className="facebook" href="#">
-                                                                        <i className="fa fa-facebook"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a className="twitter" href="#">
-                                                                        <i className="fa fa-twitter"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a className="instagram" href="#">
-                                                                        <i className="fa fa-instagram"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
+                                                </div>
+                                                <div className="col-xl-8 col-lg-7 col-md-7 col-sm-6">
+                                                    <div className="shop-list-content">
+                                                        <h3>
+                                                            <a href="product-details.html">Products Name Here</a>
+                                                        </h3>
+                                                        <div className="product-list-price">
+                                                            <span>$ 60.00</span>
+                                                            <span className="old">$ 90.00</span>
+                                                        </div>
+                                                        <div className="rating-review">
+                                                            <div className="product-list-rating">
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                            </div>
+                                                            <a href="#">3 Reviews</a>
+                                                        </div>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consecteto adipisic elit eiusm
+                                                            tempor incidid ut labore et dolore magna aliqua Ut enim ad
+                                                            minim
+                                                        </p>
+                                                        <div className="shop-list-btn btn-hover">
+                                                            <a href="#">ADD TO CART</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-6 col-sm-12">
-                                        <div className="blog-wrap-2 mb-30">
-                                            <div className="blog-img-slide owl-carousel nav-style-4">
-                                                <a href="blog-details.html">
-                                                    <img src="/assets/img/blog/blog-5.jpg" alt="" />
-                                                </a>
-                                                <a href="blog-details.html">
-                                                    <img src="/assets/img/blog/blog-4.jpg" alt="" />
-                                                </a>
-                                                <a href="blog-details.html">
-                                                    <img src="/assets/img/blog/blog-6.jpg" alt="" />
-                                                </a>
-                                            </div>
-                                            <div className="blog-content-2">
-                                                <div className="blog-meta-2">
-                                                    <ul>
-                                                        <li>22 April, 2018</li>
-                                                        <li>
-                                                            <a href="#">
-                                                                4 <i className="fa fa-comments-o"></i>
+                                        <div className="shop-list-wrap mb-30">
+                                            <div className="row">
+                                                <div className="col-xl-4 col-lg-5 col-md-5 col-sm-6">
+                                                    <div className="product-wrap">
+                                                        <div className="product-img">
+                                                            <a href="product-details.html">
+                                                                <img
+                                                                    className="default-img"
+                                                                    src="/assets/img/product/pro-2.jpg"
+                                                                    alt=""
+                                                                />
+                                                                <img
+                                                                    className="hover-img"
+                                                                    src="/assets/img/product/pro-2-1.jpg"
+                                                                    alt=""
+                                                                />
                                                             </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <h4>
-                                                    <a href="blog-details.html">New shop collection our shop</a>
-                                                </h4>
-                                                <p>
-                                                    Aenean sollicitudin, lorem quis on endum uctor nisi elitod the cona
-                                                    sequat ipsum, necas sagittis sem natoque nibh id penatibus
-                                                </p>
-                                                <div className="blog-share-comment">
-                                                    <div className="blog-btn-2">
-                                                        <a href="blog-details.html">read more</a>
+                                                            <span className="purple">New</span>
+                                                        </div>
                                                     </div>
-                                                    <div className="blog-share">
-                                                        <span>share :</span>
-                                                        <div className="share-social">
-                                                            <ul>
-                                                                <li>
-                                                                    <a className="facebook" href="#">
-                                                                        <i className="fa fa-facebook"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a className="twitter" href="#">
-                                                                        <i className="fa fa-twitter"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a className="instagram" href="#">
-                                                                        <i className="fa fa-instagram"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
+                                                </div>
+                                                <div className="col-xl-8 col-lg-7 col-md-7 col-sm-6">
+                                                    <div className="shop-list-content">
+                                                        <h3>
+                                                            <a href="product-details.html">Products Name Here</a>
+                                                        </h3>
+                                                        <div className="product-list-price">
+                                                            <span>$ 60.00</span>
+                                                        </div>
+                                                        <div className="rating-review">
+                                                            <div className="product-list-rating">
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                            </div>
+                                                            <a href="#">3 Reviews</a>
+                                                        </div>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consecteto adipisic elit eiusm
+                                                            tempor incidid ut labore et dolore magna aliqua Ut enim ad
+                                                            minim
+                                                        </p>
+                                                        <div className="shop-list-btn btn-hover">
+                                                            <a href="#">ADD TO CART</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-6 col-sm-12">
-                                        <div className="blog-wrap-2 mb-30">
-                                            <div className="blog-img-2">
-                                                <a href="blog-details.html">
-                                                    <img src="/assets/img/blog/blog-6.jpg" alt="" />
-                                                </a>
-                                            </div>
-                                            <div className="blog-content-2">
-                                                <div className="blog-meta-2">
-                                                    <ul>
-                                                        <li>22 April, 2018</li>
-                                                        <li>
-                                                            <a href="#">
-                                                                4 <i className="fa fa-comments-o"></i>
+                                        <div className="shop-list-wrap mb-30">
+                                            <div className="row">
+                                                <div className="col-xl-4 col-lg-5 col-md-5 col-sm-6">
+                                                    <div className="product-wrap">
+                                                        <div className="product-img">
+                                                            <a href="product-details.html">
+                                                                <img
+                                                                    className="default-img"
+                                                                    src="/assets/img/product/pro-3.jpg"
+                                                                    alt=""
+                                                                />
+                                                                <img
+                                                                    className="hover-img"
+                                                                    src="/assets/img/product/pro-3-1.jpg"
+                                                                    alt=""
+                                                                />
                                                             </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <h4>
-                                                    <a href="blog-details.html">New shop collection our shop</a>
-                                                </h4>
-                                                <p>
-                                                    Aenean sollicitudin, lorem quis on endum uctor nisi elitod the cona
-                                                    sequat ipsum, necas sagittis sem natoque nibh id penatibus
-                                                </p>
-                                                <div className="blog-share-comment">
-                                                    <div className="blog-btn-2">
-                                                        <a href="blog-details.html">read more</a>
+                                                            <span className="pink">-20%</span>
+                                                        </div>
                                                     </div>
-                                                    <div className="blog-share">
-                                                        <span>share :</span>
-                                                        <div className="share-social">
-                                                            <ul>
-                                                                <li>
-                                                                    <a className="facebook" href="#">
-                                                                        <i className="fa fa-facebook"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a className="twitter" href="#">
-                                                                        <i className="fa fa-twitter"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a className="instagram" href="#">
-                                                                        <i className="fa fa-instagram"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
+                                                </div>
+                                                <div className="col-xl-8 col-lg-7 col-md-7 col-sm-6">
+                                                    <div className="shop-list-content">
+                                                        <h3>
+                                                            <a href="product-details.html">Products Name Here</a>
+                                                        </h3>
+                                                        <div className="product-list-price">
+                                                            <span>$ 30.00</span>
+                                                            <span className="old">$ 50.00</span>
+                                                        </div>
+                                                        <div className="rating-review">
+                                                            <div className="product-list-rating">
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                            </div>
+                                                            <a href="#">3 Reviews</a>
+                                                        </div>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consecteto adipisic elit eiusm
+                                                            tempor incidid ut labore et dolore magna aliqua Ut enim ad
+                                                            minim
+                                                        </p>
+                                                        <div className="shop-list-btn btn-hover">
+                                                            <a href="#">ADD TO CART</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="shop-list-wrap mb-30">
+                                            <div className="row">
+                                                <div className="col-xl-4 col-lg-5 col-md-5 col-sm-6">
+                                                    <div className="product-wrap">
+                                                        <div className="product-img">
+                                                            <a href="product-details.html">
+                                                                <img
+                                                                    className="default-img"
+                                                                    src="/assets/img/product/pro-7.jpg"
+                                                                    alt=""
+                                                                />
+                                                                <img
+                                                                    className="hover-img"
+                                                                    src="/assets/img/product/pro-4-1.jpg"
+                                                                    alt=""
+                                                                />
+                                                            </a>
+                                                            <span className="purple">New</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="col-xl-8 col-lg-7 col-md-7 col-sm-6">
+                                                    <div className="shop-list-content">
+                                                        <h3>
+                                                            <a href="product-details.html">Products Name Here</a>
+                                                        </h3>
+                                                        <div className="product-list-price">
+                                                            <span>$ 70.00</span>
+                                                        </div>
+                                                        <div className="rating-review">
+                                                            <div className="product-list-rating">
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o yellow"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                                <i className="fa fa-star-o"></i>
+                                                            </div>
+                                                            <a href="#">3 Reviews</a>
+                                                        </div>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consecteto adipisic elit eiusm
+                                                            tempor incidid ut labore et dolore magna aliqua Ut enim ad
+                                                            minim
+                                                        </p>
+                                                        <div className="shop-list-btn btn-hover">
+                                                            <a href="#">ADD TO CART</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -982,7 +1205,7 @@ export default function BlogPublish() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="pro-pagination-style text-center mt-20">
+                                <div className="pro-pagination-style text-center mt-30">
                                     <ul>
                                         <li>
                                             <a className="prev" href="#">
@@ -1007,10 +1230,10 @@ export default function BlogPublish() {
                             </div>
                         </div>
                         <div className="col-lg-3">
-                            <div className="sidebar-style">
+                            <div className="sidebar-style mr-30">
                                 <div className="sidebar-widget">
                                     <h4 className="pro-sidebar-title">Search </h4>
-                                    <div className="pro-sidebar-search mb-55 mt-25">
+                                    <div className="pro-sidebar-search mb-50 mt-25">
                                         <form className="pro-sidebar-search-form" action="#">
                                             <input type="text" placeholder="Search here..." />
                                             <button>
@@ -1020,99 +1243,116 @@ export default function BlogPublish() {
                                     </div>
                                 </div>
                                 <div className="sidebar-widget">
-                                    <h4 className="pro-sidebar-title">Recent Projects </h4>
-                                    <div className="sidebar-project-wrap mt-30">
-                                        <div className="single-sidebar-blog">
-                                            <div className="sidebar-blog-img">
-                                                <a href="#">
-                                                    <img src="/assets/img/blog/sidebar-1.jpg" alt="" />
-                                                </a>
-                                            </div>
-                                            <div className="sidebar-blog-content">
-                                                <span>Photography</span>
-                                                <h4>
-                                                    <a href="#">T- Shart And Jeans</a>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <div className="single-sidebar-blog">
-                                            <div className="sidebar-blog-img">
-                                                <a href="#">
-                                                    <img src="/assets/img/blog/sidebar-2.jpg" alt="" />
-                                                </a>
-                                            </div>
-                                            <div className="sidebar-blog-content">
-                                                <span>Branding</span>
-                                                <h4>
-                                                    <a href="#">T- Shart And Jeans</a>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <div className="single-sidebar-blog">
-                                            <div className="sidebar-blog-img">
-                                                <a href="#">
-                                                    <img src="/assets/img/blog/sidebar-3.jpg" alt="" />
-                                                </a>
-                                            </div>
-                                            <div className="sidebar-blog-content">
-                                                <span>Design</span>
-                                                <h4>
-                                                    <a href="#">T- Shart And Jeans</a>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <div className="single-sidebar-blog">
-                                            <div className="sidebar-blog-img">
-                                                <a href="#">
-                                                    <img src="/assets/img/blog/sidebar-1.jpg" alt="" />
-                                                </a>
-                                            </div>
-                                            <div className="sidebar-blog-content">
-                                                <span>Photography</span>
-                                                <h4>
-                                                    <a href="#">T- Shart And Jeans</a>
-                                                </h4>
-                                            </div>
-                                        </div>
+                                    <h4 className="pro-sidebar-title">Refine By </h4>
+                                    <div className="sidebar-widget-list mt-30">
+                                        <ul>
+                                            <li>
+                                                <div className="sidebar-widget-list-left">
+                                                    <input type="checkbox" />
+                                                    <a href="#">
+                                                        On Sale <span>4</span>
+                                                    </a>
+                                                    <span className="checkmark"></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className="sidebar-widget-list-left">
+                                                    <input type="checkbox" />
+                                                    <a href="#">
+                                                        New <span>4</span>
+                                                    </a>
+                                                    <span className="checkmark"></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className="sidebar-widget-list-left">
+                                                    <input type="checkbox" />
+                                                    <a href="#">
+                                                        In Stock <span>4</span>
+                                                    </a>
+                                                    <span className="checkmark"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div className="sidebar-widget mt-35">
-                                    <h4 className="pro-sidebar-title">Categories </h4>
+                                <div className="sidebar-widget mt-45">
+                                    <h4 className="pro-sidebar-title">Filter By Price </h4>
+                                    <div className="price-filter mt-10">
+                                        <div className="price-slider-amount">
+                                            <input type="text" id="amount" name="price" placeholder="Add Your Price" />
+                                        </div>
+                                        <div id="slider-range"></div>
+                                    </div>
+                                </div>
+                                <div className="sidebar-widget mt-50">
+                                    <h4 className="pro-sidebar-title">Colour </h4>
                                     <div className="sidebar-widget-list mt-20">
                                         <ul>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Women <span>4</span>{' '}
+                                                        Green <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Men <span>4</span>{' '}
+                                                        Cream <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Bags <span>4</span>{' '}
+                                                        Blue <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Accessories <span>4</span>{' '}
+                                                        Black <span>4</span>
                                                     </a>
+                                                    <span className="checkmark"></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="sidebar-widget mt-40">
+                                    <h4 className="pro-sidebar-title">Size </h4>
+                                    <div className="sidebar-widget-list mt-20">
+                                        <ul>
+                                            <li>
+                                                <div className="sidebar-widget-list-left">
+                                                    <input type="checkbox" /> <a href="#">XL</a>
+                                                    <span className="checkmark"></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className="sidebar-widget-list-left">
+                                                    <input type="checkbox" /> <a href="#">L</a>
+                                                    <span className="checkmark"></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className="sidebar-widget-list-left">
+                                                    <input type="checkbox" /> <a href="#">SM</a>
+                                                    <span className="checkmark"></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className="sidebar-widget-list-left">
+                                                    <input type="checkbox" /> <a href="#">XXL</a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
@@ -1261,7 +1501,6 @@ export default function BlogPublish() {
                                                         className="button"
                                                         type="submit"
                                                         name="subscribe"
-                                                        value="Subscribe"
                                                     />
                                                 </div>
                                             </div>
@@ -1273,6 +1512,203 @@ export default function BlogPublish() {
                     </div>
                 </div>
             </footer>
+
+            {/* <!-- Modal --> */}
+            <div className="modal fade" id="exampleModal" tabIndex={-1} role="dialog">
+                <div className="modal-dialog" role="document">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">x</span>
+                            </button>
+                        </div>
+                        <div className="modal-body">
+                            <div className="row">
+                                <div className="col-md-5 col-sm-12 col-xs-12">
+                                    <div className="tab-content quickview-big-img">
+                                        <div id="pro-1" className="tab-pane fade show active">
+                                            <img src="/assets/img/product/quickview-l1.jpg" alt="" />
+                                        </div>
+                                        <div id="pro-2" className="tab-pane fade">
+                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
+                                        </div>
+                                        <div id="pro-3" className="tab-pane fade">
+                                            <img src="/assets/img/product/quickview-l3.jpg" alt="" />
+                                        </div>
+                                        <div id="pro-4" className="tab-pane fade">
+                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    {/* <!-- Thumbnail Large Image End --> */}
+                                    {/* <!-- Thumbnail Image End --> */}
+                                    <div className="quickview-wrap mt-15">
+                                        <div
+                                            className="quickview-slide-active owl-carousel nav nav-style-1"
+                                            role="tablist"
+                                        >
+                                            <a className="active" data-toggle="tab" href="#pro-1">
+                                                <img src="/assets/img/product/quickview-s1.jpg" alt="" />
+                                            </a>
+                                            <a data-toggle="tab" href="#pro-2">
+                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
+                                            </a>
+                                            <a data-toggle="tab" href="#pro-3">
+                                                <img src="/assets/img/product/quickview-s3.jpg" alt="" />
+                                            </a>
+                                            <a data-toggle="tab" href="#pro-4">
+                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-7 col-sm-12 col-xs-12">
+                                    <div className="product-details-content quickview-content">
+                                        <h2>Products Name Here</h2>
+                                        <div className="product-details-price">
+                                            <span>$18.00 </span>
+                                            <span className="old">$20.00 </span>
+                                        </div>
+                                        <div className="pro-details-rating-wrap">
+                                            <div className="pro-details-rating">
+                                                <i className="fa fa-star-o yellow"></i>
+                                                <i className="fa fa-star-o yellow"></i>
+                                                <i className="fa fa-star-o yellow"></i>
+                                                <i className="fa fa-star-o"></i>
+                                                <i className="fa fa-star-o"></i>
+                                            </div>
+                                            <span>3 Reviews</span>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid
+                                            ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud
+                                            exercitation ullamco
+                                        </p>
+                                        <div className="pro-details-list">
+                                            <ul>
+                                                <li>- 0.5 mm Dail</li>
+                                                <li>- Inspired vector icons</li>
+                                                <li>- Very modern style </li>
+                                            </ul>
+                                        </div>
+                                        <div className="pro-details-size-color">
+                                            <div className="pro-details-color-wrap">
+                                                <span>Color</span>
+                                                <div className="pro-details-color-content">
+                                                    <ul>
+                                                        <li className="blue"></li>
+                                                        <li className="maroon active"></li>
+                                                        <li className="gray"></li>
+                                                        <li className="green"></li>
+                                                        <li className="yellow"></li>
+                                                        <li className="white"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div className="pro-details-size">
+                                                <span>Size</span>
+                                                <div className="pro-details-size-content">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">s</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">m</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">l</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">xl</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">xxl</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="pro-details-quality">
+                                            <div className="cart-plus-minus">
+                                                <input className="cart-plus-minus-box" type="text" name="qtybutton" />
+                                            </div>
+                                            <div className="pro-details-cart btn-hover">
+                                                <a href="#">Add To Cart</a>
+                                            </div>
+                                            <div className="pro-details-wishlist">
+                                                <a href="#">
+                                                    <i className="fa fa-heart-o"></i>
+                                                </a>
+                                            </div>
+                                            <div className="pro-details-compare">
+                                                <a href="#">
+                                                    <i className="pe-7s-shuffle"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div className="pro-details-meta">
+                                            <span>Categories :</span>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Minimal,</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Furniture,</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Electronic</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="pro-details-meta">
+                                            <span>Tag :</span>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Fashion, </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Furniture,</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Electronic</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="pro-details-social">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-dribbble"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-pinterest-p"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i className="fa fa-linkedin"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }
