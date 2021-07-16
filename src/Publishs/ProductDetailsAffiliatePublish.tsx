@@ -205,8 +205,7 @@ export default function ProductDetailsAffiliatePublish() {
                                             </li>
                                             <li>
                                                 <a href="shop.html">
-                                                    {' '}
-                                                    Shop <i className="fa fa-angle-down"></i>{' '}
+                                                    Shop <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="mega-menu">
                                                     <li>
@@ -299,7 +298,6 @@ export default function ProductDetailsAffiliatePublish() {
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    {' '}
                                                     Pages <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="submenu">
@@ -960,7 +958,7 @@ export default function ProductDetailsAffiliatePublish() {
                                         exercitation ullamco laboris nisi ut aliquip ex ea commo consequat. Duis aute
                                         irure dolor in reprehend in voluptate velit esse cillum dolore eu fugiat nulla
                                         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                        officia deserunt{' '}
+                                        officia deserunt
                                     </p>
                                 </div>
                             </div>
@@ -971,7 +969,7 @@ export default function ProductDetailsAffiliatePublish() {
                                             <span>Weight</span> 400 g
                                         </li>
                                         <li>
-                                            <span>Dimensions</span>10 x 10 x 15 cm{' '}
+                                            <span>Dimensions</span>10 x 10 x 15 cm
                                         </li>
                                         <li>
                                             <span>Materials</span> 60% cotton, 40% polyester
@@ -1044,7 +1042,7 @@ export default function ProductDetailsAffiliatePublish() {
                                                         <p>
                                                             Vestibulum ante ipsum primis aucibus orci luctustrices
                                                             posuere cubilia Curae Sus pen disse viverra ed viverra.
-                                                            Mauris ullarper euismod vehicula.{' '}
+                                                            Mauris ullarper euismod vehicula.
                                                         </p>
                                                     </div>
                                                 </div>

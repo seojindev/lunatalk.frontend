@@ -146,8 +146,7 @@ export default function MainPublish() {
                                         </li>
                                         <li>
                                             <a href="shop.html">
-                                                {' '}
-                                                Shop <i className="fa fa-angle-down"></i>{' '}
+                                                Shop <i className="fa fa-angle-down"></i>
                                             </a>
                                             <ul className="mega-menu">
                                                 <li>
@@ -231,7 +230,6 @@ export default function MainPublish() {
                                         </li>
                                         <li>
                                             <a href="#">
-                                                {' '}
                                                 Pages <i className="fa fa-angle-down"></i>
                                             </a>
                                             <ul className="submenu">

@@ -205,8 +205,8 @@ export default function ShopNoSidebarPublish() {
                                             </li>
                                             <li>
                                                 <a href="shop.html">
-                                                    {' '}
-                                                    Shop <i className="fa fa-angle-down"></i>{' '}
+
+                                                    Shop <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="mega-menu">
                                                     <li>
@@ -299,7 +299,7 @@ export default function ShopNoSidebarPublish() {
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    {' '}
+
                                                     Pages <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="submenu">
@@ -1325,7 +1325,7 @@ export default function ShopNoSidebarPublish() {
                                                         <p>
                                                             Lorem ipsum dolor sit amet, consecteto adipisic elit eiusm
                                                             tempor incidid ut labore et dolore magna aliqua Ut enim ad
-                                                            minim{' '}
+                                                            minim
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>
@@ -1376,7 +1376,7 @@ export default function ShopNoSidebarPublish() {
                                                         <p>
                                                             Lorem ipsum dolor sit amet, consecteto adipisic elit eiusm
                                                             tempor incidid ut labore et dolore magna aliqua Ut enim ad
-                                                            minim{' '}
+                                                            minim
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>
@@ -1428,7 +1428,7 @@ export default function ShopNoSidebarPublish() {
                                                         <p>
                                                             Lorem ipsum dolor sit amet, consecteto adipisic elit eiusm
                                                             tempor incidid ut labore et dolore magna aliqua Ut enim ad
-                                                            minim{' '}
+                                                            minim
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>
@@ -1479,7 +1479,7 @@ export default function ShopNoSidebarPublish() {
                                                         <p>
                                                             Lorem ipsum dolor sit amet, consecteto adipisic elit eiusm
                                                             tempor incidid ut labore et dolore magna aliqua Ut enim ad
-                                                            minim{' '}
+                                                            minim
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>

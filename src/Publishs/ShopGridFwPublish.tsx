@@ -205,8 +205,8 @@ export default function ShopGridFwPublish() {
                                             </li>
                                             <li>
                                                 <a href="shop.html">
-                                                    {' '}
-                                                    Shop <i className="fa fa-angle-down"></i>{' '}
+
+                                                    Shop <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="mega-menu">
                                                     <li>
@@ -299,7 +299,7 @@ export default function ShopGridFwPublish() {
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    {' '}
+
                                                     Pages <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="submenu">
@@ -1498,7 +1498,7 @@ export default function ShopGridFwPublish() {
                                                             form, by injected humour, or randomised words which don't
                                                             look even slightly believable. If you are going to use a
                                                             passage of Lorem Ipsum, you need to be sure there isn't
-                                                            anything embarrassing hidden.{' '}
+                                                            anything embarrassing hidden.
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>
@@ -1552,7 +1552,7 @@ export default function ShopGridFwPublish() {
                                                             form, by injected humour, or randomised words which don't
                                                             look even slightly believable. If you are going to use a
                                                             passage of Lorem Ipsum, you need to be sure there isn't
-                                                            anything embarrassing hidden.{' '}
+                                                            anything embarrassing hidden.
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>
@@ -1607,7 +1607,7 @@ export default function ShopGridFwPublish() {
                                                             form, by injected humour, or randomised words which don't
                                                             look even slightly believable. If you are going to use a
                                                             passage of Lorem Ipsum, you need to be sure there isn't
-                                                            anything embarrassing hidden.{' '}
+                                                            anything embarrassing hidden.
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>
@@ -1661,7 +1661,7 @@ export default function ShopGridFwPublish() {
                                                             form, by injected humour, or randomised words which don't
                                                             look even slightly believable. If you are going to use a
                                                             passage of Lorem Ipsum, you need to be sure there isn't
-                                                            anything embarrassing hidden.{' '}
+                                                            anything embarrassing hidden.
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>
@@ -1715,16 +1715,16 @@ export default function ShopGridFwPublish() {
                                         <ul>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        On Sale <span>4</span>{' '}
+                                                        On Sale <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
                                                         New <span>4</span>
                                                     </a>
@@ -1733,9 +1733,9 @@ export default function ShopGridFwPublish() {
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        In Stock <span>4</span>{' '}
+                                                        In Stock <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
@@ -1758,36 +1758,36 @@ export default function ShopGridFwPublish() {
                                         <ul>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Green <span>4</span>{' '}
+                                                        Green <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Cream <span>4</span>{' '}
+                                                        Cream <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Blue <span>4</span>{' '}
+                                                        Blue <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Black <span>4</span>{' '}
+                                                        Black <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>

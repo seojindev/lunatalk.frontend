@@ -205,8 +205,7 @@ export default function ShopListFw2ColPublish() {
                                             </li>
                                             <li>
                                                 <a href="shop.html">
-                                                    {' '}
-                                                    Shop <i className="fa fa-angle-down"></i>{' '}
+                                                    Shop <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="mega-menu">
                                                     <li>
@@ -299,7 +298,6 @@ export default function ShopListFw2ColPublish() {
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    {' '}
                                                     Pages <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="submenu">
@@ -910,7 +908,7 @@ export default function ShopListFw2ColPublish() {
                                                         <p>
                                                             There are many variations of passages of Lorem Ipsum
                                                             available, but the majority have suffered alteration in some
-                                                            form, by injected.{' '}
+                                                            form, by injected.
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>
@@ -963,7 +961,7 @@ export default function ShopListFw2ColPublish() {
                                                         <p>
                                                             There are many variations of passages of Lorem Ipsum
                                                             available, but the majority have suffered alteration in some
-                                                            form, by injected.{' '}
+                                                            form, by injected.
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>
@@ -1017,7 +1015,7 @@ export default function ShopListFw2ColPublish() {
                                                         <p>
                                                             There are many variations of passages of Lorem Ipsum
                                                             available, but the majority have suffered alteration in some
-                                                            form, by injected.{' '}
+                                                            form, by injected.
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>
@@ -1070,7 +1068,7 @@ export default function ShopListFw2ColPublish() {
                                                         <p>
                                                             There are many variations of passages of Lorem Ipsum
                                                             available, but the majority have suffered alteration in some
-                                                            form, by injected.{' '}
+                                                            form, by injected.
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>
@@ -1123,7 +1121,7 @@ export default function ShopListFw2ColPublish() {
                                                         <p>
                                                             There are many variations of passages of Lorem Ipsum
                                                             available, but the majority have suffered alteration in some
-                                                            form, by injected.{' '}
+                                                            form, by injected.
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>
@@ -1177,7 +1175,7 @@ export default function ShopListFw2ColPublish() {
                                                         <p>
                                                             There are many variations of passages of Lorem Ipsum
                                                             available, but the majority have suffered alteration in some
-                                                            form, by injected.{' '}
+                                                            form, by injected.
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>

@@ -205,8 +205,8 @@ export default function AboutPublish() {
                                             </li>
                                             <li>
                                                 <a href="shop.html">
-                                                    {' '}
-                                                    Shop <i className="fa fa-angle-down"></i>{' '}
+
+                                                    Shop <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="mega-menu">
                                                     <li>
@@ -299,7 +299,7 @@ export default function AboutPublish() {
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    {' '}
+
                                                     Pages <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="submenu">
@@ -749,7 +749,7 @@ export default function AboutPublish() {
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commo consequat irure{' '}
+                            laboris nisi ut aliquip ex ea commo consequat irure
                         </p>
                     </div>
                 </div>

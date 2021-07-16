@@ -205,8 +205,7 @@ export default function BlogDetailsPublish() {
                                             </li>
                                             <li>
                                                 <a href="shop.html">
-                                                    {' '}
-                                                    Shop <i className="fa fa-angle-down"></i>{' '}
+                                                    Shop <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="mega-menu">
                                                     <li>
@@ -299,7 +298,6 @@ export default function BlogDetailsPublish() {
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    {' '}
                                                     Pages <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="submenu">
@@ -770,7 +768,7 @@ export default function BlogDetailsPublish() {
                                             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                                             non proident, sunt in culpa qei officia deser mollit anim id est laborum.
                                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                            doloremque laudantium, totam rem aperiam.{' '}
+                                            doloremque laudantium, totam rem aperiam.
                                         </p>
                                         <blockquote>
                                             Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor
@@ -845,7 +843,6 @@ export default function BlogDetailsPublish() {
                                 </div>
                                 <div className="next-previous-post">
                                     <a href="#">
-                                        {' '}
                                         <i className="fa fa-angle-left"></i> prev post
                                     </a>
                                     <a href="#">
@@ -864,7 +861,7 @@ export default function BlogDetailsPublish() {
                                             <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                 tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim
-                                                veniam,{' '}
+                                                veniam,
                                             </p>
                                             <div className="blog-details-btn">
                                                 <a href="blog-details.html">read more</a>
@@ -881,7 +878,7 @@ export default function BlogDetailsPublish() {
                                             <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                                 tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim
-                                                veniam,{' '}
+                                                veniam,
                                             </p>
                                             <div className="blog-details-btn">
                                                 <a href="blog-details.html">read more</a>
@@ -990,36 +987,36 @@ export default function BlogDetailsPublish() {
                                         <ul>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Women <span>4</span>{' '}
+                                                        Women <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Men <span>4</span>{' '}
+                                                        Men <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Bags <span>4</span>{' '}
+                                                        Bags <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Accessories <span>4</span>{' '}
+                                                        Accessories <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>

@@ -205,8 +205,7 @@ export default function CheckoutPublish() {
                                             </li>
                                             <li>
                                                 <a href="shop.html">
-                                                    {' '}
-                                                    Shop <i className="fa fa-angle-down"></i>{' '}
+                                                    Shop <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="mega-menu">
                                                     <li>
@@ -299,7 +298,6 @@ export default function CheckoutPublish() {
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    {' '}
                                                     Pages <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="submenu">
@@ -938,11 +936,11 @@ export default function CheckoutPublish() {
                                         <div className="your-order-middle">
                                             <ul>
                                                 <li>
-                                                    <span className="order-middle-left">Product Name X 1</span>{' '}
+                                                    <span className="order-middle-left">Product Name X 1</span>
                                                     <span className="order-price">$329 </span>
                                                 </li>
                                                 <li>
-                                                    <span className="order-middle-left">Product Name X 1</span>{' '}
+                                                    <span className="order-middle-left">Product Name X 1</span>
                                                     <span className="order-price">$329 </span>
                                                 </li>
                                             </ul>

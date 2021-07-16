@@ -205,8 +205,7 @@ export default function MyAccountPublish() {
                                             </li>
                                             <li>
                                                 <a href="shop.html">
-                                                    {' '}
-                                                    Shop <i className="fa fa-angle-down"></i>{' '}
+                                                    Shop <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="mega-menu">
                                                     <li>
@@ -299,7 +298,6 @@ export default function MyAccountPublish() {
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    {' '}
                                                     Pages <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="submenu">
@@ -750,9 +748,9 @@ export default function MyAccountPublish() {
                                     <div className="panel panel-default single-my-account">
                                         <div className="panel-heading my-account-title">
                                             <h3 className="panel-title">
-                                                <span>1 .</span>{' '}
+                                                <span>1 .</span>
                                                 <a data-toggle="collapse" data-parent="#faq" href="#my-account-1">
-                                                    Edit your account information{' '}
+                                                    Edit your account information
                                                 </a>
                                             </h3>
                                         </div>
@@ -812,9 +810,9 @@ export default function MyAccountPublish() {
                                     <div className="panel panel-default single-my-account">
                                         <div className="panel-heading my-account-title">
                                             <h3 className="panel-title">
-                                                <span>2 .</span>{' '}
+                                                <span>2 .</span>
                                                 <a data-toggle="collapse" data-parent="#faq" href="#my-account-2">
-                                                    Change your password{' '}
+                                                    Change your password
                                                 </a>
                                             </h3>
                                         </div>
@@ -856,9 +854,9 @@ export default function MyAccountPublish() {
                                     <div className="panel panel-default single-my-account">
                                         <div className="panel-heading my-account-title">
                                             <h3 className="panel-title">
-                                                <span>3 .</span>{' '}
+                                                <span>3 .</span>
                                                 <a data-toggle="collapse" data-parent="#faq" href="#my-account-3">
-                                                    Modify your address book entries{' '}
+                                                    Modify your address book entries
                                                 </a>
                                             </h3>
                                         </div>

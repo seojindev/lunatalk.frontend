@@ -205,8 +205,7 @@ export default function BlogRightSidebarPublish() {
                                             </li>
                                             <li>
                                                 <a href="shop.html">
-                                                    {' '}
-                                                    Shop <i className="fa fa-angle-down"></i>{' '}
+                                                    Shop <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="mega-menu">
                                                     <li>
@@ -299,7 +298,6 @@ export default function BlogRightSidebarPublish() {
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    {' '}
                                                     Pages <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="submenu">
@@ -1082,36 +1080,36 @@ export default function BlogRightSidebarPublish() {
                                         <ul>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Women <span>4</span>{' '}
+                                                        Women <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Men <span>4</span>{' '}
+                                                        Men <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Bags <span>4</span>{' '}
+                                                        Bags <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Accessories <span>4</span>{' '}
+                                                        Accessories <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>

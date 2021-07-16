@@ -205,8 +205,8 @@ export default function ShopPublish() {
                                             </li>
                                             <li>
                                                 <a href="shop.html">
-                                                    {' '}
-                                                    Shop <i className="fa fa-angle-down"></i>{' '}
+
+                                                    Shop <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="mega-menu">
                                                     <li>
@@ -299,7 +299,7 @@ export default function ShopPublish() {
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    {' '}
+
                                                     Pages <i className="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul className="submenu">
@@ -1325,7 +1325,7 @@ export default function ShopPublish() {
                                                         <p>
                                                             Lorem ipsum dolor sit amet, consecteto adipisic elit eiusm
                                                             tempor incidid ut labore et dolore magna aliqua Ut enim ad
-                                                            minim{' '}
+                                                            minim
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>
@@ -1376,7 +1376,7 @@ export default function ShopPublish() {
                                                         <p>
                                                             Lorem ipsum dolor sit amet, consecteto adipisic elit eiusm
                                                             tempor incidid ut labore et dolore magna aliqua Ut enim ad
-                                                            minim{' '}
+                                                            minim
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>
@@ -1428,7 +1428,7 @@ export default function ShopPublish() {
                                                         <p>
                                                             Lorem ipsum dolor sit amet, consecteto adipisic elit eiusm
                                                             tempor incidid ut labore et dolore magna aliqua Ut enim ad
-                                                            minim{' '}
+                                                            minim
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>
@@ -1479,7 +1479,7 @@ export default function ShopPublish() {
                                                         <p>
                                                             Lorem ipsum dolor sit amet, consecteto adipisic elit eiusm
                                                             tempor incidid ut labore et dolore magna aliqua Ut enim ad
-                                                            minim{' '}
+                                                            minim
                                                         </p>
                                                         <div className="shop-list-btn btn-hover">
                                                             <a href="#">ADD TO CART</a>
@@ -1533,16 +1533,16 @@ export default function ShopPublish() {
                                         <ul>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        On Sale <span>4</span>{' '}
+                                                        On Sale <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
                                                         New <span>4</span>
                                                     </a>
@@ -1551,9 +1551,9 @@ export default function ShopPublish() {
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        In Stock <span>4</span>{' '}
+                                                        In Stock <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
@@ -1576,36 +1576,36 @@ export default function ShopPublish() {
                                         <ul>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Green <span>4</span>{' '}
+                                                        Green <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Cream <span>4</span>{' '}
+                                                        Cream <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Blue <span>4</span>{' '}
+                                                        Blue <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className="sidebar-widget-list-left">
-                                                    <input type="checkbox" />{' '}
+                                                    <input type="checkbox" />
                                                     <a href="#">
-                                                        Black <span>4</span>{' '}
+                                                        Black <span>4</span>
                                                     </a>
                                                     <span className="checkmark"></span>
                                                 </div>
