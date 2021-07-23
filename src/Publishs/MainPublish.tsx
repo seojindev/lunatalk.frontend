@@ -658,7 +658,7 @@ export default function MainPublish() {
                     </div>
                 </div>
             </header>
-            <div className="slider-area">
+            <div className="slider-area slider-height-1" style={{ border: '1px solid #ccc' }}>
                 <div className="slider-active owl-carousel nav-style-1 owl-dot-none">
                     <div className="single-slider slider-height-1 bg-purple">
                         <div className="container">
@@ -721,520 +721,58 @@ export default function MainPublish() {
                     <div className="row">
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="support-wrap mb-30 support-1">
-                                <div className="support-icon">
+                                {/* <div className="support-icon">
                                     <img className="animated" src="/assets/img/icon-img/support-1.png" alt="" />
-                                </div>
+                                </div> */}
                                 <div className="support-content">
-                                    <h5>Free Shipping</h5>
-                                    <p>Free shipping on all order</p>
+                                    <h5>ACC</h5>
+                                    <p>이미지 적용 될 구간</p>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="support-wrap mb-30 support-2">
-                                <div className="support-icon">
+                                {/* <div className="support-icon">
                                     <img className="animated" src="/assets/img/icon-img/support-2.png" alt="" />
-                                </div>
+                                </div> */}
                                 <div className="support-content">
-                                    <h5>Support 24/7</h5>
-                                    <p>Free shipping on all order</p>
+                                    <h5>BAG</h5>
+                                    <p>이미지 적용 될 구간</p>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="support-wrap mb-30 support-3">
-                                <div className="support-icon">
+                                {/* <div className="support-icon">
                                     <img className="animated" src="/assets/img/icon-img/support-3.png" alt="" />
-                                </div>
+                                </div> */}
                                 <div className="support-content">
-                                    <h5>Money Return</h5>
-                                    <p>Free shipping on all order</p>
+                                    <h5>Stationery</h5>
+                                    <p>이미지 적용 될 구간</p>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="support-wrap mb-30 support-4">
-                                <div className="support-icon">
+                                {/* <div className="support-icon">
                                     <img className="animated" src="/assets/img/icon-img/support-4.png" alt="" />
-                                </div>
+                                </div> */}
                                 <div className="support-content">
-                                    <h5>Order Discount</h5>
-                                    <p>Free shipping on all order</p>
+                                    <h5>Wallet</h5>
+                                    <p>이미지 적용 될 구간</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            {/* best Item */}
             <div className="product-area pb-60">
                 <div className="container">
-                    <div className="section-title text-center">
-                        <h2>DAILY DEALS!</h2>
-                    </div>
-                    <div className="product-tab-list nav pt-30 pb-55 text-center">
-                        <a href="#product-1" data-toggle="tab">
-                            <h4>New Arrivals </h4>
-                        </a>
-                        <a className="active" href="#product-2" data-toggle="tab">
-                            <h4>Best Sellers </h4>
-                        </a>
-                        <a href="#product-3" data-toggle="tab">
-                            <h4>Sale Items</h4>
-                        </a>
+                    <div className="section-title text-center pb-55">
+                        <h2>BEST ITEM</h2>
                     </div>
                     <div className="tab-content jump">
-                        <div className="tab-pane" id="product-1">
-                            <div className="row">
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-8.jpg"
-                                                    alt=""
-                                                />
-                                                <img className="hover-img" src="/assets/img/product/pro-6.jpg" alt="" />
-                                            </a>
-                                            <span className="pink">-10%</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Crew Ventile Coat</a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                                <span className="old">$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-7.jpg"
-                                                    alt=""
-                                                />
-                                                <img
-                                                    className="hover-img"
-                                                    src="/assets/img/product/pro-4-1.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                            <span className="purple">New</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Trench Winter Coat</a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-6.jpg"
-                                                    alt=""
-                                                />
-                                                <img
-                                                    className="hover-img"
-                                                    src="/assets/img/product/pro-6-1.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                            <span className="pink">-10%</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Winter Overcoat</a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                                <span className="old">$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-5.jpg"
-                                                    alt=""
-                                                />
-                                                <img
-                                                    className="hover-img"
-                                                    src="/assets/img/product/pro-5-1.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                            <span className="purple">New</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Nice Black Dress</a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-4.jpg"
-                                                    alt=""
-                                                />
-                                                <img
-                                                    className="hover-img"
-                                                    src="/assets/img/product/pro-4-1.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                            <span className="pink">-10%</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Trench Winter Coat</a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                                <span className="old">$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-3.jpg"
-                                                    alt=""
-                                                />
-                                                <img
-                                                    className="hover-img"
-                                                    src="/assets/img/product/pro-3-1.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                            <span className="purple">New</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Winter Zipper </a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-2.jpg"
-                                                    alt=""
-                                                />
-                                                <img
-                                                    className="hover-img"
-                                                    src="/assets/img/product/pro-2-1.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                            <span className="pink">-10%</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Trench Winter Coat</a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                                <span className="old">$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-1.jpg"
-                                                    alt=""
-                                                />
-                                                <img
-                                                    className="hover-img"
-                                                    src="/assets/img/product/pro-1-1.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                            <span className="purple">New</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Winter Zipper </a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div className="tab-pane active" id="product-2">
                             <div className="row">
                                 <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
@@ -1243,28 +781,28 @@ export default function MainPublish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/pro-1.jpg"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/pro-1-1.jpg"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
                                                     alt=""
                                                 />
                                             </a>
-                                            <span className="pink">-10%</span>
+                                            {/* <span className="pink">-10%</span> */}
                                             <div className="product-action">
+                                                <div className="pro-same-action pro-cart">
+                                                    <a title="Add To Cart" href="#">
+                                                        <i className="pe-7s-cart"></i> 장바구니 담기
+                                                    </a>
+                                                </div>
                                                 <div className="pro-same-action pro-wishlist">
                                                     <a title="Wishlist" href="wishlist.html">
                                                         <i className="pe-7s-like"></i>
                                                     </a>
                                                 </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
+                                                {/* <div className="pro-same-action pro-quickview">
                                                     <a
                                                         title="Quick View"
                                                         href="#"
@@ -1273,23 +811,35 @@ export default function MainPublish() {
                                                     >
                                                         <i className="pe-7s-look"></i>
                                                     </a>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div>
                                         <div className="product-content text-center">
                                             <h3>
-                                                <a href="product-details.html">Winter Zipper </a>
+                                                <a href="product-details.html">빈티지 썸머 쇼퍼백 세트</a>
+                                                <p className="review-count">리뷰 : 200</p>
                                             </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
+                                            <div className="product-option">
+                                                <span>오렌지</span>
+                                                <span>블루</span>
                                             </div>
                                             <div className="product-price">
-                                                <span>$ 60.00</span>
-                                                <span className="old">$ 60.00</span>
+                                                <p className="old">25,000원</p>
+                                                <p>15,000원</p>
+                                            </div>
+                                            <div className="product-icon">
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/37?1626422274"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/47?1626422241"
+                                                        alt="img"
+                                                    />
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -1300,28 +850,28 @@ export default function MainPublish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/pro-2.jpg"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/pro-2-1.jpg"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
                                                     alt=""
                                                 />
                                             </a>
-                                            <span className="purple">New</span>
+                                            {/* <span className="pink">-10%</span> */}
                                             <div className="product-action">
+                                                <div className="pro-same-action pro-cart">
+                                                    <a title="Add To Cart" href="#">
+                                                        <i className="pe-7s-cart"></i> 장바구니 담기
+                                                    </a>
+                                                </div>
                                                 <div className="pro-same-action pro-wishlist">
                                                     <a title="Wishlist" href="wishlist.html">
                                                         <i className="pe-7s-like"></i>
                                                     </a>
                                                 </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
+                                                {/* <div className="pro-same-action pro-quickview">
                                                     <a
                                                         title="Quick View"
                                                         href="#"
@@ -1330,22 +880,35 @@ export default function MainPublish() {
                                                     >
                                                         <i className="pe-7s-look"></i>
                                                     </a>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div>
                                         <div className="product-content text-center">
                                             <h3>
-                                                <a href="product-details.html">Trench Winter Coat</a>
+                                                <a href="product-details.html">빈티지 썸머 쇼퍼백 세트</a>
+                                                <p className="review-count">리뷰 : 200</p>
                                             </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
+                                            <div className="product-option">
+                                                <span>오렌지</span>
+                                                <span>블루</span>
                                             </div>
                                             <div className="product-price">
-                                                <span>$ 60.00</span>
+                                                <p className="old">25,000원</p>
+                                                <p>15,000원</p>
+                                            </div>
+                                            <div className="product-icon">
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/37?1626422274"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/47?1626422241"
+                                                        alt="img"
+                                                    />
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -1356,28 +919,28 @@ export default function MainPublish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/pro-3.jpg"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/pro-3-1.jpg"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
                                                     alt=""
                                                 />
                                             </a>
-                                            <span className="pink">-10%</span>
+                                            {/* <span className="pink">-10%</span> */}
                                             <div className="product-action">
+                                                <div className="pro-same-action pro-cart">
+                                                    <a title="Add To Cart" href="#">
+                                                        <i className="pe-7s-cart"></i> 장바구니 담기
+                                                    </a>
+                                                </div>
                                                 <div className="pro-same-action pro-wishlist">
                                                     <a title="Wishlist" href="wishlist.html">
                                                         <i className="pe-7s-like"></i>
                                                     </a>
                                                 </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
+                                                {/* <div className="pro-same-action pro-quickview">
                                                     <a
                                                         title="Quick View"
                                                         href="#"
@@ -1386,23 +949,35 @@ export default function MainPublish() {
                                                     >
                                                         <i className="pe-7s-look"></i>
                                                     </a>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div>
                                         <div className="product-content text-center">
                                             <h3>
-                                                <a href="product-details.html">Winter Zipper </a>
+                                                <a href="product-details.html">빈티지 썸머 쇼퍼백 세트</a>
+                                                <p className="review-count">리뷰 : 200</p>
                                             </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
+                                            <div className="product-option">
+                                                <span>오렌지</span>
+                                                <span>블루</span>
                                             </div>
                                             <div className="product-price">
-                                                <span>$ 60.00</span>
-                                                <span className="old">$ 60.00</span>
+                                                <p className="old">25,000원</p>
+                                                <p>15,000원</p>
+                                            </div>
+                                            <div className="product-icon">
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/37?1626422274"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/47?1626422241"
+                                                        alt="img"
+                                                    />
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -1413,28 +988,28 @@ export default function MainPublish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/pro-4.jpg"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/pro-4-1.jpg"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
                                                     alt=""
                                                 />
                                             </a>
-                                            <span className="purple">New</span>
+                                            {/* <span className="pink">-10%</span> */}
                                             <div className="product-action">
+                                                <div className="pro-same-action pro-cart">
+                                                    <a title="Add To Cart" href="#">
+                                                        <i className="pe-7s-cart"></i> 장바구니 담기
+                                                    </a>
+                                                </div>
                                                 <div className="pro-same-action pro-wishlist">
                                                     <a title="Wishlist" href="wishlist.html">
                                                         <i className="pe-7s-like"></i>
                                                     </a>
                                                 </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
+                                                {/* <div className="pro-same-action pro-quickview">
                                                     <a
                                                         title="Quick View"
                                                         href="#"
@@ -1443,674 +1018,35 @@ export default function MainPublish() {
                                                     >
                                                         <i className="pe-7s-look"></i>
                                                     </a>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div>
                                         <div className="product-content text-center">
                                             <h3>
-                                                <a href="product-details.html">Trench Winter Coat</a>
+                                                <a href="product-details.html">빈티지 썸머 쇼퍼백 세트</a>
+                                                <p className="review-count">리뷰 : 200</p>
                                             </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
+                                            <div className="product-option">
+                                                <span>오렌지</span>
+                                                <span>블루</span>
                                             </div>
                                             <div className="product-price">
-                                                <span>$ 60.00</span>
+                                                <p className="old">25,000원</p>
+                                                <p>15,000원</p>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-5.jpg"
-                                                    alt=""
-                                                />
-                                                <img
-                                                    className="hover-img"
-                                                    src="/assets/img/product/pro-5-1.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                            <span className="pink">-10%</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Nice Black Dress</a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                                <span className="old">$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-6.jpg"
-                                                    alt=""
-                                                />
-                                                <img
-                                                    className="hover-img"
-                                                    src="/assets/img/product/pro-6-1.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                            <span className="purple">New</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Winter Overcoat</a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-7.jpg"
-                                                    alt=""
-                                                />
-                                                <img
-                                                    className="hover-img"
-                                                    src="/assets/img/product/pro-4-1.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                            <span className="pink">-10%</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Trench Winter Coat</a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                                <span className="old">$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-8.jpg"
-                                                    alt=""
-                                                />
-                                                <img className="hover-img" src="/assets/img/product/pro-6.jpg" alt="" />
-                                            </a>
-                                            <span className="purple">New</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Crew Ventile Coat</a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="tab-pane" id="product-3">
-                            <div className="row">
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-6.jpg"
-                                                    alt=""
-                                                />
-                                                <img
-                                                    className="hover-img"
-                                                    src="/assets/img/product/pro-6-1.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                            <span className="pink">-10%</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Winter Overcoat</a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                                <span className="old">$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-5.jpg"
-                                                    alt=""
-                                                />
-                                                <img
-                                                    className="hover-img"
-                                                    src="/assets/img/product/pro-5-1.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                            <span className="purple">New</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Nice Black Dress</a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-4.jpg"
-                                                    alt=""
-                                                />
-                                                <img
-                                                    className="hover-img"
-                                                    src="/assets/img/product/pro-4-1.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                            <span className="pink">-10%</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Trench Winter Coat</a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                                <span className="old">$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-3.jpg"
-                                                    alt=""
-                                                />
-                                                <img
-                                                    className="hover-img"
-                                                    src="/assets/img/product/pro-3-1.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                            <span className="purple">New</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Winter Zipper </a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-2.jpg"
-                                                    alt=""
-                                                />
-                                                <img
-                                                    className="hover-img"
-                                                    src="/assets/img/product/pro-2-1.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                            <span className="pink">-10%</span>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Trench Winter Coat</a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                                <span className="old">$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-1.jpg"
-                                                    alt=""
-                                                />
-                                                <img
-                                                    className="hover-img"
-                                                    src="/assets/img/product/pro-1-1.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                            <span className="purple">New</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Winter Zipper </a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-8.jpg"
-                                                    alt=""
-                                                />
-                                                <img className="hover-img" src="/assets/img/product/pro-6.jpg" alt="" />
-                                            </a>
-                                            <span className="pink">-10%</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Crew Ventile Coat</a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
-                                                <span className="old">$ 60.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
-                                    <div className="product-wrap mb-25">
-                                        <div className="product-img">
-                                            <a href="product-details.html">
-                                                <img
-                                                    className="default-img"
-                                                    src="/assets/img/product/pro-7.jpg"
-                                                    alt=""
-                                                />
-                                                <img
-                                                    className="hover-img"
-                                                    src="/assets/img/product/pro-4-1.jpg"
-                                                    alt=""
-                                                />
-                                            </a>
-                                            <span className="purple">New</span>
-                                            <div className="product-action">
-                                                <div className="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="wishlist.html">
-                                                        <i className="pe-7s-like"></i>
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#">
-                                                        <i className="pe-7s-cart"></i> Add to cart
-                                                    </a>
-                                                </div>
-                                                <div className="pro-same-action pro-quickview">
-                                                    <a
-                                                        title="Quick View"
-                                                        href="#"
-                                                        data-toggle="modal"
-                                                        data-target="#exampleModal"
-                                                    >
-                                                        <i className="pe-7s-look"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="product-content text-center">
-                                            <h3>
-                                                <a href="product-details.html">Trench Winter Coat</a>
-                                            </h3>
-                                            <div className="product-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <div className="product-price">
-                                                <span>$ 60.00</span>
+                                            <div className="product-icon">
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/37?1626422274"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/47?1626422241"
+                                                        alt="img"
+                                                    />
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -2120,74 +1056,576 @@ export default function MainPublish() {
                     </div>
                 </div>
             </div>
-            <div className="blog-area pb-55">
+            {/* //best Item */}
+            {/* new Item */}
+            <div className="product-area pb-60">
                 <div className="container">
-                    <div className="section-title text-center mb-55">
-                        <h2>OUR BLOG</h2>
+                    <div className="section-title text-center pb-55">
+                        <h2>NEW ITEM</h2>
                     </div>
-                    <div className="row">
-                        <div className="col-lg-4 col-md-6 col-sm-6">
-                            <div className="blog-wrap mb-30 scroll-zoom">
-                                <div className="blog-img">
-                                    <a href="blog-details.html">
-                                        <img src="/assets/img/blog/blog-1.jpg" alt="" />
-                                    </a>
-                                    <span className="purple">Lifestyle</span>
-                                </div>
-                                <div className="blog-content-wrap">
-                                    <div className="blog-content text-center">
-                                        <h3>
-                                            <a href="blog-details.html">
-                                                Lorem ipsum dolor sit <br /> amet consec.
+                    <div className="tab-content jump">
+                        <div className="tab-pane active" id="product-2">
+                            <div className="row">
+                                {/* one Item */}
+                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                                    <div className="product-wrap mb-25">
+                                        <div className="product-img">
+                                            <a href="product-details.html">
+                                                <img
+                                                    className="default-img"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                    alt=""
+                                                />
+                                                <img
+                                                    className="hover-img"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                    alt=""
+                                                />
                                             </a>
-                                        </h3>
-                                        <span>
-                                            By Shop <a href="#">Admin</a>
-                                        </span>
+                                            {/* <span className="pink">-10%</span> */}
+                                            <div className="product-action">
+                                                <div className="pro-same-action pro-cart">
+                                                    <a title="Add To Cart" href="#">
+                                                        <i className="pe-7s-cart"></i> 장바구니 담기
+                                                    </a>
+                                                </div>
+                                                <div className="pro-same-action pro-wishlist">
+                                                    <a title="Wishlist" href="wishlist.html">
+                                                        <i className="pe-7s-like"></i>
+                                                    </a>
+                                                </div>
+                                                {/* <div className="pro-same-action pro-quickview">
+                                                    <a
+                                                        title="Quick View"
+                                                        href="#"
+                                                        data-toggle="modal"
+                                                        data-target="#exampleModal"
+                                                    >
+                                                        <i className="pe-7s-look"></i>
+                                                    </a>
+                                                </div> */}
+                                            </div>
+                                        </div>
+                                        <div className="product-content text-center">
+                                            <h3>
+                                                <a href="product-details.html">빈티지 썸머 쇼퍼백 세트</a>
+                                                <p className="review-count">리뷰 : 200</p>
+                                            </h3>
+                                            <div className="product-option">
+                                                <span>오렌지</span>
+                                                <span>블루</span>
+                                            </div>
+                                            <div className="product-price">
+                                                <p className="old">25,000원</p>
+                                                <p>15,000원</p>
+                                            </div>
+                                            <div className="product-icon">
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/37?1626422274"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/47?1626422241"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6">
-                            <div className="blog-wrap mb-30 scroll-zoom">
-                                <div className="blog-img">
-                                    <a href="blog-details.html">
-                                        <img src="/assets/img/blog/blog-2.jpg" alt="" />
-                                    </a>
-                                    <span className="pink">Lifestyle</span>
-                                </div>
-                                <div className="blog-content-wrap">
-                                    <div className="blog-content text-center">
-                                        <h3>
-                                            <a href="blog-details.html">
-                                                Lorem ipsum dolor sit <br /> amet consec.
+                                {/* one Item */}
+                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                                    <div className="product-wrap mb-25">
+                                        <div className="product-img">
+                                            <a href="product-details.html">
+                                                <img
+                                                    className="default-img"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                    alt=""
+                                                />
+                                                <img
+                                                    className="hover-img"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                    alt=""
+                                                />
                                             </a>
-                                        </h3>
-                                        <span>
-                                            By Shop <a href="#">Admin</a>
-                                        </span>
+                                            {/* <span className="pink">-10%</span> */}
+                                            <div className="product-action">
+                                                <div className="pro-same-action pro-cart">
+                                                    <a title="Add To Cart" href="#">
+                                                        <i className="pe-7s-cart"></i> 장바구니 담기
+                                                    </a>
+                                                </div>
+                                                <div className="pro-same-action pro-wishlist">
+                                                    <a title="Wishlist" href="wishlist.html">
+                                                        <i className="pe-7s-like"></i>
+                                                    </a>
+                                                </div>
+                                                {/* <div className="pro-same-action pro-quickview">
+                                                    <a
+                                                        title="Quick View"
+                                                        href="#"
+                                                        data-toggle="modal"
+                                                        data-target="#exampleModal"
+                                                    >
+                                                        <i className="pe-7s-look"></i>
+                                                    </a>
+                                                </div> */}
+                                            </div>
+                                        </div>
+                                        <div className="product-content text-center">
+                                            <h3>
+                                                <a href="product-details.html">빈티지 썸머 쇼퍼백 세트</a>
+                                                <p className="review-count">리뷰 : 200</p>
+                                            </h3>
+                                            <div className="product-option">
+                                                <span>오렌지</span>
+                                                <span>블루</span>
+                                            </div>
+                                            <div className="product-price">
+                                                <p className="old">25,000원</p>
+                                                <p>15,000원</p>
+                                            </div>
+                                            <div className="product-icon">
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/37?1626422274"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/47?1626422241"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6">
-                            <div className="blog-wrap mb-30 scroll-zoom">
-                                <div className="blog-img">
-                                    <a href="blog-details.html">
-                                        <img src="/assets/img/blog/blog-3.jpg" alt="" />
-                                    </a>
-                                    <span className="purple">Lifestyle</span>
-                                </div>
-                                <div className="blog-content-wrap">
-                                    <div className="blog-content text-center">
-                                        <h3>
-                                            <a href="blog-details.html">
-                                                Lorem ipsum dolor sit <br /> amet consec.
+                                {/* // one Item */}
+                                {/* one Item */}
+                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                                    <div className="product-wrap mb-25">
+                                        <div className="product-img">
+                                            <a href="product-details.html">
+                                                <img
+                                                    className="default-img"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                    alt=""
+                                                />
+                                                <img
+                                                    className="hover-img"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                    alt=""
+                                                />
                                             </a>
-                                        </h3>
-                                        <span>
-                                            By Shop <a href="#">Admin</a>
-                                        </span>
+                                            {/* <span className="pink">-10%</span> */}
+                                            <div className="product-action">
+                                                <div className="pro-same-action pro-cart">
+                                                    <a title="Add To Cart" href="#">
+                                                        <i className="pe-7s-cart"></i> 장바구니 담기
+                                                    </a>
+                                                </div>
+                                                <div className="pro-same-action pro-wishlist">
+                                                    <a title="Wishlist" href="wishlist.html">
+                                                        <i className="pe-7s-like"></i>
+                                                    </a>
+                                                </div>
+                                                {/* <div className="pro-same-action pro-quickview">
+                                                    <a
+                                                        title="Quick View"
+                                                        href="#"
+                                                        data-toggle="modal"
+                                                        data-target="#exampleModal"
+                                                    >
+                                                        <i className="pe-7s-look"></i>
+                                                    </a>
+                                                </div> */}
+                                            </div>
+                                        </div>
+                                        <div className="product-content text-center">
+                                            <h3>
+                                                <a href="product-details.html">빈티지 썸머 쇼퍼백 세트</a>
+                                                <p className="review-count">리뷰 : 200</p>
+                                            </h3>
+                                            <div className="product-option">
+                                                <span>오렌지</span>
+                                                <span>블루</span>
+                                            </div>
+                                            <div className="product-price">
+                                                <p className="old">25,000원</p>
+                                                <p>15,000원</p>
+                                            </div>
+                                            <div className="product-icon">
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/37?1626422274"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/47?1626422241"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* // one Item */}
+                                {/* one Item */}
+                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                                    <div className="product-wrap mb-25">
+                                        <div className="product-img">
+                                            <a href="product-details.html">
+                                                <img
+                                                    className="default-img"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                    alt=""
+                                                />
+                                                <img
+                                                    className="hover-img"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                    alt=""
+                                                />
+                                            </a>
+                                            {/* <span className="pink">-10%</span> */}
+                                            <div className="product-action">
+                                                <div className="pro-same-action pro-cart">
+                                                    <a title="Add To Cart" href="#">
+                                                        <i className="pe-7s-cart"></i> 장바구니 담기
+                                                    </a>
+                                                </div>
+                                                <div className="pro-same-action pro-wishlist">
+                                                    <a title="Wishlist" href="wishlist.html">
+                                                        <i className="pe-7s-like"></i>
+                                                    </a>
+                                                </div>
+                                                {/* <div className="pro-same-action pro-quickview">
+                                                    <a
+                                                        title="Quick View"
+                                                        href="#"
+                                                        data-toggle="modal"
+                                                        data-target="#exampleModal"
+                                                    >
+                                                        <i className="pe-7s-look"></i>
+                                                    </a>
+                                                </div> */}
+                                            </div>
+                                        </div>
+                                        <div className="product-content text-center">
+                                            <h3>
+                                                <a href="product-details.html">빈티지 썸머 쇼퍼백 세트</a>
+                                                <p className="review-count">리뷰 : 200</p>
+                                            </h3>
+                                            <div className="product-option">
+                                                <span>오렌지</span>
+                                                <span>블루</span>
+                                            </div>
+                                            <div className="product-price">
+                                                <p className="old">25,000원</p>
+                                                <p>15,000원</p>
+                                            </div>
+                                            <div className="product-icon">
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/37?1626422274"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/47?1626422241"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* // one Item */}
+                                {/* one Item */}
+                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                                    <div className="product-wrap mb-25">
+                                        <div className="product-img">
+                                            <a href="product-details.html">
+                                                <img
+                                                    className="default-img"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                    alt=""
+                                                />
+                                                <img
+                                                    className="hover-img"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                    alt=""
+                                                />
+                                            </a>
+                                            {/* <span className="pink">-10%</span> */}
+                                            <div className="product-action">
+                                                <div className="pro-same-action pro-cart">
+                                                    <a title="Add To Cart" href="#">
+                                                        <i className="pe-7s-cart"></i> 장바구니 담기
+                                                    </a>
+                                                </div>
+                                                <div className="pro-same-action pro-wishlist">
+                                                    <a title="Wishlist" href="wishlist.html">
+                                                        <i className="pe-7s-like"></i>
+                                                    </a>
+                                                </div>
+                                                {/* <div className="pro-same-action pro-quickview">
+                                                    <a
+                                                        title="Quick View"
+                                                        href="#"
+                                                        data-toggle="modal"
+                                                        data-target="#exampleModal"
+                                                    >
+                                                        <i className="pe-7s-look"></i>
+                                                    </a>
+                                                </div> */}
+                                            </div>
+                                        </div>
+                                        <div className="product-content text-center">
+                                            <h3>
+                                                <a href="product-details.html">빈티지 썸머 쇼퍼백 세트</a>
+                                                <p className="review-count">리뷰 : 200</p>
+                                            </h3>
+                                            <div className="product-option">
+                                                <span>오렌지</span>
+                                                <span>블루</span>
+                                            </div>
+                                            <div className="product-price">
+                                                <p className="old">25,000원</p>
+                                                <p>15,000원</p>
+                                            </div>
+                                            <div className="product-icon">
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/37?1626422274"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/47?1626422241"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* // one Item */}
+                                {/* // one Item */}
+                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                                    <div className="product-wrap mb-25">
+                                        <div className="product-img">
+                                            <a href="product-details.html">
+                                                <img
+                                                    className="default-img"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                    alt=""
+                                                />
+                                                <img
+                                                    className="hover-img"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                    alt=""
+                                                />
+                                            </a>
+                                            {/* <span className="pink">-10%</span> */}
+                                            <div className="product-action">
+                                                <div className="pro-same-action pro-cart">
+                                                    <a title="Add To Cart" href="#">
+                                                        <i className="pe-7s-cart"></i> 장바구니 담기
+                                                    </a>
+                                                </div>
+                                                <div className="pro-same-action pro-wishlist">
+                                                    <a title="Wishlist" href="wishlist.html">
+                                                        <i className="pe-7s-like"></i>
+                                                    </a>
+                                                </div>
+                                                {/* <div className="pro-same-action pro-quickview">
+                                                    <a
+                                                        title="Quick View"
+                                                        href="#"
+                                                        data-toggle="modal"
+                                                        data-target="#exampleModal"
+                                                    >
+                                                        <i className="pe-7s-look"></i>
+                                                    </a>
+                                                </div> */}
+                                            </div>
+                                        </div>
+                                        <div className="product-content text-center">
+                                            <h3>
+                                                <a href="product-details.html">빈티지 썸머 쇼퍼백 세트</a>
+                                                <p className="review-count">리뷰 : 200</p>
+                                            </h3>
+                                            <div className="product-option">
+                                                <span>오렌지</span>
+                                                <span>블루</span>
+                                            </div>
+                                            <div className="product-price">
+                                                <p className="old">25,000원</p>
+                                                <p>15,000원</p>
+                                            </div>
+                                            <div className="product-icon">
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/37?1626422274"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/47?1626422241"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                                    <div className="product-wrap mb-25">
+                                        <div className="product-img">
+                                            <a href="product-details.html">
+                                                <img
+                                                    className="default-img"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                    alt=""
+                                                />
+                                                <img
+                                                    className="hover-img"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                    alt=""
+                                                />
+                                            </a>
+                                            {/* <span className="pink">-10%</span> */}
+                                            <div className="product-action">
+                                                <div className="pro-same-action pro-cart">
+                                                    <a title="Add To Cart" href="#">
+                                                        <i className="pe-7s-cart"></i> 장바구니 담기
+                                                    </a>
+                                                </div>
+                                                <div className="pro-same-action pro-wishlist">
+                                                    <a title="Wishlist" href="wishlist.html">
+                                                        <i className="pe-7s-like"></i>
+                                                    </a>
+                                                </div>
+                                                {/* <div className="pro-same-action pro-quickview">
+                                                    <a
+                                                        title="Quick View"
+                                                        href="#"
+                                                        data-toggle="modal"
+                                                        data-target="#exampleModal"
+                                                    >
+                                                        <i className="pe-7s-look"></i>
+                                                    </a>
+                                                </div> */}
+                                            </div>
+                                        </div>
+                                        <div className="product-content text-center">
+                                            <h3>
+                                                <a href="product-details.html">빈티지 썸머 쇼퍼백 세트</a>
+                                                <p className="review-count">리뷰 : 200</p>
+                                            </h3>
+                                            <div className="product-option">
+                                                <span>오렌지</span>
+                                                <span>블루</span>
+                                            </div>
+                                            <div className="product-price">
+                                                <p className="old">25,000원</p>
+                                                <p>15,000원</p>
+                                            </div>
+                                            <div className="product-icon">
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/37?1626422274"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/47?1626422241"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                                    <div className="product-wrap mb-25">
+                                        <div className="product-img">
+                                            <a href="product-details.html">
+                                                <img
+                                                    className="default-img"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                    alt=""
+                                                />
+                                                <img
+                                                    className="hover-img"
+                                                    src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                    alt=""
+                                                />
+                                            </a>
+                                            {/* <span className="pink">-10%</span> */}
+                                            <div className="product-action">
+                                                <div className="pro-same-action pro-cart">
+                                                    <a title="Add To Cart" href="#">
+                                                        <i className="pe-7s-cart"></i> 장바구니 담기
+                                                    </a>
+                                                </div>
+                                                <div className="pro-same-action pro-wishlist">
+                                                    <a title="Wishlist" href="wishlist.html">
+                                                        <i className="pe-7s-like"></i>
+                                                    </a>
+                                                </div>
+                                                {/* <div className="pro-same-action pro-quickview">
+                                                    <a
+                                                        title="Quick View"
+                                                        href="#"
+                                                        data-toggle="modal"
+                                                        data-target="#exampleModal"
+                                                    >
+                                                        <i className="pe-7s-look"></i>
+                                                    </a>
+                                                </div> */}
+                                            </div>
+                                        </div>
+                                        <div className="product-content text-center">
+                                            <h3>
+                                                <a href="product-details.html">빈티지 썸머 쇼퍼백 세트</a>
+                                                <p className="review-count">리뷰 : 200</p>
+                                            </h3>
+                                            <div className="product-option">
+                                                <span>오렌지</span>
+                                                <span>블루</span>
+                                            </div>
+                                            <div className="product-price">
+                                                <p className="old">25,000원</p>
+                                                <p>15,000원</p>
+                                            </div>
+                                            <div className="product-icon">
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/37?1626422274"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                                <span>
+                                                    <img
+                                                        src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/47?1626422241"
+                                                        alt="img"
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -2195,6 +1633,48 @@ export default function MainPublish() {
                     </div>
                 </div>
             </div>
+            {/*  //new Item */}
+            {/* 공지사항 및 고객센터 */}
+            <div className="notice-area pt-30 pb-50">
+                <div className="container">
+                    <div className="customer_center">
+                        <h3>CUSTOMER CENTER</h3>
+                        <p className="df-ft-tel">032-684-1550</p>
+                        <strong>운영시간</strong>
+                        <p className="df-rep-cstime">
+                            평일 오전 09:00 ~ 오후 06:00
+                            <br />
+                            점심시간 오후 01:00 ~ 오후 02:00
+                            <br />토 / 일 / 공휴일 휴무
+                        </p>
+                    </div>
+                    <div className="notice_center">
+                        <h3>NOTICE</h3>
+                        <div className="notice_column">
+                            <p className="title">오픈중입니다.</p>
+                            <p className="day">2021-07-23</p>
+                        </div>
+                        <div className="notice_column">
+                            <p className="title">오픈중입니다.</p>
+                            <p className="day">2021-07-23</p>
+                        </div>
+                        <div className="notice_column">
+                            <p className="title">오픈중입니다.</p>
+                            <p className="day">2021-07-23</p>
+                        </div>
+                        <div className="notice_column">
+                            <p className="title">오픈중입니다.</p>
+                            <p className="day">2021-07-23</p>
+                        </div>
+                        <div className="notice_column">
+                            <p className="title">오픈중입니다.</p>
+                            <p className="day">2021-07-23</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* // 공지사항 및 고객센터 */}
+
             <footer className="footer-area bg-gray pt-100 pb-70">
                 <div className="container">
                     <div className="row">
@@ -2331,209 +1811,6 @@ export default function MainPublish() {
                     </div>
                 </div>
             </footer>
-
-            {/* <!-- Modal --> */}
-            <div className="modal fade" id="exampleModal" tabIndex={-1} role="dialog">
-                <div className="modal-dialog" role="document">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">x</span>
-                            </button>
-                        </div>
-                        <div className="modal-body">
-                            <div className="row">
-                                <div className="col-md-5 col-sm-12 col-xs-12">
-                                    <div className="tab-content quickview-big-img">
-                                        <div id="pro-1" className="tab-pane fade show active">
-                                            <img src="/assets/img/product/quickview-l1.jpg" alt="" />
-                                        </div>
-                                        <div id="pro-2" className="tab-pane fade">
-                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
-                                        </div>
-                                        <div id="pro-3" className="tab-pane fade">
-                                            <img src="/assets/img/product/quickview-l3.jpg" alt="" />
-                                        </div>
-                                        <div id="pro-4" className="tab-pane fade">
-                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                    {/* <!-- Thumbnail Large Image End --> */}
-                                    {/* <!-- Thumbnail Image End --> */}
-                                    <div className="quickview-wrap mt-15">
-                                        <div
-                                            className="quickview-slide-active owl-carousel nav nav-style-1"
-                                            role="tablist"
-                                        >
-                                            <a className="active" data-toggle="tab" href="#pro-1">
-                                                <img src="/assets/img/product/quickview-s1.jpg" alt="" />
-                                            </a>
-                                            <a data-toggle="tab" href="#pro-2">
-                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
-                                            </a>
-                                            <a data-toggle="tab" href="#pro-3">
-                                                <img src="/assets/img/product/quickview-s3.jpg" alt="" />
-                                            </a>
-                                            <a data-toggle="tab" href="#pro-4">
-                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-7 col-sm-12 col-xs-12">
-                                    <div className="product-details-content quickview-content">
-                                        <h2>Products Name Here</h2>
-                                        <div className="product-details-price">
-                                            <span>$18.00 </span>
-                                            <span className="old">$20.00 </span>
-                                        </div>
-                                        <div className="pro-details-rating-wrap">
-                                            <div className="pro-details-rating">
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o yellow"></i>
-                                                <i className="fa fa-star-o"></i>
-                                                <i className="fa fa-star-o"></i>
-                                            </div>
-                                            <span>3 Reviews</span>
-                                        </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid
-                                            ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud
-                                            exercitation ullamco
-                                        </p>
-                                        <div className="pro-details-list">
-                                            <ul>
-                                                <li>- 0.5 mm Dail</li>
-                                                <li>- Inspired vector icons</li>
-                                                <li>- Very modern style </li>
-                                            </ul>
-                                        </div>
-                                        <div className="pro-details-size-color">
-                                            <div className="pro-details-color-wrap">
-                                                <span>Color</span>
-                                                <div className="pro-details-color-content">
-                                                    <ul>
-                                                        <li className="blue"></li>
-                                                        <li className="maroon active"></li>
-                                                        <li className="gray"></li>
-                                                        <li className="green"></li>
-                                                        <li className="yellow"></li>
-                                                        <li className="white"></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="pro-details-size">
-                                                <span>Size</span>
-                                                <div className="pro-details-size-content">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="#">s</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">m</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">l</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">xl</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">xxl</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="pro-details-quality">
-                                            <div className="cart-plus-minus">
-                                                <input
-                                                    className="cart-plus-minus-box"
-                                                    type="text"
-                                                    name="qtybutton"
-                                                    value="2"
-                                                    onChange={e => console.debug(e)}
-                                                />
-                                            </div>
-                                            <div className="pro-details-cart btn-hover">
-                                                <a href="#">Add To Cart</a>
-                                            </div>
-                                            <div className="pro-details-wishlist">
-                                                <a href="#">
-                                                    <i className="fa fa-heart-o"></i>
-                                                </a>
-                                            </div>
-                                            <div className="pro-details-compare">
-                                                <a href="#">
-                                                    <i className="pe-7s-shuffle"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="pro-details-meta">
-                                            <span>Categories :</span>
-                                            <ul>
-                                                <li>
-                                                    <a href="#">Minimal,</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Furniture,</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Fashion</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="pro-details-meta">
-                                            <span>Tag :</span>
-                                            <ul>
-                                                <li>
-                                                    <a href="#">Fashion, </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Furniture,</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Electronic</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="pro-details-social">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        <i className="fa fa-facebook"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i className="fa fa-dribbble"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i className="fa fa-pinterest-p"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i className="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i className="fa fa-linkedin"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </>
     );
 }
