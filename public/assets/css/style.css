@@ -7682,10 +7682,10 @@ a.default-btn {
 }
 .product-details-content .product-details-price span {
     font-size: 24px;
-    color: #fe5252;
+    color: #000;
 }
 .product-details-content .product-details-price span.old {
-    color: #333;
+    color: #8e8e8e;
     font-size: 18px;
     text-decoration: line-through;
     margin-left: 20px;
@@ -7748,7 +7748,42 @@ a.default-btn {
 .product-details-content .pro-details-size-color {
     display: -webkit-box;
     display: -ms-flexbox;
+    /* display: flex; */
+    margin-bottom: 10px;
+}
+.product-details-content .pro-details-size-color select {
+    padding: 16px 24px;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+.product-details-content .btn_wrap {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.product-details-content .btn_wrap button {
+    background: #000;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+.product-details-content .btn_wrap button.large {
+    width: 40%;
+}
+.product-details-content .btn_wrap button.btn-favor {
+    background: #fff;
+    color: #000;
+    width: 10%;
+    border: 1px solid #e5e5e5;
+}
+.product-details-content .btn_wrap button.btn-favor i {
+    font-size: 20px;
+    line-height: 20px;
 }
 @media only screen and (max-width: 767px) {
     .product-details-content .pro-details-size-color {
@@ -7759,7 +7794,7 @@ a.default-btn {
     .product-details-content .pro-details-size-color {
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex;
+        /* display: flex; */
     }
 }
 .product-details-content .pro-details-size-color .pro-details-color-wrap {
@@ -14348,16 +14383,23 @@ a.default-btn {
 /* affiliate */
 .pro-details-affiliate {
     margin: 30px 0;
+    width: 90%;
 }
 .pro-details-affiliate a {
+    width: 100%;
+    text-align: center;
     color: #fff;
     display: inline-block;
     font-weight: 500;
     background-color: #000;
     line-height: 1;
-    padding: 13px 30px 16px;
+    /* padding: 13px 30px 16px; */
+    padding: 20px 15px;
     z-index: 9;
     border: 1px solid transparent;
+}
+.pro-details-affiliate a:first-child {
+    margin-right: 10px;
 }
 
 /* product-details-slider */

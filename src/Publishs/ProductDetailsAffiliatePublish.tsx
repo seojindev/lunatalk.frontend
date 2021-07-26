@@ -727,18 +727,6 @@ export default function ProductDetailsAffiliatePublish() {
                     </div>
                 </div>
             </header>
-            <div className="breadcrumb-area pt-35 pb-35 bg-gray-3">
-                <div className="container">
-                    <div className="breadcrumb-content text-center">
-                        <ul>
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li className="active">Shop Details </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
             <div className="shop-area pt-100 pb-100">
                 <div className="container">
                     <div className="row">
@@ -746,37 +734,13 @@ export default function ProductDetailsAffiliatePublish() {
                             <div className="product-details">
                                 <div className="product-details-img">
                                     <div className="tab-content jump">
-                                        <div id="shop-details-1" className="tab-pane large-img-style">
+                                        <div id="shop-details-1" className="tab-pane active large-img-style">
                                             <img src="/assets/img/product-details/large-1.jpg" alt="" />
-                                            <span className="dec-price">-10%</span>
+                                            {/* <span className="dec-price">-10%</span> */}
                                             <div className="img-popup-wrap">
                                                 <a
                                                     className="img-popup"
                                                     href="/assets/img/product-details/b-large-1.jpg"
-                                                >
-                                                    <i className="pe-7s-expand1"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div id="shop-details-2" className="tab-pane active large-img-style">
-                                            <img src="/assets/img/product-details/large-2.jpg" alt="" />
-                                            <span className="dec-price">-10%</span>
-                                            <div className="img-popup-wrap">
-                                                <a
-                                                    className="img-popup"
-                                                    href="/assets/img/product-details/b-large-2.jpg"
-                                                >
-                                                    <i className="pe-7s-expand1"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div id="shop-details-3" className="tab-pane large-img-style">
-                                            <img src="/assets/img/product-details/large-3.jpg" alt="" />
-                                            <span className="dec-price">-10%</span>
-                                            <div className="img-popup-wrap">
-                                                <a
-                                                    className="img-popup"
-                                                    href="/assets/img/product-details/b-large-3.jpg"
                                                 >
                                                     <i className="pe-7s-expand1"></i>
                                                 </a>
@@ -803,36 +767,18 @@ export default function ProductDetailsAffiliatePublish() {
                         </div>
                         <div className="col-lg-6 col-md-6">
                             <div className="product-details-content ml-70">
-                                <h2>Products Name Here</h2>
+                                <h2>빈티지 썸머 쇼퍼백 세트</h2>
                                 <div className="product-details-price">
-                                    <span>$18.00 </span>
-                                    <span className="old">$20.00 </span>
+                                    <span>15,000원</span>
+                                    <span className="old">20,000원 </span>
                                 </div>
                                 <div className="pro-details-rating-wrap">
-                                    <div className="pro-details-rating">
-                                        <i className="fa fa-star-o yellow"></i>
-                                        <i className="fa fa-star-o yellow"></i>
-                                        <i className="fa fa-star-o yellow"></i>
-                                        <i className="fa fa-star-o"></i>
-                                        <i className="fa fa-star-o"></i>
-                                    </div>
                                     <span>
-                                        <a href="#">3 Reviews</a>
+                                        <a href="#">3 리뷰</a>
                                     </span>
                                 </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore
-                                    et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco
-                                </p>
-                                <div className="pro-details-list">
-                                    <ul>
-                                        <li>- 0.5 mm Dail</li>
-                                        <li>- Inspired vector icons</li>
-                                        <li>- Very modern style </li>
-                                    </ul>
-                                </div>
                                 <div className="pro-details-size-color">
-                                    <div className="pro-details-color-wrap">
+                                    {/* <div className="pro-details-color-wrap">
                                         <span>Color</span>
                                         <div className="pro-details-color-content">
                                             <ul>
@@ -865,40 +811,38 @@ export default function ProductDetailsAffiliatePublish() {
                                                 </li>
                                             </ul>
                                         </div>
+                                    </div> */}
+                                    <select>
+                                        <option value="">색상을 선택해주세요.</option>
+                                        <option value="">오렌지</option>
+                                        <option value="">블루</option>
+                                    </select>
+                                    <select>
+                                        <option value="">옵션을 선택해주세요.</option>
+                                        <option value="">오렌지</option>
+                                        <option value="">블루</option>
+                                    </select>
+                                </div>
+                                {/* <div className="btn_wrap">
+                                    <div className="pro-details-affiliate btn-hover">
+                                        <a href="#">구매하기</a>
                                     </div>
+                                    <div className="pro-details-affiliate btn-hover">
+                                        <a href="#">장바구니</a>
+                                    </div>
+                                </div> */}
+                                <div className="btn_wrap">
+                                    <button type="button" className="large btn-hover">
+                                        구매하기
+                                    </button>
+                                    <button type="button" className="large btn-hover">
+                                        장바구니
+                                    </button>
+                                    <button type="button" className="btn-favor">
+                                        <i className="pe-7s-like"></i>
+                                    </button>
                                 </div>
-                                <div className="pro-details-affiliate btn-hover">
-                                    <a href="#">Buy Now</a>
-                                </div>
-                                <div className="pro-details-meta">
-                                    <span>Categories :</span>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Minimal,</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Furniture,</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Fashion</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className="pro-details-meta">
-                                    <span>Tag :</span>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Fashion, </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Furniture,</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Electronic</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className="pro-details-social">
+                                {/* <div className="pro-details-social">
                                     <ul>
                                         <li>
                                             <a href="#">
@@ -926,7 +870,7 @@ export default function ProductDetailsAffiliatePublish() {
                                             </a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -937,13 +881,13 @@ export default function ProductDetailsAffiliatePublish() {
                     <div className="description-review-wrapper">
                         <div className="description-review-topbar nav">
                             <a data-toggle="tab" href="#des-details1">
-                                Additional information
+                                주문정보
                             </a>
                             <a className="active" data-toggle="tab" href="#des-details2">
-                                Description
+                                상품정보
                             </a>
                             <a data-toggle="tab" href="#des-details3">
-                                Reviews (2)
+                                리뷰 (2)
                             </a>
                         </div>
                         <div className="tab-content description-review-bottom">
@@ -1098,216 +1042,294 @@ export default function ProductDetailsAffiliatePublish() {
             <div className="related-product-area pb-95">
                 <div className="container">
                     <div className="section-title text-center mb-50">
-                        <h2>Related products</h2>
+                        <h2>추천 상품</h2>
                     </div>
-                    <div className="related-product-active owl-carousel owl-dot-none">
-                        <div className="product-wrap">
-                            <div className="product-img">
-                                <a href="product-details-affiliate.html">
-                                    <img className="default-img" src="/assets/img/product/pro-1.jpg" alt="" />
-                                    <img className="hover-img" src="/assets/img/product/pro-1-1.jpg" alt="" />
-                                </a>
-                                <span className="pink">-10%</span>
-                                <div className="product-action">
-                                    <div className="pro-same-action pro-wishlist">
-                                        <a title="Wishlist" href="#">
-                                            <i className="pe-7s-like"></i>
+                    <div className="related-product-active owl-carousel owl-dot-none" style={{ display: 'block' }}>
+                        <div className="row">
+                            {/* one Item */}
+                            <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                                <div className="product-wrap mb-25 scroll-zoom">
+                                    <div className="product-img">
+                                        <a href="product-details.html">
+                                            <img
+                                                className="default-img"
+                                                src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="hover-img"
+                                                src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                alt=""
+                                            />
                                         </a>
+                                        {/* <span className="pink">-10%</span> */}
+                                        <div className="product-action">
+                                            <div className="pro-same-action pro-cart">
+                                                <a title="Add To Cart" href="#">
+                                                    <i className="pe-7s-cart"></i> 장바구니 담기
+                                                </a>
+                                            </div>
+                                            <div className="pro-same-action pro-wishlist">
+                                                <a title="Wishlist" href="wishlist.html">
+                                                    <i className="pe-7s-like"></i>
+                                                </a>
+                                            </div>
+                                            {/* <div className="pro-same-action pro-quickview">
+                                                    <a
+                                                        title="Quick View"
+                                                        href="#"
+                                                        data-toggle="modal"
+                                                        data-target="#exampleModal"
+                                                    >
+                                                        <i className="pe-7s-look"></i>
+                                                    </a>
+                                                </div> */}
+                                        </div>
                                     </div>
-                                    <div className="pro-same-action pro-cart">
-                                        <a title="Add To Cart" href="#">
-                                            <i className="pe-7s-cart"></i> Add to cart
-                                        </a>
-                                    </div>
-                                    <div className="pro-same-action pro-quickview">
-                                        <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal">
-                                            <i className="pe-7s-look"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="product-content text-center">
-                                <h3>
-                                    <a href="product-details-affiliate.html">T- Shirt And Jeans</a>
-                                </h3>
-                                <div className="product-rating">
-                                    <i className="fa fa-star-o yellow"></i>
-                                    <i className="fa fa-star-o yellow"></i>
-                                    <i className="fa fa-star-o yellow"></i>
-                                    <i className="fa fa-star-o"></i>
-                                    <i className="fa fa-star-o"></i>
-                                </div>
-                                <div className="product-price">
-                                    <span>$ 60.00</span>
-                                    <span className="old">$ 60.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="product-wrap">
-                            <div className="product-img">
-                                <a href="product-details-affiliate.html">
-                                    <img className="default-img" src="/assets/img/product/pro-2.jpg" alt="" />
-                                    <img className="hover-img" src="/assets/img/product/pro-2-1.jpg" alt="" />
-                                </a>
-                                <span className="purple">New</span>
-                                <div className="product-action">
-                                    <div className="pro-same-action pro-wishlist">
-                                        <a title="Wishlist" href="#">
-                                            <i className="pe-7s-like"></i>
-                                        </a>
-                                    </div>
-                                    <div className="pro-same-action pro-cart">
-                                        <a title="Add To Cart" href="#">
-                                            <i className="pe-7s-cart"></i> Add to cart
-                                        </a>
-                                    </div>
-                                    <div className="pro-same-action pro-quickview">
-                                        <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal">
-                                            <i className="pe-7s-look"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="product-content text-center">
-                                <h3>
-                                    <a href="product-details-affiliate.html">T- Shirt And Jeans</a>
-                                </h3>
-                                <div className="product-rating">
-                                    <i className="fa fa-star-o yellow"></i>
-                                    <i className="fa fa-star-o yellow"></i>
-                                    <i className="fa fa-star-o yellow"></i>
-                                    <i className="fa fa-star-o"></i>
-                                    <i className="fa fa-star-o"></i>
-                                </div>
-                                <div className="product-price">
-                                    <span>$ 60.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="product-wrap">
-                            <div className="product-img">
-                                <a href="product-details-affiliate.html">
-                                    <img className="default-img" src="/assets/img/product/pro-3.jpg" alt="" />
-                                    <img className="hover-img" src="/assets/img/product/pro-3-1.jpg" alt="" />
-                                </a>
-                                <span className="pink">-10%</span>
-                                <div className="product-action">
-                                    <div className="pro-same-action pro-wishlist">
-                                        <a title="Wishlist" href="#">
-                                            <i className="pe-7s-like"></i>
-                                        </a>
-                                    </div>
-                                    <div className="pro-same-action pro-cart">
-                                        <a title="Add To Cart" href="#">
-                                            <i className="pe-7s-cart"></i> Add to cart
-                                        </a>
-                                    </div>
-                                    <div className="pro-same-action pro-quickview">
-                                        <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal">
-                                            <i className="pe-7s-look"></i>
-                                        </a>
+                                    <div className="product-content text-center">
+                                        <h3>
+                                            <a href="product-details.html">빈티지 썸머 쇼퍼백 세트</a>
+                                            <p className="review-count">리뷰 : 200</p>
+                                        </h3>
+                                        <div className="product-option">
+                                            <span>오렌지</span>
+                                            <span>블루</span>
+                                        </div>
+                                        <div className="product-price">
+                                            <p className="old">25,000원</p>
+                                            <p>15,000원</p>
+                                        </div>
+                                        <div className="product-icon">
+                                            <span>
+                                                <img
+                                                    src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/37?1626422274"
+                                                    alt="img"
+                                                />
+                                            </span>
+                                            <span>
+                                                <img
+                                                    src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/47?1626422241"
+                                                    alt="img"
+                                                />
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="product-content text-center">
-                                <h3>
-                                    <a href="product-details-affiliate.html">T- Shirt And Jeans</a>
-                                </h3>
-                                <div className="product-rating">
-                                    <i className="fa fa-star-o yellow"></i>
-                                    <i className="fa fa-star-o yellow"></i>
-                                    <i className="fa fa-star-o yellow"></i>
-                                    <i className="fa fa-star-o"></i>
-                                    <i className="fa fa-star-o"></i>
-                                </div>
-                                <div className="product-price">
-                                    <span>$ 60.00</span>
-                                    <span className="old">$ 60.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="product-wrap">
-                            <div className="product-img">
-                                <a href="product-details-affiliate.html">
-                                    <img className="default-img" src="/assets/img/product/pro-4.jpg" alt="" />
-                                    <img className="hover-img" src="/assets/img/product/pro-4-1.jpg" alt="" />
-                                </a>
-                                <span className="purple">New</span>
-                                <div className="product-action">
-                                    <div className="pro-same-action pro-wishlist">
-                                        <a title="Wishlist" href="#">
-                                            <i className="pe-7s-like"></i>
+                            {/* // one Item */}
+                            {/* one Item */}
+                            <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                                <div className="product-wrap mb-25 scroll-zoom">
+                                    <div className="product-img">
+                                        <a href="product-details.html">
+                                            <img
+                                                className="default-img"
+                                                src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="hover-img"
+                                                src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                alt=""
+                                            />
                                         </a>
+                                        {/* <span className="pink">-10%</span> */}
+                                        <div className="product-action">
+                                            <div className="pro-same-action pro-cart">
+                                                <a title="Add To Cart" href="#">
+                                                    <i className="pe-7s-cart"></i> 장바구니 담기
+                                                </a>
+                                            </div>
+                                            <div className="pro-same-action pro-wishlist">
+                                                <a title="Wishlist" href="wishlist.html">
+                                                    <i className="pe-7s-like"></i>
+                                                </a>
+                                            </div>
+                                            {/* <div className="pro-same-action pro-quickview">
+                                                    <a
+                                                        title="Quick View"
+                                                        href="#"
+                                                        data-toggle="modal"
+                                                        data-target="#exampleModal"
+                                                    >
+                                                        <i className="pe-7s-look"></i>
+                                                    </a>
+                                                </div> */}
+                                        </div>
                                     </div>
-                                    <div className="pro-same-action pro-cart">
-                                        <a title="Add To Cart" href="#">
-                                            <i className="pe-7s-cart"></i> Add to cart
-                                        </a>
-                                    </div>
-                                    <div className="pro-same-action pro-quickview">
-                                        <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal">
-                                            <i className="pe-7s-look"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="product-content text-center">
-                                <h3>
-                                    <a href="product-details-affiliate.html">T- Shirt And Jeans</a>
-                                </h3>
-                                <div className="product-rating">
-                                    <i className="fa fa-star-o yellow"></i>
-                                    <i className="fa fa-star-o yellow"></i>
-                                    <i className="fa fa-star-o yellow"></i>
-                                    <i className="fa fa-star-o"></i>
-                                    <i className="fa fa-star-o"></i>
-                                </div>
-                                <div className="product-price">
-                                    <span>$ 60.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="product-wrap">
-                            <div className="product-img">
-                                <a href="product-details-affiliate.html">
-                                    <img className="default-img" src="/assets/img/product/pro-5.jpg" alt="" />
-                                    <img className="hover-img" src="/assets/img/product/pro-5-1.jpg" alt="" />
-                                </a>
-                                <span className="pink">-10%</span>
-                                <div className="product-action">
-                                    <div className="pro-same-action pro-wishlist">
-                                        <a title="Wishlist" href="#">
-                                            <i className="pe-7s-like"></i>
-                                        </a>
-                                    </div>
-                                    <div className="pro-same-action pro-cart">
-                                        <a title="Add To Cart" href="#">
-                                            <i className="pe-7s-cart"></i> Add to cart
-                                        </a>
-                                    </div>
-                                    <div className="pro-same-action pro-quickview">
-                                        <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal">
-                                            <i className="pe-7s-look"></i>
-                                        </a>
+                                    <div className="product-content text-center">
+                                        <h3>
+                                            <a href="product-details.html">빈티지 썸머 쇼퍼백 세트</a>
+                                            <p className="review-count">리뷰 : 200</p>
+                                        </h3>
+                                        <div className="product-option">
+                                            <span>오렌지</span>
+                                            <span>블루</span>
+                                        </div>
+                                        <div className="product-price">
+                                            <p className="old">25,000원</p>
+                                            <p>15,000원</p>
+                                        </div>
+                                        <div className="product-icon">
+                                            <span>
+                                                <img
+                                                    src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/37?1626422274"
+                                                    alt="img"
+                                                />
+                                            </span>
+                                            <span>
+                                                <img
+                                                    src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/47?1626422241"
+                                                    alt="img"
+                                                />
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="product-content text-center">
-                                <h3>
-                                    <a href="product-details-affiliate.html">T- Shirt And Jeans</a>
-                                </h3>
-                                <div className="product-rating">
-                                    <i className="fa fa-star-o yellow"></i>
-                                    <i className="fa fa-star-o yellow"></i>
-                                    <i className="fa fa-star-o yellow"></i>
-                                    <i className="fa fa-star-o"></i>
-                                    <i className="fa fa-star-o"></i>
-                                </div>
-                                <div className="product-price">
-                                    <span>$ 60.00</span>
-                                    <span className="old">$ 60.00</span>
+                            {/* // one Item */}
+                            {/* one Item */}
+                            <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                                <div className="product-wrap mb-25 scroll-zoom">
+                                    <div className="product-img">
+                                        <a href="product-details.html">
+                                            <img
+                                                className="default-img"
+                                                src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="hover-img"
+                                                src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                alt=""
+                                            />
+                                        </a>
+                                        {/* <span className="pink">-10%</span> */}
+                                        <div className="product-action">
+                                            <div className="pro-same-action pro-cart">
+                                                <a title="Add To Cart" href="#">
+                                                    <i className="pe-7s-cart"></i> 장바구니 담기
+                                                </a>
+                                            </div>
+                                            <div className="pro-same-action pro-wishlist">
+                                                <a title="Wishlist" href="wishlist.html">
+                                                    <i className="pe-7s-like"></i>
+                                                </a>
+                                            </div>
+                                            {/* <div className="pro-same-action pro-quickview">
+                                                    <a
+                                                        title="Quick View"
+                                                        href="#"
+                                                        data-toggle="modal"
+                                                        data-target="#exampleModal"
+                                                    >
+                                                        <i className="pe-7s-look"></i>
+                                                    </a>
+                                                </div> */}
+                                        </div>
+                                    </div>
+                                    <div className="product-content text-center">
+                                        <h3>
+                                            <a href="product-details.html">빈티지 썸머 쇼퍼백 세트</a>
+                                            <p className="review-count">리뷰 : 200</p>
+                                        </h3>
+                                        <div className="product-option">
+                                            <span>오렌지</span>
+                                            <span>블루</span>
+                                        </div>
+                                        <div className="product-price">
+                                            <p className="old">25,000원</p>
+                                            <p>15,000원</p>
+                                        </div>
+                                        <div className="product-icon">
+                                            <span>
+                                                <img
+                                                    src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/37?1626422274"
+                                                    alt="img"
+                                                />
+                                            </span>
+                                            <span>
+                                                <img
+                                                    src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/47?1626422241"
+                                                    alt="img"
+                                                />
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            {/* // one Item */}
+                            {/* one Item */}
+                            <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                                <div className="product-wrap mb-25 scroll-zoom">
+                                    <div className="product-img">
+                                        <a href="product-details.html">
+                                            <img
+                                                className="default-img"
+                                                src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                alt=""
+                                            />
+                                            <img
+                                                className="hover-img"
+                                                src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                alt=""
+                                            />
+                                        </a>
+                                        {/* <span className="pink">-10%</span> */}
+                                        <div className="product-action">
+                                            <div className="pro-same-action pro-cart">
+                                                <a title="Add To Cart" href="#">
+                                                    <i className="pe-7s-cart"></i> 장바구니 담기
+                                                </a>
+                                            </div>
+                                            <div className="pro-same-action pro-wishlist">
+                                                <a title="Wishlist" href="wishlist.html">
+                                                    <i className="pe-7s-like"></i>
+                                                </a>
+                                            </div>
+                                            {/* <div className="pro-same-action pro-quickview">
+                                                    <a
+                                                        title="Quick View"
+                                                        href="#"
+                                                        data-toggle="modal"
+                                                        data-target="#exampleModal"
+                                                    >
+                                                        <i className="pe-7s-look"></i>
+                                                    </a>
+                                                </div> */}
+                                        </div>
+                                    </div>
+                                    <div className="product-content text-center">
+                                        <h3>
+                                            <a href="product-details.html">빈티지 썸머 쇼퍼백 세트</a>
+                                            <p className="review-count">리뷰 : 200</p>
+                                        </h3>
+                                        <div className="product-option">
+                                            <span>오렌지</span>
+                                            <span>블루</span>
+                                        </div>
+                                        <div className="product-price">
+                                            <p className="old">25,000원</p>
+                                            <p>15,000원</p>
+                                        </div>
+                                        <div className="product-icon">
+                                            <span>
+                                                <img
+                                                    src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/37?1626422274"
+                                                    alt="img"
+                                                />
+                                            </span>
+                                            <span>
+                                                <img
+                                                    src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/47?1626422241"
+                                                    alt="img"
+                                                />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* // one Item */}
                         </div>
                     </div>
                 </div>
