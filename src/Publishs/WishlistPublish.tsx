@@ -413,7 +413,10 @@ export default function WishlistPublish() {
                                                 <li className="single-shopping-cart">
                                                     <div className="shopping-cart-img">
                                                         <a href="#">
-                                                            <img alt="" src="/assets/img/cart/cart-1.png" />
+                                                            <img
+                                                                alt=""
+                                                                src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                            />
                                                         </a>
                                                     </div>
                                                     <div className="shopping-cart-title">
@@ -432,7 +435,10 @@ export default function WishlistPublish() {
                                                 <li className="single-shopping-cart">
                                                     <div className="shopping-cart-img">
                                                         <a href="#">
-                                                            <img alt="" src="/assets/img/cart/cart-2.png" />
+                                                            <img
+                                                                alt=""
+                                                                src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                            />
                                                         </a>
                                                     </div>
                                                     <div className="shopping-cart-title">
@@ -727,21 +733,9 @@ export default function WishlistPublish() {
                     </div>
                 </div>
             </header>
-            <div className="breadcrumb-area pt-35 pb-35 bg-gray-3">
-                <div className="container">
-                    <div className="breadcrumb-content text-center">
-                        <ul>
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li className="active">Wishlist </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
             <div className="cart-main-area pt-90 pb-100">
                 <div className="container">
-                    <h3 className="cart-page-title">Your cart items</h3>
+                    <h3 className="cart-page-title">WISH LIST</h3>
                     <div className="row">
                         <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                             <form action="#">
@@ -749,27 +743,36 @@ export default function WishlistPublish() {
                                     <table>
                                         <thead>
                                             <tr>
-                                                <th>Image</th>
-                                                <th>Product Name</th>
-                                                <th>Until Price</th>
-                                                <th>Qty</th>
-                                                <th>Subtotal</th>
-                                                <th>Add To Cart</th>
+                                                <th>
+                                                    <input type="checkbox" />
+                                                </th>
+                                                <th>이미지</th>
+                                                <th>상품 정보</th>
+                                                {/* <th>판매가</th> */}
+                                                <th>수량</th>
+                                                <th>판매가</th>
+                                                <th>장바구니</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
+                                                <td>
+                                                    <input type="checkbox" />
+                                                </td>
                                                 <td className="product-thumbnail">
                                                     <a href="#">
-                                                        <img src="/assets/img/cart/cart-1.png" alt="" />
+                                                        <img
+                                                            src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                            alt=""
+                                                        />
                                                     </a>
                                                 </td>
                                                 <td className="product-name">
-                                                    <a href="#">Product Name</a>
+                                                    <a href="#">빈티지 썸머 쇼퍼백 세트</a>
                                                 </td>
-                                                <td className="product-price-cart">
+                                                {/* <td className="product-price-cart">
                                                     <span className="amount">$260.00</span>
-                                                </td>
+                                                </td> */}
                                                 <td className="product-quantity">
                                                     <div className="cart-plus-minus">
                                                         <input
@@ -781,20 +784,23 @@ export default function WishlistPublish() {
                                                 </td>
                                                 <td className="product-subtotal">$110.00</td>
                                                 <td className="product-wishlist-cart">
-                                                    <a href="#">add to cart</a>
+                                                    <a href="#">담기</a>
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <td>
+                                                    <input type="checkbox" />
+                                                </td>
                                                 <td className="product-thumbnail">
                                                     <a href="#">
-                                                        <img src="/assets/img/cart/cart-2.png" alt="" />
+                                                        <img
+                                                            src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                            alt=""
+                                                        />
                                                     </a>
                                                 </td>
                                                 <td className="product-name">
-                                                    <a href="#">Product Name</a>
-                                                </td>
-                                                <td className="product-price-cart">
-                                                    <span className="amount">$150.00</span>
+                                                    <a href="#">빈티지 썸머 쇼퍼백 세트</a>
                                                 </td>
                                                 <td className="product-quantity">
                                                     <div className="cart-plus-minus">
@@ -807,20 +813,23 @@ export default function WishlistPublish() {
                                                 </td>
                                                 <td className="product-subtotal">$150.00</td>
                                                 <td className="product-wishlist-cart">
-                                                    <a href="#">add to cart</a>
+                                                    <a href="#">담기</a>
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <td>
+                                                    <input type="checkbox" />
+                                                </td>
                                                 <td className="product-thumbnail">
                                                     <a href="#">
-                                                        <img src="/assets/img/cart/cart-1.png" alt="" />
+                                                        <img
+                                                            src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
+                                                            alt=""
+                                                        />
                                                     </a>
                                                 </td>
                                                 <td className="product-name">
-                                                    <a href="#">Product Name</a>
-                                                </td>
-                                                <td className="product-price-cart">
-                                                    <span className="amount">$170.00</span>
+                                                    <a href="#">빈티지 썸머 쇼퍼백 세트</a>
                                                 </td>
                                                 <td className="product-quantity">
                                                     <div className="cart-plus-minus">
@@ -833,13 +842,22 @@ export default function WishlistPublish() {
                                                 </td>
                                                 <td className="product-subtotal">$170.00</td>
                                                 <td className="product-wishlist-cart">
-                                                    <a href="#">add to cart</a>
+                                                    <a href="#">담기</a>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </form>
+                        </div>
+                        <div className="btn_wrap">
+                            <div className="left">
+                                <button type="button">선택삭제</button>
+                            </div>
+                            <div className="right">
+                                <button type="button">선택 담기</button>
+                                <button type="button">선택 구매하기</button>
+                            </div>
                         </div>
                     </div>
                 </div>

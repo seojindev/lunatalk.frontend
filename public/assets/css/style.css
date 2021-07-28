@@ -14451,6 +14451,10 @@ h3.cart-page-title {
     vertical-align: middle;
     white-space: nowrap;
 }
+.cart-table-content table tr input {
+    width: 15px;
+    height: 15px;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .cart-table-content table thead > tr th {
         padding: 21px 35px 22px;
@@ -14466,6 +14470,11 @@ h3.cart-page-title {
 }
 .cart-table-content table tbody > tr td.product-thumbnail {
     width: 150px;
+}
+.cart-table-content table tbody > tr td.product-thumbnail a,
+.cart-table-content table tbody > tr td.product-thumbnail a img {
+    display: block;
+    width: 100%;
 }
 .cart-table-content table tbody > tr td.product-name {
     width: 435px;
@@ -14567,6 +14576,27 @@ h3.cart-page-title {
     font-size: 15px;
     padding: 30px 0;
     text-align: center;
+}
+
+.cart-main-area .btn_wrap {
+    width: 100%;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.cart-main-area .btn_wrap button {
+    outline: none;
+    border: none;
+    background-color: #a749ff;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 13px 12px;
+}
+.cart-main-area .btn_wrap .right button:first-child {
+    margin-right: 15px;
 }
 
 .cart-shiping-update-wrapper {
