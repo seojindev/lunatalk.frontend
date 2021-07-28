@@ -8,6 +8,7 @@ export default function PublishPage() {
         {
             name: string;
             component: string;
+            progress: string;
         }[]
     >([]);
 
@@ -16,13 +17,15 @@ export default function PublishPage() {
             pageItem: {
                 name: string;
                 component: string;
+                progress: string;
             }[]
         ) => {
             setPublist(
-                pageItem.map((e: { name: string; component: string }) => {
+                pageItem.map((e: { name: string; component: string; progress: string }) => {
                     return {
                         name: e.name,
                         component: e.component,
+                        progress: e.progress,
                     };
                 })
             );
@@ -46,6 +49,7 @@ export default function PublishPage() {
                             <th>이름</th>
                             <th>컴포넌트</th>
                             <th>링크</th>
+                            <th>진행상황</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -64,6 +68,7 @@ export default function PublishPage() {
                                                 {`${process.env.PUBLIC_URL}/publishs/${item.name}`}
                                             </Link>
                                         </td>
+                                        <td>{item.progress}</td>
                                     </tr>
                                 );
                             })}
