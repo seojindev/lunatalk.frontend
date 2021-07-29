@@ -750,7 +750,7 @@ export default function MyAccountPublish() {
                                             <h3 className="panel-title">
                                                 <span>1 .</span>
                                                 <a data-toggle="collapse" data-parent="#faq" href="#my-account-1">
-                                                    Edit your account information
+                                                    나의정보 관리
                                                 </a>
                                             </h3>
                                         </div>
