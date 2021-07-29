@@ -15985,8 +15985,10 @@ h3.cart-page-title {
 }
 .single-my-account h3.panel-title a {
     color: #242424;
+    font-weight: 600;
+    font-size: 16px;
     display: block;
-    padding: 16px 55px;
+    padding: 16px 47px;
     position: relative;
 }
 @media only screen and (max-width: 767px) {
@@ -15997,7 +15999,7 @@ h3.cart-page-title {
 .single-my-account h3.panel-title a:hover {
     color: #a749ff;
 }
-.single-my-account h3.panel-title a::before {
+/* .single-my-account h3.panel-title a::before {
     color: #000;
     content: '';
     display: inline-block;
@@ -16006,12 +16008,12 @@ h3.cart-page-title {
     position: absolute;
     right: 10px;
     top: 19px;
-}
+} */
 .single-my-account h3.panel-title a:hover::before {
     color: #a749ff;
 }
 .single-my-account .myaccount-info-wrapper {
-    padding: 30px 20px;
+    padding: 30px 50px;
     background-color: #fff;
 }
 .single-my-account .myaccount-info-wrapper .account-info-wrapper {
@@ -16041,7 +16043,7 @@ h3.cart-page-title {
     background: transparent none repeat scroll 0 0;
     border: 1px solid #ebebeb;
     color: #000;
-    height: 40px;
+    height: 50px;
     padding: 0 15px;
 }
 .single-my-account .myaccount-info-wrapper .billing-back-btn {
