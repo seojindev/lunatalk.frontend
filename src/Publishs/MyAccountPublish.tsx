@@ -727,7 +727,7 @@ export default function MyAccountPublish() {
                     </div>
                 </div>
             </header>
-            <div className="breadcrumb-area pt-35 pb-35 bg-gray-3">
+            {/* <div className="breadcrumb-area pt-35 pb-35 bg-gray-3">
                 <div className="container">
                     <div className="breadcrumb-content text-center">
                         <ul>
@@ -738,7 +738,7 @@ export default function MyAccountPublish() {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="checkout-area pb-80 pt-100">
                 <div className="container">
                     <div className="row">
@@ -787,13 +787,21 @@ export default function MyAccountPublish() {
                                                                 <input type="email" />
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-6 col-md-6">
-                                                            <div className="billing-info">
-                                                                <label>주소</label>
-                                                                <input type="email" />
+                                                        <div className="col-lg-12 col-md-12">
+                                                            <div className="col-lg-6 col-md-6">
+                                                                <div className="billing-info">
+                                                                    <label>주소</label>
+                                                                    <input type="email" />
+                                                                </div>
+                                                            </div>
+                                                            <div className="billing-back-btn">
+                                                                <div className="billing-btn">
+                                                                    <button type="submit">주소찾기</button>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-6 col-md-6">
+
+                                                        <div className="col-lg-12 col-md-12">
                                                             <div className="billing-info">
                                                                 <label>상세주소</label>
                                                                 <input type="email" />
