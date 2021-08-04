@@ -823,14 +823,14 @@ export default function MyAccountPublish() {
                                                     </div>
                                                     <div className="row">
                                                         <div className="col-lg-12 col-md-12">
-                                                            <div className="billing-info">
-                                                                <label>정보/이벤트 SMS 수신에 동의합니다.</label>
-                                                                {/* <input
+                                                            <div className="billing-info event-check">
+                                                                <input
                                                                     type="checkbox"
                                                                     name="이벤트수신동의"
                                                                     value="이벤트수신동의"
                                                                     checked
-                                                                /> */}
+                                                                />
+                                                                <label>정보/이벤트 SMS 수신에 동의합니다.</label>
                                                             </div>
                                                         </div>
                                                     </div>

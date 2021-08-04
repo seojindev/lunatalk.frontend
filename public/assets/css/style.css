@@ -16105,9 +16105,19 @@ h3.cart-page-title {
     margin-bottom: 20px;
     margin-left: 10px;
 }
+.single-my-account .myaccount-info-wrapper .event-check {
+    display: flex;
+    align-items: center;
+}
+.single-my-account .myaccount-info-wrapper .billing-info input[type='checkbox'] {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
 .single-my-account .myaccount-info-wrapper .billing-info label {
     color: #000;
     font-size: 14px;
+    margin-bottom: 0;
     text-transform: capitalize;
 }
 .single-my-account .myaccount-info-wrapper .billing-info input {
