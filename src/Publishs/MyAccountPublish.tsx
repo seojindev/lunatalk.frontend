@@ -767,52 +767,61 @@ export default function MyAccountPublish() {
                                                                 <input type="email" />
                                                             </div>
                                                         </div>
+                                                    </div>
 
+                                                    <div className="row">
                                                         <div className="col-lg-12 col-md-12">
                                                             <div className="billing-info">
                                                                 <label>비밀번호 변경</label>
                                                                 <input type="email" />
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                    <div className="row">
                                                         <div className="col-lg-12 col-md-12">
                                                             <div className="billing-info">
                                                                 <label>비밀번호 확인</label>
                                                                 <input type="email" />
                                                             </div>
                                                         </div>
-
+                                                    </div>
+                                                    <div className="row">
                                                         <div className="col-lg-12 col-md-12">
                                                             <div className="billing-info">
                                                                 <label>이메일</label>
                                                                 <input type="email" />
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-12 col-md-12">
-                                                            <div className="col-lg-6 col-md-6">
-                                                                <div className="billing-info">
-                                                                    <label>주소</label>
-                                                                    <input type="email" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="row">
-                                                            <div className="col-lg-4 col-md-4 billing-back-btn">
-                                                                <div className="billing-btn">
-                                                                    <button type="submit">주소찾기</button>
-                                                                </div>
-                                                            </div>
-                                                            <div className="col-lg-6 col-md-6 billing-info">
-                                                                <label>상세주소</label>
+                                                    </div>
+
+                                                    <div className="row">
+                                                        <div className="col-lg-8 col-md-12">
+                                                            <div className="billing-info">
+                                                                <label>주소</label>
                                                                 <input type="email" />
                                                             </div>
                                                         </div>
-
+                                                        <div className="col-lg-4 billing-back-btn">
+                                                            <div className="billing-btn">
+                                                                <button type="submit">주소찾기</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-lg-12 col-md-6 billing-info">
+                                                            <label>상세주소</label>
+                                                            <input type="email" />
+                                                        </div>
+                                                    </div>
+                                                    <div className="row">
                                                         <div className="col-lg-12 col-md-12">
                                                             <div className="billing-info">
                                                                 <label>휴대폰번호</label>
                                                                 <input type="email" />
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                    <div className="row">
                                                         <div className="col-lg-12 col-md-12">
                                                             <div className="billing-info">
                                                                 <label>정보/이벤트 SMS 수신에 동의합니다.</label>
