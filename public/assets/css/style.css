@@ -14964,6 +14964,51 @@ h3.cart-page-title {
 .billing-info-wrap .billing-select input.billing-address {
     margin-bottom: 10px;
 }
+.billing-info-wrap .billing-info .billing-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.billing-info-wrap .billing-info .billing-search input {
+    width: 83%;
+}
+.billing-info-wrap .billing-info .billing-search button {
+    width: 15%;
+    background-color: #a749ff;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50px;
+}
+.billing-info-wrap .billing-info.phone,
+.billing-info-wrap .billing-info.address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.billing-info-wrap .billing-info.phone .billing-select,
+.billing-info-wrap .billing-info.address .billing-select {
+    width:30%;
+}
+.billing-info-wrap .billing-info.phone label,
+.billing-info-wrap .billing-info.address label {
+    width: 100%;
+}
+.billing-info-wrap .billing-info.phone select,
+.billing-info-wrap .billing-info.address select {
+    border: 1px solid #e6e6e6;
+    height: 45px;
+    padding-left: 20px;
+    padding-right: 10px;
+    width:100%;
+}
+.billing-info-wrap .billing-info.phone input,
+.billing-info-wrap .billing-info.address input {
+    width: 30%;
+}
 .billing-info-wrap .billing-select select {
     -moz-appearance: none;
     -webkit-appearance: none;

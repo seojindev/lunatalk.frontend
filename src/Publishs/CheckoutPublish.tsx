@@ -727,312 +727,119 @@ export default function CheckoutPublish() {
                     </div>
                 </div>
             </header>
-            <div className="breadcrumb-area pt-35 pb-35 bg-gray-3">
-                <div className="container">
-                    <div className="breadcrumb-content text-center">
-                        <ul>
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li className="active">Checkout </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
             <div className="checkout-area pt-95 pb-100">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-7">
                             <div className="billing-info-wrap">
-                                <h3>Billing Details</h3>
+                                <h3>배송정보</h3>
                                 <div className="row">
-                                    <div className="col-lg-6 col-md-6">
+                                    <div className="col-lg-12">
                                         <div className="billing-info mb-20">
-                                            <label>First Name</label>
-                                            <input type="text" />
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-6">
-                                        <div className="billing-info mb-20">
-                                            <label>Last Name</label>
+                                            <label>이름</label>
                                             <input type="text" />
                                         </div>
                                     </div>
                                     <div className="col-lg-12">
                                         <div className="billing-info mb-20">
-                                            <label>Company Name</label>
-                                            <input type="text" />
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-12">
-                                        <div className="billing-select mb-20">
-                                            <label>Country</label>
-                                            <select>
-                                                <option>Select a country</option>
-                                                <option>Azerbaijan</option>
-                                                <option>Bahamas</option>
-                                                <option>Bahrain</option>
-                                                <option>Bangladesh</option>
-                                                <option>Barbados</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-12">
-                                        <div className="billing-info mb-20">
-                                            <label>Street Address</label>
+                                            <label>주소</label>
+                                            <div className="billing-search">
+                                                <input type="text" placeholder="우편번호" />
+                                                <button type="button">검색</button>
+                                            </div>
                                             <input
                                                 className="billing-address"
-                                                placeholder="House number and street name"
+                                                placeholder="기본 주소"
                                                 type="text"
+                                                disabled
                                             />
-                                            <input placeholder="Apartment, suite, unit etc." type="text" />
+                                            <input placeholder="나머지 주소" type="text" />
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-12">
+                                        <div className="billing-info mb-20 phone">
+                                            <label>휴대폰번호</label>
+                                            {/* <input type="text" /> */}
+                                            <div className="billing-select">
+                                                <select id="phone-first">
+                                                    <option value="010">010</option>
+                                                    <option value="011">011</option>
+                                                    <option value="016">016</option>
+                                                    <option value="017">017</option>
+                                                    <option value="018">018</option>
+                                                    <option value="019">019</option>
+                                                </select>
+                                            </div>
+                                            -
+                                            <input type="text" />
+                                            -
+                                            <input type="text" />
                                         </div>
                                     </div>
                                     <div className="col-lg-12">
-                                        <div className="billing-info mb-20">
-                                            <label>Town / City</label>
+                                        <div className="billing-info mb-20 address">
+                                            <label>이메일 주소</label>
                                             <input type="text" />
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-6">
-                                        <div className="billing-info mb-20">
-                                            <label>State / County</label>
+                                            @
                                             <input type="text" />
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-6">
-                                        <div className="billing-info mb-20">
-                                            <label>Postcode / ZIP</label>
-                                            <input type="text" />
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-6">
-                                        <div className="billing-info mb-20">
-                                            <label>Phone</label>
-                                            <input type="text" />
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-6">
-                                        <div className="billing-info mb-20">
-                                            <label>Email Address</label>
-                                            <input type="text" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="checkout-account mb-50">
-                                    <input className="checkout-toggle2" type="checkbox" />
-                                    <span>Create an account?</span>
-                                </div>
-                                <div className="checkout-account-toggle open-toggle2 mb-30">
-                                    <input placeholder="Email address" type="email" />
-                                    <input placeholder="Password" type="password" />
-                                    <button className="btn-hover checkout-btn" type="submit">
-                                        register
-                                    </button>
-                                </div>
-                                <div className="additional-info-wrap">
-                                    <h4>Additional information</h4>
-                                    <div className="additional-info">
-                                        <label>Order notes</label>
-                                        <textarea
-                                            placeholder="Notes about your order, e.g. special notes for delivery. "
-                                            name="message"
-                                        ></textarea>
-                                    </div>
-                                </div>
-                                <div className="checkout-account mt-25">
-                                    <input className="checkout-toggle" type="checkbox" />
-                                    <span>Ship to a different address?</span>
-                                </div>
-                                <div className="different-address open-toggle mt-30">
-                                    <div className="row">
-                                        <div className="col-lg-6 col-md-6">
-                                            <div className="billing-info mb-20">
-                                                <label>First Name</label>
-                                                <input type="text" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 col-md-6">
-                                            <div className="billing-info mb-20">
-                                                <label>Last Name</label>
-                                                <input type="text" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <div className="billing-info mb-20">
-                                                <label>Company Name</label>
-                                                <input type="text" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <div className="billing-select mb-20">
-                                                <label>Country</label>
-                                                <select>
-                                                    <option>Select a country</option>
-                                                    <option>Azerbaijan</option>
-                                                    <option>Bahamas</option>
-                                                    <option>Bahrain</option>
-                                                    <option>Bangladesh</option>
-                                                    <option>Barbados</option>
+                                            <div className="billing-select">
+                                                <select id="email-address">
+                                                    <option value="naver.com">naver.com</option>
                                                 </select>
                                             </div>
                                         </div>
-                                        <div className="col-lg-12">
-                                            <div className="billing-info mb-20">
-                                                <label>Street Address</label>
-                                                <input
-                                                    className="billing-address"
-                                                    placeholder="House number and street name"
-                                                    type="text"
-                                                />
-                                                <input placeholder="Apartment, suite, unit etc." type="text" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <div className="billing-info mb-20">
-                                                <label>Town / City</label>
-                                                <input type="text" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 col-md-6">
-                                            <div className="billing-info mb-20">
-                                                <label>State / County</label>
-                                                <input type="text" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 col-md-6">
-                                            <div className="billing-info mb-20">
-                                                <label>Postcode / ZIP</label>
-                                                <input type="text" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 col-md-6">
-                                            <div className="billing-info mb-20">
-                                                <label>Phone</label>
-                                                <input type="text" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 col-md-6">
-                                            <div className="billing-info mb-20">
-                                                <label>Email Address</label>
-                                                <input type="text" />
-                                            </div>
-                                        </div>
+                                    </div>
+                                </div>
+                                <div className="additional-info-wrap">
+                                    <h4>배송메세지</h4>
+                                    <div className="additional-info">
+                                        <textarea name="message"></textarea>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-5">
                             <div className="your-order-area">
-                                <h3>Your order</h3>
+                                <h3>주문정보</h3>
                                 <div className="your-order-wrap gray-bg-4">
                                     <div className="your-order-product-info">
                                         <div className="your-order-top">
                                             <ul>
-                                                <li>Product</li>
-                                                <li>Total</li>
+                                                <li>상품</li>
+                                                <li>금액</li>
                                             </ul>
                                         </div>
                                         <div className="your-order-middle">
                                             <ul>
                                                 <li>
                                                     <span className="order-middle-left">Product Name X 1</span>
-                                                    <span className="order-price">$329 </span>
+                                                    <span className="order-price">15,000원 </span>
                                                 </li>
                                                 <li>
                                                     <span className="order-middle-left">Product Name X 1</span>
-                                                    <span className="order-price">$329 </span>
+                                                    <span className="order-price">15,000원 </span>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div className="your-order-bottom">
                                             <ul>
-                                                <li className="your-order-shipping">Shipping</li>
-                                                <li>Free shipping</li>
+                                                <li className="your-order-shipping">배송구분</li>
+                                                <li>무료배송</li>
                                             </ul>
                                         </div>
                                         <div className="your-order-total">
                                             <ul>
-                                                <li className="order-total">Total</li>
-                                                <li>$329</li>
+                                                <li className="order-total">합계</li>
+                                                <li>30,000원</li>
                                             </ul>
                                         </div>
-                                    </div>
-                                    <div className="payment-method">
-                                        <div className="payment-accordion element-mrg">
-                                            <div className="panel-group" id="accordion">
-                                                <div className="panel payment-accordion">
-                                                    <div className="panel-heading" id="method-one">
-                                                        <h4 className="panel-title">
-                                                            <a
-                                                                data-toggle="collapse"
-                                                                data-parent="#accordion"
-                                                                href="#method1"
-                                                            >
-                                                                Direct bank transfer
-                                                            </a>
-                                                        </h4>
-                                                    </div>
-                                                    <div id="method1" className="panel-collapse collapse show">
-                                                        <div className="panel-body">
-                                                            <p>
-                                                                Please send a check to Store Name, Store Street, Store
-                                                                Town, Store State / County, Store Postcode.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="panel payment-accordion">
-                                                    <div className="panel-heading" id="method-two">
-                                                        <h4 className="panel-title">
-                                                            <a
-                                                                className="collapsed"
-                                                                data-toggle="collapse"
-                                                                data-parent="#accordion"
-                                                                href="#method2"
-                                                            >
-                                                                Check payments
-                                                            </a>
-                                                        </h4>
-                                                    </div>
-                                                    <div id="method2" className="panel-collapse collapse">
-                                                        <div className="panel-body">
-                                                            <p>
-                                                                Please send a check to Store Name, Store Street, Store
-                                                                Town, Store State / County, Store Postcode.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="panel payment-accordion">
-                                                    <div className="panel-heading" id="method-three">
-                                                        <h4 className="panel-title">
-                                                            <a
-                                                                className="collapsed"
-                                                                data-toggle="collapse"
-                                                                data-parent="#accordion"
-                                                                href="#method3"
-                                                            >
-                                                                Cash on delivery
-                                                            </a>
-                                                        </h4>
-                                                    </div>
-                                                    <div id="method3" className="panel-collapse collapse">
-                                                        <div className="panel-body">
-                                                            <p>
-                                                                Please send a check to Store Name, Store Street, Store
-                                                                Town, Store State / County, Store Postcode.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <p>상품의 옵션 및 수량 변경은 상품상세 또는 장바구니에서 가능합니다.</p>
                                     </div>
                                 </div>
                                 <div className="Place-order mt-25">
                                     <a className="btn-hover" href="#">
-                                        Place Order
+                                        결제하기
                                     </a>
                                 </div>
                             </div>

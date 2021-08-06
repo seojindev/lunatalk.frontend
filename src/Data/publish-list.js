@@ -40,7 +40,7 @@ const publishList = [
     {
         name: 'checkout',
         component: 'CheckoutPublish',
-        progress: '진행전',
+        progress: '완료',
     },
     // {
     //     name: 'contact',
