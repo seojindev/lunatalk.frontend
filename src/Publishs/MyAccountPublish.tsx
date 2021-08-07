@@ -727,7 +727,7 @@ export default function MyAccountPublish() {
                     </div>
                 </div>
             </header>
-            <div className="breadcrumb-area pt-35 pb-35 bg-gray-3">
+            {/* <div className="breadcrumb-area pt-35 pb-35 bg-gray-3">
                 <div className="container">
                     <div className="breadcrumb-content text-center">
                         <ul>
@@ -738,7 +738,7 @@ export default function MyAccountPublish() {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="checkout-area pb-80 pt-100">
                 <div className="container">
                     <div className="row">
@@ -748,66 +748,102 @@ export default function MyAccountPublish() {
                                     <div className="panel panel-default single-my-account">
                                         <div className="panel-heading my-account-title">
                                             <h3 className="panel-title">
-                                                <span>1 .</span>
-                                                <a data-toggle="collapse" data-parent="#faq" href="#my-account-1">
-                                                    Edit your account information
-                                                </a>
+                                                <span></span>
+                                                <a data-toggle="collapse">회원정보 수정</a>
                                             </h3>
                                         </div>
                                         <div id="my-account-1" className="panel-collapse collapse show">
                                             <div className="panel-body">
                                                 <div className="myaccount-info-wrapper">
                                                     <div className="account-info-wrapper">
-                                                        <h4>My Account Information</h4>
-                                                        <h5>Your Personal Details</h5>
+                                                        <h4>
+                                                            고객님의 주소와 연락처 등 개인정보를 수정하실 수 있습니다.
+                                                        </h4>
                                                     </div>
                                                     <div className="row">
-                                                        <div className="col-lg-6 col-md-6">
-                                                            <div className="billing-info">
-                                                                <label>First Name</label>
-                                                                <input type="text" />
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-lg-6 col-md-6">
-                                                            <div className="billing-info">
-                                                                <label>Last Name</label>
-                                                                <input type="text" />
-                                                            </div>
-                                                        </div>
                                                         <div className="col-lg-12 col-md-12">
                                                             <div className="billing-info">
-                                                                <label>Email Address</label>
+                                                                <label>이름</label>
                                                                 <input type="email" />
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-6 col-md-6">
+                                                    </div>
+
+                                                    <div className="row">
+                                                        <div className="col-lg-12 col-md-12">
                                                             <div className="billing-info">
-                                                                <label>Telephone</label>
-                                                                <input type="text" />
+                                                                <label>비밀번호 변경</label>
+                                                                <input type="email" />
                                                             </div>
                                                         </div>
-                                                        <div className="col-lg-6 col-md-6">
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-lg-12 col-md-12">
                                                             <div className="billing-info">
-                                                                <label>Fax</label>
-                                                                <input type="text" />
+                                                                <label>비밀번호 확인</label>
+                                                                <input type="email" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-lg-12 col-md-12">
+                                                            <div className="billing-info">
+                                                                <label>이메일</label>
+                                                                <input type="email" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="row">
+                                                        <div className="col-lg-8 col-md-12">
+                                                            <div className="billing-info">
+                                                                <label>주소</label>
+                                                                <input type="email" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-4 billing-back-btn">
+                                                            <div className="billing-btn">
+                                                                <button type="submit">주소찾기</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-lg-12 col-md-6 billing-info">
+                                                            <label>상세주소</label>
+                                                            <input type="email" />
+                                                        </div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-lg-12 col-md-12">
+                                                            <div className="billing-info">
+                                                                <label>휴대폰번호</label>
+                                                                <input type="email" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="row">
+                                                        <div className="col-lg-12 col-md-12">
+                                                            <div className="billing-info event-check">
+                                                                <input
+                                                                    type="checkbox"
+                                                                    name="이벤트수신동의"
+                                                                    value="이벤트수신동의"
+                                                                    checked
+                                                                />
+                                                                <label>정보/이벤트 SMS 수신에 동의합니다.</label>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="billing-back-btn">
-                                                        <div className="billing-back">
-                                                            <a href="#">
-                                                                <i className="fa fa-arrow-up"></i> back
-                                                            </a>
-                                                        </div>
                                                         <div className="billing-btn">
-                                                            <button type="submit">Continue</button>
+                                                            <button type="submit">정보수정</button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="panel panel-default single-my-account">
+                                    {/* <div className="panel panel-default single-my-account">
                                         <div className="panel-heading my-account-title">
                                             <h3 className="panel-title">
                                                 <span>2 .</span>
@@ -850,8 +886,8 @@ export default function MyAccountPublish() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="panel panel-default single-my-account">
+                                    </div> */}
+                                    {/* <div className="panel panel-default single-my-account">
                                         <div className="panel-heading my-account-title">
                                             <h3 className="panel-title">
                                                 <span>3 .</span>
@@ -908,7 +944,7 @@ export default function MyAccountPublish() {
                                                 <span>4 .</span> <a href="wishlist.html">Modify your wish list </a>
                                             </h3>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
