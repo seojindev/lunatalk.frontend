@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// CSS Import
+import '@Style/Default/common.css';
+
 ReactDOM.render(
     <React.Fragment>
         <App />
