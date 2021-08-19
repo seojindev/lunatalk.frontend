@@ -1,0 +1,40 @@
+.footer_wrap {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #eee;
+    padding: 1.5rem 0;
+}
+
+.footer_wrap .footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_wrap .footer .logo {
+    width: 30%;
+}
+
+.footer_wrap .footer .logo img {
+    width: 100%;
+    display: block;
+}
+
+.footer_wrap .footer .footer_content {
+    width: 70%;
+    letter-spacing: -1px;
+}
+.footer_wrap .footer .footer_content h3 {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+.footer_wrap .footer .footer_content p {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+.footer_wrap .footer .footer_content .copyright {
+    font-weight: 900;
+}

@@ -3,7 +3,7 @@ import { BsSearch, BsPeopleCircle, BsHeart, BsBag } from 'react-icons/bs';
 import '@Style/Common/HeaderBar.css';
 
 // TODO : 백엔드 개발 완료전 더미데이터로 메뉴를 보여줌.
-import menuList from '@Src/Data/menu-list';
+import menuList from '@Constants/menu-list';
 
 const menuMap: any = menuList.map(menu => {
     return {
