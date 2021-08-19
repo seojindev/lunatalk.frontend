@@ -1,0 +1,9 @@
+{
+    "MainLayout": [
+        {
+            "name": "메인",
+            "routeName": "/",
+            "componentName": "Mains/MainPage"
+        }
+    ]
+}

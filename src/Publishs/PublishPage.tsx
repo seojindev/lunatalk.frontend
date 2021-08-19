@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './PublishPageStyle.css';
-import publishList from '@Src/Data/publish-list';
+import publishList from '@Constants/publish-list';
 
 export default function PublishPage() {
     const [pubList, setPublist] = useState<
