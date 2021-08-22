@@ -36,5 +36,23 @@
     margin-bottom: 0.5rem;
 }
 .footer_wrap .footer .footer_content .copyright {
-    font-weight: 900;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1200px) {
+    .footer_wrap .footer {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    .footer_wrap .footer .footer_content {
+        width: 100%;
+    }
+    .footer_wrap .footer .footer_content h3 {
+        font-size: 15px;
+        margin-bottom: 0.5rem;
+    }
+    .footer_wrap .footer .footer_content p {
+        font-size: 12px;
+        margin-bottom: 0.2rem;
+    }
 }

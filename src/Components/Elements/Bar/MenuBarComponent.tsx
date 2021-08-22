@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BsSearch, BsPeopleCircle, BsHeart, BsBag } from 'react-icons/bs';
 import '@Style/Common/HeaderBar.css';
 
 // TODO : 백엔드 개발 완료전 더미데이터로 메뉴를 보여줌.
 import menuList from '@Constants/menu-list';
+import { Link } from 'react-router-dom';
 
 const menuMap: any = menuList.map(menu => {
     return {
@@ -13,19 +14,30 @@ const menuMap: any = menuList.map(menu => {
 });
 
 export default function MenuBarComponent() {
+    const [toggleSelected, setToggleSeleted] = useState<boolean>(false);
+    const [toggleAccount, setToggleAccount] = useState<boolean>(false);
+
+    const handleSelected = () => {
+        setToggleSeleted(!toggleSelected);
+    };
+
+    const handleAccounted = () => {
+        setToggleAccount(!toggleAccount);
+    };
+
     return (
         <header className="header-area header-padding-1 sticky-bar header-res-padding clearfix">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-xl-2 col-lg-2 col-md-6 col-4">
-                        <div className="logo">
-                            <a href="/" style={{ display: 'block', width: '100%' }}>
+                        <div className="logo" style={{ marginBottom: '10px' }}>
+                            <Link to="/" style={{ display: 'block', width: '100%' }}>
                                 <img
                                     className="shopieal-logo"
                                     alt=""
                                     src="http://www.dadamungu.com/2011/_DATA/brand/1334711623.jpg"
                                 />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-xl-8 col-lg-8 d-none d-lg-block">
@@ -34,7 +46,7 @@ export default function MenuBarComponent() {
                                 <ul>
                                     {menuMap.map((menu: any, key: number) => (
                                         <li key={key}>
-                                            <a href={menu.link}>{menu.name}</a>
+                                            <Link to={menu.link}>{menu.name}</Link>
                                         </li>
                                     ))}
                                 </ul>
@@ -44,48 +56,52 @@ export default function MenuBarComponent() {
                     <div className="col-xl-2 col-lg-2 col-md-6 col-8">
                         <div className="header-right-wrap">
                             <div className="same-style header-search">
-                                <a className="search-active" href="#">
+                                <a className="search-active" href="#" onClick={handleSelected}>
                                     <BsSearch />
                                 </a>
-                                <div className="search-content">
-                                    <form action="#">
-                                        <input type="text" placeholder="Search" onChange={e => console.debug(e)} />
-                                        <button className="button-search">
-                                            <BsSearch />
-                                        </button>
-                                    </form>
+                                <div
+                                    className="search-content"
+                                    style={toggleSelected ? { display: 'block' } : { display: 'none' }}
+                                >
+                                    <input type="text" placeholder="Search" onChange={e => console.debug(e)} />
+                                    <button className="button-search">
+                                        <BsSearch />
+                                    </button>
                                 </div>
                             </div>
                             <div className="same-style account-satting">
-                                <a className="account-satting-active" href="#">
+                                <a className="account-satting-active" href="#" onClick={handleAccounted}>
                                     <BsPeopleCircle />
                                 </a>
-                                <div className="account-dropdown">
+                                <div
+                                    className="account-dropdown"
+                                    style={toggleAccount ? { display: 'block' } : { display: 'none' }}
+                                >
                                     <ul>
                                         <li>
-                                            <a href="login-register.html">로그인</a>
+                                            <Link to="/login-register">로그인</Link>
                                         </li>
                                         <li>
-                                            <a href="login-register.html">회원가입</a>
+                                            <Link to="/login-register">회원가입</Link>
                                         </li>
                                         <li>
-                                            <a href="wishlist.html">장바구니 </a>
+                                            <Link to="/wishlist">장바구니</Link>
                                         </li>
                                         <li>
-                                            <a href="my-account.html">나의 정보</a>
+                                            <Link to="/my_account">나의정보</Link>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="same-style header-wishlist">
-                                <a href="#">
+                                <Link to="/wishlist">
                                     <BsHeart />
-                                </a>
+                                </Link>
                             </div>
                             <div className="same-style cart-wrap">
-                                <a href="#">
+                                <Link to="/cart">
                                     <BsBag />
-                                </a>
+                                </Link>
                             </div>
                             {/* TODO: 장바구니 버튼 눌렀을시 나오는 컴포넌트 따로 분리해야함.*/}
                             {/*    <div className="same-style cart-wrap">*/}
@@ -155,18 +171,14 @@ export default function MenuBarComponent() {
                             {/*</div>*/}
                         </div>
                     </div>
-                    <div className="mobile-menu-area">
-                        <div className="mobile-menu">
-                            <nav id="mobile-menu-active">
-                                <ul className="menu-overflow">
-                                    {menuMap.map((menu: any, key: number) => (
-                                        <li key={key}>
-                                            <a href={menu.link}>{menu.name}</a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </nav>
-                        </div>
+                    <div className="mobile_menu_wrap">
+                        <ul>
+                            {menuMap.map((menu: any, key: number) => (
+                                <li key={key}>
+                                    <Link to={menu.link}>{menu.name}</Link>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </div>
             </div>
