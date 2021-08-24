@@ -170,7 +170,7 @@ ul {
     padding: 0;
 }
 
-/*-- 
+/*--
     - Common Classes
 -----------------------------------------*/
 .fix {
@@ -1213,7 +1213,7 @@ a:hover {
 }
 
 /***************************
-    Page section padding 
+    Page section padding
 ****************************/
 .ptb-0 {
     padding: 0;
@@ -1328,7 +1328,7 @@ a:hover {
 }
 
 /***************************
-    Page section margin 
+    Page section margin
 ****************************/
 .mtb-0 {
     margin: 0;
@@ -1402,7 +1402,7 @@ a:hover {
     margin: 290px 0;
 }
 
-/*-- 
+/*--
     - Input Placeholder
 -----------------------------------------*/
 input:-moz-placeholder,
@@ -1717,8 +1717,8 @@ textarea:focus {
     margin: 14px 0 0;
 }
 
-/*-- 
-    Scroll Up 
+/*--
+    Scroll Up
 -----------------------------------------*/
 #scrollUp {
     width: 50px;
@@ -2012,7 +2012,7 @@ a.default-btn {
     }
 }
 .effect-snow {
-    background-image: url('../img/bg/snow1.png');
+    background-image: url("http://dev.media.lunatalk.co.kr/storage/assets/img/bg/snow1.png");
     -webkit-animation: snow 20s linear infinite;
     animation: snow 20s linear infinite;
 }
@@ -7576,7 +7576,7 @@ a.default-btn {
 /* .product-wrap .product-content .product-price span::before {
     position: absolute;
     content: '';
-    /* right: -13px; 
+    /* right: -13px;
     top: 10px;
     width: 7px;
     height: 2px;
@@ -12297,7 +12297,7 @@ a.default-btn {
     position: relative;
 }
 .subscribe-style-2 .subscribe-form-2 form .clear-2 {
-    background: rgba(0, 0, 0, 0) url('../../assets/img/icon-img/suscribe.png') no-repeat scroll right 0 center;
+    background: rgba(0, 0, 0, 0) url("http://dev.media.lunatalk.co.kr/storage/assets/img/icon-img/suscribe.png") no-repeat scroll right 0 center;
     bottom: 0px;
     display: inline-block;
     position: absolute;
@@ -13630,7 +13630,7 @@ a.default-btn {
     -moz-appearance: none;
     -webkit-appearance: none;
     min-width: 143px;
-    background: rgba(0, 0, 0, 0) url('../../assets/img/icon-img/select.png') no-repeat scroll right 0px center;
+    background: rgba(0, 0, 0, 0) url("http://dev.media.lunatalk.co.kr/storage/assets/img/icon-img/select.png") no-repeat scroll right 0px center;
 }
 .shop-top-bar .select-shoing-wrap p {
     color: #606060;
@@ -14746,7 +14746,7 @@ h3.cart-page-title {
 .discount-code-wrapper .tax-wrapper .tax-select-wrapper .tax-select select {
     -moz-appearance: none;
     -webkit-appearance: none;
-    background: #fff url('../../assets/img/icon-img/cart.png') no-repeat scroll right 18px center;
+    background: #fff url("http://dev.media.lunatalk.co.kr/storage/assets/img/icon-img/cart.png") no-repeat scroll right 18px center;
     border: 1px solid #ebebeb;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -15017,7 +15017,7 @@ h3.cart-page-title {
     font-size: 14px;
     height: 45px;
     padding: 2px 20px;
-    background: rgba(0, 0, 0, 0) url('../../assets/img/icon-img/select.png') no-repeat scroll right 18px center;
+    background: rgba(0, 0, 0, 0) url("http://dev.media.lunatalk.co.kr/storage/assets/img/icon-img/select.png") no-repeat scroll right 18px center;
     cursor: pointer;
 }
 .billing-info-wrap .checkout-account {
@@ -16028,14 +16028,7 @@ h3.cart-page-title {
     position: absolute;
     top: 16px;
 }
-.single-my-account h3.panel-title a {
-    color: #242424;
-    font-weight: 600;
-    font-size: 16px;
-    display: block;
-    padding: 16px 47px;
-    position: relative;
-    .col,
+.col,
     .col-1,
     .col-10,
     .col-11,
@@ -16104,7 +16097,14 @@ h3.cart-page-title {
     .col-xl-7,
     .col-xl-8,
     .col-xl-9,
-    .col-xl-auto;
+    .col-xl-auto,
+    .single-my-account h3.panel-title a {
+    color: #242424;
+    font-weight: 600;
+    font-size: 16px;
+    display: block;
+    padding: 16px 47px;
+    position: relative;
 }
 @media only screen and (max-width: 767px) {
     .single-my-account h3.panel-title a {

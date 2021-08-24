@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 
 // CSS Import
 import '@Style/Default/common.css';
+import '@Style/Default/style.css';
 
 ReactDOM.render(
     <React.Fragment>

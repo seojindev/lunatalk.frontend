@@ -4,6 +4,11 @@
             "name": "메인",
             "routeName": "/",
             "componentName": "Mains/MainPage"
+        },
+        {
+            "name": "로그인/회원가입",
+            "routeName": "/auths/login-register",
+            "componentName": "Auths/LoginRegisterPage"
         }
     ]
 }
