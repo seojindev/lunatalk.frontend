@@ -68,7 +68,11 @@ export default function BlogDetailsPublish() {
                             <div className="col-xl-2 col-lg-2 col-md-6 col-4">
                                 <div className="logo">
                                     <a href="index.html">
-                                        <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                        <img
+                                            className="shopieal-logo"
+                                            alt=""
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                        />
                                     </a>
                                 </div>
                             </div>
@@ -284,7 +288,7 @@ export default function BlogDetailsPublish() {
                                                             <li className="mega-menu-img">
                                                                 <a href="shop.html">
                                                                     <img
-                                                                        src="/assets/img/banner/banner-12.png"
+                                                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/banner/banner-12.png"
                                                                         alt=""
                                                                     />
                                                                 </a>
@@ -413,7 +417,10 @@ export default function BlogDetailsPublish() {
                                                 <li className="single-shopping-cart">
                                                     <div className="shopping-cart-img">
                                                         <a href="#">
-                                                            <img alt="" src="/assets/img/cart/cart-1.png" />
+                                                            <img
+                                                                alt=""
+                                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-1.png"
+                                                            />
                                                         </a>
                                                     </div>
                                                     <div className="shopping-cart-title">
@@ -432,7 +439,10 @@ export default function BlogDetailsPublish() {
                                                 <li className="single-shopping-cart">
                                                     <div className="shopping-cart-img">
                                                         <a href="#">
-                                                            <img alt="" src="/assets/img/cart/cart-2.png" />
+                                                            <img
+                                                                alt=""
+                                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-2.png"
+                                                            />
                                                         </a>
                                                     </div>
                                                     <div className="shopping-cart-title">
@@ -746,7 +756,10 @@ export default function BlogDetailsPublish() {
                             <div className="blog-details-wrapper ml-20">
                                 <div className="blog-details-top">
                                     <div className="blog-details-img">
-                                        <img alt="" src="/assets/img/blog/blog-5.jpg" />
+                                        <img
+                                            alt=""
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-5.jpg"
+                                        />
                                     </div>
                                     <div className="blog-details-content">
                                         <div className="blog-meta-2">
@@ -787,12 +800,18 @@ export default function BlogDetailsPublish() {
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="dec-img mb-50">
-                                                <img alt="" src="/assets/img/blog/blog-details.jpg" />
+                                                <img
+                                                    alt=""
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-details.jpg"
+                                                />
                                             </div>
                                         </div>
                                         <div className="col-md-6">
                                             <div className="dec-img mb-50">
-                                                <img alt="" src="/assets/img/blog/blog-details-2.jpg" />
+                                                <img
+                                                    alt=""
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-details-2.jpg"
+                                                />
                                             </div>
                                         </div>
                                     </div>
@@ -853,7 +872,10 @@ export default function BlogDetailsPublish() {
                                     <h4 className="blog-dec-title">comments : 02</h4>
                                     <div className="single-comment-wrapper mt-35">
                                         <div className="blog-comment-img">
-                                            <img src="/assets/img/blog/comment-1.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/comment-1.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                         <div className="blog-comment-content">
                                             <h4>Anthony Stephens</h4>
@@ -870,7 +892,10 @@ export default function BlogDetailsPublish() {
                                     </div>
                                     <div className="single-comment-wrapper mt-50 ml-120">
                                         <div className="blog-comment-img">
-                                            <img src="/assets/img/blog/comment-2.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/comment-2.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                         <div className="blog-comment-content">
                                             <h4>DX Joxova</h4>
@@ -930,7 +955,10 @@ export default function BlogDetailsPublish() {
                                         <div className="single-sidebar-blog">
                                             <div className="sidebar-blog-img">
                                                 <a href="#">
-                                                    <img src="/assets/img/blog/sidebar-1.jpg" alt="" />
+                                                    <img
+                                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/sidebar-1.jpg"
+                                                        alt=""
+                                                    />
                                                 </a>
                                             </div>
                                             <div className="sidebar-blog-content">
@@ -943,7 +971,10 @@ export default function BlogDetailsPublish() {
                                         <div className="single-sidebar-blog">
                                             <div className="sidebar-blog-img">
                                                 <a href="#">
-                                                    <img src="/assets/img/blog/sidebar-2.jpg" alt="" />
+                                                    <img
+                                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/sidebar-2.jpg"
+                                                        alt=""
+                                                    />
                                                 </a>
                                             </div>
                                             <div className="sidebar-blog-content">
@@ -956,7 +987,10 @@ export default function BlogDetailsPublish() {
                                         <div className="single-sidebar-blog">
                                             <div className="sidebar-blog-img">
                                                 <a href="#">
-                                                    <img src="/assets/img/blog/sidebar-3.jpg" alt="" />
+                                                    <img
+                                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/sidebar-3.jpg"
+                                                        alt=""
+                                                    />
                                                 </a>
                                             </div>
                                             <div className="sidebar-blog-content">
@@ -969,7 +1003,10 @@ export default function BlogDetailsPublish() {
                                         <div className="single-sidebar-blog">
                                             <div className="sidebar-blog-img">
                                                 <a href="#">
-                                                    <img src="/assets/img/blog/sidebar-1.jpg" alt="" />
+                                                    <img
+                                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/sidebar-1.jpg"
+                                                        alt=""
+                                                    />
                                                 </a>
                                             </div>
                                             <div className="sidebar-blog-content">
@@ -1058,7 +1095,11 @@ export default function BlogDetailsPublish() {
                             <div className="copyright mb-30">
                                 <div className="footer-logo">
                                     <a href="index.html">
-                                        <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                        <img
+                                            className="shopieal-logo"
+                                            alt=""
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                        />
                                     </a>
                                 </div>
                                 <p>

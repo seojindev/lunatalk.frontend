@@ -68,7 +68,11 @@ export default function NotFoundPublish() {
                             <div className="col-xl-2 col-lg-2 col-md-6 col-4">
                                 <div className="logo">
                                     <a href="index.html">
-                                        <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                        <img
+                                            className="shopieal-logo"
+                                            alt=""
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                        />
                                     </a>
                                 </div>
                             </div>
@@ -284,7 +288,7 @@ export default function NotFoundPublish() {
                                                             <li className="mega-menu-img">
                                                                 <a href="shop.html">
                                                                     <img
-                                                                        src="/assets/img/banner/banner-12.png"
+                                                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/banner/banner-12.png"
                                                                         alt=""
                                                                     />
                                                                 </a>
@@ -413,7 +417,10 @@ export default function NotFoundPublish() {
                                                 <li className="single-shopping-cart">
                                                     <div className="shopping-cart-img">
                                                         <a href="#">
-                                                            <img alt="" src="/assets/img/cart/cart-1.png" />
+                                                            <img
+                                                                alt=""
+                                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-1.png"
+                                                            />
                                                         </a>
                                                     </div>
                                                     <div className="shopping-cart-title">
@@ -432,7 +439,10 @@ export default function NotFoundPublish() {
                                                 <li className="single-shopping-cart">
                                                     <div className="shopping-cart-img">
                                                         <a href="#">
-                                                            <img alt="" src="/assets/img/cart/cart-2.png" />
+                                                            <img
+                                                                alt=""
+                                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-2.png"
+                                                            />
                                                         </a>
                                                     </div>
                                                     <div className="shopping-cart-title">
@@ -777,7 +787,11 @@ export default function NotFoundPublish() {
                             <div className="copyright mb-30">
                                 <div className="footer-logo">
                                     <a href="index.html">
-                                        <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                        <img
+                                            className="shopieal-logo"
+                                            alt=""
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                        />
                                     </a>
                                 </div>
                                 <p>

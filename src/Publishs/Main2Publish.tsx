@@ -9,7 +9,11 @@ export default function Main2Publish() {
                         <div className="col-xl-2 col-lg-2 col-md-6 col-4">
                             <div className="logo">
                                 <a href="index.html">
-                                    <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                    <img
+                                        className="shopieal-logo"
+                                        alt=""
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                    />
                                 </a>
                             </div>
                         </div>
@@ -218,7 +222,10 @@ export default function Main2Publish() {
                                                     <ul>
                                                         <li className="mega-menu-img">
                                                             <a href="shop.html">
-                                                                <img src="/assets/img/banner/banner-12.png" alt="" />
+                                                                <img
+                                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/banner/banner-12.png"
+                                                                    alt=""
+                                                                />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -345,7 +352,10 @@ export default function Main2Publish() {
                                             <li className="single-shopping-cart">
                                                 <div className="shopping-cart-img">
                                                     <a href="#">
-                                                        <img alt="" src="/assets/img/cart/cart-1.png" />
+                                                        <img
+                                                            alt=""
+                                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-1.png"
+                                                        />
                                                     </a>
                                                 </div>
                                                 <div className="shopping-cart-title">
@@ -364,7 +374,10 @@ export default function Main2Publish() {
                                             <li className="single-shopping-cart">
                                                 <div className="shopping-cart-img">
                                                     <a href="#">
-                                                        <img alt="" src="/assets/img/cart/cart-2.png" />
+                                                        <img
+                                                            alt=""
+                                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-2.png"
+                                                        />
                                                     </a>
                                                 </div>
                                                 <div className="shopping-cart-title">
@@ -714,7 +727,10 @@ export default function Main2Publish() {
                         <div className="col-lg-4 col-md-4">
                             <div className="single-banner mb-30">
                                 <a href="product-details.html">
-                                    <img src="/assets/img/banner/banner-1.jpg" alt="" />
+                                    <img
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/banner/banner-1.jpg"
+                                        alt=""
+                                    />
                                 </a>
                                 <div className="banner-content">
                                     <h3>Watches</h3>
@@ -730,7 +746,10 @@ export default function Main2Publish() {
                         <div className="col-lg-4 col-md-4">
                             <div className="single-banner mb-30">
                                 <a href="product-details.html">
-                                    <img src="/assets/img/banner/banner-2.jpg" alt="" />
+                                    <img
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/banner/banner-2.jpg"
+                                        alt=""
+                                    />
                                 </a>
                                 <div className="banner-content">
                                     <h3>Plo Bag</h3>
@@ -746,7 +765,10 @@ export default function Main2Publish() {
                         <div className="col-lg-4 col-md-4">
                             <div className="single-banner mb-30">
                                 <a href="product-details.html">
-                                    <img src="/assets/img/banner/banner-3.jpg" alt="" />
+                                    <img
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/banner/banner-3.jpg"
+                                        alt=""
+                                    />
                                 </a>
                                 <div className="banner-content">
                                     <h3>Sunglass</h3>
@@ -887,12 +909,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-5.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-5.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-5.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-5.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -938,12 +960,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-4.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-4.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-4.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-4.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -988,12 +1010,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-3.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-3.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-3.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-3.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1039,12 +1061,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-2.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-2.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-2.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-2.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1089,12 +1111,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-1.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-1.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-1.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-1.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1140,12 +1162,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-8.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-8.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-8.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-8.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1190,12 +1212,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-7.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-7.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-7.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-7.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1241,12 +1263,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-6.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-6.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-6.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-6.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1295,12 +1317,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-1.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-1.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-1.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-1.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1346,12 +1368,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-2.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-2.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-2.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-2.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1396,12 +1418,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-3.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-3.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-3.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-3.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1447,12 +1469,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-4.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-4.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-4.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-4.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1497,12 +1519,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-5.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-5.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-5.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-5.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1548,12 +1570,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-6.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-6.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-6.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-6.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1598,12 +1620,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-7.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-7.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-7.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-7.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1649,12 +1671,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-8.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-8.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-8.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-8.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1703,12 +1725,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-8.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-8.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-8.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-8.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1754,12 +1776,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-7.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-7.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-7.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-7.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1804,12 +1826,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-6.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-6.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-6.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-6.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1855,12 +1877,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-5.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-5.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-5.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-5.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1905,12 +1927,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-4.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-4.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-4.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-4.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -1956,12 +1978,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-3.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-3.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-3.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-3.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -2006,12 +2028,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-2.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-2.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-2.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-2.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -2057,12 +2079,12 @@ export default function Main2Publish() {
                                             <a href="product-details.html">
                                                 <img
                                                     className="default-img"
-                                                    src="/assets/img/product/hm2-pro-1.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-1.jpg"
                                                     alt=""
                                                 />
                                                 <img
                                                     className="hover-img"
-                                                    src="/assets/img/product/hm2-pro-1.jpg"
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/hm2-pro-1.jpg"
                                                     alt=""
                                                 />
                                             </a>
@@ -2116,7 +2138,10 @@ export default function Main2Publish() {
                             <div className="blog-wrap mb-30 scroll-zoom">
                                 <div className="blog-img">
                                     <a href="blog-details.html">
-                                        <img src="/assets/img/blog/blog-1.jpg" alt="" />
+                                        <img
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-1.jpg"
+                                            alt=""
+                                        />
                                     </a>
                                     <span className="purple">Lifestyle</span>
                                 </div>
@@ -2138,7 +2163,10 @@ export default function Main2Publish() {
                             <div className="blog-wrap mb-30 scroll-zoom">
                                 <div className="blog-img">
                                     <a href="blog-details.html">
-                                        <img src="/assets/img/blog/blog-2.jpg" alt="" />
+                                        <img
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-2.jpg"
+                                            alt=""
+                                        />
                                     </a>
                                     <span className="pink">Lifestyle</span>
                                 </div>
@@ -2160,7 +2188,10 @@ export default function Main2Publish() {
                             <div className="blog-wrap mb-30 scroll-zoom">
                                 <div className="blog-img">
                                     <a href="blog-details.html">
-                                        <img src="/assets/img/blog/blog-3.jpg" alt="" />
+                                        <img
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-3.jpg"
+                                            alt=""
+                                        />
                                     </a>
                                     <span className="purple">Lifestyle</span>
                                 </div>
@@ -2188,7 +2219,11 @@ export default function Main2Publish() {
                             <div className="copyright mb-30">
                                 <div className="footer-logo">
                                     <a href="index.html">
-                                        <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                        <img
+                                            className="shopieal-logo"
+                                            alt=""
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                        />
                                     </a>
                                 </div>
                                 <p>
@@ -2322,16 +2357,28 @@ export default function Main2Publish() {
                                 <div className="col-md-5 col-sm-12 col-xs-12">
                                     <div className="tab-content quickview-big-img">
                                         <div id="pro-1" className="tab-pane fade show active">
-                                            <img src="/assets/img/product/quickview-l1.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-l1.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                         <div id="pro-2" className="tab-pane fade">
-                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-l2.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                         <div id="pro-3" className="tab-pane fade">
-                                            <img src="/assets/img/product/quickview-l3.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-l3.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                         <div id="pro-4" className="tab-pane fade">
-                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-l2.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                     </div>
                                     {/* <!-- Thumbnail Large Image End --> */}
@@ -2342,16 +2389,28 @@ export default function Main2Publish() {
                                             role="tablist"
                                         >
                                             <a className="active" data-toggle="tab" href="#pro-1">
-                                                <img src="/assets/img/product/quickview-s1.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-s1.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <a data-toggle="tab" href="#pro-2">
-                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-s2.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <a data-toggle="tab" href="#pro-3">
-                                                <img src="/assets/img/product/quickview-s3.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-s3.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <a data-toggle="tab" href="#pro-4">
-                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-s2.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                         </div>
                                     </div>

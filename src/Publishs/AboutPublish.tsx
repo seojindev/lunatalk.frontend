@@ -68,7 +68,11 @@ export default function AboutPublish() {
                             <div className="col-xl-2 col-lg-2 col-md-6 col-4">
                                 <div className="logo">
                                     <a href="index.html">
-                                        <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                        <img
+                                            className="shopieal-logo"
+                                            alt=""
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                        />
                                     </a>
                                 </div>
                             </div>
@@ -284,7 +288,7 @@ export default function AboutPublish() {
                                                             <li className="mega-menu-img">
                                                                 <a href="shop.html">
                                                                     <img
-                                                                        src="/assets/img/banner/banner-12.png"
+                                                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/banner/banner-12.png"
                                                                         alt=""
                                                                     />
                                                                 </a>
@@ -413,7 +417,10 @@ export default function AboutPublish() {
                                                 <li className="single-shopping-cart">
                                                     <div className="shopping-cart-img">
                                                         <a href="#">
-                                                            <img alt="" src="/assets/img/cart/cart-1.png" />
+                                                            <img
+                                                                alt=""
+                                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-1.png"
+                                                            />
                                                         </a>
                                                     </div>
                                                     <div className="shopping-cart-title">
@@ -432,7 +439,10 @@ export default function AboutPublish() {
                                                 <li className="single-shopping-cart">
                                                     <div className="shopping-cart-img">
                                                         <a href="#">
-                                                            <img alt="" src="/assets/img/cart/cart-2.png" />
+                                                            <img
+                                                                alt=""
+                                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-2.png"
+                                                            />
                                                         </a>
                                                     </div>
                                                     <div className="shopping-cart-title">
@@ -758,7 +768,10 @@ export default function AboutPublish() {
                         <div className="col-lg-4 col-md-4">
                             <div className="single-banner mb-30">
                                 <a href="product-details.html">
-                                    <img src="/assets/img/banner/banner-1.jpg" alt="" />
+                                    <img
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/banner/banner-1.jpg"
+                                        alt=""
+                                    />
                                 </a>
                                 <div className="banner-content">
                                     <h3>Watches</h3>
@@ -774,7 +787,10 @@ export default function AboutPublish() {
                         <div className="col-lg-4 col-md-4">
                             <div className="single-banner mb-30">
                                 <a href="product-details.html">
-                                    <img src="/assets/img/banner/banner-2.jpg" alt="" />
+                                    <img
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/banner/banner-2.jpg"
+                                        alt=""
+                                    />
                                 </a>
                                 <div className="banner-content">
                                     <h3>Plo Bag</h3>
@@ -790,7 +806,10 @@ export default function AboutPublish() {
                         <div className="col-lg-4 col-md-4">
                             <div className="single-banner mb-30">
                                 <a href="product-details.html">
-                                    <img src="/assets/img/banner/banner-3.jpg" alt="" />
+                                    <img
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/banner/banner-3.jpg"
+                                        alt=""
+                                    />
                                 </a>
                                 <div className="banner-content">
                                     <h3>Sunglass</h3>
@@ -895,7 +914,10 @@ export default function AboutPublish() {
                             <div className="team-wrapper mb-30">
                                 <div className="team-img">
                                     <a href="#">
-                                        <img src="/assets/img/team/team-1.jpg" alt="" />
+                                        <img
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/team/team-1.jpg"
+                                            alt=""
+                                        />
                                     </a>
                                     <div className="team-action">
                                         <a className="facebook" href="#">
@@ -919,7 +941,10 @@ export default function AboutPublish() {
                             <div className="team-wrapper mb-30">
                                 <div className="team-img">
                                     <a href="#">
-                                        <img src="/assets/img/team/team-3.jpg" alt="" />
+                                        <img
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/team/team-3.jpg"
+                                            alt=""
+                                        />
                                     </a>
                                     <div className="team-action">
                                         <a className="facebook" href="#">
@@ -943,7 +968,10 @@ export default function AboutPublish() {
                             <div className="team-wrapper mb-30">
                                 <div className="team-img">
                                     <a href="#">
-                                        <img src="/assets/img/team/team-2.jpg" alt="" />
+                                        <img
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/team/team-2.jpg"
+                                            alt=""
+                                        />
                                     </a>
                                     <div className="team-action">
                                         <a className="facebook" href="#">
@@ -967,7 +995,10 @@ export default function AboutPublish() {
                             <div className="team-wrapper mb-30">
                                 <div className="team-img">
                                     <a href="#">
-                                        <img src="/assets/img/team/team-4.jpg" alt="" />
+                                        <img
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/team/team-4.jpg"
+                                            alt=""
+                                        />
                                     </a>
                                     <div className="team-action">
                                         <a className="facebook" href="#">
@@ -994,19 +1025,34 @@ export default function AboutPublish() {
                 <div className="container">
                     <div className="brand-logo-active owl-carousel owl-dot-none">
                         <div className="single-brand-logo">
-                            <img src="/assets/img/brand-logo/barnd-logo-1.png" alt="" />
+                            <img
+                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/brand-logo/barnd-logo-1.png"
+                                alt=""
+                            />
                         </div>
                         <div className="single-brand-logo">
-                            <img src="/assets/img/brand-logo/barnd-logo-2.png" alt="" />
+                            <img
+                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/brand-logo/barnd-logo-2.png"
+                                alt=""
+                            />
                         </div>
                         <div className="single-brand-logo">
-                            <img src="/assets/img/brand-logo/barnd-logo-3.png" alt="" />
+                            <img
+                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/brand-logo/barnd-logo-3.png"
+                                alt=""
+                            />
                         </div>
                         <div className="single-brand-logo">
-                            <img src="/assets/img/brand-logo/barnd-logo-4.png" alt="" />
+                            <img
+                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/brand-logo/barnd-logo-4.png"
+                                alt=""
+                            />
                         </div>
                         <div className="single-brand-logo">
-                            <img src="/assets/img/brand-logo/barnd-logo-5.png" alt="" />
+                            <img
+                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/brand-logo/barnd-logo-5.png"
+                                alt=""
+                            />
                         </div>
                     </div>
                 </div>
@@ -1018,7 +1064,11 @@ export default function AboutPublish() {
                             <div className="copyright mb-30">
                                 <div className="footer-logo">
                                     <a href="index.html">
-                                        <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                        <img
+                                            className="shopieal-logo"
+                                            alt=""
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                        />
                                     </a>
                                 </div>
                                 <p>

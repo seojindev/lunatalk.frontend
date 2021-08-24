@@ -68,7 +68,11 @@ export default function WishlistPublish() {
                             <div className="col-xl-2 col-lg-2 col-md-6 col-4">
                                 <div className="logo">
                                     <a href="index.html">
-                                        <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                        <img
+                                            className="shopieal-logo"
+                                            alt=""
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                        />
                                     </a>
                                 </div>
                             </div>
@@ -284,7 +288,7 @@ export default function WishlistPublish() {
                                                             <li className="mega-menu-img">
                                                                 <a href="shop.html">
                                                                     <img
-                                                                        src="/assets/img/banner/banner-12.png"
+                                                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/banner/banner-12.png"
                                                                         alt=""
                                                                     />
                                                                 </a>
@@ -869,7 +873,11 @@ export default function WishlistPublish() {
                             <div className="copyright mb-30">
                                 <div className="footer-logo">
                                     <a href="index.html">
-                                        <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                        <img
+                                            className="shopieal-logo"
+                                            alt=""
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                        />
                                     </a>
                                 </div>
                                 <p>
@@ -1003,16 +1011,28 @@ export default function WishlistPublish() {
                                 <div className="col-md-5 col-sm-12 col-xs-12">
                                     <div className="tab-content quickview-big-img">
                                         <div id="pro-1" className="tab-pane fade show active">
-                                            <img src="/assets/img/product/quickview-l1.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-l1.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                         <div id="pro-2" className="tab-pane fade">
-                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-l2.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                         <div id="pro-3" className="tab-pane fade">
-                                            <img src="/assets/img/product/quickview-l3.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-l3.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                         <div id="pro-4" className="tab-pane fade">
-                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-l2.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                     </div>
                                     {/* <!-- Thumbnail Large Image End --> */}
@@ -1023,16 +1043,28 @@ export default function WishlistPublish() {
                                             role="tablist"
                                         >
                                             <a className="active" data-toggle="tab" href="#pro-1">
-                                                <img src="/assets/img/product/quickview-s1.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-s1.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <a data-toggle="tab" href="#pro-2">
-                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-s2.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <a data-toggle="tab" href="#pro-3">
-                                                <img src="/assets/img/product/quickview-s3.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-s3.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <a data-toggle="tab" href="#pro-4">
-                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-s2.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                         </div>
                                     </div>

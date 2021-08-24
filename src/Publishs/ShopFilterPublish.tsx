@@ -68,7 +68,11 @@ export default function ShopFilterPublish() {
                             <div className="col-xl-2 col-lg-2 col-md-6 col-4">
                                 <div className="logo">
                                     <a href="index.html">
-                                        <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                        <img
+                                            className="shopieal-logo"
+                                            alt=""
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                        />
                                     </a>
                                 </div>
                             </div>
@@ -284,7 +288,7 @@ export default function ShopFilterPublish() {
                                                             <li className="mega-menu-img">
                                                                 <a href="shop.html">
                                                                     <img
-                                                                        src="/assets/img/banner/banner-12.png"
+                                                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/banner/banner-12.png"
                                                                         alt=""
                                                                     />
                                                                 </a>
@@ -413,7 +417,10 @@ export default function ShopFilterPublish() {
                                                 <li className="single-shopping-cart">
                                                     <div className="shopping-cart-img">
                                                         <a href="#">
-                                                            <img alt="" src="/assets/img/cart/cart-1.png" />
+                                                            <img
+                                                                alt=""
+                                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-1.png"
+                                                            />
                                                         </a>
                                                     </div>
                                                     <div className="shopping-cart-title">
@@ -432,7 +439,10 @@ export default function ShopFilterPublish() {
                                                 <li className="single-shopping-cart">
                                                     <div className="shopping-cart-img">
                                                         <a href="#">
-                                                            <img alt="" src="/assets/img/cart/cart-2.png" />
+                                                            <img
+                                                                alt=""
+                                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-2.png"
+                                                            />
                                                         </a>
                                                     </div>
                                                     <div className="shopping-cart-title">
@@ -752,7 +762,7 @@ export default function ShopFilterPublish() {
                             {/* TODO: state로 처리해야함. */}
                             {/* <div className="product-filter-wrapper" style={{ display: 'block' }}>
                                 <div className="row">
-                                    {/* <!-- Product Filter --> 
+                                    {/* <!-- Product Filter -->
                                     <div className="col-md-3 col-sm-6 col-xs-12 mb-30">
                                         <div className="product-filter">
                                             <h5></h5>
@@ -778,7 +788,7 @@ export default function ShopFilterPublish() {
                                             </ul>
                                         </div>
                                     </div>
-                                    {/* <!-- Product Filter --> 
+                                    {/* <!-- Product Filter -->
                                     <div className="col-md-3 col-sm-6 col-xs-12 mb-30">
                                         <div className="product-filter">
                                             <h5>color filters</h5>
@@ -804,7 +814,7 @@ export default function ShopFilterPublish() {
                                             </ul>
                                         </div>
                                     </div>
-                                    {/* <!-- Product Filter --> 
+                                    {/* <!-- Product Filter -->
                                     <div className="col-md-3 col-sm-6 col-xs-12 mb-30">
                                         <div className="product-filter">
                                             <h5>product tags</h5>
@@ -832,7 +842,7 @@ export default function ShopFilterPublish() {
                                             </div>
                                         </div>
                                     </div> */}
-                            {/* <!-- Product Filter --> 
+                            {/* <!-- Product Filter -->
                                     <div className="col-md-3 col-sm-6 col-xs-12 mb-30">
                                         <div className="product-filter">
                                             <h5>Filter by price</h5>
@@ -1314,7 +1324,11 @@ export default function ShopFilterPublish() {
                             <div className="copyright mb-30">
                                 <div className="footer-logo">
                                     <a href="index.html">
-                                        <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                        <img
+                                            className="shopieal-logo"
+                                            alt=""
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                        />
                                     </a>
                                 </div>
                                 <p>
@@ -1448,16 +1462,28 @@ export default function ShopFilterPublish() {
                                 <div className="col-md-5 col-sm-12 col-xs-12">
                                     <div className="tab-content quickview-big-img">
                                         <div id="pro-1" className="tab-pane fade show active">
-                                            <img src="/assets/img/product/quickview-l1.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-l1.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                         <div id="pro-2" className="tab-pane fade">
-                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-l2.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                         <div id="pro-3" className="tab-pane fade">
-                                            <img src="/assets/img/product/quickview-l3.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-l3.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                         <div id="pro-4" className="tab-pane fade">
-                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-l2.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                     </div>
                                     {/* <!-- Thumbnail Large Image End --> */}
@@ -1468,16 +1494,28 @@ export default function ShopFilterPublish() {
                                             role="tablist"
                                         >
                                             <a className="active" data-toggle="tab" href="#pro-1">
-                                                <img src="/assets/img/product/quickview-s1.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-s1.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <a data-toggle="tab" href="#pro-2">
-                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-s2.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <a data-toggle="tab" href="#pro-3">
-                                                <img src="/assets/img/product/quickview-s3.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-s3.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <a data-toggle="tab" href="#pro-4">
-                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-s2.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                         </div>
                                     </div>

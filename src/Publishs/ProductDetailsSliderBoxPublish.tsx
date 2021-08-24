@@ -68,7 +68,11 @@ export default function ProductDetailsSliderBoxPublish() {
                             <div className="col-xl-2 col-lg-2 col-md-6 col-4">
                                 <div className="logo">
                                     <a href="index.html">
-                                        <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                        <img
+                                            className="shopieal-logo"
+                                            alt=""
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                        />
                                     </a>
                                 </div>
                             </div>
@@ -284,7 +288,7 @@ export default function ProductDetailsSliderBoxPublish() {
                                                             <li className="mega-menu-img">
                                                                 <a href="shop.html">
                                                                     <img
-                                                                        src="/assets/img/banner/banner-12.png"
+                                                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/banner/banner-12.png"
                                                                         alt=""
                                                                     />
                                                                 </a>
@@ -413,7 +417,10 @@ export default function ProductDetailsSliderBoxPublish() {
                                                 <li className="single-shopping-cart">
                                                     <div className="shopping-cart-img">
                                                         <a href="#">
-                                                            <img alt="" src="/assets/img/cart/cart-1.png" />
+                                                            <img
+                                                                alt=""
+                                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-1.png"
+                                                            />
                                                         </a>
                                                     </div>
                                                     <div className="shopping-cart-title">
@@ -432,7 +439,10 @@ export default function ProductDetailsSliderBoxPublish() {
                                                 <li className="single-shopping-cart">
                                                     <div className="shopping-cart-img">
                                                         <a href="#">
-                                                            <img alt="" src="/assets/img/cart/cart-2.png" />
+                                                            <img
+                                                                alt=""
+                                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-2.png"
+                                                            />
                                                         </a>
                                                     </div>
                                                     <div className="shopping-cart-title">
@@ -746,25 +756,37 @@ export default function ProductDetailsSliderBoxPublish() {
                             <div className="product-details-slider-active nav-style-1 owl-carousel owl-dot-none">
                                 <div className="dec-img-wrap">
                                     <a className="img-popup" href="/assets/img/product-details/product-detalis-bl1.jpg">
-                                        <img src="/assets/img/product-details/product-detalis-l1.jpg" alt="" />
+                                        <img
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/product-details/product-detalis-l1.jpg"
+                                            alt=""
+                                        />
                                     </a>
                                     <span>-29%</span>
                                 </div>
                                 <div className="dec-img-wrap">
                                     <a className="img-popup" href="/assets/img/product-details/product-detalis-bl2.jpg">
-                                        <img src="/assets/img/product-details/product-detalis-l2.jpg" alt="" />
+                                        <img
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/product-details/product-detalis-l2.jpg"
+                                            alt=""
+                                        />
                                     </a>
                                     <span>-29%</span>
                                 </div>
                                 <div className="dec-img-wrap">
                                     <a className="img-popup" href="/assets/img/product-details/product-detalis-bl5.jpg">
-                                        <img src="/assets/img/product-details/product-detalis-l5.jpg" alt="" />
+                                        <img
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/product-details/product-detalis-l5.jpg"
+                                            alt=""
+                                        />
                                     </a>
                                     <span>-29%</span>
                                 </div>
                                 <div className="dec-img-wrap">
                                     <a className="img-popup" href="/assets/img/product-details/product-detalis-bl3.jpg">
-                                        <img src="/assets/img/product-details/product-detalis-l3.jpg" alt="" />
+                                        <img
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/product-details/product-detalis-l3.jpg"
+                                            alt=""
+                                        />
                                     </a>
                                     <span>-29%</span>
                                 </div>
@@ -972,7 +994,10 @@ export default function ProductDetailsSliderBoxPublish() {
                                         <div className="review-wrapper">
                                             <div className="single-review">
                                                 <div className="review-img">
-                                                    <img src="/assets/img/testimonial/1.jpg" alt="" />
+                                                    <img
+                                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/testimonial/1.jpg"
+                                                        alt=""
+                                                    />
                                                 </div>
                                                 <div className="review-content">
                                                     <div className="review-top-wrap">
@@ -1004,7 +1029,10 @@ export default function ProductDetailsSliderBoxPublish() {
                                             </div>
                                             <div className="single-review child-review">
                                                 <div className="review-img">
-                                                    <img src="/assets/img/testimonial/2.jpg" alt="" />
+                                                    <img
+                                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/testimonial/2.jpg"
+                                                        alt=""
+                                                    />
                                                 </div>
                                                 <div className="review-content">
                                                     <div className="review-top-wrap">
@@ -1090,8 +1118,16 @@ export default function ProductDetailsSliderBoxPublish() {
                         <div className="product-wrap">
                             <div className="product-img">
                                 <a href="product-details-slider-box.html">
-                                    <img className="default-img" src="/assets/img/product/pro-1.jpg" alt="" />
-                                    <img className="hover-img" src="/assets/img/product/pro-1-1.jpg" alt="" />
+                                    <img
+                                        className="default-img"
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/pro-1.jpg"
+                                        alt=""
+                                    />
+                                    <img
+                                        className="hover-img"
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/pro-1-1.jpg"
+                                        alt=""
+                                    />
                                 </a>
                                 <span className="pink">-10%</span>
                                 <div className="product-action">
@@ -1132,8 +1168,16 @@ export default function ProductDetailsSliderBoxPublish() {
                         <div className="product-wrap">
                             <div className="product-img">
                                 <a href="product-details-slider-box.html">
-                                    <img className="default-img" src="/assets/img/product/pro-2.jpg" alt="" />
-                                    <img className="hover-img" src="/assets/img/product/pro-2-1.jpg" alt="" />
+                                    <img
+                                        className="default-img"
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/pro-2.jpg"
+                                        alt=""
+                                    />
+                                    <img
+                                        className="hover-img"
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/pro-2-1.jpg"
+                                        alt=""
+                                    />
                                 </a>
                                 <span className="purple">New</span>
                                 <div className="product-action">
@@ -1173,8 +1217,16 @@ export default function ProductDetailsSliderBoxPublish() {
                         <div className="product-wrap">
                             <div className="product-img">
                                 <a href="product-details-slider-box.html">
-                                    <img className="default-img" src="/assets/img/product/pro-3.jpg" alt="" />
-                                    <img className="hover-img" src="/assets/img/product/pro-3-1.jpg" alt="" />
+                                    <img
+                                        className="default-img"
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/pro-3.jpg"
+                                        alt=""
+                                    />
+                                    <img
+                                        className="hover-img"
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/pro-3-1.jpg"
+                                        alt=""
+                                    />
                                 </a>
                                 <span className="pink">-10%</span>
                                 <div className="product-action">
@@ -1215,8 +1267,16 @@ export default function ProductDetailsSliderBoxPublish() {
                         <div className="product-wrap">
                             <div className="product-img">
                                 <a href="product-details-slider-box.html">
-                                    <img className="default-img" src="/assets/img/product/pro-4.jpg" alt="" />
-                                    <img className="hover-img" src="/assets/img/product/pro-4-1.jpg" alt="" />
+                                    <img
+                                        className="default-img"
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/pro-4.jpg"
+                                        alt=""
+                                    />
+                                    <img
+                                        className="hover-img"
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/pro-4-1.jpg"
+                                        alt=""
+                                    />
                                 </a>
                                 <span className="purple">New</span>
                                 <div className="product-action">
@@ -1256,8 +1316,16 @@ export default function ProductDetailsSliderBoxPublish() {
                         <div className="product-wrap">
                             <div className="product-img">
                                 <a href="product-details-slider-box.html">
-                                    <img className="default-img" src="/assets/img/product/pro-5.jpg" alt="" />
-                                    <img className="hover-img" src="/assets/img/product/pro-5-1.jpg" alt="" />
+                                    <img
+                                        className="default-img"
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/pro-5.jpg"
+                                        alt=""
+                                    />
+                                    <img
+                                        className="hover-img"
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/pro-5-1.jpg"
+                                        alt=""
+                                    />
                                 </a>
                                 <span className="pink">-10%</span>
                                 <div className="product-action">
@@ -1305,7 +1373,11 @@ export default function ProductDetailsSliderBoxPublish() {
                             <div className="copyright mb-30">
                                 <div className="footer-logo">
                                     <a href="index.html">
-                                        <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                        <img
+                                            className="shopieal-logo"
+                                            alt=""
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                        />
                                     </a>
                                 </div>
                                 <p>
@@ -1439,16 +1511,28 @@ export default function ProductDetailsSliderBoxPublish() {
                                 <div className="col-md-5 col-sm-12 col-xs-12">
                                     <div className="tab-content quickview-big-img">
                                         <div id="pro-1" className="tab-pane fade show active">
-                                            <img src="/assets/img/product/quickview-l1.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-l1.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                         <div id="pro-2" className="tab-pane fade">
-                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-l2.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                         <div id="pro-3" className="tab-pane fade">
-                                            <img src="/assets/img/product/quickview-l3.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-l3.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                         <div id="pro-4" className="tab-pane fade">
-                                            <img src="/assets/img/product/quickview-l2.jpg" alt="" />
+                                            <img
+                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-l2.jpg"
+                                                alt=""
+                                            />
                                         </div>
                                     </div>
                                     {/* <!-- Thumbnail Large Image End --> */}
@@ -1459,16 +1543,28 @@ export default function ProductDetailsSliderBoxPublish() {
                                             role="tablist"
                                         >
                                             <a className="active" data-toggle="tab" href="#pro-1">
-                                                <img src="/assets/img/product/quickview-s1.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-s1.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <a data-toggle="tab" href="#pro-2">
-                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-s2.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <a data-toggle="tab" href="#pro-3">
-                                                <img src="/assets/img/product/quickview-s3.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-s3.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <a data-toggle="tab" href="#pro-4">
-                                                <img src="/assets/img/product/quickview-s2.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/product/quickview-s2.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                         </div>
                                     </div>

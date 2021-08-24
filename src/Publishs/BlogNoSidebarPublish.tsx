@@ -68,7 +68,11 @@ export default function BlogNoSidebarPublish() {
                             <div className="col-xl-2 col-lg-2 col-md-6 col-4">
                                 <div className="logo">
                                     <a href="index.html">
-                                        <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                        <img
+                                            className="shopieal-logo"
+                                            alt=""
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                        />
                                     </a>
                                 </div>
                             </div>
@@ -284,7 +288,7 @@ export default function BlogNoSidebarPublish() {
                                                             <li className="mega-menu-img">
                                                                 <a href="shop.html">
                                                                     <img
-                                                                        src="/assets/img/banner/banner-12.png"
+                                                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/banner/banner-12.png"
                                                                         alt=""
                                                                     />
                                                                 </a>
@@ -413,7 +417,10 @@ export default function BlogNoSidebarPublish() {
                                                 <li className="single-shopping-cart">
                                                     <div className="shopping-cart-img">
                                                         <a href="#">
-                                                            <img alt="" src="/assets/img/cart/cart-1.png" />
+                                                            <img
+                                                                alt=""
+                                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-1.png"
+                                                            />
                                                         </a>
                                                     </div>
                                                     <div className="shopping-cart-title">
@@ -432,7 +439,10 @@ export default function BlogNoSidebarPublish() {
                                                 <li className="single-shopping-cart">
                                                     <div className="shopping-cart-img">
                                                         <a href="#">
-                                                            <img alt="" src="/assets/img/cart/cart-2.png" />
+                                                            <img
+                                                                alt=""
+                                                                src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-2.png"
+                                                            />
                                                         </a>
                                                     </div>
                                                     <div className="shopping-cart-title">
@@ -748,7 +758,10 @@ export default function BlogNoSidebarPublish() {
                                     <div className="blog-wrap-2 mb-30">
                                         <div className="blog-img-2">
                                             <a href="blog-details.html">
-                                                <img src="/assets/img/blog/blog-9.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-9.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                         </div>
                                         <div className="blog-content-2">
@@ -803,7 +816,10 @@ export default function BlogNoSidebarPublish() {
                                     <div className="blog-wrap-2 mb-30">
                                         <div className="blog-img-2">
                                             <a href="blog-details.html">
-                                                <img src="/assets/img/blog/blog-4.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-4.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <div className="video-icon">
                                                 <a
@@ -866,68 +882,22 @@ export default function BlogNoSidebarPublish() {
                                     <div className="blog-wrap-2 mb-30">
                                         <div className="blog-img-slide owl-carousel nav-style-4">
                                             <a href="blog-details.html">
-                                                <img src="/assets/img/blog/blog-5.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-5.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <a href="blog-details.html">
-                                                <img src="/assets/img/blog/blog-9.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-9.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <a href="blog-details.html">
-                                                <img src="/assets/img/blog/blog-6.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div className="blog-content-2">
-                                            <div className="blog-meta-2">
-                                                <ul>
-                                                    <li>22 April, 2018</li>
-                                                    <li>
-                                                        <a href="#">
-                                                            4 <i className="fa fa-comments-o"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <h4>
-                                                <a href="blog-details.html">New shop collection our shop</a>
-                                            </h4>
-                                            <p>
-                                                Aenean sollicitudin, lorem quis on endum uctor nisi elitod the cona
-                                                sequat ipsum, necas sagittis sem natoque nibh id penatibus
-                                            </p>
-                                            <div className="blog-share-comment">
-                                                <div className="blog-btn-2">
-                                                    <a href="blog-details.html">read more</a>
-                                                </div>
-                                                <div className="blog-share">
-                                                    <span>share :</span>
-                                                    <div className="share-social">
-                                                        <ul>
-                                                            <li>
-                                                                <a className="facebook" href="#">
-                                                                    <i className="fa fa-facebook"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a className="twitter" href="#">
-                                                                    <i className="fa fa-twitter"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a className="instagram" href="#">
-                                                                    <i className="fa fa-instagram"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6 col-sm-12">
-                                    <div className="blog-wrap-2 mb-30">
-                                        <div className="blog-img-2">
-                                            <a href="blog-details.html">
-                                                <img src="/assets/img/blog/blog-6.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-6.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                         </div>
                                         <div className="blog-content-2">
@@ -982,7 +952,10 @@ export default function BlogNoSidebarPublish() {
                                     <div className="blog-wrap-2 mb-30">
                                         <div className="blog-img-2">
                                             <a href="blog-details.html">
-                                                <img src="/assets/img/blog/blog-7.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-6.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                         </div>
                                         <div className="blog-content-2">
@@ -1037,7 +1010,68 @@ export default function BlogNoSidebarPublish() {
                                     <div className="blog-wrap-2 mb-30">
                                         <div className="blog-img-2">
                                             <a href="blog-details.html">
-                                                <img src="/assets/img/blog/blog-8.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-7.jpg"
+                                                    alt=""
+                                                />
+                                            </a>
+                                        </div>
+                                        <div className="blog-content-2">
+                                            <div className="blog-meta-2">
+                                                <ul>
+                                                    <li>22 April, 2018</li>
+                                                    <li>
+                                                        <a href="#">
+                                                            4 <i className="fa fa-comments-o"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h4>
+                                                <a href="blog-details.html">New shop collection our shop</a>
+                                            </h4>
+                                            <p>
+                                                Aenean sollicitudin, lorem quis on endum uctor nisi elitod the cona
+                                                sequat ipsum, necas sagittis sem natoque nibh id penatibus
+                                            </p>
+                                            <div className="blog-share-comment">
+                                                <div className="blog-btn-2">
+                                                    <a href="blog-details.html">read more</a>
+                                                </div>
+                                                <div className="blog-share">
+                                                    <span>share :</span>
+                                                    <div className="share-social">
+                                                        <ul>
+                                                            <li>
+                                                                <a className="facebook" href="#">
+                                                                    <i className="fa fa-facebook"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a className="twitter" href="#">
+                                                                    <i className="fa fa-twitter"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a className="instagram" href="#">
+                                                                    <i className="fa fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-4 col-md-6 col-sm-12">
+                                    <div className="blog-wrap-2 mb-30">
+                                        <div className="blog-img-2">
+                                            <a href="blog-details.html">
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-8.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <div className="video-icon">
                                                 <a
@@ -1100,68 +1134,22 @@ export default function BlogNoSidebarPublish() {
                                     <div className="blog-wrap-2 mb-30">
                                         <div className="blog-img-slide owl-carousel nav-style-4">
                                             <a href="blog-details.html">
-                                                <img src="/assets/img/blog/blog-9.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-9.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <a href="blog-details.html">
-                                                <img src="/assets/img/blog/blog-4.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-4.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                             <a href="blog-details.html">
-                                                <img src="/assets/img/blog/blog-5.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div className="blog-content-2">
-                                            <div className="blog-meta-2">
-                                                <ul>
-                                                    <li>22 April, 2018</li>
-                                                    <li>
-                                                        <a href="#">
-                                                            4 <i className="fa fa-comments-o"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <h4>
-                                                <a href="blog-details.html">New shop collection our shop</a>
-                                            </h4>
-                                            <p>
-                                                Aenean sollicitudin, lorem quis on endum uctor nisi elitod the cona
-                                                sequat ipsum, necas sagittis sem natoque nibh id penatibus
-                                            </p>
-                                            <div className="blog-share-comment">
-                                                <div className="blog-btn-2">
-                                                    <a href="blog-details.html">read more</a>
-                                                </div>
-                                                <div className="blog-share">
-                                                    <span>share :</span>
-                                                    <div className="share-social">
-                                                        <ul>
-                                                            <li>
-                                                                <a className="facebook" href="#">
-                                                                    <i className="fa fa-facebook"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a className="twitter" href="#">
-                                                                    <i className="fa fa-twitter"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a className="instagram" href="#">
-                                                                    <i className="fa fa-instagram"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6 col-sm-12">
-                                    <div className="blog-wrap-2 mb-30">
-                                        <div className="blog-img-2">
-                                            <a href="blog-details.html">
-                                                <img src="/assets/img/blog/blog-4.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-5.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                         </div>
                                         <div className="blog-content-2">
@@ -1216,7 +1204,68 @@ export default function BlogNoSidebarPublish() {
                                     <div className="blog-wrap-2 mb-30">
                                         <div className="blog-img-2">
                                             <a href="blog-details.html">
-                                                <img src="/assets/img/blog/blog-5.jpg" alt="" />
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-4.jpg"
+                                                    alt=""
+                                                />
+                                            </a>
+                                        </div>
+                                        <div className="blog-content-2">
+                                            <div className="blog-meta-2">
+                                                <ul>
+                                                    <li>22 April, 2018</li>
+                                                    <li>
+                                                        <a href="#">
+                                                            4 <i className="fa fa-comments-o"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <h4>
+                                                <a href="blog-details.html">New shop collection our shop</a>
+                                            </h4>
+                                            <p>
+                                                Aenean sollicitudin, lorem quis on endum uctor nisi elitod the cona
+                                                sequat ipsum, necas sagittis sem natoque nibh id penatibus
+                                            </p>
+                                            <div className="blog-share-comment">
+                                                <div className="blog-btn-2">
+                                                    <a href="blog-details.html">read more</a>
+                                                </div>
+                                                <div className="blog-share">
+                                                    <span>share :</span>
+                                                    <div className="share-social">
+                                                        <ul>
+                                                            <li>
+                                                                <a className="facebook" href="#">
+                                                                    <i className="fa fa-facebook"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a className="twitter" href="#">
+                                                                    <i className="fa fa-twitter"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a className="instagram" href="#">
+                                                                    <i className="fa fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-4 col-md-6 col-sm-12">
+                                    <div className="blog-wrap-2 mb-30">
+                                        <div className="blog-img-2">
+                                            <a href="blog-details.html">
+                                                <img
+                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/blog/blog-5.jpg"
+                                                    alt=""
+                                                />
                                             </a>
                                         </div>
                                         <div className="blog-content-2">
@@ -1301,7 +1350,11 @@ export default function BlogNoSidebarPublish() {
                             <div className="copyright mb-30">
                                 <div className="footer-logo">
                                     <a href="index.html">
-                                        <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                        <img
+                                            className="shopieal-logo"
+                                            alt=""
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                        />
                                     </a>
                                 </div>
                                 <p>

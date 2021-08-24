@@ -9,7 +9,11 @@ export default function MainPublish() {
                         <div className="col-xl-2 col-lg-2 col-md-6 col-4">
                             <div className="logo">
                                 <a href="index.html">
-                                    <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                    <img
+                                        className="shopieal-logo"
+                                        alt=""
+                                        src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                    />
                                 </a>
                             </div>
                         </div>
@@ -218,7 +222,10 @@ export default function MainPublish() {
                                                     <ul>
                                                         <li className="mega-menu-img">
                                                             <a href="shop.html">
-                                                                <img src="/assets/img/banner/banner-12.png" alt="" />
+                                                                <img
+                                                                    src="http://dev.media.lunatalk.co.kr/storage/assets/img/banner/banner-12.png"
+                                                                    alt=""
+                                                                />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -345,7 +352,10 @@ export default function MainPublish() {
                                             <li className="single-shopping-cart">
                                                 <div className="shopping-cart-img">
                                                     <a href="#">
-                                                        <img alt="" src="/assets/img/cart/cart-1.png" />
+                                                        <img
+                                                            alt=""
+                                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-1.png"
+                                                        />
                                                     </a>
                                                 </div>
                                                 <div className="shopping-cart-title">
@@ -364,7 +374,10 @@ export default function MainPublish() {
                                             <li className="single-shopping-cart">
                                                 <div className="shopping-cart-img">
                                                     <a href="#">
-                                                        <img alt="" src="/assets/img/cart/cart-2.png" />
+                                                        <img
+                                                            alt=""
+                                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-2.png"
+                                                        />
                                                     </a>
                                                 </div>
                                                 <div className="shopping-cart-title">
@@ -679,7 +692,11 @@ export default function MainPublish() {
                                 </div>
                                 <div className="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-6">
                                     <div className="slider-single-img slider-animated-1">
-                                        <img className="animated" src="/assets/img/slider/single-slide-1.png" alt="" />
+                                        <img
+                                            className="animated"
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/slider/single-slide-1.png"
+                                            alt=""
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -706,7 +723,7 @@ export default function MainPublish() {
                                     <div className="slider-single-img slider-animated-1">
                                         <img
                                             className="animated"
-                                            src="/assets/img/slider/single-slide-hm1-2.png"
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/slider/single-slide-hm1-2.png"
                                             alt=""
                                         />
                                     </div>
@@ -722,7 +739,7 @@ export default function MainPublish() {
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="support-wrap mb-30 support-1">
                                 {/* <div className="support-icon">
-                                    <img className="animated" src="/assets/img/icon-img/support-1.png" alt="" />
+                                    <img className="animated" src="http://dev.media.lunatalk.co.kr/storage/assets/img/icon-img/support-1.png" alt="" />
                                 </div> */}
                                 <div className="support-content">
                                     <h5>ACC</h5>
@@ -733,7 +750,7 @@ export default function MainPublish() {
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="support-wrap mb-30 support-2">
                                 {/* <div className="support-icon">
-                                    <img className="animated" src="/assets/img/icon-img/support-2.png" alt="" />
+                                    <img className="animated" src="http://dev.media.lunatalk.co.kr/storage/assets/img/icon-img/support-2.png" alt="" />
                                 </div> */}
                                 <div className="support-content">
                                     <h5>BAG</h5>
@@ -744,7 +761,7 @@ export default function MainPublish() {
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="support-wrap mb-30 support-3">
                                 {/* <div className="support-icon">
-                                    <img className="animated" src="/assets/img/icon-img/support-3.png" alt="" />
+                                    <img className="animated" src="http://dev.media.lunatalk.co.kr/storage/assets/img/icon-img/support-3.png" alt="" />
                                 </div> */}
                                 <div className="support-content">
                                     <h5>Stationery</h5>
@@ -755,7 +772,7 @@ export default function MainPublish() {
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="support-wrap mb-30 support-4">
                                 {/* <div className="support-icon">
-                                    <img className="animated" src="/assets/img/icon-img/support-4.png" alt="" />
+                                    <img className="animated" src="http://dev.media.lunatalk.co.kr/storage/assets/img/icon-img/support-4.png" alt="" />
                                 </div> */}
                                 <div className="support-content">
                                     <h5>Wallet</h5>
@@ -1682,7 +1699,11 @@ export default function MainPublish() {
                             <div className="copyright mb-30">
                                 <div className="footer-logo">
                                     <a href="index.html">
-                                        <img className="shopieal-logo" alt="" src="/assets/img/logo/logo.png" />
+                                        <img
+                                            className="shopieal-logo"
+                                            alt=""
+                                            src="http://dev.media.lunatalk.co.kr/storage/assets/img/logo/logo.png"
+                                        />
                                     </a>
                                 </div>
                                 <p>

@@ -114,7 +114,7 @@ export default function MenuBarComponent() {
                             {/*                <li className="single-shopping-cart">*/}
                             {/*                    <div className="shopping-cart-img">*/}
                             {/*                        <a href="#">*/}
-                            {/*                            <img alt="" src="/assets/img/cart/cart-1.png" />*/}
+                            {/*                            <img alt="" src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-1.png" />*/}
                             {/*                        </a>*/}
                             {/*                    </div>*/}
                             {/*                    <div className="shopping-cart-title">*/}
@@ -133,7 +133,7 @@ export default function MenuBarComponent() {
                             {/*                <li className="single-shopping-cart">*/}
                             {/*                    <div className="shopping-cart-img">*/}
                             {/*                        <a href="#">*/}
-                            {/*                            <img alt="" src="/assets/img/cart/cart-2.png" />*/}
+                            {/*                            <img alt="" src="http://dev.media.lunatalk.co.kr/storage/assets/img/cart/cart-2.png" />*/}
                             {/*                        </a>*/}
                             {/*                    </div>*/}
                             {/*                    <div className="shopping-cart-title">*/}
