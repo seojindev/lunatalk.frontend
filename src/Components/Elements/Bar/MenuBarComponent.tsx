@@ -79,7 +79,7 @@ export default function MenuBarComponent() {
                                 >
                                     <ul>
                                         <li>
-                                            <Link to="/login-register">로그인</Link>
+                                            <Link to="/auths/login-register">로그인</Link>
                                         </li>
                                         <li>
                                             <Link to="/login-register">회원가입</Link>
