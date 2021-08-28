@@ -2012,7 +2012,7 @@ a.default-btn {
     }
 }
 .effect-snow {
-    background-image: url("http://dev.media.lunatalk.co.kr/storage/assets/img/bg/snow1.png");
+    background-image: url('http://dev.media.lunatalk.co.kr/storage/assets/img/bg/snow1.png');
     -webkit-animation: snow 20s linear infinite;
     animation: snow 20s linear infinite;
 }
@@ -2461,13 +2461,13 @@ a.default-btn {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-right-wrap {
         margin-top: 0px;
-        margin-right: 50px;
+        /* margin-right: 50px; */
     }
 }
 @media only screen and (max-width: 767px) {
     .header-right-wrap {
         margin-top: 2px;
-        margin-right: 50px;
+        /* margin-right: 50px; */
     }
 }
 .header-right-wrap .same-style {
@@ -4008,14 +4008,33 @@ a.default-btn {
 }
 /*----- 3. Slider style  ------*/
 .slider-height-1 {
-    height: 750px;
+    max-height: 520px;
+}
+.slick-next {
+    right: 25px !important;
+}
+.slick-prev {
+    left: 25px !important;
+    z-index: 100;
+}
+.slick-dots {
+    bottom: 25px !important;
+}
+.slick-prev,
+.slick-next {
+    width: 30px !important;
+    height: 30px !important;
+}
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px !important;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
     .slider-height-1 {
-        height: 650px;
+        height: 100%;
     }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+/* @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .slider-height-1 {
         height: 520px;
     }
@@ -4024,11 +4043,11 @@ a.default-btn {
     .slider-height-1 {
         height: 450px;
     }
-}
+} */
 @media only screen and (max-width: 767px) {
     .slider-height-1 {
         height: auto;
-        padding: 50px 0 0;
+        /* padding: 50px 0 0; */
     }
     .slider-height-1.slider-height-res15 {
         padding: 0px 0 0;
@@ -4036,7 +4055,7 @@ a.default-btn {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .slider-height-1 {
-        padding: 38px 0 0;
+        /* padding: 38px 0 0; */
     }
 }
 @media only screen and (max-width: 767px) {
@@ -12297,7 +12316,8 @@ a.default-btn {
     position: relative;
 }
 .subscribe-style-2 .subscribe-form-2 form .clear-2 {
-    background: rgba(0, 0, 0, 0) url("http://dev.media.lunatalk.co.kr/storage/assets/img/icon-img/suscribe.png") no-repeat scroll right 0 center;
+    background: rgba(0, 0, 0, 0) url('http://dev.media.lunatalk.co.kr/storage/assets/img/icon-img/suscribe.png')
+        no-repeat scroll right 0 center;
     bottom: 0px;
     display: inline-block;
     position: absolute;
@@ -13630,7 +13650,8 @@ a.default-btn {
     -moz-appearance: none;
     -webkit-appearance: none;
     min-width: 143px;
-    background: rgba(0, 0, 0, 0) url("http://dev.media.lunatalk.co.kr/storage/assets/img/icon-img/select.png") no-repeat scroll right 0px center;
+    background: rgba(0, 0, 0, 0) url('http://dev.media.lunatalk.co.kr/storage/assets/img/icon-img/select.png') no-repeat
+        scroll right 0px center;
 }
 .shop-top-bar .select-shoing-wrap p {
     color: #606060;
@@ -14746,7 +14767,8 @@ h3.cart-page-title {
 .discount-code-wrapper .tax-wrapper .tax-select-wrapper .tax-select select {
     -moz-appearance: none;
     -webkit-appearance: none;
-    background: #fff url("http://dev.media.lunatalk.co.kr/storage/assets/img/icon-img/cart.png") no-repeat scroll right 18px center;
+    background: #fff url('http://dev.media.lunatalk.co.kr/storage/assets/img/icon-img/cart.png') no-repeat scroll right
+        18px center;
     border: 1px solid #ebebeb;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -14991,7 +15013,7 @@ h3.cart-page-title {
 }
 .billing-info-wrap .billing-info.phone .billing-select,
 .billing-info-wrap .billing-info.address .billing-select {
-    width:30%;
+    width: 30%;
 }
 .billing-info-wrap .billing-info.phone label,
 .billing-info-wrap .billing-info.address label {
@@ -15003,7 +15025,7 @@ h3.cart-page-title {
     height: 45px;
     padding-left: 20px;
     padding-right: 10px;
-    width:100%;
+    width: 100%;
 }
 .billing-info-wrap .billing-info.phone input,
 .billing-info-wrap .billing-info.address input {
@@ -15017,7 +15039,8 @@ h3.cart-page-title {
     font-size: 14px;
     height: 45px;
     padding: 2px 20px;
-    background: rgba(0, 0, 0, 0) url("http://dev.media.lunatalk.co.kr/storage/assets/img/icon-img/select.png") no-repeat scroll right 18px center;
+    background: rgba(0, 0, 0, 0) url('http://dev.media.lunatalk.co.kr/storage/assets/img/icon-img/select.png') no-repeat
+        scroll right 18px center;
     cursor: pointer;
 }
 .billing-info-wrap .checkout-account {
@@ -16029,76 +16052,76 @@ h3.cart-page-title {
     top: 16px;
 }
 .col,
-    .col-1,
-    .col-10,
-    .col-11,
-    .col-12,
-    .col-2,
-    .col-3,
-    .col-4,
-    .col-5,
-    .col-6,
-    .col-7,
-    .col-8,
-    .col-9,
-    .col-auto,
-    .col-lg,
-    .col-lg-1,
-    .col-lg-10,
-    .col-lg-11,
-    .col-lg-12,
-    .col-lg-2,
-    .col-lg-3,
-    .col-lg-4,
-    .col-lg-5,
-    .col-lg-6,
-    .col-lg-7,
-    .col-lg-8,
-    .col-lg-9,
-    .col-lg-auto,
-    .col-md,
-    .col-md-1,
-    .col-md-10,
-    .col-md-11,
-    .col-md-12,
-    .col-md-2,
-    .col-md-3,
-    .col-md-4,
-    .col-md-5,
-    .col-md-6,
-    .col-md-7,
-    .col-md-8,
-    .col-md-9,
-    .col-md-auto,
-    .col-sm,
-    .col-sm-1,
-    .col-sm-10,
-    .col-sm-11,
-    .col-sm-12,
-    .col-sm-2,
-    .col-sm-3,
-    .col-sm-4,
-    .col-sm-5,
-    .col-sm-6,
-    .col-sm-7,
-    .col-sm-8,
-    .col-sm-9,
-    .col-sm-auto,
-    .col-xl,
-    .col-xl-1,
-    .col-xl-10,
-    .col-xl-11,
-    .col-xl-12,
-    .col-xl-2,
-    .col-xl-3,
-    .col-xl-4,
-    .col-xl-5,
-    .col-xl-6,
-    .col-xl-7,
-    .col-xl-8,
-    .col-xl-9,
-    .col-xl-auto,
-    .single-my-account h3.panel-title a {
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto,
+.single-my-account h3.panel-title a {
     color: #242424;
     font-weight: 600;
     font-size: 16px;
