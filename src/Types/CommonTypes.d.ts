@@ -27,15 +27,86 @@ declare module 'CommonTypes' {
     export interface Codes {
         code_name: any;
         code_group: {
-            S01: CodeItem[];
-            S02: CodeItem[];
-            S03: CodeItem[];
-            S04: CodeItem[];
-            G01: CodeItem[];
-            P01: CodeItem[];
-            O10: CodeItem[];
-            O20: CodeItem[];
-            E01: CodeItem[];
+            '110': CodeItem[];
+            '120': CodeItem[];
+            '130': CodeItem[];
+            '210': CodeItem[];
+            '300': CodeItem[];
+            '400': CodeItem[];
+            '010': CodeItem[];
         };
+    }
+
+    // 기본 api 리턴 인테페이스
+    export interface ServiceResponse<T> {
+        status: boolean;
+        message: string;
+        payload: T;
+    }
+
+    // 기본 데이터들.
+    export interface AppBase {
+        codes: Codes[];
+    }
+
+    export interface Login {
+        access_token: string;
+        refresh_token: string;
+    }
+
+    export interface Logout {
+        message: string;
+    }
+
+    export interface Register {
+        id: number;
+        user_uuid: string;
+        login_id: string;
+        name: string;
+        user_type: string;
+        user_level: string;
+        user_state: string;
+    }
+
+    export interface PhoneAuthResponse {
+        phone_number: string;
+        auth_index: number;
+        auth_code: string;
+    }
+
+    export interface PhoneAuthConfirmResponse {
+        auth_index: number;
+        phone_number: string;
+    }
+
+    export interface Banner {
+        click_code: string;
+        product_name: string;
+        product_uuid: string;
+        product_image: string;
+    }
+    export interface BestItem {
+        click_code: string;
+        product_name: string;
+        product_uuid: string;
+        product_price: {
+            type1: number;
+            type2: string;
+        };
+        product_image: string;
+    }
+    export interface Category {
+        click_code: string;
+        product_name: string;
+        product_uuid: string;
+        product_image: string;
+        product_thumb_image: string;
+    }
+    export interface Categories {
+        acc: Category;
+        bag: Category;
+        stationery: Category;
+        wallet: Category;
+        CUSTOM_ITEM: Category;
     }
 }

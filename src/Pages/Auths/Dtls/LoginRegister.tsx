@@ -1,14 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { RootState } from 'StoreTypes';
 import TabButtonLinkBox from './TabButtonLinkBox';
 import LoginFormBox from './LoginFormBox';
 import RegisterFormBox from './RegisterFormBox';
 
 export default function LoginRegister() {
-    const [pageMode, setPageMode] = useState<'login' | 'register'>('login');
+    const { pathName } = useSelector((store: RootState) => ({
+        pathName: store.router.location.pathname,
+    }));
 
+    const [pageMode, setPageMode] = useState<'login' | 'register'>('register');
+
+    // 상단 텝 버튼 처리.
     const handleClickTopButtonLink = (mode: 'login' | 'register') => {
         setPageMode(mode);
     };
+
+    useEffect(() => {
+        const funcSetPageModeLogin = () => {
+            setPageMode('login');
+        };
+
+        const funcSetPageModeRegister = () => {
+            setPageMode('register');
+        };
+
+        if (pathName === '/auths/login') {
+            funcSetPageModeLogin();
+        } else if (pathName === '/auths/register') {
+            funcSetPageModeRegister();
+        }
+    }, [pathName]);
 
     return (
         <div className="login-register-area pt-100 pb-100">
