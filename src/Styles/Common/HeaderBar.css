@@ -412,7 +412,7 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-right-wrap {
         margin-top: 0px;
-        margin-right: 50px;
+        /* margin-right: 50px; */
     }
 }
 @media only screen and (max-width: 767px) {
