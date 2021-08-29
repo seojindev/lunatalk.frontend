@@ -1,7 +1,6 @@
 import { createReducer } from 'typesafe-actions';
-import { SagaAction } from 'CommonTypes';
 import produce from 'immer';
-import { Banner, BestItem, Categories } from 'ServiceTypes';
+import { SagaAction, Banner, BestItem, Categories } from 'CommonTypes';
 import { MainState } from 'StoreTypes';
 import { GET_MAIN_CATEGORY_SUCCESS, GET_MAIN_HOTITEM_SUCCESS } from './actions';
 

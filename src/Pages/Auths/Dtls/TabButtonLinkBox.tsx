@@ -31,10 +31,10 @@ export default function TabButtonLinkBox({
     }, [modeState]);
     return (
         <div className="login-register-tab-list nav">
-            <Link className={activeClass.login} to="/auths/login-register" onClick={() => modeChange('login')}>
+            <Link className={activeClass.login} to="/auths/login" onClick={() => modeChange('login')}>
                 <h4> 로그인 </h4>
             </Link>
-            <Link className={activeClass.register} to="/auths/login-register" onClick={() => modeChange('register')}>
+            <Link className={activeClass.register} to="/auths/register" onClick={() => modeChange('register')}>
                 <h4> 회원가입 </h4>
             </Link>
         </div>

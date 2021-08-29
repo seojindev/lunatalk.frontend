@@ -1,7 +1,6 @@
 import { takeLatest, fork, put, call } from 'redux-saga/effects';
 import { getMainBanner, getMainBestItem, getMainCategoies, getMainHotItem } from '@API';
-import { ServiceResponse } from 'ServiceTypes';
-import { Banner, BestItem, Categories } from 'ServiceTypes';
+import { ServiceResponse, Banner, BestItem, Categories } from 'CommonTypes';
 
 import {
     GET_MAIN_BANNER_START,

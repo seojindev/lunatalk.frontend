@@ -6,9 +6,19 @@
             "componentName": "Mains/MainPage"
         },
         {
-            "name": "로그인/회원가입",
-            "routeName": "/auths/login-register",
+            "name": "로그인",
+            "routeName": "/auths/login",
             "componentName": "Auths/LoginRegisterPage"
+        },
+        {
+            "name": "회원가입",
+            "routeName": "/auths/register",
+            "componentName": "Auths/LoginRegisterPage"
+        },
+        {
+            "name": "로그아웃",
+            "routeName": "/auths/logout",
+            "componentName": "Auths/LogoutPage"
         }
     ]
 }
