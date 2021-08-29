@@ -10,7 +10,7 @@ import { BodySpinner } from '@Element/Spinners';
 const routeMap: any = publishList.map(route => {
     return {
         name: route.name,
-        comoonent: lazy(() => import(`../Publishs/${route.component}`)),
+        component: lazy(() => import(`../Publishs/${route.component}`)),
     };
 });
 
@@ -18,7 +18,7 @@ const routeMap: any = publishList.map(route => {
 const MainLayoutPage = PagesList.MainLayout.map((page: { routeName: string; componentName: string }) => {
     return {
         name: page.routeName,
-        comoonent: lazy(() => import(`../Pages/${page.componentName}`)),
+        component: lazy(() => import(`../Pages/${page.componentName}`)),
     };
 });
 
@@ -42,7 +42,7 @@ const Routes = ({ Routerhistory }: { Routerhistory: any }) => {
                                         return (
                                             <Route
                                                 path={process.env.PUBLIC_URL + `${item.name}`}
-                                                component={item.comoonent}
+                                                component={item.component}
                                                 key={n}
                                                 exact
                                             />
@@ -60,7 +60,7 @@ const Routes = ({ Routerhistory }: { Routerhistory: any }) => {
                                 return (
                                     <Route
                                         path={process.env.PUBLIC_URL + `/publishs/${item.name}`}
-                                        component={item.comoonent}
+                                        component={item.component}
                                         key={n}
                                     />
                                 );
