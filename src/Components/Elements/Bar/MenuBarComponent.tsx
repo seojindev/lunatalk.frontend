@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { BsSearch, BsPeopleCircle, BsHeart, BsBag } from 'react-icons/bs';
 import '@Style/Common/HeaderBar.css';
-import { getLocalToken } from '@Helper';
+import { useSelector } from 'react-redux';
+import { RootState } from 'StoreTypes';
 
 // TODO : 백엔드 개발 완료전 더미데이터로 메뉴를 보여줌.
 import menuList from '@Constants/menu-list';
@@ -15,6 +16,10 @@ const menuMap: any = menuList.map(menu => {
 });
 
 export default function MenuBarComponent() {
+    const { storeLoginState } = useSelector((store: RootState) => ({
+        storeLoginState: store.app.loginState,
+    }));
+
     const [toggleSelected, setToggleSeleted] = useState<boolean>(false);
     const [toggleAccount, setToggleAccount] = useState<boolean>(false);
 
@@ -29,16 +34,16 @@ export default function MenuBarComponent() {
     };
 
     useEffect(() => {
-        const funcCheckLogin = async () => {
-            const localToken = await getLocalToken();
-
-            if (localToken && localToken.login_state === true) {
+        const funcCheckLogin = () => {
+            if (storeLoginState) {
                 SetloginCkResult(true);
+            } else {
+                SetloginCkResult(false);
             }
         };
 
         funcCheckLogin();
-    });
+    }, [storeLoginState]);
 
     return (
         <header className="header-area header-padding-1 sticky-bar header-res-padding clearfix">

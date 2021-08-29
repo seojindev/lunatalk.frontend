@@ -111,11 +111,11 @@ export default function LoginFormBox() {
 
         // 리멤버 아이디 체크.
         const funcCheckRemember = async () => {
-            const user_id = await cookieManager.get('user_id');
-            if (!isEmpty(user_id)) {
+            const login_id = await cookieManager.get('login_id');
+            if (!isEmpty(login_id)) {
                 setInputValue({
                     ...inputValue,
-                    login_id: user_id,
+                    login_id: login_id,
                 });
                 setOptionRemember(true);
             }
