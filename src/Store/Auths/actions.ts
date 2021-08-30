@@ -67,3 +67,5 @@ export const loginAction = createAction(
 
 // 로그아웃.
 export const logoutAction = createAction(_Types.LOGOUT_TRY)();
+
+export const authResetAction = createAction(_Types.AUTHS_RESET)();

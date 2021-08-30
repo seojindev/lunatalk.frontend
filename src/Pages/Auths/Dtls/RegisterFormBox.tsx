@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 import { RootState } from 'StoreTypes';
 import { CodeItem } from 'CommonTypes';
 import { ButtonSpinner } from '@Element/Spinners';
-import { getPhoneAuthRequestAction, phoneAuthConfirmAction, tryRegisterAction } from '@Store/Auths';
+import { getPhoneAuthRequestAction, phoneAuthConfirmAction, tryRegisterAction, authResetAction } from '@Store/Auths';
 import { initialRegisterInputValue, initialPhoneAuthValue } from '@Constants/Const';
 import _Alert_ from '@_Alert_';
 import { isEmpty } from '@Helper';
@@ -304,7 +304,17 @@ export default function RegisterFormBox() {
         if (storetryRegister.status === 'success') {
             funcRegisterSuccess();
         }
+        return () => {
+            if (storetryRegister.status === 'success') {
+                dispatch(authResetAction());
+            }
+        };
     }, [storetryRegister]);
+
+    // 시작시 리셋
+    useEffect(() => {
+        dispatch(authResetAction());
+    }, []);
 
     return (
         <div className="login-form-container">

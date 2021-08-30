@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { RootState } from 'StoreTypes';
 import { ButtonSpinner } from '@Element/Spinners';
-import { loginAction } from '@Store/Auths';
+import { loginAction, authResetAction } from '@Store/Auths';
 import _Alert_ from '@_Alert_';
 import { isEmpty, cookieManager, getLocalToken } from '@Helper';
 
@@ -92,8 +92,10 @@ export default function LoginFormBox() {
         return () => {
             if (loginCkResult === true) {
                 _Alert_.default({ text: `이미 로그인 되어 있습니다.` });
+                dispatch(authResetAction());
             } else if (loginSuccess === true) {
                 _Alert_.default({ text: `로그인이 완료 되었습니다.` });
+                dispatch(authResetAction());
             }
         };
     });
@@ -121,6 +123,7 @@ export default function LoginFormBox() {
             }
         };
 
+        dispatch(authResetAction());
         funcCheckLogin();
         funcCheckRemember();
     }, []);

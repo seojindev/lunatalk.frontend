@@ -27,3 +27,6 @@ export const LOGIN_TRY_FAILURE = 'auth/LOGIN_TRY_FAILURE';
 export const LOGOUT_TRY = 'auth/LOGOUT_TRY';
 export const LOGOUT_TRY_SUCCESS = 'auth/LOGOUT_TRY_SUCCESS';
 export const LOGOUT_TRY_FAILURE = 'auth/LOGOUT_TRY_FAILURE';
+
+// 리셋
+export const AUTHS_RESET = 'auth/AUTHS_RESET';

@@ -199,5 +199,12 @@ export const AuthsSagaReducer = createReducer<AuthsState>(initialState, {
             draft.logout.tryLogout.message = action.payload.message;
         });
     },
+    [_Types.AUTHS_RESET]: (state: AuthsState) => {
+        return produce(state, draft => {
+            draft.register = initialState.register;
+            draft.login = initialState.login;
+            draft.logout = initialState.logout;
+        });
+    },
 });
 export default AuthsSagaReducer;

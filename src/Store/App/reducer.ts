@@ -73,7 +73,6 @@ export const AppSagaReducer = createReducer<AppState>(initialState, {
         state: AppState,
         action: SagaAction<{ login_state: boolean; access_token: string; refresh_token: string }>
     ) => {
-        console.debug(action.payload);
         return produce(state, draft => {
             draft.loginState = action.payload.login_state;
             draft.loginUser.access_token = action.payload.access_token;
