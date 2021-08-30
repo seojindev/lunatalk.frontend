@@ -11,6 +11,8 @@ import { isEmpty } from '@Helper';
 
 type checkBoxLeyType = 'agreeStep1' | 'agreeStep2' | 'agreeStep3' | 'agreeStep4' | 'agreeStep5';
 
+const isProduction = process.env.REACT_APP_ENV === 'production' ? true : false;
+
 export default function RegisterFormBox() {
     const dispatch = useDispatch();
     const history = useHistory();
@@ -277,7 +279,12 @@ export default function RegisterFormBox() {
     // 휴대폰 인증 코드 요청 처리.
     useEffect(() => {
         if (storeGetAuthCodeRequest.status === 'success') {
-            _Alert_.defaultInfo({ text: `인증코드는 ${storeGetAuthCodeRequest.result.auth_code}` });
+            // 개발일떄 인증코드 표시.
+            if (isProduction) {
+                _Alert_.defaultInfo({ text: `인증 코드를 입력해 주세요.` });
+            } else {
+                _Alert_.defaultInfo({ text: `인증코드는 ${storeGetAuthCodeRequest.result.auth_code}` });
+            }
         } else if (storeGetAuthCodeRequest.status === 'failure') {
             _Alert_.defaultInfo({ text: storeGetAuthCodeRequest.result.message });
         }
