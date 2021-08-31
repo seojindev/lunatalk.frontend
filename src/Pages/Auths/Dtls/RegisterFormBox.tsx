@@ -168,7 +168,7 @@ export default function RegisterFormBox() {
             user_password: registerInputValue.user_password,
             user_password_confirm: registerInputValue.user_password_confirm,
             user_name: registerInputValue.user_name,
-            user_email: `${phoneAuthValue.phoneNumberStep1}@${phoneAuthValue.phoneNumberStep2}`,
+            user_email: `${registerEmail.emailStep1}@${registerEmail.emailStep2}`,
             user_select_email: agreeCheckBox.agreeStep4 === true ? 'Y' : 'N',
             user_select_message: agreeCheckBox.agreeStep5 === true ? 'Y' : 'N',
         };
