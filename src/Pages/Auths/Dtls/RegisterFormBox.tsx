@@ -304,7 +304,7 @@ export default function RegisterFormBox() {
         const funcRegisterSuccess = () => {
             _Alert_.defaultInfo({ text: `회원 가입이 완료 되었습니다. 로그인 해 주세요.` });
             history.push({
-                pathname: process.env.PUBLIC_URL + `/login`,
+                pathname: process.env.PUBLIC_URL + `login`,
             });
         };
 
@@ -446,15 +446,15 @@ export default function RegisterFormBox() {
                                 );
                             } else if (storeGetAuthCodeRequest.status === 'success') {
                                 return (
-                                    <span>
+                                    <div className="button-box">
                                         <span>인증번호 발송</span>
-                                    </span>
+                                    </div>
                                 );
                             } else {
                                 return (
-                                    <span onClick={() => handleClickSendButton()}>
+                                    <div onClick={() => handleClickSendButton()} className="button-box">
                                         <span>인증번호 발송</span>
-                                    </span>
+                                    </div>
                                 );
                             }
                         })()}
@@ -472,14 +472,14 @@ export default function RegisterFormBox() {
                                 disabled={storeAuthCodeConfirm.status === 'success'}
                             />
                             {storeAuthCodeConfirm.status === 'success' ? (
-                                <span>
+                                <div className="button-box">
                                     <span>확인</span>
-                                </span>
+                                </div>
                             ) : (
                                 <>
-                                    <span onClick={() => handleChangePhoneAuthConfirm()}>
+                                    <div onClick={() => handleChangePhoneAuthConfirm()} className="button-box">
                                         <span>확인</span>
-                                    </span>
+                                    </div>
                                 </>
                             )}
                         </div>
@@ -576,11 +576,9 @@ export default function RegisterFormBox() {
                                 <label>맞춤 혜택 알림 문자 수신 동의 (선택)</label>
                             </li>
                         </ul>
-                    </div>
-                    <div className="button-box">
-                        <span onClick={() => handleClickRegisterButton()}>
+                        <div className="button-box" onClick={() => handleClickRegisterButton()}>
                             <span>회원가입</span>
-                        </span>
+                        </div>
                     </div>
                 </form>
             </div>
