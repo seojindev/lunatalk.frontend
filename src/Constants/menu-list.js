@@ -1,19 +1,19 @@
 const menuList = [
     {
         name: 'ACC',
-        link: '/products',
+        link: '/category/acc',
     },
     {
         name: 'BAG',
-        link: '/products',
+        link: '/category/bag',
     },
     {
         name: 'Stationery',
-        link: '/products',
+        link: '/category/stationery',
     },
     {
         name: 'wallet',
-        link: '/products',
+        link: '/category/wallet',
     },
 ];
 

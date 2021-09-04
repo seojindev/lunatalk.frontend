@@ -19,6 +19,11 @@
             "name": "로그아웃",
             "routeName": "/auths/logout",
             "componentName": "Auths/LogoutPage"
+        },
+        {
+            "name": "상품 리스트",
+            "routeName": "/category/:uuid",
+            "componentName": "Products/ProductListPage"
         }
     ]
 }
