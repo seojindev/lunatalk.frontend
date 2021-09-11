@@ -7,7 +7,7 @@ export default function ProductBoxComponent() {
         <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
             <div className="product-wrap mb-25">
                 <div className="product-img">
-                    <a href="product-details.html">
+                    <Link to="/product/1">
                         <img
                             className="default-img"
                             src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
@@ -18,7 +18,7 @@ export default function ProductBoxComponent() {
                             src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
                             alt=""
                         />
-                    </a>
+                    </Link>
                     {/* <span className="pink">-10%</span> */}
                     <div className="product-action">
                         <div className="pro-same-action pro-cart">

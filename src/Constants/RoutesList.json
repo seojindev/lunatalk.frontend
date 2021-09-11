@@ -24,6 +24,11 @@
             "name": "상품 리스트",
             "routeName": "/category/:uuid",
             "componentName": "Products/ProductListPage"
+        },
+        {
+            "name": "상품 디테일",
+            "routeName": "/product/:uuid",
+            "componentName": "Products/ProductDetailPage"
         }
     ]
 }

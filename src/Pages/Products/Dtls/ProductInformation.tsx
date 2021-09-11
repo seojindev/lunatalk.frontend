@@ -1,0 +1,28 @@
+import React from 'react';
+
+interface ProductReviewProps {
+    active: string;
+}
+
+export default function ProductInformation({ active }: ProductReviewProps) {
+    return (
+        <div id="des-details1" className={'tab-pane' + active}>
+            <div className="product-anotherinfo-wrapper">
+                <ul>
+                    <li>
+                        <span>Weight</span> 400 g
+                    </li>
+                    <li>
+                        <span>Dimensions</span>10 x 10 x 15 cm
+                    </li>
+                    <li>
+                        <span>Materials</span> 60% cotton, 40% polyester
+                    </li>
+                    <li>
+                        <span>Other Info</span> American heirloom jean shorts pug seitan letterpress
+                    </li>
+                </ul>
+            </div>
+        </div>
+    );
+}
