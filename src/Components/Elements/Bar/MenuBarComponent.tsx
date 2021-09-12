@@ -109,7 +109,7 @@ export default function MenuBarComponent() {
                                             </>
                                         )}
                                         <li>
-                                            <Link to="/wishlist">장바구니</Link>
+                                            <Link to="/cart">장바구니</Link>
                                         </li>
                                         <li>
                                             <Link to="/my_account">나의정보</Link>
