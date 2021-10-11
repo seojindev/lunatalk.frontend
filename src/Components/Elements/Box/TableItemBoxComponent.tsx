@@ -1,6 +1,13 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { RootState } from 'StoreTypes';
 
 export default function TableItemBoxComponent() {
+    const { storeRouterLocation } = useSelector((store: RootState) => ({
+        storeRouterLocation: store.router.location,
+    }));
+
+    const pathName: string = storeRouterLocation?.pathname;
     return (
         <tr>
             <td>
@@ -16,12 +23,12 @@ export default function TableItemBoxComponent() {
             </td>
             <td className="product-quantity">
                 <div className="cart-plus-minus">
-                    <input className="cart-plus-minus-box" type="text" name="qtybutton" value="1" />
+                    <input className="cart-plus-minus-box" type="text" name="qtybutton" />
                 </div>
             </td>
             <td className="product-subtotal">$110.00</td>
             <td className="product-wishlist-cart">
-                <a href="#">담기</a>
+                <a href="#">{pathName === '/wishlist' ? '담기' : '구매'}</a>
             </td>
         </tr>
     );

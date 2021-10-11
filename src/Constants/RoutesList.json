@@ -34,6 +34,11 @@
             "name": "위시 리스트",
             "routeName": "/wishlist",
             "componentName": "WishList/WishListPage"
+        },
+        {
+            "name": "장바구니",
+            "routeName": "/cart",
+            "componentName": "Cart/CartPage"
         }
     ]
 }
