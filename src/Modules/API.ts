@@ -1,6 +1,5 @@
 import { _Axios_ } from '@Utils';
 import {
-    Banner,
     BestItem,
     Category,
     AppBase,
@@ -10,6 +9,7 @@ import {
     ServiceResponse,
     PhoneAuthConfirmResponse,
     Logout,
+    MainSlide,
 } from 'CommonTypes';
 
 // 서버 공지 사항 체크.
@@ -70,8 +70,8 @@ export function phoneAuthConfirm(payload: {
 }
 
 // 메인 배너
-export function getMainBanner(): Promise<ServiceResponse<Banner>> {
-    return _Axios_({ method: 'get', url: '/api/v1/pages/tabs/main-top', payload: { data: {} } });
+export function getMainSlide(): Promise<ServiceResponse<MainSlide>> {
+    return _Axios_({ method: 'get', url: '/api/front/v1/pages/main/main-slide', payload: { data: {} } });
 }
 
 // 메인 베스트 아이템

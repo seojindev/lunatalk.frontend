@@ -109,4 +109,14 @@ declare module 'CommonTypes' {
         wallet: Category;
         CUSTOM_ITEM: Category;
     }
+
+    export interface MainSlide {
+        name: string;
+        image: {
+            file_name: string;
+            url: string;
+            width: number;
+            height: number;
+        };
+    }
 }

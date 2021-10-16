@@ -1,7 +1,6 @@
 declare module 'StoreTypes' {
     import { RouterState } from 'connected-react-router';
-    import { Codes, DefaultStatus, Login } from 'CommonTypes';
-    import { Banner, BestItem, Category } from 'MainTypes';
+    import { Codes, DefaultStatus, Login, MainSlide } from 'CommonTypes';
 
     // App Store
     export interface AppState {
@@ -18,10 +17,10 @@ declare module 'StoreTypes' {
 
     // Main Store
     export interface MainState {
-        banner: Banner[];
-        best_item: BestItem[];
-        hot_item: BestItem[];
-        categories: Categories;
+        main_slide: MainSlide[];
+        // best_item: BestItem[];
+        // hot_item: BestItem[];
+        // categories: Categories;
     }
 
     // 인증 처리 Store
