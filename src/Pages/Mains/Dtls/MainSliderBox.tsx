@@ -44,14 +44,16 @@ export default function MainSliderBox() {
     };
 
     return (
-        <Slider {...settings}>
-            {mainSlide.map((item: any, n: number) => (
-                <div className="slider-height-1" key={n}>
-                    <Link to={item.link}>
-                        <img src={item.url} alt="img" style={{ width: '100%', margin: '0 auto' }} />
-                    </Link>
-                </div>
-            ))}
-        </Slider>
+        <div className="main-slide-wrap">
+            <Slider {...settings}>
+                {mainSlide.map((item: any, n: number) => (
+                    <div className="slider-height-1" key={n}>
+                        <Link to={item.link}>
+                            <img src={item.url} alt="img" style={{ width: '100%', margin: '0 auto' }} />
+                        </Link>
+                    </div>
+                ))}
+            </Slider>
+        </div>
     );
 }

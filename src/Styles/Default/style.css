@@ -2073,7 +2073,7 @@ a.default-btn {
 }
 
 .header-padding-1 .container-fluid {
-    padding: 0 80px;
+    padding: 0 30px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
     .header-padding-1 .container-fluid {
@@ -2116,9 +2116,9 @@ a.default-btn {
         padding: 20px 0 15px;
     }
 }
-.logo {
-    margin-top: 32px;
-}
+/*.logo {*/
+/*    margin-top: 32px;*/
+/*}*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .logo {
         margin-top: 0px;
@@ -4007,6 +4007,10 @@ a.default-btn {
     }
 }
 /*----- 3. Slider style  ------*/
+.main-slide-wrap {
+    max-width: 1250px;
+    margin:0 auto;
+}
 .slider-height-1 {
     max-height: 520px;
 }
