@@ -1,12 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-interface MainMenuBoxProps {
-    categoryName: string;
-    categoryLink: string;
-}
-
-export default function MainMenuBox({ categoryName, categoryLink }: MainMenuBoxProps) {
+export default function MainMenuBox({ categoryName, categoryLink }: { categoryName: string; categoryLink: string }) {
     return (
         <div className="col-lg-3 col-md-6 col-sm-6">
             <Link to={categoryLink}>

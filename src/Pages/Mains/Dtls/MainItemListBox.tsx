@@ -1,11 +1,7 @@
 import React from 'react';
 import { ProductBox } from '@Element/Box';
 
-interface MainItemListBoxProps {
-    listName: string;
-}
-
-export default function MainItemListBox({ listName }: MainItemListBoxProps) {
+export default function MainItemListBox({ listName }: { listName: string }) {
     return (
         <div className="product-area pb-60">
             <div className="container">

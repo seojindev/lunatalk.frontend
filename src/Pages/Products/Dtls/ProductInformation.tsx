@@ -1,10 +1,6 @@
 import React from 'react';
 
-interface ProductReviewProps {
-    active: string;
-}
-
-export default function ProductInformation({ active }: ProductReviewProps) {
+export default function ProductInformation({ active }: { active: string }) {
     return (
         <div id="des-details1" className={'tab-pane' + active}>
             <div className="product-anotherinfo-wrapper">
