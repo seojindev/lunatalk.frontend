@@ -112,7 +112,7 @@ export default function MenuBarComponent() {
                                             <Link to="/cart">장바구니</Link>
                                         </li>
                                         <li>
-                                            <Link to="/my_account">나의정보</Link>
+                                            <Link to="/mypage">마이페이지</Link>
                                         </li>
                                         {loginCkResult === true && (
                                             <>
