@@ -4,15 +4,7 @@ import { ConnectedRouter } from 'connected-react-router';
 import { MainLayout } from '@Layouts';
 import { TestPage, DefaultPage, PublishPage } from '@Pages';
 import PagesList from '@Constants/RoutesList.json';
-// TODO : 퍼블리싱 동적으로 보여 주기 위해. 개발 끝나면 삭제 해야 함.
-import publishList from '@Constants/publish-list';
 import { BodySpinner } from '@Element/Spinners';
-const routeMap: any = publishList.map(route => {
-    return {
-        name: route.name,
-        component: lazy(() => import(`../Publishs/${route.component}`)),
-    };
-});
 
 // 메인 레이아웃.
 const MainLayoutPage = PagesList.MainLayout.map((page: { routeName: string; componentName: string }) => {
@@ -52,21 +44,6 @@ const Routes = ({ Routerhistory }: { Routerhistory: any }) => {
                             </Switch>
                         </MainLayout>
                     </Route>
-
-                    <Switch>
-                        {/* // TODO : 퍼블리싱 동적으로 보여 주기 위해. 개발 끝나면 삭제 해야 함. */}
-                        <Suspense fallback={<div>Loading...</div>}>
-                            {routeMap.map((item: any, n: any) => {
-                                return (
-                                    <Route
-                                        path={process.env.PUBLIC_URL + `/publishs/${item.name}`}
-                                        component={item.component}
-                                        key={n}
-                                    />
-                                );
-                            })}
-                        </Suspense>
-                    </Switch>
                 </Switch>
             </ConnectedRouter>
         </BrowserRouter>
