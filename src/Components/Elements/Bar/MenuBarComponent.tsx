@@ -63,7 +63,7 @@ export default function MenuBarComponent() {
                                 <img
                                     className="shopieal-logo"
                                     alt=""
-                                    src="http://www.dadamungu.com/2011/_DATA/brand/1334711623.jpg"
+                                    src="http://dev.admin.lunatalk.co.kr/static/media/logo.e0e49014.jpg"
                                 />
                             </Link>
                         </div>
