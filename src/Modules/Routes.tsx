@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 import { MainLayout } from '@Layouts';
-import { TestPage, DefaultPage, PublishPage } from '@Pages';
+import { TestPage, DefaultPage } from '@Pages';
 import PagesList from '@Constants/RoutesList.json';
 import { BodySpinner } from '@Element/Spinners';
 
@@ -23,7 +23,6 @@ const Routes = ({ Routerhistory }: { Routerhistory: any }) => {
                     {/* <Route path={process.env.PUBLIC_URL + '/'} component={DefaultPage} exact /> */}
                     <Route path={process.env.PUBLIC_URL + '/test'} component={TestPage} exact />
                     <Route path={process.env.PUBLIC_URL + '/default'} component={DefaultPage} exact />
-                    <Route path={process.env.PUBLIC_URL + '/publish'} component={PublishPage} exact />
                     {/* </Route> */}
 
                     <Route path={['/:path?']}>
