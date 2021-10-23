@@ -10,6 +10,7 @@ import {
     PhoneAuthConfirmResponse,
     Logout,
     MainSlide,
+    MainCategory,
 } from 'CommonTypes';
 
 // 서버 공지 사항 체크.
@@ -70,8 +71,13 @@ export function phoneAuthConfirm(payload: {
 }
 
 // 메인 배너
-export function getMainSlide(): Promise<ServiceResponse<MainSlide>> {
+export function getMainSlide(): Promise<ServiceResponse<MainSlide[]>> {
     return _Axios_({ method: 'get', url: '/api/front/v1/pages/main/main-slide', payload: { data: {} } });
+}
+
+// 메인 카테고리
+export function getMainCategory(): Promise<ServiceResponse<MainCategory[]>> {
+    return _Axios_({ method: 'get', url: '/api/front/v1/pages/main/main-product-category', payload: { data: {} } });
 }
 
 // 메인 베스트 아이템

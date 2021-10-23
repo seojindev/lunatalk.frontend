@@ -6761,29 +6761,58 @@ a.default-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap:wrap;
     justify-content: center; /* 이미지 적용시 주석될 css */
     align-items: center; /* 이미지 적용시 주석될 css */
     text-align: center; /* 이미지 적용시 주석될 css */
-    height: 200px;
-    border: 1px solid #ccc;
+    min-height: 200px;
+    /*border: 1px solid #ccc;*/
     border-radius: 5px;
+    overflow: hidden;
 }
 .support-wrap .support-icon {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50px;
-    flex: 0 0 50px;
+    /*-webkit-box-flex: 0;*/
+    /*-ms-flex: 0 0 50px;*/
+    /*flex: 0 0 50px;*/
     /* margin-right: 20px; */
+    /*overflow: hidden;*/
+    position: relative;
 }
 .support-wrap .support-icon img {
     width: 100%;
+}
+.support-wrap .support-icon::after {
+    content:'';
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.3);
+    z-index: 11;
 }
 .support-wrap .support-content h5 {
     font-size: 18px;
     margin: 0 0 5px;
 }
-.support-wrap .support-content p {
-    color: #666;
+.support-wrap .support-icon .text {
+    width:100%;
+    height:270px;
+    position: absolute;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.3);
+}
+.support-wrap .support-icon p {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
     margin: 0;
+    font-size:22px;
+    letter-spacing: -1px;
+    z-index:12;
 }
 .support-wrap.support-2 {
     margin-left: 22px;

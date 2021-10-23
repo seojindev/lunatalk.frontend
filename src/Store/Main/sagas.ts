@@ -1,7 +1,14 @@
 import { takeLatest, fork, put, call } from 'redux-saga/effects';
-import { getMainSlide } from '@API';
-import { ServiceResponse, MainSlide } from 'CommonTypes';
-import { GET_MAIN_SLIDE_FAILURE, GET_MAIN_SLIDE_START, GET_MAIN_SLIDE_SUCCESS } from '@Store/Main/types';
+import { getMainCategory, getMainSlide } from '@API';
+import { ServiceResponse, MainSlide, MainCategory } from 'CommonTypes';
+import {
+    GET_CATEGORY_FAILURE,
+    GET_CATEGORY_START,
+    GET_CATEGORY_SUCCESS,
+    GET_MAIN_SLIDE_FAILURE,
+    GET_MAIN_SLIDE_START,
+    GET_MAIN_SLIDE_SUCCESS,
+} from '@Store/Main/types';
 
 function* getMainSlideSaga() {
     try {
@@ -12,6 +19,20 @@ function* getMainSlideSaga() {
             type: GET_MAIN_SLIDE_FAILURE,
             payload: {
                 message: '메인 배너 리스트를 불러오지 못했습니다. \n 잠시후 다시 시도해 주세요.',
+            },
+        });
+    }
+}
+
+function* getCategorySaga() {
+    try {
+        const response: ServiceResponse<MainCategory[]> = yield call(getMainCategory);
+        yield put({ type: GET_CATEGORY_SUCCESS, payload: { main_category: response.payload } });
+    } catch (e) {
+        yield put({
+            type: GET_CATEGORY_FAILURE,
+            payload: {
+                message: '메인 카테고리 리스트를 불러오지 못했습니다. \n 잠시후 다시 시도해 주세요.',
             },
         });
     }
@@ -61,6 +82,7 @@ function* getMainSlideSaga() {
 
 function* onBaseSagaWatcher() {
     yield takeLatest(GET_MAIN_SLIDE_START as any, getMainSlideSaga);
+    yield takeLatest(GET_CATEGORY_START as any, getCategorySaga);
     // yield takeLatest(GET_MAIN_BESTITEM_START as any, getMainBestItemSaga);
     // yield takeLatest(GET_MAIN_HOTITEM_START as any, getMainHotItemSaga);
     // yield takeLatest(GET_MAIN_CATEGORY_START as any, getMainCategoriesSaga);

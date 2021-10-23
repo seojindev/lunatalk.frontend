@@ -1,8 +1,8 @@
 import { createReducer } from 'typesafe-actions';
 import produce from 'immer';
-import { SagaAction, MainSlide } from 'CommonTypes';
+import { SagaAction, MainSlide, MainCategory } from 'CommonTypes';
 import { MainState } from 'StoreTypes';
-import { GET_MAIN_SLIDE_SUCCESS } from '@Store/Main/types';
+import { GET_CATEGORY_FAILURE, GET_CATEGORY_SUCCESS, GET_MAIN_SLIDE_SUCCESS } from '@Store/Main/types';
 // import { GET_MAIN_CATEGORY_SUCCESS, GET_MAIN_HOTITEM_SUCCESS } from './actions';
 //
 // import { GET_MAIN_BANNER_SUCCESS, GET_MAIN_BESTITEM_SUCCESS } from './actions';
@@ -10,6 +10,7 @@ import { GET_MAIN_SLIDE_SUCCESS } from '@Store/Main/types';
 // 스토어 init.
 const initialState: MainState = {
     main_slide: [],
+    main_category: [],
     // best_item: [],
     // hot_item: [],
     // categories: {
@@ -61,6 +62,16 @@ export const MainSagaReducer = createReducer<MainState>(initialState, {
     [GET_MAIN_SLIDE_SUCCESS]: (state: MainState, action: SagaAction<{ main_slide: MainSlide[] }>) => {
         return produce(state, draft => {
             draft.main_slide = action.payload.main_slide;
+        });
+    },
+    [GET_CATEGORY_SUCCESS]: (state: MainState, action: SagaAction<{ main_category: MainCategory[] }>) => {
+        return produce(state, draft => {
+            draft.main_category = action.payload.main_category;
+        });
+    },
+    [GET_CATEGORY_FAILURE]: (state: MainState, action: SagaAction<{ main_category: MainCategory[] }>) => {
+        return produce(state, draft => {
+            draft.main_category = action.payload.main_category;
         });
     },
     // [GET_MAIN_BESTITEM_SUCCESS]: (state: MainState, action: SagaAction<{ best_item: BestItem[] }>) => {

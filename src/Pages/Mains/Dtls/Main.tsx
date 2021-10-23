@@ -4,13 +4,6 @@ import menuList from '@Constants/menu-list';
 import MainMenuBox from './MainMenuBox';
 import MainItemListBox from './MainItemListBox';
 
-const menuMap: any = menuList.map(menu => {
-    return {
-        name: menu.name,
-        link: menu.link,
-    };
-});
-
 export default function Main() {
     return (
         <>
@@ -20,9 +13,7 @@ export default function Main() {
             <div className="suppoer-area pt-100 pb-60">
                 <div className="container">
                     <div className="row">
-                        {menuMap.map((item: any, n: number) => (
-                            <MainMenuBox key={n} categoryName={item.name} categoryLink={item.link} />
-                        ))}
+                        <MainMenuBox />
                     </div>
                 </div>
             </div>
