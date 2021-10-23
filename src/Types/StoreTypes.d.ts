@@ -1,6 +1,6 @@
 declare module 'StoreTypes' {
     import { RouterState } from 'connected-react-router';
-    import { Categoies, Codes, DefaultStatus, Login, MainCategory, MainSlide } from 'CommonTypes';
+    import { Categoies, Codes, DefaultStatus, Login, MainCategory, MainNotice, MainSlide } from 'CommonTypes';
 
     // App Store
     export interface AppState {
@@ -20,6 +20,7 @@ declare module 'StoreTypes' {
     export interface MainState {
         main_slide: MainSlide[];
         main_category: MainCategory[];
+        main_notice: MainNotice[];
         // best_item: BestItem[];
         // hot_item: BestItem[];
         // categories: Categories;

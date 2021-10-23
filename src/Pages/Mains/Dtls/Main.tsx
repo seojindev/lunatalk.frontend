@@ -2,6 +2,7 @@ import React from 'react';
 import MainSliderBox from './MainSliderBox';
 import MainMenuBox from './MainMenuBox';
 import MainItemListBox from './MainItemListBox';
+import MainNotice from '@Page/Mains/Dtls/MainNotice';
 
 export default function Main() {
     return (
@@ -33,29 +34,7 @@ export default function Main() {
                             <br />토 / 일 / 공휴일 휴무
                         </p>
                     </div>
-                    <div className="notice_center">
-                        <h3>NOTICE</h3>
-                        <div className="notice_column">
-                            <p className="title">오픈중입니다.</p>
-                            <p className="day">2021-07-23</p>
-                        </div>
-                        <div className="notice_column">
-                            <p className="title">오픈중입니다.</p>
-                            <p className="day">2021-07-23</p>
-                        </div>
-                        <div className="notice_column">
-                            <p className="title">오픈중입니다.</p>
-                            <p className="day">2021-07-23</p>
-                        </div>
-                        <div className="notice_column">
-                            <p className="title">오픈중입니다.</p>
-                            <p className="day">2021-07-23</p>
-                        </div>
-                        <div className="notice_column">
-                            <p className="title">오픈중입니다.</p>
-                            <p className="day">2021-07-23</p>
-                        </div>
-                    </div>
+                    <MainNotice />
                 </div>
             </div>
             {/* // 공지사항 및 고객센터 */}

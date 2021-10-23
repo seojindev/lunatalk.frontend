@@ -11,4 +11,9 @@ export const GET_CATEGORY_START = 'main/GET_CATEGORY_START';
 export const GET_CATEGORY_SUCCESS = 'main/GET_CATEGORY_SUCCESS';
 export const GET_CATEGORY_FAILURE = 'main/GET_CATEGORY_FAILURE';
 
+// main notice
+export const GET_NOTICE_START = 'main/GET_NOTICE_START';
+export const GET_NOTICE_SUCCESS = 'main/GET_NOTICE_SUCCESS';
+export const GET_NOTICE_FAILURE = 'main/GET_NOTICE_FAILURE';
+
 export type MainAction = ActionType<typeof actions>;

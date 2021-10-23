@@ -140,4 +140,13 @@ declare module 'CommonTypes' {
             height: number;
         };
     }
+    export interface MainNotice {
+        uuid: string;
+        title: string;
+        category: {
+            code_id: string;
+            code_name: string;
+        };
+        created_at: string;
+    }
 }

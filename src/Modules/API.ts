@@ -11,6 +11,7 @@ import {
     Logout,
     MainSlide,
     MainCategory,
+    MainNotice,
 } from 'CommonTypes';
 
 // 서버 공지 사항 체크.
@@ -78,6 +79,11 @@ export function getMainSlide(): Promise<ServiceResponse<MainSlide[]>> {
 // 메인 카테고리
 export function getMainCategory(): Promise<ServiceResponse<MainCategory[]>> {
     return _Axios_({ method: 'get', url: '/api/front/v1/pages/main/main-product-category', payload: { data: {} } });
+}
+
+// 메인 공지사항
+export function getMainNotice(): Promise<ServiceResponse<MainNotice[]>> {
+    return _Axios_({ method: 'get', url: '/api/front/v1/pages/main/main-notice', payload: { data: {} } });
 }
 
 // 메인 베스트 아이템
