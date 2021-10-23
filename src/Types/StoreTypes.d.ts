@@ -1,6 +1,6 @@
 declare module 'StoreTypes' {
     import { RouterState } from 'connected-react-router';
-    import { Codes, DefaultStatus, Login, MainCategory, MainSlide } from 'CommonTypes';
+    import { Categoies, Codes, DefaultStatus, Login, MainCategory, MainSlide } from 'CommonTypes';
 
     // App Store
     export interface AppState {
@@ -11,6 +11,7 @@ declare module 'StoreTypes' {
         service_message: string;
         common: {
             codes: Codes;
+            categories: Categoies[];
         };
         loginUser: Login;
     }

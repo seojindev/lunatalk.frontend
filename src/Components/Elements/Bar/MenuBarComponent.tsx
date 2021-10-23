@@ -5,20 +5,16 @@ import { useSelector } from 'react-redux';
 import { RootState } from 'StoreTypes';
 
 // TODO : 백엔드 개발 완료전 더미데이터로 메뉴를 보여줌.
-import menuList from '@Constants/menu-list';
 import { Link } from 'react-router-dom';
-
-const menuMap: any = menuList.map(menu => {
-    return {
-        name: menu.name,
-        link: menu.link,
-    };
-});
+import { Categories } from 'CommonTypes';
 
 export default function MenuBarComponent() {
-    const { storeLoginState } = useSelector((store: RootState) => ({
+    const { storeLoginState, categories } = useSelector((store: RootState) => ({
         storeLoginState: store.app.loginState,
+        categories: store.app.common.categories,
     }));
+
+    const [categoryMenu, setCategoryMenu] = useState<{ name: string; link: string }[]>([]);
 
     const [toggleSelected, setToggleSeleted] = useState<boolean>(false);
     const [toggleAccount, setToggleAccount] = useState<boolean>(false);
@@ -32,6 +28,18 @@ export default function MenuBarComponent() {
     const handleAccounted = () => {
         setToggleAccount(!toggleAccount);
     };
+
+    useEffect(() => {
+        if (categories.length) {
+            const resultCategories = categories.map((category: Categories) => {
+                return {
+                    name: category.name,
+                    link: `/category/${category.name}`,
+                };
+            });
+            setCategoryMenu(resultCategories);
+        }
+    }, []);
 
     useEffect(() => {
         const funcCheckLogin = () => {
@@ -64,7 +72,7 @@ export default function MenuBarComponent() {
                         <div className="main-menu">
                             <nav>
                                 <ul>
-                                    {menuMap.map((menu: any, key: number) => (
+                                    {categoryMenu.map((menu: any, key: number) => (
                                         <li key={key}>
                                             <Link to={menu.link}>{menu.name}</Link>
                                         </li>
@@ -204,7 +212,7 @@ export default function MenuBarComponent() {
                     </div>
                     <div className="mobile_menu_wrap">
                         <ul>
-                            {menuMap.map((menu: any, key: number) => (
+                            {categoryMenu.map((menu: any, key: number) => (
                                 <li key={key}>
                                     <Link to={menu.link}>{menu.name}</Link>
                                 </li>

@@ -37,6 +37,12 @@ declare module 'CommonTypes' {
         };
     }
 
+    // category Menu 코드.
+    export interface Categories {
+        uuid: string;
+        name: string;
+    }
+
     // 기본 api 리턴 인테페이스
     export interface ServiceResponse<T> {
         status: boolean;
@@ -47,6 +53,7 @@ declare module 'CommonTypes' {
     // 기본 데이터들.
     export interface AppBase {
         codes: Codes[];
+        product_category: Categories[];
     }
 
     export interface Login {

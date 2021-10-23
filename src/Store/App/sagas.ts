@@ -29,6 +29,7 @@ function* appInitSaga() {
             type: _Type.COMMON_DATA,
             payload: {
                 codes: serverBaseData.payload.codes,
+                categories: serverBaseData.payload.product_category,
             },
         });
         //  로그인후 데이터 저장
