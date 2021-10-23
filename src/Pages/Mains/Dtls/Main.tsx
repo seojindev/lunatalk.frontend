@@ -1,6 +1,5 @@
 import React from 'react';
 import MainSliderBox from './MainSliderBox';
-import menuList from '@Constants/menu-list';
 import MainMenuBox from './MainMenuBox';
 import MainItemListBox from './MainItemListBox';
 

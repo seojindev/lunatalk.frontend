@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import menuList from '@Constants/menu-list';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCategoryAction } from '@Store/Main';
 import { RootState } from 'StoreTypes';
