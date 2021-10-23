@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import WishListForm from '@Page/WishList/Dtls/WishListForm';
+import { useSelector } from 'react-redux';
+import { RootState } from 'StoreTypes';
+import _Alert_ from '@_Alert_';
 
 export default function WishList() {
+    const { access_token, refresh_token } = useSelector((store: RootState) => ({
+        access_token: store.app.loginUser.access_token,
+        refresh_token: store.app.loginUser.refresh_token,
+    }));
+
+    useEffect(() => {
+        if (access_token === null || refresh_token === null) {
+            _Alert_.thenGoHome({ text: `로그인이 필요한 페이지 입니다.` });
+        }
+    }, []);
     return (
         <div className="cart-main-area pt-90 pb-100">
             <div className="container">
