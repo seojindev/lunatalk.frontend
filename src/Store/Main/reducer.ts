@@ -2,7 +2,7 @@ import { createReducer } from 'typesafe-actions';
 import produce from 'immer';
 import { SagaAction, MainSlide } from 'CommonTypes';
 import { MainState } from 'StoreTypes';
-import { GET_MAIN_SLIDE_SUCCESS } from '@Store/Main/actions';
+import { GET_MAIN_SLIDE_SUCCESS } from '@Store/Main/types';
 // import { GET_MAIN_CATEGORY_SUCCESS, GET_MAIN_HOTITEM_SUCCESS } from './actions';
 //
 // import { GET_MAIN_BANNER_SUCCESS, GET_MAIN_BESTITEM_SUCCESS } from './actions';

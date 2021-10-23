@@ -1,7 +1,7 @@
 import { takeLatest, fork, put, call } from 'redux-saga/effects';
 import { getMainSlide } from '@API';
 import { ServiceResponse, MainSlide } from 'CommonTypes';
-import { GET_MAIN_SLIDE_FAILURE, GET_MAIN_SLIDE_START, GET_MAIN_SLIDE_SUCCESS } from '@Store/Main/actions';
+import { GET_MAIN_SLIDE_FAILURE, GET_MAIN_SLIDE_START, GET_MAIN_SLIDE_SUCCESS } from '@Store/Main/types';
 
 function* getMainSlideSaga() {
     try {

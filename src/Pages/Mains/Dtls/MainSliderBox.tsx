@@ -25,7 +25,7 @@ export default function MainSliderBox() {
             const mainSlideResult = main_slide.map((item: MainSlide) => {
                 return {
                     url: item.image.url,
-                    link: '/main',
+                    link: item.url.slide_url === '' ? `/product/${item.url.product_uuid}` : item.url.slide_url,
                     width: item.image.width,
                     height: item.image.height,
                 };

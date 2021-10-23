@@ -118,5 +118,9 @@ declare module 'CommonTypes' {
             width: number;
             height: number;
         };
+        url: {
+            product_uuid: string;
+            slide_url: string;
+        };
     }
 }
