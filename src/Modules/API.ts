@@ -1,6 +1,6 @@
 import { _Axios_ } from '@Utils';
 import {
-    BestItem,
+    ListItem,
     Category,
     AppBase,
     Login,
@@ -87,15 +87,15 @@ export function getMainNotice(): Promise<ServiceResponse<MainNotice[]>> {
 }
 
 // 메인 베스트 아이템
-export function getMainBestItem(): Promise<ServiceResponse<BestItem>> {
-    return _Axios_({ method: 'get', url: '/api/v1/pages/tabs/main-products-best-items', payload: { data: {} } });
+export function getMainBestItem(): Promise<ServiceResponse<ListItem[]>> {
+    return _Axios_({ method: 'get', url: '/api/front/v1/pages/main/main-product-best-item', payload: { data: {} } });
 }
-// 메인 핫 아이템
-export function getMainHotItem(): Promise<ServiceResponse<BestItem>> {
-    return _Axios_({ method: 'get', url: '/api/v1/pages/tabs/main-products-hot-items', payload: { data: {} } });
+// 메인 뉴 아이템
+export function getMainNewItem(): Promise<ServiceResponse<ListItem[]>> {
+    return _Axios_({ method: 'get', url: '/api/front/v1/pages/main/main-product-new-item', payload: { data: {} } });
 }
 
 // 메인 카테고리
 export function getMainCategoies(): Promise<ServiceResponse<Category>> {
-    return _Axios_({ method: 'get', url: '/api/v1/pages/tabs/main-products-category', payload: { data: {} } });
+    return _Axios_({ method: 'get', url: '/api/front/v1/pages/main/main-product-new-item', payload: { data: {} } });
 }

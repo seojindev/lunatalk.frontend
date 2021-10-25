@@ -92,15 +92,29 @@ declare module 'CommonTypes' {
         product_uuid: string;
         product_image: string;
     }
-    export interface BestItem {
-        click_code: string;
-        product_name: string;
-        product_uuid: string;
-        product_price: {
-            type1: number;
-            type2: string;
+    export interface ListItem {
+        uuid: string;
+        product: {
+            uuid: string;
+            name: string;
+            original_price: {
+                number: number;
+                string: string;
+            };
+            price: {
+                number: number;
+                string: string;
+            };
+            color: string;
+            review_count: {
+                number: number;
+                string: string;
+            };
+            rep_image: {
+                file_name: string;
+                url: string;
+            };
         };
-        product_image: string;
     }
     export interface Category {
         click_code: string;

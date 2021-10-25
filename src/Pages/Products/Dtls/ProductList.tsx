@@ -1,4 +1,3 @@
-import { ProductBox } from '@Src/Components/Elements/Box';
 import React from 'react';
 
 export default function ProductList() {
@@ -22,9 +21,9 @@ export default function ProductList() {
                         </div>
                         <div className="shop-bottom-area">
                             <div className="row">
-                                {[...Array(10)].map((x, i) => (
-                                    <ProductBox key={i} />
-                                ))}
+                                {/*{[...Array(10)].map((x, i) => (*/}
+                                {/*    // <ProductBox key={i} />*/}
+                                {/*))}*/}
                             </div>
                         </div>
                     </div>

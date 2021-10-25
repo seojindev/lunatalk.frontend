@@ -1,7 +1,17 @@
 import React from 'react';
 import { ProductBox } from '@Element/Box';
 
-export default function MainItemListBox({ listName }: { listName: string }) {
+export interface product {
+    uuid: string;
+    name: string;
+    originalPrice: string;
+    price: string;
+    color: string;
+    review: string;
+    url: string;
+}
+
+export default function MainItemListBox({ listName, product }: { listName: string; product: product[] }) {
     return (
         <div className="product-area pb-60">
             <div className="container">
@@ -12,10 +22,9 @@ export default function MainItemListBox({ listName }: { listName: string }) {
                     <div className="tab-pane active" id="product-2">
                         <div className="row">
                             {/*TODO: product 구조 확인후 변경*/}
-                            <ProductBox />
-                            <ProductBox />
-                            <ProductBox />
-                            <ProductBox />
+                            {product.map((item: product) => (
+                                <ProductBox item={item} />
+                            ))}
                         </div>
                     </div>
                 </div>

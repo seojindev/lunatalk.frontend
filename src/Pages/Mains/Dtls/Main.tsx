@@ -1,8 +1,9 @@
 import React from 'react';
 import MainSliderBox from './MainSliderBox';
 import MainMenuBox from './MainMenuBox';
-import MainItemListBox from './MainItemListBox';
 import MainNotice from '@Page/Mains/Dtls/MainNotice';
+import MainBestItem from '@Page/Mains/Dtls/MainBestItem';
+import MainNewItem from '@Page/Mains/Dtls/MainNewItem';
 
 export default function Main() {
     return (
@@ -17,9 +18,8 @@ export default function Main() {
                     </div>
                 </div>
             </div>
-            {/*TODO: Product Item 구조 확인후 변경*/}
-            <MainItemListBox listName="Best Item" />
-            <MainItemListBox listName="New Item" />
+            <MainBestItem />
+            <MainNewItem />
             {/* 공지사항 및 고객센터 */}
             <div className="notice-area pt-30 pb-50">
                 <div className="container">

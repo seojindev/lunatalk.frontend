@@ -1,5 +1,4 @@
 import React from 'react';
-import { ProductBox } from '@Element/Box';
 
 export default function ProductsRecommend() {
     return (
@@ -11,9 +10,9 @@ export default function ProductsRecommend() {
                 <div className="related-product-active owl-carousel owl-dot-none" style={{ display: 'block' }}>
                     <div className="row">
                         {/*상품 리스트*/}
-                        {[...Array(4)].map((x, i) => (
-                            <ProductBox key={i} />
-                        ))}
+                        {/*{[...Array(4)].map((x, i) => (*/}
+                        {/*    <ProductBox key={i} />*/}
+                        {/*))}*/}
                     </div>
                 </div>
             </div>

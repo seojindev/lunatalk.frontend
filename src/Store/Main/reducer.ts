@@ -1,11 +1,13 @@
 import { createReducer } from 'typesafe-actions';
 import produce from 'immer';
-import { SagaAction, MainSlide, MainCategory, MainNotice } from 'CommonTypes';
+import { SagaAction, MainSlide, MainCategory, MainNotice, ListItem } from 'CommonTypes';
 import { MainState } from 'StoreTypes';
 import {
+    GET_BEST_ITEM_SUCCESS,
     GET_CATEGORY_FAILURE,
     GET_CATEGORY_SUCCESS,
     GET_MAIN_SLIDE_SUCCESS,
+    GET_NEW_ITEM_SUCCESS,
     GET_NOTICE_SUCCESS,
 } from '@Store/Main/types';
 // import { GET_MAIN_CATEGORY_SUCCESS, GET_MAIN_HOTITEM_SUCCESS } from './actions';
@@ -17,6 +19,8 @@ const initialState: MainState = {
     main_slide: [],
     main_category: [],
     main_notice: [],
+    main_best_item: [],
+    main_new_item: [],
     // best_item: [],
     // hot_item: [],
     // categories: {
@@ -83,6 +87,16 @@ export const MainSagaReducer = createReducer<MainState>(initialState, {
     [GET_NOTICE_SUCCESS]: (state: MainState, action: SagaAction<{ main_notice: MainNotice[] }>) => {
         return produce(state, draft => {
             draft.main_notice = action.payload.main_notice;
+        });
+    },
+    [GET_BEST_ITEM_SUCCESS]: (state: MainState, action: SagaAction<{ main_best_item: ListItem[] }>) => {
+        return produce(state, draft => {
+            draft.main_best_item = action.payload.main_best_item;
+        });
+    },
+    [GET_NEW_ITEM_SUCCESS]: (state: MainState, action: SagaAction<{ main_new_item: ListItem[] }>) => {
+        return produce(state, draft => {
+            draft.main_new_item = action.payload.main_new_item;
         });
     },
     // [GET_MAIN_BESTITEM_SUCCESS]: (state: MainState, action: SagaAction<{ best_item: BestItem[] }>) => {

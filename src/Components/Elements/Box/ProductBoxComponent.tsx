@@ -1,23 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BsFillHeartFill, BsFillBagFill } from 'react-icons/bs';
+import { product } from '@Element/Box/MainItemListBox';
 
-export default function ProductBoxComponent() {
+export default function ProductBoxComponent({ item }: { item: product }) {
     return (
         <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
             <div className="product-wrap mb-25">
                 <div className="product-img">
-                    <Link to="/product/1">
-                        <img
-                            className="default-img"
-                            src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
-                            alt=""
-                        />
-                        <img
-                            className="hover-img"
-                            src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
-                            alt=""
-                        />
+                    <Link to={`/product/${item.uuid}`}>
+                        <img className="default-img" src={item.url} alt={item.name} />
+                        <img className="hover-img" src={item.url} alt={item.name} />
                     </Link>
                     {/* <span className="pink">-10%</span> */}
                     <div className="product-action">
@@ -45,16 +38,15 @@ export default function ProductBoxComponent() {
                 </div>
                 <div className="product-content text-center">
                     <h3>
-                        <a href="product-details.html">빈티지 썸머 쇼퍼백 세트</a>
-                        <p className="review-count">리뷰 : 200</p>
+                        <Link to={`/product/${item.uuid}`}>{item.name}</Link>
+                        <p className="review-count">리뷰 : {item.review}</p>
                     </h3>
                     <div className="product-option">
-                        <span>오렌지</span>
-                        <span>블루</span>
+                        <span>{item.color}</span>
                     </div>
                     <div className="product-price">
-                        <p className="old">25,000원</p>
-                        <p>15,000원</p>
+                        <p className="old">{item.originalPrice}원</p>
+                        <p>{item.price}원</p>
                     </div>
                     <div className="product-icon">
                         <span>

@@ -1,13 +1,19 @@
 import { takeLatest, fork, put, call } from 'redux-saga/effects';
-import { getMainCategory, getMainNotice, getMainSlide } from '@API';
-import { ServiceResponse, MainSlide, MainCategory, MainNotice } from 'CommonTypes';
+import { getMainBestItem, getMainCategory, getMainNewItem, getMainNotice, getMainSlide } from '@API';
+import { ServiceResponse, MainSlide, MainCategory, MainNotice, ListItem } from 'CommonTypes';
 import {
+    GET_BEST_ITEM_FAILURE,
+    GET_BEST_ITEM_START,
+    GET_BEST_ITEM_SUCCESS,
     GET_CATEGORY_FAILURE,
     GET_CATEGORY_START,
     GET_CATEGORY_SUCCESS,
     GET_MAIN_SLIDE_FAILURE,
     GET_MAIN_SLIDE_START,
     GET_MAIN_SLIDE_SUCCESS,
+    GET_NEW_ITEM_FAILURE,
+    GET_NEW_ITEM_START,
+    GET_NEW_ITEM_SUCCESS,
     GET_NOTICE_FAILURE,
     GET_NOTICE_START,
     GET_NOTICE_SUCCESS,
@@ -50,6 +56,34 @@ function* getNoticeSaga() {
             type: GET_NOTICE_FAILURE,
             payload: {
                 message: '메인 공지사항 리스트를 불러오지 못했습니다. \n 잠시후 다시 시도해 주세요.',
+            },
+        });
+    }
+}
+
+function* getBestItemSaga() {
+    try {
+        const response: ServiceResponse<ListItem[]> = yield call(getMainBestItem);
+        yield put({ type: GET_BEST_ITEM_SUCCESS, payload: { main_best_item: response.payload } });
+    } catch (e) {
+        yield put({
+            type: GET_BEST_ITEM_FAILURE,
+            payload: {
+                message: '메인 베스트 아이템 리스트를 불러오지 못했습니다. \n 잠시후 다시 시도해 주세요.',
+            },
+        });
+    }
+}
+
+function* getNewItemSaga() {
+    try {
+        const response: ServiceResponse<ListItem[]> = yield call(getMainNewItem);
+        yield put({ type: GET_NEW_ITEM_SUCCESS, payload: { main_new_item: response.payload } });
+    } catch (e) {
+        yield put({
+            type: GET_NEW_ITEM_FAILURE,
+            payload: {
+                message: '메인 뉴 아이템 리스트를 불러오지 못했습니다. \n 잠시후 다시 시도해 주세요.',
             },
         });
     }
@@ -101,6 +135,8 @@ function* onBaseSagaWatcher() {
     yield takeLatest(GET_MAIN_SLIDE_START as any, getMainSlideSaga);
     yield takeLatest(GET_CATEGORY_START as any, getCategorySaga);
     yield takeLatest(GET_NOTICE_START as any, getNoticeSaga);
+    yield takeLatest(GET_BEST_ITEM_START as any, getBestItemSaga);
+    yield takeLatest(GET_NEW_ITEM_START as any, getNewItemSaga);
     // yield takeLatest(GET_MAIN_BESTITEM_START as any, getMainBestItemSaga);
     // yield takeLatest(GET_MAIN_HOTITEM_START as any, getMainHotItemSaga);
     // yield takeLatest(GET_MAIN_CATEGORY_START as any, getMainCategoriesSaga);
