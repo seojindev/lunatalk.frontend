@@ -8,10 +8,12 @@ import { all } from 'redux-saga/effects';
 import app from '@Store/App';
 import main from '@Store/Main';
 import auths from '@Store/Auths';
+import category from '@Store/Category';
 
 import appSagas from '@Store/App/sagas';
 import mainSagas from '@Store/Main/sagas';
 import authsSagas from '@Store/Auths/sagas';
+import categorySagas from '@Store/Category/sagas';
 /** store end */
 
 export const createRootReducer = (history: History) =>
@@ -20,8 +22,9 @@ export const createRootReducer = (history: History) =>
         app: app,
         main: main,
         auths: auths,
+        category: category,
     });
 
 export function* rootSaga() {
-    yield all([...appSagas, ...mainSagas, ...authsSagas]);
+    yield all([...appSagas, ...mainSagas, ...authsSagas, ...categorySagas]);
 }

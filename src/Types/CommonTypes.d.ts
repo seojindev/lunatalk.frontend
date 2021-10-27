@@ -37,6 +37,17 @@ declare module 'CommonTypes' {
         };
     }
 
+    export interface MainCategory {
+        name: string;
+        uuid: string;
+        image: {
+            file_name: string;
+            url: string;
+            width: number;
+            height: number;
+        };
+    }
+
     // category Menu 코드.
     export interface Categories {
         uuid: string;
@@ -116,6 +127,31 @@ declare module 'CommonTypes' {
             };
         };
     }
+    export interface CategoryItem {
+        uuid: string;
+        products: CategoryProduct[];
+    }
+    export interface CategoryProduct {
+        uuid: string;
+        name: string;
+        original_price: {
+            number: number;
+            string: string;
+        };
+        price: {
+            number: number;
+            string: string;
+        };
+        color: string;
+        review_count: {
+            number: number;
+            string: string;
+        };
+        rep_image: {
+            file_name: string;
+            url: string;
+        };
+    }
     export interface Category {
         click_code: string;
         product_name: string;
@@ -142,16 +178,6 @@ declare module 'CommonTypes' {
         url: {
             product_uuid: string;
             slide_url: string;
-        };
-    }
-    export interface MainCategory {
-        name: string;
-        uuid: string;
-        image: {
-            file_name: string;
-            url: string;
-            width: number;
-            height: number;
         };
     }
     export interface MainNotice {

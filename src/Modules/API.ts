@@ -1,7 +1,6 @@
 import { _Axios_ } from '@Utils';
 import {
     ListItem,
-    Category,
     AppBase,
     Login,
     PhoneAuthResponse,
@@ -95,7 +94,11 @@ export function getMainNewItem(): Promise<ServiceResponse<ListItem[]>> {
     return _Axios_({ method: 'get', url: '/api/front/v1/pages/main/main-product-new-item', payload: { data: {} } });
 }
 
-// 메인 카테고리
-export function getMainCategoies(): Promise<ServiceResponse<Category>> {
-    return _Axios_({ method: 'get', url: '/api/front/v1/pages/main/main-product-new-item', payload: { data: {} } });
+// 카테고리 리스트
+export function getCategoryListItem(payload: { categoryUuid: string }): Promise<ServiceResponse<ListItem[]>> {
+    return _Axios_({
+        method: 'get',
+        url: `/api/front/v1/pages/product-category/${payload.categoryUuid}/list`,
+        payload: { data: {} },
+    });
 }

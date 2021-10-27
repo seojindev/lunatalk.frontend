@@ -34,7 +34,7 @@ export default function MenuBarComponent() {
             const resultCategories = categories.map((category: Categories) => {
                 return {
                     name: category.name,
-                    link: `/category/${category.name}`,
+                    link: `/category/${category.uuid}`,
                 };
             });
             setCategoryMenu(resultCategories);
