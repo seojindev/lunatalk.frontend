@@ -17,15 +17,16 @@ export default function MainMenuBox() {
     }, []);
 
     useEffect(() => {
-        if (main_category !== []) {
-            const mainCategoryResult = main_category.map((item: MainCategory) => {
+        if (main_category) {
+            const result = main_category.map((item: MainCategory) => {
                 return {
-                    imgUrl: item.image.url,
                     name: item.name,
                     uuid: item.uuid,
+                    imgUrl: item.image.url,
                 };
             });
-            setMainCategory(mainCategoryResult);
+            console.log('mainCategory', mainCategory);
+            setMainCategory(result);
         }
     }, [main_category]);
     return (
@@ -33,7 +34,7 @@ export default function MainMenuBox() {
             {mainCategory.map((item: { imgUrl: string; name: string; uuid: string }) => {
                 return (
                     <div className="col-lg-3 col-md-6 col-sm-6" key={item.uuid}>
-                        <Link to={`category/${item.name}`}>
+                        <Link to={`category/${item.uuid}`}>
                             <div className="support-wrap mb-30 support-1">
                                 <div className="support-icon">
                                     <img className="animated" src={item.imgUrl} alt="" />
