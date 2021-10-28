@@ -23,10 +23,11 @@ export default function MainItemListBox({ listName, product }: { listName: strin
                 <div className="tab-content jump">
                     <div className="tab-pane active" id="product-2">
                         <div className="row">
-                            {/*TODO: product 구조 확인후 변경*/}
-                            {product.map((item: product) => (
-                                <ProductBox item={item} />
-                            ))}
+                            {product.length ? (
+                                product.map((item: product) => <ProductBox item={item} />)
+                            ) : (
+                                <h3>상품이 존재하지 않습니다.</h3>
+                            )}
                         </div>
                     </div>
                 </div>

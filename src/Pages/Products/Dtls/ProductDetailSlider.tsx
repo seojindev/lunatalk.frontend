@@ -4,7 +4,7 @@ import React from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-export default function ProductDetailSlider() {
+export default function ProductDetailSlider({ image }: { image: string }) {
     // const settings = {
     //     dots: true, // 점은 안 보이게
     //     infinite: true, // 무한으로 즐기게
@@ -38,11 +38,7 @@ export default function ProductDetailSlider() {
         // </Slider>
         // TODO: slider로 적용시 사이즈가 지멋대로 됨... 원인파악중
         <div style={{ width: '100%' }}>
-            <img
-                src="http://lunatalk.co.kr/web/product/big/sjsanup21_64.jpg"
-                alt="img"
-                style={{ display: 'block', width: '100%' }}
-            />
+            <img src={image} alt="img" style={{ display: 'block', height: '100%' }} />
         </div>
     );
 }

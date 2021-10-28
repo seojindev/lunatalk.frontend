@@ -189,4 +189,55 @@ declare module 'CommonTypes' {
         };
         created_at: string;
     }
+
+    export interface ProductDetail {
+        uuid: string;
+        category: {
+            uuid: string;
+            name: string;
+        };
+        name: string;
+        barcode: string;
+        original_price: {
+            number: number;
+            string: string;
+        };
+        price: {
+            number: number;
+            string: string;
+        };
+        quantity: {
+            number: number;
+            string: string;
+        };
+        options: {
+            color: {
+                id: number;
+                name: string;
+            }[];
+            wireless: {
+                id: number;
+                name: string;
+            }[];
+        };
+        image: {
+            rep: {
+                id: number;
+                file_name: string;
+                url: string;
+            }[];
+            detail: {
+                id: number;
+                file_name: string;
+                url: string;
+            }[];
+        };
+        sale: string;
+        active: string;
+        created_at: {
+            type1: string;
+            type2: string;
+            type3: string;
+        };
+    }
 }

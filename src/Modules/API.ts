@@ -11,6 +11,7 @@ import {
     MainSlide,
     MainCategory,
     MainNotice,
+    ProductDetail,
 } from 'CommonTypes';
 
 // 서버 공지 사항 체크.
@@ -99,6 +100,15 @@ export function getCategoryListItem(payload: { categoryUuid: string }): Promise<
     return _Axios_({
         method: 'get',
         url: `/api/front/v1/pages/product-category/${payload.categoryUuid}/list`,
+        payload: { data: {} },
+    });
+}
+
+// 상품 디테일
+export function getProductDetail(payload: { productUuid: string }): Promise<ServiceResponse<ProductDetail>> {
+    return _Axios_({
+        method: 'get',
+        url: `/api/front/v1/pages/product/${payload.productUuid}/detail`,
         payload: { data: {} },
     });
 }

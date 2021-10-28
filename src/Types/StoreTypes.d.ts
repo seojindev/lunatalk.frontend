@@ -10,6 +10,7 @@ declare module 'StoreTypes' {
         MainNotice,
         MainSlide,
         CategoryItem,
+        ProductDetail,
     } from 'CommonTypes';
 
     // App Store
@@ -40,6 +41,9 @@ declare module 'StoreTypes' {
 
     export interface CategoryState {
         products: CategoryItem;
+    }
+    export interface ProductState {
+        detail: ProductDetail;
     }
 
     // 인증 처리 Store
@@ -101,5 +105,6 @@ declare module 'StoreTypes' {
         main: MainState;
         auths: AuthsState;
         category: CategoryState;
+        product: ProductState;
     }
 }

@@ -1,14 +1,26 @@
 import React from 'react';
 import { BsFillHeartFill } from 'react-icons/bs';
 
-export default function ProductOrder() {
+export default function ProductOrder({
+    name,
+    originalPrice,
+    price,
+    color,
+    wireless,
+}: {
+    name: string;
+    originalPrice: string;
+    price: string;
+    color: any;
+    wireless: any;
+}) {
     return (
         <div className="col-lg-6 col-md-6">
             <div className="product-details-content ml-70">
-                <h2>빈티지 썸머 쇼퍼백 세트</h2>
+                <h2>{name}</h2>
                 <div className="product-details-price">
-                    <span>15,000원</span>
-                    <span className="old">20,000원 </span>
+                    <span>{price}원</span>
+                    <span className="old">{originalPrice}원 </span>
                 </div>
                 <div className="pro-details-rating-wrap">
                     <span>
@@ -16,16 +28,26 @@ export default function ProductOrder() {
                     </span>
                 </div>
                 <div className="pro-details-size-color">
-                    <select>
-                        <option value="">색상을 선택해주세요.</option>
-                        <option value="">오렌지</option>
-                        <option value="">블루</option>
-                    </select>
-                    <select>
-                        <option value="">옵션을 선택해주세요.</option>
-                        <option value="">오렌지</option>
-                        <option value="">블루</option>
-                    </select>
+                    {color.length > 0 ? (
+                        <select>
+                            <option value="">색상을 선택해주세요.</option>
+                            {color.map((item: any) => (
+                                <option value={item.id} key={item.id}>
+                                    {item.name}
+                                </option>
+                            ))}
+                        </select>
+                    ) : null}
+                    {wireless.length > 0 ? (
+                        <select>
+                            <option value="">옵션을 선택해주세요.</option>
+                            {wireless.map((item: any) => (
+                                <option value={item.id} key={item.id}>
+                                    {item.name}
+                                </option>
+                            ))}
+                        </select>
+                    ) : null}
                 </div>
                 <div className="btn_wrap">
                     <button type="button" className="large btn-hover">
