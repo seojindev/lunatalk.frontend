@@ -20,6 +20,7 @@ export default function ProductDetail() {
     const [productDetail, setProductDetail] = useState<{
         name: string;
         original_price: string;
+        numberPrice: number;
         price: string;
         quantity: number;
         option: {
@@ -43,6 +44,7 @@ export default function ProductDetail() {
     }>({
         name: '',
         original_price: '',
+        numberPrice: 0,
         price: '',
         quantity: 0,
         option: {
@@ -78,6 +80,7 @@ export default function ProductDetail() {
             name: '',
             original_price: '',
             price: '',
+            numberPrice: 0,
             quantity: 0,
             option: {
                 color: [
@@ -111,6 +114,7 @@ export default function ProductDetail() {
                 name: detail.name,
                 original_price: detail.original_price.string,
                 price: detail.price.string,
+                numberPrice: detail.price.number,
                 quantity: detail.quantity.number,
                 option: {
                     color: detail.options.color,
@@ -146,8 +150,10 @@ export default function ProductDetail() {
                             name={productDetail.name}
                             originalPrice={productDetail.original_price}
                             price={productDetail.price}
+                            numberPrice={productDetail.numberPrice}
                             color={productDetail.option.color}
                             wireless={productDetail.option.wireless}
+                            quantity={productDetail.quantity}
                         />
                     </div>
                 </div>

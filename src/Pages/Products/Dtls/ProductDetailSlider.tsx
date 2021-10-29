@@ -38,7 +38,7 @@ export default function ProductDetailSlider({ image }: { image: string }) {
         // </Slider>
         // TODO: slider로 적용시 사이즈가 지멋대로 됨... 원인파악중
         <div style={{ width: '100%' }}>
-            <img src={image} alt="img" style={{ display: 'block', height: '100%' }} />
+            <img src={image} alt="img" style={{ display: 'block', width: '100%' }} />
         </div>
     );
 }

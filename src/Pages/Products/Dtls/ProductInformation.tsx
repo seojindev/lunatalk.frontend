@@ -22,7 +22,7 @@ export default function ProductInformation({ active, image }: { active: string; 
                 {/*    </li>*/}
                 {/*</ul>*/}
                 {image.url.map((productImg: string) => (
-                    <img src={productImg} alt="img" />
+                    <img src={productImg} alt="img" key={productImg} style={{ display: 'block', width: '100%' }} />
                 ))}
             </div>
         </div>
