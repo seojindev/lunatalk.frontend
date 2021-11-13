@@ -65,8 +65,7 @@ export default function ProductOrder({
     };
 
     const onChangeProductCountInput = (name: string, e: React.ChangeEvent<HTMLInputElement>) => {
-        const find = _.find(selectProduct, { name: name });
-        if (find?.count && find?.count >= Number(e.target.value)) {
+        if (Number(e.target.value) > quantity) {
             setSelectProduct(
                 selectProduct.map(product => (product.name === name ? { ...product, count: 1 } : product))
             );
@@ -208,6 +207,7 @@ export default function ProductOrder({
                                           type="button"
                                           onClick={() => productCountPlusOrMinus(product.name, 'plus')}
                                           style={{ background: '#fff' }}
+                                          disabled={product.count === quantity}
                                       >
                                           <AiOutlinePlus />
                                       </button>
@@ -215,6 +215,7 @@ export default function ProductOrder({
                                           type="button"
                                           onClick={() => productCountPlusOrMinus(product.name, 'minus')}
                                           style={{ background: '#fff' }}
+                                          disabled={product.count === 1}
                                       >
                                           <AiOutlineMinus />
                                       </button>
