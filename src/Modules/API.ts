@@ -108,7 +108,7 @@ export function getCategoryListItem(payload: { categoryUuid: string }): Promise<
 export function getProductDetail(payload: { productUuid: string }): Promise<ServiceResponse<ProductDetail>> {
     return _Axios_({
         method: 'get',
-        url: `/api/front/v1/pages/product/${payload.productUuid}/detail`,
+        url: `/api/front/v1/product/${payload.productUuid}/detail`,
         payload: { data: {} },
     });
 }
