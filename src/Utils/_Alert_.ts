@@ -54,11 +54,12 @@ const _Alert_ = {
     // 얼럿 띄우고 페이지 이동.
     thenHistoryPush: (alertOption: alertTypeInterface): void => {
         // FIXME : 이동할 페이지 어떻게 할껀지?
-        // const push_target = alertOption.push_router ? alertOption.push_router : '/';
+        const push_target = alertOption.push_router ? alertOption.push_router : '/';
         Swal.fire({
             text: alertOption.text,
         }).then(() => {
             // history.push(process.env.PUBLIC_URL + push_target);
+            window.location.href = `${push_target}`;
         });
     },
     // 얼럿 띄우고 홈으로 이동.

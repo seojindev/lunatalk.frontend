@@ -4,8 +4,10 @@ import { _Alert_ } from '@Util/index';
 import _ from 'lodash';
 import { IoClose } from 'react-icons/io5';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
+import { addCProductToCart } from '@API';
 
 export default function ProductOrder({
+    uuid,
     name,
     originalPrice,
     price,
@@ -14,6 +16,7 @@ export default function ProductOrder({
     wireless,
     quantity,
 }: {
+    uuid: string;
     name: string;
     originalPrice: string;
     price: string;
@@ -123,6 +126,20 @@ export default function ProductOrder({
             }
         }
     };
+
+    const productToCart = (uuid: string) => {
+        addCProductToCart({ productUuid: uuid })
+            .then(res => {
+                if (res.status) {
+                    _Alert_.default({ text: res.payload.message });
+                }
+            })
+            .catch(err => {
+                console.error(err);
+                _Alert_.default({ text: '일시적인 오류가 발생하였습니다. 잠시후 다시 이용해주세요.' });
+            });
+    };
+
     useEffect(() => {
         selectedOption();
     }, [selectOption]);
@@ -246,7 +263,7 @@ export default function ProductOrder({
                     <button type="button" className="large btn-hover">
                         구매하기
                     </button>
-                    <button type="button" className="large btn-hover">
+                    <button type="button" className="large btn-hover" onClick={() => productToCart(uuid)}>
                         장바구니
                     </button>
                     <button type="button" className="btn-favor">

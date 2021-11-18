@@ -38,8 +38,8 @@ export default function MainNotice() {
             ) : (
                 mainNoticeState.map((notice: { title: string; uuid: string; category: string; createdAt: string }) => {
                     return (
-                        <Link to={`notice/${notice.uuid}`}>
-                            <div className="notice_column" key={notice.uuid}>
+                        <Link to={`notice/${notice.uuid}`} key={notice.uuid}>
+                            <div className="notice_column">
                                 <p className="title">
                                     <strong>[{notice.category}]</strong> {notice.title}
                                 </p>

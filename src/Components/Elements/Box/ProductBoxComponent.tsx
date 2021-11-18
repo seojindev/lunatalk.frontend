@@ -2,8 +2,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BsFillHeartFill, BsFillBagFill } from 'react-icons/bs';
 import { product } from '@Element/Box/MainItemListBox';
+import { addCProductToCart } from '@API';
+import _Alert_ from '@_Alert_';
 
 export default function ProductBoxComponent({ item }: { item: product }) {
+    const productToCart = (uuid: string) => {
+        addCProductToCart({ productUuid: uuid })
+            .then(res => {
+                if (res.status) {
+                    _Alert_.default({ text: res.payload.message });
+                }
+            })
+            .catch(err => {
+                console.error(err);
+                _Alert_.default({ text: '일시적인 오류가 발생하였습니다. 잠시후 다시 이용해주세요.' });
+            });
+    };
     return (
         <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
             <div className="product-wrap mb-25">
@@ -14,8 +28,8 @@ export default function ProductBoxComponent({ item }: { item: product }) {
                     </Link>
                     {/* <span className="pink">-10%</span> */}
                     <div className="product-action">
-                        <div className="pro-same-action pro-cart">
-                            <Link to="/cart">
+                        <div className="pro-same-action pro-cart" onClick={() => productToCart(item.uuid)}>
+                            <Link to="#">
                                 <BsFillBagFill /> 장바구니 담기
                             </Link>
                         </div>

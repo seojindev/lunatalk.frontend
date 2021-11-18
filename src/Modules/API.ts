@@ -112,3 +112,12 @@ export function getProductDetail(payload: { productUuid: string }): Promise<Serv
         payload: { data: {} },
     });
 }
+
+// 장바구니 아이템 추가
+export function addCProductToCart(payload: { productUuid: string }): Promise<ServiceResponse<{ message: string }>> {
+    return _Axios_({
+        method: 'post',
+        url: `/api/front/v1/pages/cart/${payload.productUuid}/create`,
+        payload: { data: {} },
+    });
+}

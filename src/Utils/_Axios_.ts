@@ -116,7 +116,7 @@ export default ({ method = 'post', url, payload }: serviceInterface): any => {
         const status = error.response?.status;
 
         // FIXME 서버 상태, 인증 외에 401 에러 처리 어떻게 할껀지?
-        if (options.shouldIntercept(error) === false) {
+        if (!options.shouldIntercept(error)) {
             if (status === 503) {
                 // 서버 에러
                 _Alert_.serverStatusError({
@@ -150,6 +150,15 @@ export default ({ method = 'post', url, payload }: serviceInterface): any => {
                     message: error.response?.data.error_message,
                 });
             }
+        } else {
+            _Alert_.thenHistoryPush({
+                text: error.response?.data.error_message,
+                push_router: '/auths/login',
+            });
+            return Promise.resolve({
+                status: false,
+                message: error.response?.data.error_message,
+            });
         }
 
         if (error.config._retry || error.config._queued) {

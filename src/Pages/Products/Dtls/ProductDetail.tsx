@@ -18,6 +18,7 @@ export default function ProductDetail() {
     }));
     const [tabState, setTabState] = useState<string>('상품정보');
     const [productDetail, setProductDetail] = useState<{
+        uuid: string;
         name: string;
         original_price: string;
         numberPrice: number;
@@ -42,6 +43,7 @@ export default function ProductDetail() {
             };
         };
     }>({
+        uuid: '',
         name: '',
         original_price: '',
         numberPrice: 0,
@@ -77,6 +79,7 @@ export default function ProductDetail() {
 
     useEffect(() => {
         setProductDetail({
+            uuid: '',
             name: '',
             original_price: '',
             price: '',
@@ -111,6 +114,7 @@ export default function ProductDetail() {
     useEffect(() => {
         if (detail) {
             setProductDetail({
+                uuid: detail.uuid,
                 name: detail.name,
                 original_price: detail.original_price.string,
                 price: detail.price.string,
@@ -147,6 +151,7 @@ export default function ProductDetail() {
                             </div>
                         </div>
                         <ProductOrder
+                            uuid={productDetail.uuid}
                             name={productDetail.name}
                             originalPrice={productDetail.original_price}
                             price={productDetail.price}
