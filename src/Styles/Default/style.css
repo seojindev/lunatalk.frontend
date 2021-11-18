@@ -2484,7 +2484,8 @@ a.default-btn {
         margin-left: 5px;
     }
 }
-.header-right-wrap .same-style > a {
+.header-right-wrap .same-style > div,
+.header-right-wrap .same-style > a{
     color: #000;
     font-size: 23px;
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BsSearch, BsPeopleCircle, BsHeart, BsBag } from 'react-icons/bs';
+import { BsSearch, BsPeopleCircle, BsBag } from 'react-icons/bs';
 import '@Style/Common/HeaderBar.css';
 import { useSelector } from 'react-redux';
 import { RootState } from 'StoreTypes';
@@ -84,9 +84,9 @@ export default function MenuBarComponent() {
                     <div className="col-xl-2 col-lg-2 col-md-6 col-8">
                         <div className="header-right-wrap">
                             <div className="same-style header-search">
-                                <a className="search-active" href="#" onClick={handleSelected}>
+                                <div className="search-active" onClick={handleSelected}>
                                     <BsSearch />
-                                </a>
+                                </div>
                                 <div
                                     className="search-content"
                                     style={toggleSelected ? { display: 'block' } : { display: 'none' }}
@@ -132,11 +132,11 @@ export default function MenuBarComponent() {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="same-style header-wishlist">
-                                <Link to="/wishlist">
-                                    <BsHeart />
-                                </Link>
-                            </div>
+                            {/*<div className="same-style header-wishlist">*/}
+                            {/*    <Link to="/wishlist">*/}
+                            {/*        <BsHeart />*/}
+                            {/*    </Link>*/}
+                            {/*</div>*/}
                             <div className="same-style cart-wrap">
                                 <Link to="/cart">
                                     <BsBag />
