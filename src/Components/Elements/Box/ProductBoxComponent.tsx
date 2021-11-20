@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BsFillHeartFill, BsFillBagFill } from 'react-icons/bs';
+import { BsFillBagFill } from 'react-icons/bs';
 import { product } from '@Element/Box/MainItemListBox';
 import { addCProductToCart } from '@API';
 import _Alert_ from '@_Alert_';
@@ -33,11 +33,11 @@ export default function ProductBoxComponent({ item }: { item: product }) {
                                 <BsFillBagFill /> 장바구니 담기
                             </Link>
                         </div>
-                        <div className="pro-same-action pro-wishlist">
-                            <Link to="/wishlist">
-                                <BsFillHeartFill />
-                            </Link>
-                        </div>
+                        {/*<div className="pro-same-action pro-wishlist">*/}
+                        {/*    <Link to="/wishlist">*/}
+                        {/*        <BsFillHeartFill />*/}
+                        {/*    </Link>*/}
+                        {/*</div>*/}
                         {/* <div className="pro-same-action pro-quickview">
                                                     <a
                                                         title="Quick View"
