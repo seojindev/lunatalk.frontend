@@ -1,27 +1,45 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import CartForm from '@Page/Cart/Dtls/CartForm';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { getCartListAction } from '@Store/Cart';
 import { RootState } from 'StoreTypes';
-import _Alert_ from '@_Alert_';
+import { Cart as CartData } from 'CommonTypes';
 
 export default function Cart() {
-    const { access_token, refresh_token } = useSelector((store: RootState) => ({
-        access_token: store.app.loginUser.access_token,
-        refresh_token: store.app.loginUser.refresh_token,
+    const dispatch = useDispatch();
+    const { cartList } = useSelector((store: RootState) => ({
+        cartList: store.cart.list,
     }));
+    const [cartData, setCartData] = useState<
+        { cartId: number; productUuid: string; price: string; name: string; image: string; count: number }[]
+    >([]);
 
     useEffect(() => {
-        if (access_token === null || refresh_token === null) {
-            _Alert_.thenGoHome({ text: `로그인이 필요한 페이지 입니다.` });
-        }
+        dispatch(getCartListAction());
     }, []);
+
+    useEffect(() => {
+        if (cartList.length) {
+            const cartResult = cartList.map((item: CartData) => {
+                return {
+                    cartId: item.cart_id,
+                    productUuid: item.product_uuid,
+                    name: item.name,
+                    price: item.price.string,
+                    image: item.rep_image.url,
+                    count: 1,
+                };
+            });
+            setCartData(cartResult);
+        }
+    }, [cartList]);
     return (
         <div className="cart-main-area pt-90 pb-100">
             <div className="container">
                 <h3 className="cart-page-title">CART LIST</h3>
                 <div className="row">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                        <CartForm />
+                        <CartForm list={cartData} />
                     </div>
                     <div className="btn_wrap">
                         <div className="left">

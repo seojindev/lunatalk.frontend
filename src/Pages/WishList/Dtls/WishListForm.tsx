@@ -1,5 +1,4 @@
 import React from 'react';
-import TableItemBoxComponent from '@Element/Box/TableItemBoxComponent';
 
 export default function WishListForm() {
     return (
@@ -20,9 +19,9 @@ export default function WishListForm() {
                         </tr>
                     </thead>
                     <tbody>
-                        {[...Array(4)].map((x, i: number) => (
-                            <TableItemBoxComponent key={i} />
-                        ))}
+                        {/*{[...Array(4)].map((x, i: number) => (*/}
+                        {/*// <TableItemBoxComponent key={i} />*/}
+                        {/*// ))}*/}
                     </tbody>
                 </table>
             </div>

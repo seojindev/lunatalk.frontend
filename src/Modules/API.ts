@@ -12,6 +12,7 @@ import {
     MainCategory,
     MainNotice,
     ProductDetail,
+    Cart,
 } from 'CommonTypes';
 
 // 서버 공지 사항 체크.
@@ -118,6 +119,15 @@ export function addCProductToCart(payload: { productUuid: string }): Promise<Ser
     return _Axios_({
         method: 'post',
         url: `/api/front/v1/pages/cart/${payload.productUuid}/create`,
+        payload: { data: {} },
+    });
+}
+
+// 장바구니 리스트
+export function getCartList(): Promise<ServiceResponse<Cart[]>> {
+    return _Axios_({
+        method: 'get',
+        url: '/api/front/v1/pages/cart/list',
         payload: { data: {} },
     });
 }

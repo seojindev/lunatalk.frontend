@@ -240,4 +240,18 @@ declare module 'CommonTypes' {
             type3: string;
         };
     }
+    export interface Cart {
+        cart_id: number;
+        product_uuid: string;
+        name: string;
+        price: {
+            number: number;
+            string: string;
+        };
+        rep_image: {
+            id: number;
+            file_name: string;
+            url: string;
+        };
+    }
 }
