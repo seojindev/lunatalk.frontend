@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { BsFillHeartFill } from 'react-icons/bs';
 import { _Alert_ } from '@Util/index';
 import _ from 'lodash';
 import { IoClose } from 'react-icons/io5';
@@ -266,9 +265,9 @@ export default function ProductOrder({
                     <button type="button" className="large btn-hover" onClick={() => productToCart(uuid)}>
                         장바구니
                     </button>
-                    <button type="button" className="btn-favor">
-                        <BsFillHeartFill />
-                    </button>
+                    {/*<button type="button" className="btn-favor">*/}
+                    {/*    <BsFillHeartFill />*/}
+                    {/*</button>*/}
                 </div>
             </div>
         </div>
