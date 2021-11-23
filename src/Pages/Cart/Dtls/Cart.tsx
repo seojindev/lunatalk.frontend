@@ -14,9 +14,28 @@ export default function Cart() {
         { cartId: number; productUuid: string; price: string; name: string; image: string; count: number }[]
     >([]);
 
+    const [checkBox, setCheckBox] = useState<number[]>([]);
+
     useEffect(() => {
         dispatch(getCartListAction());
     }, []);
+
+    const checkBoxOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { checked, name } = e.target;
+        if (checked && name !== 'All') {
+            setCheckBox([...checkBox, Number(name)]);
+        } else if (!checked && name !== 'All') {
+            setCheckBox(checkBox.filter(item => item !== Number(name)));
+        } else if (name === 'All' && checked) {
+            const allCartId: number[] = [];
+            cartData.map(item => {
+                allCartId.push(item.cartId);
+            });
+            setCheckBox(allCartId);
+        } else if (name === 'All' && !checked) {
+            setCheckBox([]);
+        }
+    };
 
     useEffect(() => {
         if (cartList.length) {
@@ -39,7 +58,7 @@ export default function Cart() {
                 <h3 className="cart-page-title">CART LIST</h3>
                 <div className="row">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                        <CartForm list={cartData} />
+                        <CartForm list={cartData} checkBoxOnChange={checkBoxOnChange} checkBox={checkBox} />
                     </div>
                     <div className="btn_wrap">
                         <div className="left">

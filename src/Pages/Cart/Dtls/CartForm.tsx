@@ -1,7 +1,7 @@
 import React from 'react';
 import TableItemBoxComponent from '@Element/Box/TableItemBoxComponent';
 
-export default function CartForm({ list }: any) {
+export default function CartForm({ list, checkBoxOnChange, checkBox }: any) {
     return (
         <form action="#">
             <div className="table-content table-responsive cart-table-content">
@@ -9,7 +9,12 @@ export default function CartForm({ list }: any) {
                     <thead>
                         <tr>
                             <th>
-                                <input type="checkbox" />
+                                <input
+                                    type="checkbox"
+                                    name="All"
+                                    onChange={e => checkBoxOnChange(e)}
+                                    checked={checkBox.length === list.length}
+                                />
                             </th>
                             <th>이미지</th>
                             <th>상품 정보</th>
@@ -35,10 +40,13 @@ export default function CartForm({ list }: any) {
                                 ) => (
                                     <TableItemBoxComponent
                                         key={i}
+                                        cartId={item.cartId}
                                         productUuid={item.productUuid}
                                         name={item.name}
                                         price={item.price}
                                         image={item.image}
+                                        checkBox={checkBox}
+                                        onChange={checkBoxOnChange}
                                     />
                                 )
                             )

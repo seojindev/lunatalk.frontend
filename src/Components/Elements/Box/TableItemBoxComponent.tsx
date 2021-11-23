@@ -1,16 +1,23 @@
 import React, { useState } from 'react';
+import _ from 'lodash';
 import { Link } from 'react-router-dom';
 
 export default function TableItemBoxComponent({
+    cartId,
     productUuid,
     price,
     image,
     name,
+    onChange,
+    checkBox,
 }: {
+    cartId: number;
     productUuid: string;
     price: string;
     image: string;
     name: string;
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    checkBox: number[];
 }) {
     const [cartProductCount, setCartProductCount] = useState<number>(1);
     const cartCountOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -19,7 +26,12 @@ export default function TableItemBoxComponent({
     return (
         <tr>
             <td>
-                <input type="checkbox" />
+                <input
+                    type="checkbox"
+                    name={cartId.toString()}
+                    onChange={e => onChange(e)}
+                    checked={_.includes(checkBox, cartId)}
+                />
             </td>
             <td className="product-thumbnail">
                 <Link to={`/product/${productUuid}`}>
