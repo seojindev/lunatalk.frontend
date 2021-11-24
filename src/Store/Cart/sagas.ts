@@ -6,7 +6,8 @@ import { GET_CART_LIST_FAILURE, GET_CART_LIST_START, GET_CART_LIST_SUCCESS } fro
 function* getCartListSaga() {
     try {
         const response: ServiceResponse<Cart[]> = yield call(getCartList);
-        yield put({ type: GET_CART_LIST_SUCCESS, payload: { cart: response.payload ? response.payload : [] } });
+        console.log(response);
+        yield put({ type: GET_CART_LIST_SUCCESS, payload: { cart: !response.status ? [] : response.payload } });
     } catch (e) {
         yield put({
             type: GET_CART_LIST_FAILURE,

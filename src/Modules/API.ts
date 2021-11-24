@@ -131,3 +131,12 @@ export function getCartList(): Promise<ServiceResponse<Cart[]>> {
         payload: { data: {} },
     });
 }
+
+// 장바구니 삭제
+export function deleteCart(payload: { cartList: number[] }): Promise<ServiceResponse<{ message: string }>> {
+    return _Axios_({
+        method: 'delete',
+        url: '/api/front/v1/pages/cart/many-delete',
+        payload: payload.cartList,
+    });
+}

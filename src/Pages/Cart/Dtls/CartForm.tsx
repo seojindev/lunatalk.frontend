@@ -9,12 +9,14 @@ export default function CartForm({ list, checkBoxOnChange, checkBox }: any) {
                     <thead>
                         <tr>
                             <th>
-                                <input
-                                    type="checkbox"
-                                    name="All"
-                                    onChange={e => checkBoxOnChange(e)}
-                                    checked={checkBox.length === list.length}
-                                />
+                                {list.length > 0 ? (
+                                    <input
+                                        type="checkbox"
+                                        name="All"
+                                        onChange={e => checkBoxOnChange(e)}
+                                        checked={checkBox.length === list.length}
+                                    />
+                                ) : null}
                             </th>
                             <th>이미지</th>
                             <th>상품 정보</th>

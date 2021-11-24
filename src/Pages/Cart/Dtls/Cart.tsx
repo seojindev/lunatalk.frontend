@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getCartListAction } from '@Store/Cart';
 import { RootState } from 'StoreTypes';
 import { Cart as CartData } from 'CommonTypes';
+import { deleteCart } from '@API';
+import _Alert_ from '@_Alert_';
 
 export default function Cart() {
     const dispatch = useDispatch();
@@ -50,8 +52,25 @@ export default function Cart() {
                 };
             });
             setCartData(cartResult);
+        } else {
+            setCartData([]);
         }
     }, [cartList]);
+
+    const cartDelete = async () => {
+        if (checkBox.length > 0) {
+            const response = await deleteCart({ cartList: checkBox });
+            if (response.status) {
+                _Alert_.default({ text: response.payload.message });
+                dispatch(getCartListAction());
+                setCheckBox([]);
+            } else {
+                _Alert_.default({ text: '일시적인 오류가 발생하였습니다. 잠시후 다시 이용해주세요.' });
+            }
+        } else {
+            _Alert_.default({ text: '장바구니가 비어있습니다.' });
+        }
+    };
     return (
         <div className="cart-main-area pt-90 pb-100">
             <div className="container">
@@ -62,7 +81,9 @@ export default function Cart() {
                     </div>
                     <div className="btn_wrap">
                         <div className="left">
-                            <button type="button">선택 삭제</button>
+                            <button type="button" onClick={() => cartDelete()}>
+                                선택 삭제
+                            </button>
                         </div>
                         <div className="right">
                             <button type="button">전체 구매</button>
