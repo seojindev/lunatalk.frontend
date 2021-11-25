@@ -81,7 +81,7 @@ export default function Cart() {
                     </div>
                     <div className="btn_wrap">
                         <div className="left">
-                            <button type="button" onClick={() => cartDelete()}>
+                            <button type="button" onClick={() => cartDelete()} disabled={!cartData.length}>
                                 선택 삭제
                             </button>
                         </div>
