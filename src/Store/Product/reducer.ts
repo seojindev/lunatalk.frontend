@@ -26,6 +26,7 @@ const initialState: ProductState = {
             number: 0,
             string: '',
         },
+        reviews: [],
         options: {
             color: [
                 {

@@ -24,6 +24,7 @@ export default function ProductDetail() {
         numberPrice: number;
         price: string;
         quantity: number;
+        reviews: any[];
         option: {
             color: {
                 id: number;
@@ -49,6 +50,7 @@ export default function ProductDetail() {
         numberPrice: 0,
         price: '',
         quantity: 0,
+        reviews: [],
         option: {
             color: [
                 {
@@ -85,6 +87,7 @@ export default function ProductDetail() {
             price: '',
             numberPrice: 0,
             quantity: 0,
+            reviews: [],
             option: {
                 color: [
                     {
@@ -120,6 +123,7 @@ export default function ProductDetail() {
                 price: detail.price.string,
                 numberPrice: detail.price.number,
                 quantity: detail.quantity.number,
+                reviews: detail.reviews,
                 option: {
                     color: detail.options.color,
                     wireless: detail.options.wireless,
@@ -180,7 +184,7 @@ export default function ProductDetail() {
                                 상품정보
                             </p>
                             <p className={tabState === '리뷰' ? 'active' : ''} onClick={() => handleTabChange('리뷰')}>
-                                리뷰 (2)
+                                리뷰 ({detail.reviews.length})
                             </p>
                         </div>
                         <div className="tab-content description-review-bottom">
@@ -189,7 +193,10 @@ export default function ProductDetail() {
                                 active={tabState === '상품정보' ? 'active' : ''}
                                 image={productDetail.image.detail}
                             />
-                            <ProductReview active={tabState === '리뷰' ? 'active' : ''} />
+                            <ProductReview
+                                active={tabState === '리뷰' ? 'active' : ''}
+                                reviews={productDetail.reviews}
+                            />
                         </div>
                     </div>
                 </div>

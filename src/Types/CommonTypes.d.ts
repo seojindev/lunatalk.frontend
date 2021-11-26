@@ -210,6 +210,7 @@ declare module 'CommonTypes' {
             number: number;
             string: string;
         };
+        reviews: [];
         options: {
             color: {
                 id: number;
