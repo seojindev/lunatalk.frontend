@@ -5,7 +5,7 @@ export default function ProductReview({ active, reviews }: { active: string; rev
         <div id="des-details3" className={'tab-pane' + active}>
             {reviews.length > 0 ? (
                 reviews.map((item: any) => (
-                    <div className="row" key={item.id} style={{ width: '100%', margin: '0 5%', display: 'block' }}>
+                    <div className="row" key={item.id} style={{ width: '100%', marginLeft: '1%', display: 'block' }}>
                         <div className="col-lg-15">
                             <div className="review-wrapper">
                                 <div className="single-review">
@@ -15,8 +15,11 @@ export default function ProductReview({ active, reviews }: { active: string; rev
                                                 <div className="review-name">
                                                     <h4>{item.title}</h4>
                                                 </div>
+                                                <div className="review-name">
+                                                    <h4>{item.user_name}</h4>
+                                                </div>
                                             </div>
-                                            <div className="review-left">{item.user_name}</div>
+                                            <div className="review-left">{item.created_at.type3}</div>
                                         </div>
                                         <div className="review-bottom">
                                             <p>{item.content}</p>
@@ -31,10 +34,11 @@ export default function ProductReview({ active, reviews }: { active: string; rev
                                                     <div className="review-name">
                                                         <h4>{item.answer.title}</h4>
                                                     </div>
+                                                    <div className="review-name">
+                                                        <h4>Lunatalk</h4>
+                                                    </div>
                                                 </div>
-                                                <div className="review-left">
-                                                    <p>Lunatalk</p>
-                                                </div>
+                                                <div className="review-left">{item.answer.created_at.type3}</div>
                                             </div>
                                             <div className="review-bottom">
                                                 <p>{item.answer.contents}</p>
