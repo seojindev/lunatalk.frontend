@@ -64,7 +64,10 @@ function* getNoticeSaga() {
 function* getBestItemSaga() {
     try {
         const response: ServiceResponse<ListItem[]> = yield call(getMainBestItem);
-        yield put({ type: GET_BEST_ITEM_SUCCESS, payload: { main_best_item: response.payload } });
+        yield put({
+            type: GET_BEST_ITEM_SUCCESS,
+            payload: { main_best_item: response.payload ? response.payload : [] },
+        });
     } catch (e) {
         yield put({
             type: GET_BEST_ITEM_FAILURE,
@@ -78,7 +81,7 @@ function* getBestItemSaga() {
 function* getNewItemSaga() {
     try {
         const response: ServiceResponse<ListItem[]> = yield call(getMainNewItem);
-        yield put({ type: GET_NEW_ITEM_SUCCESS, payload: { main_new_item: response.payload } });
+        yield put({ type: GET_NEW_ITEM_SUCCESS, payload: { main_new_item: response.payload ? response.payload : [] } });
     } catch (e) {
         yield put({
             type: GET_NEW_ITEM_FAILURE,
