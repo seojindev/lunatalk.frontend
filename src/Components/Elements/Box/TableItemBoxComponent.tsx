@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import _ from 'lodash';
 import { Link } from 'react-router-dom';
 
@@ -16,7 +16,7 @@ export default function TableItemBoxComponent({
     price: string;
     image: string;
     name: string;
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange: (e: ChangeEvent<HTMLInputElement>) => void;
     checkBox: number[];
 }) {
     const [cartProductCount, setCartProductCount] = useState<number>(1);

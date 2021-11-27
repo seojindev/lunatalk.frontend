@@ -140,3 +140,16 @@ export function deleteCart(payload: { cartList: number[] }): Promise<ServiceResp
         payload: payload.cartList,
     });
 }
+
+// 리뷰 작성
+export function addReview(payload: {
+    productUuid: string;
+    title: string;
+    review: string;
+}): Promise<ServiceResponse<{ message: string }>> {
+    return _Axios_({
+        method: 'post',
+        url: `/api/front/v1/product/${payload.productUuid}/create-review`,
+        payload: { title: payload.title, review: payload.review },
+    });
+}

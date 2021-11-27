@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BsSearch, BsPeopleCircle, BsBag } from 'react-icons/bs';
+import { BsSearch, BsFillPersonFill, BsBag } from 'react-icons/bs';
 import '@Style/Common/HeaderBar.css';
 import { useSelector } from 'react-redux';
 import { RootState } from 'StoreTypes';
@@ -99,7 +99,7 @@ export default function MenuBarComponent() {
                             </div>
                             <div className="same-style account-satting">
                                 <a className="account-satting-active" href="#" onClick={handleAccounted}>
-                                    <BsPeopleCircle />
+                                    <BsFillPersonFill />
                                 </a>
                                 <div
                                     className="account-dropdown"
