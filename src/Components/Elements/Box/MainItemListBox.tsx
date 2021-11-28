@@ -1,6 +1,5 @@
 import React from 'react';
 import { ProductBox } from '@Element/Box';
-import { PageSpinner } from '@Element/Spinners';
 
 export interface product {
     uuid: string;
@@ -27,7 +26,7 @@ export default function MainItemListBox({ listName, product }: { listName: strin
                             {product.length ? (
                                 product.map((item: product) => <ProductBox item={item} key={item.uuid} />)
                             ) : (
-                                <PageSpinner />
+                                <h3>상품이 없습니다.</h3>
                             )}
                         </div>
                     </div>

@@ -5,10 +5,12 @@ import { useSelector } from 'react-redux';
 import { RootState } from 'StoreTypes';
 
 // TODO : 백엔드 개발 완료전 더미데이터로 메뉴를 보여줌.
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { Categories } from 'CommonTypes';
+import { _Alert_ } from '@Src/Utils';
 
 export default function MenuBarComponent() {
+    const history = useHistory();
     const { storeLoginState, categories } = useSelector((store: RootState) => ({
         storeLoginState: store.app.loginState,
         categories: store.app.common.categories,
@@ -21,12 +23,42 @@ export default function MenuBarComponent() {
 
     const [loginCkResult, SetloginCkResult] = useState<boolean>(false);
 
+    const [searchName, setSearchName] = useState<{ searchName: string }>({
+        searchName: '',
+    });
+
     const handleSelected = () => {
         setToggleSeleted(!toggleSelected);
     };
 
     const handleAccounted = () => {
         setToggleAccount(!toggleAccount);
+    };
+
+    const handleSearchName = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { name, value } = e.target;
+        setSearchName({
+            ...searchName,
+            [name]: value,
+        });
+    };
+
+    const pushSearchPage = () => {
+        if (!searchName) {
+            _Alert_.default({ text: '검색할 이름을 입력해주세요.' });
+        } else {
+            history.push(`/search/${searchName.searchName}`);
+            setSearchName({ searchName: '' });
+            handleSelected();
+        }
+    };
+
+    const pushKeySearchPage = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === 'Enter') {
+            history.push(`/search/${searchName.searchName}`);
+            setSearchName({ searchName: '' });
+            handleSelected();
+        }
     };
 
     useEffect(() => {
@@ -91,8 +123,15 @@ export default function MenuBarComponent() {
                                     className="search-content"
                                     style={toggleSelected ? { display: 'block' } : { display: 'none' }}
                                 >
-                                    <input type="text" placeholder="Search" onChange={e => console.debug(e)} />
-                                    <button className="button-search">
+                                    <input
+                                        type="text"
+                                        placeholder="Search"
+                                        name="searchName"
+                                        value={searchName.searchName}
+                                        onChange={e => handleSearchName(e)}
+                                        onKeyUp={e => pushKeySearchPage(e)}
+                                    />
+                                    <button className="button-search" onClick={() => pushSearchPage()}>
                                         <BsSearch />
                                     </button>
                                 </div>

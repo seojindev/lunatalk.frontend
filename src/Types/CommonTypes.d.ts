@@ -126,9 +126,10 @@ declare module 'CommonTypes' {
                 url: string;
             };
         };
+        error_message: string;
     }
     export interface CategoryItem {
-        uuid: string;
+        uuid?: string;
         products: CategoryProduct[];
     }
     export interface CategoryProduct {

@@ -44,6 +44,11 @@
             "name": "마이페이지",
             "routeName": "/mypage",
             "componentName": "MyPage/MyPage"
+        },
+        {
+            "name": "검색페이지",
+            "routeName": "/search/:name",
+            "componentName": "Search/SearchListPage"
         }
     ]
 }

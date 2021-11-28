@@ -153,3 +153,12 @@ export function addReview(payload: {
         payload: { title: payload.title, review: payload.review },
     });
 }
+
+// 검색페이지
+export function getSearchProduct(payload: { name: string }): Promise<ServiceResponse<ListItem[]>> {
+    return _Axios_({
+        method: 'get',
+        url: `/api/front/v1/product/${payload.name}/search-list`,
+        payload: { data: {} },
+    });
+}

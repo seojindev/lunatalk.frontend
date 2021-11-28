@@ -1,7 +1,7 @@
 import { createReducer } from 'typesafe-actions';
 import produce from 'immer';
-import { GET_CATEGORY_LIST_SUCCESS } from '@Store/Category/types';
-import { CategoryItem, SagaAction } from 'CommonTypes';
+import { GET_CATEGORY_LIST_SUCCESS, GET_SEARCH_LIST_SUCCESS } from '@Store/Category/types';
+import { CategoryItem, CategoryProduct, SagaAction } from 'CommonTypes';
 import { CategoryState } from 'StoreTypes';
 
 // 스토어 init.
@@ -24,7 +24,11 @@ export const CategorySagaReducer = createReducer<CategoryState>(initialState, {
             draft.products = action.payload.category;
         });
     },
-
+    [GET_SEARCH_LIST_SUCCESS]: (state: CategoryState, action: SagaAction<{ searchProducts: CategoryProduct[] }>) => {
+        return produce(state, draft => {
+            draft.products.products = action.payload.searchProducts;
+        });
+    },
     // [GET_MAIN_BESTITEM_SUCCESS]: (state: MainState, action: SagaAction<{ best_item: BestItem[] }>) => {
     //     return produce(state, draft => {
     //         draft.best_item = action.payload.best_item;
