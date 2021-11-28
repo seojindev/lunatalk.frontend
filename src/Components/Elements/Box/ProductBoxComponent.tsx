@@ -6,13 +6,17 @@ import { addProductToCart } from '@API';
 import _Alert_ from '@_Alert_';
 
 export default function ProductBoxComponent({ item }: { item: product }) {
-    const productToCart = async (uuid: string) => {
-        const response = await addProductToCart({ productUuid: uuid });
-        if (response.status) {
-            _Alert_.default({ text: response.payload.message });
-        } else {
-            _Alert_.default({ text: '일시적인 오류가 발생하였습니다. 잠시후 다시 이용해주세요.' });
-        }
+    const productToCart = (uuid: string) => {
+        addProductToCart({ productUuid: uuid })
+            .then(res => {
+                if (res.status) {
+                    _Alert_.default({ text: res.payload.message });
+                }
+            })
+            .catch(err => {
+                console.error(err);
+                _Alert_.default({ text: '일시적인 오류가 발생하였습니다. 잠시후 다시 이용해주세요.' });
+            });
     };
     return (
         <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6">
