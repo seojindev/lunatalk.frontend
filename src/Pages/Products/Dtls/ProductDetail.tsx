@@ -163,6 +163,7 @@ export default function ProductDetail() {
                             color={productDetail.option.color}
                             wireless={productDetail.option.wireless}
                             quantity={productDetail.quantity}
+                            reviewCount={productDetail.reviews.length}
                         />
                     </div>
                 </div>
@@ -184,7 +185,7 @@ export default function ProductDetail() {
                                 상품정보
                             </p>
                             <p className={tabState === '리뷰' ? 'active' : ''} onClick={() => handleTabChange('리뷰')}>
-                                리뷰 ({detail.reviews.length})
+                                리뷰 ({productDetail.reviews.length})
                             </p>
                         </div>
                         <div className="tab-content description-review-bottom">

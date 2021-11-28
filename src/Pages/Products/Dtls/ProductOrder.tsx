@@ -14,6 +14,7 @@ export default function ProductOrder({
     color,
     wireless,
     quantity,
+    reviewCount,
 }: {
     uuid: string;
     name: string;
@@ -23,6 +24,7 @@ export default function ProductOrder({
     color: any;
     wireless: any;
     quantity: number;
+    reviewCount: number;
 }) {
     const [selectProduct, setSelectProduct] = useState<
         {
@@ -149,7 +151,7 @@ export default function ProductOrder({
                 </div>
                 <div className="pro-details-rating-wrap">
                     <span>
-                        <a href="#">3 리뷰</a>
+                        <a href="#">{reviewCount} 리뷰</a>
                     </span>
                 </div>
                 <div className="pro-details-size-color">
