@@ -7482,7 +7482,7 @@ a.default-btn {
     position: relative;
 }
 .product-wrap .product-img {
-    height: 345px;
+    max-height: 345px;
     position: relative;
     overflow: hidden;
 }
@@ -7493,7 +7493,7 @@ a.default-btn {
 }
 .product-wrap .product-img img {
     width: 100%;
-    height: 345px;
+    max-height: 345px;
     object-fit: cover;
 }
 .product-wrap .product-img span {

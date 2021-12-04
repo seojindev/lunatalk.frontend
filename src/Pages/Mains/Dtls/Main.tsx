@@ -11,7 +11,7 @@ export default function Main() {
             {/* 메인슬라이더 영역. */}
             <MainSliderBox />
             {/* 메인 카테고리 영역. */}
-            <div className="suppoer-area pt-100 pb-60">
+            <div className="suppoer-area pt-50 pb-50">
                 <div className="container">
                     <div className="row">
                         <MainMenuBox />

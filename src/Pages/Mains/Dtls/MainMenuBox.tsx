@@ -33,9 +33,9 @@ export default function MainMenuBox() {
         <>
             {mainCategory.map((item: { imgUrl: string; name: string; uuid: string }) => {
                 return (
-                    <div className="col-lg-3 col-md-6 col-sm-6" key={item.uuid}>
+                    <div className="col-lg-3 col-md-6 col-sm-6 col-6" key={item.uuid}>
                         <Link to={`category/${item.uuid}`}>
-                            <div className="support-wrap mb-30 support-1">
+                            <div className="support-wrap mb-20 support-1">
                                 <div className="support-icon">
                                     <img className="animated" src={item.imgUrl} alt="" />
                                     <p>{item.name}</p>
