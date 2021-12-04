@@ -16746,3 +16746,151 @@ h3.cart-page-title {
         display:block;
     }
 }
+
+/*마이페이지 내정보*/
+.my-page-information-wrap .header > h3.center {
+    text-align: center;
+}
+.my-page-information-wrap .body {
+    width:100%;
+    padding:30px 0;
+}
+
+.my-page-information-wrap .body > .column {
+    display:flex;
+    min-height:50px;
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+}
+.my-page-information-wrap .body > .column > .left {
+    width:20%;
+    padding: 13px 10px 13px 34px;
+    background-color: #f8f8f8;
+    vertical-align: top;
+    color: #000;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+}
+.my-page-information-wrap .body > .column > .left  .empha {
+    font-size: 14px;
+    color: #f8574f;
+    margin-right:5px;
+}
+.my-page-information-wrap .body > .column > .right {
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 10px;
+}
+.my-page-information-wrap .body > .column > .right > input {
+    width:50%;
+    min-width: 100px;
+    height: 35px;
+}
+.my-page-information-wrap .body > .column > .right > input.phone {
+    width:10%;
+}
+.my-page-information-wrap .body > .column > .right > input.address {
+    width:60%;
+}
+.my-page-information-wrap .body > .column > .right > input.address-number {
+    width:100px;
+}
+.my-page-information-wrap .body > .column > .right > .information-button {
+    min-width: 98px;
+    background:#fff;
+    color:#333;
+    outline: none;
+    height:35px;
+    border:1px solid #333;
+    margin-left: 10px;
+}
+.my-page-information-wrap .body > .column > .right > input.email {
+    width:20%;
+}
+.my-page-information-wrap .body > .column > .right select.email_select {
+    width: 20%;
+    height:35px;
+    border:1px solid #333;
+}
+.my-page-information-wrap .bottom {
+    padding:20px 0;
+    display: flex;
+    justify-content: center;
+}
+.my-page-information-wrap .bottom button {
+    width: 200px;
+    height:50px;
+    border:none;
+}
+.my-page-information-wrap .bottom button:first-child {
+    margin-right: 10px;
+    background:#a749ff;
+    color:#fff;
+}
+.my-page-information-wrap .bottom button:last-child {
+    background: #fff;
+    color:#a749ff;
+    border:1px solid #a749ff;
+}
+
+@media only screen and (max-width: 767px) {
+    .my-page-information-wrap .body > .column {
+        padding:5px 0;
+    }
+    .my-page-information-wrap .body > .column > .left {
+        width:40%;
+       padding:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .my-page-information-wrap .body > .column > .left p {
+    }
+    .my-page-information-wrap .body > .column > .right > input {
+        width:100%;
+    }
+    .my-page-information-wrap .body > .column > .right > input.phone {
+        width:5%;
+        min-width: 45px;
+        margin-bottom:5px;
+    }
+    .my-page-information-wrap .body > .column > .right > .information-button {
+        width:100%;
+        min-width:50px;
+        margin-left: 0;
+
+    }
+    .my-page-information-wrap .body > .column > .right > input.address {
+        width:100%;
+    }
+    .my-page-information-wrap .body > .column > .right > input.address-number {
+        width:100%;
+        margin-bottom:5px;
+    }
+    .my-page-information-wrap .body > .column > .right > input.email {
+        width:100%;
+    }
+    .my-page-information-wrap .body > .column > .right select.email_select {
+        width: 100%;
+    }
+    .my-page-information-wrap .bottom {
+        padding:0;
+    }
+    .my-page-information-wrap .bottom button {
+        width: 50%;
+        height:40px;
+    }
+    .my-page-information-wrap .bottom button:first-child {
+        margin-right: 10px;
+        background:#a749ff;
+        color:#fff;
+    }
+    .my-page-information-wrap .bottom button:last-child {
+        background: #fff;
+        color:#a749ff;
+        border:1px solid #a749ff;
+    }
+}

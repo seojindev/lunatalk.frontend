@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function MyInfo() {
+export default function MyInfoBox() {
     return (
         <div className="my-page-info pt-20 pb-20 mb-30">
             {/*<div>*/}
@@ -18,6 +19,7 @@ export default function MyInfo() {
                 <br />
             </span>
             <span>회원님의 마이페이지 입니다.</span>
+            <Link to="/myPage/information">회원정보 수정</Link>
         </div>
     );
 }

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import MyInfo from '@Page/MyPage/Dtls/MyInfo';
+import MyInfoBox from '@Page/MyPage/Dtls/MyInfoBox';
 import MyOrderDetail from '@Page/MyPage/Dtls/MyOrderDetail';
 import MyOrderList from '@Page/MyPage/Dtls/MyOrderList';
 import { useSelector } from 'react-redux';
@@ -21,7 +21,7 @@ export default function My() {
         <div className="suppoer-area pt-50 pb-60">
             <div className="container my-page-wrap">
                 <h3>My Page</h3>
-                <MyInfo />
+                <MyInfoBox />
                 <MyOrderDetail />
                 <MyOrderList />
             </div>

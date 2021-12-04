@@ -42,8 +42,13 @@
         },
         {
             "name": "마이페이지",
-            "routeName": "/mypage",
+            "routeName": "/myPage",
             "componentName": "MyPage/MyPage"
+        },
+        {
+            "name": "회원정보",
+            "routeName": "/myPage/information",
+            "componentName": "MyPage/MyInformationPage"
         },
         {
             "name": "검색페이지",
