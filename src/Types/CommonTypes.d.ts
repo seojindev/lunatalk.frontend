@@ -256,4 +256,47 @@ declare module 'CommonTypes' {
             url: string;
         };
     }
+
+    export interface MyInformationResponse {
+        uuid: string;
+        login_id: string;
+        client: {
+            code_id: string;
+            code_name: string;
+        };
+        type: {
+            code_id: string;
+            code_name: string;
+        };
+        level: {
+            code_id: string;
+            code_name: string;
+        };
+        status: {
+            code_id: string;
+            code_name: string;
+        };
+        name: string;
+        address: {
+            postcode: string;
+            step1: string;
+            step2: string;
+        };
+        email: {
+            full_email: string;
+            gubun1: {
+                step1: string;
+                step2: string;
+            };
+            gubun2: {
+                step1: string;
+                step2: string;
+            };
+        };
+        phone_number: {
+            step1: string;
+            step2: string;
+            step3: string;
+        };
+    }
 }

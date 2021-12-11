@@ -12,6 +12,7 @@ declare module 'StoreTypes' {
         CategoryItem,
         ProductDetail,
         Cart,
+        MyInformationResponse,
     } from 'CommonTypes';
 
     // App Store
@@ -49,6 +50,9 @@ declare module 'StoreTypes' {
 
     export interface CartState {
         list: Cart[];
+    }
+    export interface MyPageState {
+        information: MyInformationResponse;
     }
 
     // 인증 처리 Store
@@ -112,5 +116,6 @@ declare module 'StoreTypes' {
         category: CategoryState;
         product: ProductState;
         cart: CartState;
+        my: MyPageState;
     }
 }

@@ -13,6 +13,7 @@ import {
     MainNotice,
     ProductDetail,
     Cart,
+    MyInformationResponse,
 } from 'CommonTypes';
 
 // 서버 공지 사항 체크.
@@ -160,5 +161,37 @@ export function getSearchProduct(payload: { name: string }): Promise<ServiceResp
         method: 'get',
         url: `/api/front/v1/product/${payload.name}/search-list`,
         payload: { data: {} },
+    });
+}
+
+// 내정보
+export function getMyInformation(): Promise<ServiceResponse<MyInformationResponse>> {
+    return _Axios_({
+        method: 'get',
+        url: '/api/front/v1/pages/my-page/my-info',
+        payload: { data: {} },
+    });
+}
+
+// 내 정보 수정
+export function updateMyInformation(payload: {
+    authIndex: string | null;
+    password: string;
+    email: string;
+    postCode: string | null;
+    address1: string | null;
+    address2: string | null;
+}): Promise<ServiceResponse<{ message: string }>> {
+    return _Axios_({
+        method: 'post',
+        url: '/api/front/v1/pages/my-page/my-info',
+        payload: {
+            auth_index: payload.authIndex,
+            password: payload.password,
+            email: payload.email,
+            postCode: payload.postCode,
+            address1: payload.address1,
+            address2: payload.address2,
+        },
     });
 }

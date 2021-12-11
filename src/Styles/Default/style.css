@@ -16894,3 +16894,23 @@ h3.cart-page-title {
         border:1px solid #a749ff;
     }
 }
+
+.postCodeWrap {
+    display: block;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:600px;
+}
+.postCodeWrap > .close {
+    position: absolute;
+    top:-30px;
+    right:0;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .postCodeWrap {
+        width:100%;
+    }
+}
