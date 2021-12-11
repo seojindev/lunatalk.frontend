@@ -14,7 +14,7 @@ export default function ProductBoxComponent({ item }: { item: product }) {
             _Alert_.default({ text: response.message });
         }
     };
-
+    console.log(typeof item.color);
     return (
         <div className="col-xl-3 col-xs-6 col-md-4 col-lg-3 col-sm-6 col-6">
             <div className="product-wrap mb-25">
@@ -52,9 +52,17 @@ export default function ProductBoxComponent({ item }: { item: product }) {
                         <Link to={`/product/${item.uuid}`}>{item.name}</Link>
                         <p className="review-count">리뷰 : {item.review}</p>
                     </h3>
-                    <div className="product-option">
-                        <span>{item.color}</span>
-                    </div>
+                    {typeof item.color === 'object' && item.color.length > 0 ? (
+                        <div className="product-option">
+                            {item.color.map(item => (
+                                <span key={item.id}>{item.name}</span>
+                            ))}
+                        </div>
+                    ) : (
+                        <div className="product-option">
+                            <span>{item.color}</span>
+                        </div>
+                    )}
                     <div className="product-price">
                         <p className="old">{item.originalPrice}원</p>
                         <p>{item.price}원</p>

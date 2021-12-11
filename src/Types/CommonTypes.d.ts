@@ -116,7 +116,7 @@ declare module 'CommonTypes' {
                 number: number;
                 string: string;
             };
-            color: string;
+            color: Array<{ id: number; name: string }>;
             review_count: {
                 number: number;
                 string: string;
@@ -154,7 +154,7 @@ declare module 'CommonTypes' {
             number: number;
             string: string;
         };
-        color: string;
+        color: Array<{ id: number; name: string }>;
         review_count: {
             number: number;
             string: string;

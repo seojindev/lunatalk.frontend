@@ -6,7 +6,7 @@ export interface product {
     name: string;
     originalPrice: string;
     price: string;
-    color: string;
+    color: Array<{ id: number; name: string }>;
     review: string;
     url: string;
     badge:
