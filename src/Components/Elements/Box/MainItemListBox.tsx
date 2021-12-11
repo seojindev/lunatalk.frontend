@@ -9,6 +9,17 @@ export interface product {
     color: string;
     review: string;
     url: string;
+    badge:
+        | Array<{
+              id: number;
+              name: string;
+              image: {
+                  id: number;
+                  file_name: string;
+                  url: string;
+              };
+          }>
+        | [];
 }
 
 export default function MainItemListBox({ listName, product }: { listName: string; product: product[] }) {

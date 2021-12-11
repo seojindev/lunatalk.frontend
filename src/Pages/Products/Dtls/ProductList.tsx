@@ -30,6 +30,7 @@ export default function ProductList() {
                     color: product.color,
                     review: product.review_count.string,
                     url: product.rep_image.url,
+                    badge: product.badge,
                 };
             });
             setProduct(resultProductList);

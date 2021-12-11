@@ -60,18 +60,11 @@ export default function ProductBoxComponent({ item }: { item: product }) {
                         <p>{item.price}원</p>
                     </div>
                     <div className="product-icon">
-                        <span>
-                            <img
-                                src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/37?1626422274"
-                                alt="img"
-                            />
-                        </span>
-                        <span>
-                            <img
-                                src="http://www.jogunshop.com/shopimages/jogunshop/prod_icons/47?1626422241"
-                                alt="img"
-                            />
-                        </span>
+                        {item.badge.map(item => (
+                            <span key={item.id}>
+                                <img src={item.image.url} alt={item.name} />
+                            </span>
+                        ))}
                     </div>
                 </div>
             </div>

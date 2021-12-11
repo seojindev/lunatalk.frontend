@@ -125,6 +125,17 @@ declare module 'CommonTypes' {
                 file_name: string;
                 url: string;
             };
+            badge:
+                | Array<{
+                      id: number;
+                      name: string;
+                      image: {
+                          id: number;
+                          file_name: string;
+                          url: string;
+                      };
+                  }>
+                | Array;
         };
         error_message: string;
     }
@@ -152,6 +163,17 @@ declare module 'CommonTypes' {
             file_name: string;
             url: string;
         };
+        badge:
+            | Array<{
+                  id: number;
+                  name: string;
+                  image: {
+                      id: number;
+                      file_name: string;
+                      url: string;
+                  };
+              }>
+            | Array;
     }
     export interface Category {
         click_code: string;

@@ -27,6 +27,7 @@ export default function MainNewItem() {
                     color: product.product.color,
                     review: product.product.review_count.string,
                     url: product.product.rep_image.url,
+                    badge: product.product.badge,
                 };
             });
             setNewItem(resultBestItem);
