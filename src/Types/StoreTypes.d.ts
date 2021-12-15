@@ -13,6 +13,7 @@ declare module 'StoreTypes' {
         ProductDetail,
         Cart,
         MyInformationResponse,
+        CategoryProduct,
     } from 'CommonTypes';
 
     // App Store
@@ -46,6 +47,7 @@ declare module 'StoreTypes' {
     }
     export interface ProductState {
         detail: ProductDetail;
+        recommend: CategoryProduct[];
     }
 
     export interface CartState {

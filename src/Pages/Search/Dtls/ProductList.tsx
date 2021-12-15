@@ -37,7 +37,6 @@ export default function ProductList() {
             setProduct(resultProductList);
         }
     }, [products]);
-    console.log(product);
     return (
         <div className="shop-area pt-95 pb-100">
             <div className="container">

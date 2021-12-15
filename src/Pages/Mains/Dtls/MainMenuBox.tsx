@@ -25,7 +25,6 @@ export default function MainMenuBox() {
                     imgUrl: item.image.url,
                 };
             });
-            console.log('mainCategory', mainCategory);
             setMainCategory(result);
         }
     }, [main_category]);

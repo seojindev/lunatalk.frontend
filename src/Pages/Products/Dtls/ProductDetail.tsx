@@ -6,47 +6,52 @@ import ProductOrderInfo from '@Page/Products/Dtls/ProductOrderInfo';
 import ProductInformation from '@Page/Products/Dtls/ProductInformation';
 import ProductReview from '@Page/Products/Dtls/ProductReview';
 import { useDispatch, useSelector } from 'react-redux';
-import { productDetailAction } from '@Store/Product';
+import { productDetailAction, productRecommendAction } from '@Store/Product';
 import { useParams } from 'react-router-dom';
 import { RootState } from 'StoreTypes';
+import { CategoryProduct } from 'CommonTypes';
+import { product } from '@Element/Box/MainItemListBox';
+
+interface productDetail {
+    uuid: string;
+    name: string;
+    originalPrice: string;
+    numberPrice: number;
+    price: string;
+    quantity: number;
+    reviews: any[];
+    option: {
+        color: {
+            id: number;
+            name: string;
+        }[];
+        wireless: {
+            id: number;
+            name: string;
+        }[];
+    };
+    image: {
+        rep: {
+            url: string[];
+        };
+        detail: {
+            url: string[];
+        };
+    };
+}
 
 export default function ProductDetail() {
     const dispatch = useDispatch();
     const { uuid } = useParams<{ uuid: string }>();
-    const { detail } = useSelector((store: RootState) => ({
+    const { detail, recommend } = useSelector((store: RootState) => ({
         detail: store.product.detail,
+        recommend: store.product.recommend,
     }));
     const [tabState, setTabState] = useState<string>('상품정보');
-    const [productDetail, setProductDetail] = useState<{
-        uuid: string;
-        name: string;
-        original_price: string;
-        numberPrice: number;
-        price: string;
-        quantity: number;
-        reviews: any[];
-        option: {
-            color: {
-                id: number;
-                name: string;
-            }[];
-            wireless: {
-                id: number;
-                name: string;
-            }[];
-        };
-        image: {
-            rep: {
-                url: string[];
-            };
-            detail: {
-                url: string[];
-            };
-        };
-    }>({
+    const [productDetail, setProductDetail] = useState<productDetail>({
         uuid: '',
         name: '',
-        original_price: '',
+        originalPrice: '',
         numberPrice: 0,
         price: '',
         quantity: 0,
@@ -74,6 +79,7 @@ export default function ProductDetail() {
             },
         },
     });
+    const [recommendState, setRecommendState] = useState<product[]>([]);
 
     const handleTabChange = (value: string) => {
         setTabState(value);
@@ -83,7 +89,7 @@ export default function ProductDetail() {
         setProductDetail({
             uuid: '',
             name: '',
-            original_price: '',
+            originalPrice: '',
             price: '',
             numberPrice: 0,
             quantity: 0,
@@ -112,6 +118,7 @@ export default function ProductDetail() {
             },
         });
         dispatch(productDetailAction({ productUuid: uuid }));
+        dispatch(productRecommendAction({ productUuid: uuid }));
     }, []);
 
     useEffect(() => {
@@ -119,7 +126,7 @@ export default function ProductDetail() {
             setProductDetail({
                 uuid: detail.uuid,
                 name: detail.name,
-                original_price: detail.original_price.string,
+                originalPrice: detail.original_price.string,
                 price: detail.price.string,
                 numberPrice: detail.price.number,
                 quantity: detail.quantity.number,
@@ -139,7 +146,21 @@ export default function ProductDetail() {
             });
         }
     }, [detail]);
-    console.log(productDetail);
+    useEffect(() => {
+        if (recommend) {
+            const resultProductList = recommend.map((product: CategoryProduct) => ({
+                uuid: product.uuid,
+                name: product.name,
+                originalPrice: product.original_price.string,
+                price: product.price.string,
+                color: product.color,
+                review: product.review_count.string,
+                url: product.rep_image.url,
+                badge: product.badge,
+            }));
+            setRecommendState(resultProductList);
+        }
+    }, [recommend]);
     return (
         <>
             <div className="shop-area pt-100 pb-100">
@@ -157,7 +178,7 @@ export default function ProductDetail() {
                         <ProductOrder
                             uuid={productDetail.uuid}
                             name={productDetail.name}
-                            originalPrice={productDetail.original_price}
+                            originalPrice={productDetail.originalPrice}
                             price={productDetail.price}
                             numberPrice={productDetail.numberPrice}
                             color={productDetail.option.color}
@@ -202,7 +223,7 @@ export default function ProductDetail() {
                     </div>
                 </div>
             </div>
-            <ProductsRecommend />
+            <ProductsRecommend products={recommendState} />
         </>
     );
 }

@@ -1,6 +1,8 @@
 import React from 'react';
+import { product } from '@Element/Box/MainItemListBox';
+import { ProductBox } from '@Element/Box';
 
-export default function ProductsRecommend() {
+export default function ProductsRecommend({ products }: { products: product[] }) {
     return (
         <div className="related-product-area pb-95">
             <div className="container">
@@ -9,10 +11,9 @@ export default function ProductsRecommend() {
                 </div>
                 <div className="related-product-active owl-carousel owl-dot-none" style={{ display: 'block' }}>
                     <div className="row">
-                        {/*상품 리스트*/}
-                        {/*{[...Array(4)].map((x, i) => (*/}
-                        {/*    <ProductBox key={i} />*/}
-                        {/*))}*/}
+                        {products.map((item: product) => (
+                            <ProductBox item={item} key={item.uuid} />
+                        ))}
                     </div>
                 </div>
             </div>

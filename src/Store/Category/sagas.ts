@@ -31,7 +31,6 @@ function* getSearchListSaga({ payload }: { payload: { name: string } }) {
         const response: COMMON_TYPES.ServiceResponse<COMMON_TYPES.ListItem[]> = yield call(getSearchProduct, {
             name: payload.name,
         });
-        console.log(response);
         yield put({
             type: GET_SEARCH_LIST_SUCCESS,
             payload: { searchProducts: response.payload.length > 0 ? response.payload : [] },

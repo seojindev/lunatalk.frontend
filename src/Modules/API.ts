@@ -14,6 +14,7 @@ import {
     ProductDetail,
     Cart,
     MyInformationResponse,
+    CategoryProduct,
 } from 'CommonTypes';
 
 // 서버 공지 사항 체크.
@@ -111,6 +112,15 @@ export function getProductDetail(payload: { productUuid: string }): Promise<Serv
     return _Axios_({
         method: 'get',
         url: `/api/front/v1/product/${payload.productUuid}/detail`,
+        payload: { data: {} },
+    });
+}
+
+// 추천 상품
+export function getRecommendProduct(payload: { productUuid: string }): Promise<ServiceResponse<CategoryProduct[]>> {
+    return _Axios_({
+        method: 'get',
+        url: `/api/front/v1/product/${payload.productUuid}/recommend`,
         payload: { data: {} },
     });
 }
