@@ -54,6 +54,11 @@
             "name": "검색페이지",
             "routeName": "/search/:name",
             "componentName": "Search/SearchListPage"
+        },
+        {
+            "name": "공지사항",
+            "routeName": "/notice/:uuid",
+            "componentName": "Notice/NoticePage"
         }
     ]
 }

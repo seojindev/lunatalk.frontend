@@ -16914,3 +16914,28 @@ h3.cart-page-title {
         width:100%;
     }
 }
+
+.notice_head {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 2px solid #a749ff;
+    border-bottom: 1px solid #ccc;
+    padding: 0.8rem;
+}
+.notice_head > p {
+    margin-bottom: 0;
+}
+.notice_body {
+    width:100%;
+    min-height: 300px;
+    padding: 1rem 0.8rem;
+    border-bottom: 1px solid #ccc;
+}
+.notice_body img {
+    display: block;
+    width: 100%;
+    max-width:300px;
+}

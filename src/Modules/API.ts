@@ -15,6 +15,7 @@ import {
     Cart,
     MyInformationResponse,
     CategoryProduct,
+    NoticeDetailResponse,
 } from 'CommonTypes';
 
 // 서버 공지 사항 체크.
@@ -203,5 +204,13 @@ export function updateMyInformation(payload: {
             address1: payload.address1,
             address2: payload.address2,
         },
+    });
+}
+
+export function getNoticeDetail(payload: { uuid: string }): Promise<ServiceResponse<NoticeDetailResponse>> {
+    return _Axios_({
+        method: 'get',
+        url: `/api/front/v1/pages/main/${payload.uuid}/notice-detail`,
+        payload: { data: {} },
     });
 }

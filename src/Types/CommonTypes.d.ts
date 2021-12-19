@@ -321,4 +321,24 @@ declare module 'CommonTypes' {
             step3: string;
         };
     }
+    export interface NoticeDetailResponse {
+        id: number;
+        uuid: string;
+        category: {
+            code_id: string;
+            code_name: string;
+        };
+        title: string;
+        content: string;
+        images:
+            | []
+            | {
+                  file_name: string;
+                  url: string;
+              }[];
+        created_at: {
+            type1: string;
+            type2: string;
+        };
+    }
 }
