@@ -59,6 +59,11 @@
             "name": "공지사항",
             "routeName": "/notice/:uuid",
             "componentName": "Notice/NoticePage"
+        },
+        {
+            "name": "주문",
+            "routeName": "/order",
+            "componentName": "Order/OrderPage"
         }
     ]
 }

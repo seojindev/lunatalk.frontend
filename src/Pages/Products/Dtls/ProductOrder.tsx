@@ -4,6 +4,7 @@ import _ from 'lodash';
 import { IoClose } from 'react-icons/io5';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { addProductToCart } from '@API';
+import history from '@Module/History';
 
 export default function ProductOrder({
     uuid,
@@ -85,6 +86,11 @@ export default function ProductOrder({
 
     const deleteSelectProduct = (name: string) => {
         setSelectProduct(selectProduct.filter(product => product.name !== name));
+    };
+
+    //TODO: 구매하기 함수
+    const handleOnPayment = () => {
+        history.push('/order');
     };
 
     const selectedOption = () => {
@@ -257,7 +263,7 @@ export default function ProductOrder({
                     </p>
                 </div>
                 <div className="btn_wrap">
-                    <button type="button" className="large btn-hover">
+                    <button type="button" className="large btn-hover" onClick={() => handleOnPayment()}>
                         구매하기
                     </button>
                     <button type="button" className="large btn-hover" onClick={() => productToCart(uuid)}>

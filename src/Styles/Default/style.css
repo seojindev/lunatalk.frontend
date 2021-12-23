@@ -16,7 +16,7 @@
     5. Section title style
     6. Product style
     7. Blog style
-    7.5 Notice style
+    7.5 Order style
     8. Footer style
     9. Banner style
     10. Suscribe style
@@ -10251,7 +10251,7 @@ a.default-btn {
         width: 25px;
     }
 }
-/*-------- 7.5. Notice style  -----*/
+/*-------- 7.5. Order style  -----*/
 .notice-area {
     width: 100%;
     border-top: 1px solid #e7e7e7;
