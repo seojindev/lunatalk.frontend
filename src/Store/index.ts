@@ -12,6 +12,7 @@ import category from '@Store/Category';
 import product from '@Store/Product';
 import cart from '@Store/Cart';
 import my from '@Store/MyInformation';
+import order from '@Store/Order';
 
 import appSagas from '@Store/App/sagas';
 import mainSagas from '@Store/Main/sagas';
@@ -20,6 +21,7 @@ import categorySagas from '@Store/Category/sagas';
 import productSagas from '@Store/Product/sagas';
 import cartSagas from '@Store/Cart/sagas';
 import mySagas from '@Store/MyInformation/sagas';
+import orderSagas from '@Store/Order/sagas';
 /** store end */
 
 export const createRootReducer = (history: History) =>
@@ -32,8 +34,18 @@ export const createRootReducer = (history: History) =>
         product: product,
         cart: cart,
         my: my,
+        order: order,
     });
 
 export function* rootSaga() {
-    yield all([...appSagas, ...mainSagas, ...authsSagas, ...categorySagas, ...productSagas, ...cartSagas, ...mySagas]);
+    yield all([
+        ...appSagas,
+        ...mainSagas,
+        ...authsSagas,
+        ...categorySagas,
+        ...productSagas,
+        ...cartSagas,
+        ...mySagas,
+        ...orderSagas,
+    ]);
 }

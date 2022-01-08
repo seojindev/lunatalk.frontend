@@ -1,7 +1,7 @@
 declare module 'StoreTypes' {
     import { RouterState } from 'connected-react-router';
     import {
-        Categoies,
+        Categories,
         Codes,
         DefaultStatus,
         ListItem,
@@ -14,6 +14,7 @@ declare module 'StoreTypes' {
         Cart,
         MyInformationResponse,
         CategoryProduct,
+        OrderProduct,
     } from 'CommonTypes';
 
     // App Store
@@ -25,7 +26,7 @@ declare module 'StoreTypes' {
         service_message: string;
         common: {
             codes: Codes;
-            categories: Categoies[];
+            categories: Categories[];
         };
         loginUser: Login;
     }
@@ -57,6 +58,19 @@ declare module 'StoreTypes' {
         information: MyInformationResponse;
     }
 
+    export interface OrderState {
+        info: {
+            name: string;
+            zipcode: string;
+            address1: string;
+            address2: string;
+            phone: string;
+            email: string;
+            message: string;
+        };
+        product: OrderProduct[];
+    }
+
     // 인증 처리 Store
     export interface AuthsState {
         register: {
@@ -65,7 +79,7 @@ declare module 'StoreTypes' {
                 result: {
                     phone_number: string;
                     auth_index: number | null;
-                    auth_code: sring;
+                    auth_code: string;
                     message: string;
                 };
             };
@@ -119,5 +133,6 @@ declare module 'StoreTypes' {
         product: ProductState;
         cart: CartState;
         my: MyPageState;
+        order: OrderState;
     }
 }

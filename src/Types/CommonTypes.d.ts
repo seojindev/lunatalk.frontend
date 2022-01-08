@@ -341,4 +341,23 @@ declare module 'CommonTypes' {
             type2: string;
         };
     }
+
+    export interface OrderProduct {
+        uuid: string;
+        name: string;
+        count: number;
+        price: string;
+        numberPrice: number;
+        options: string | undefined;
+    }
+    export interface CallPaymentOrderPayload {
+        name: string;
+        zipcode: string;
+        address1: string;
+        address2: string;
+        phone: string;
+        email: string;
+        message: string | undefined;
+        product: string[];
+    }
 }

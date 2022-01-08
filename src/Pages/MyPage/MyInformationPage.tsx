@@ -13,7 +13,7 @@ export default function MyInformationPage() {
     return (
         <HelmetProvider>
             <Helmet>
-                <meta charSet="utf-8" />보
+                <meta charSet="utf-8" />
                 <link rel="canonical" href={`${globalThis.location.origin}${storeRouterLocation}`} />
             </Helmet>
             <Suspense fallback={<BodySpinner />}>

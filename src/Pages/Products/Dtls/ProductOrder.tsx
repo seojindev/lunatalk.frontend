@@ -5,6 +5,8 @@ import { IoClose } from 'react-icons/io5';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { addProductToCart } from '@API';
 import history from '@Module/History';
+import { useDispatch } from 'react-redux';
+import { createOrderProductAction } from '@Store/Order';
 
 export default function ProductOrder({
     uuid,
@@ -27,6 +29,7 @@ export default function ProductOrder({
     quantity: number;
     reviewCount: number;
 }) {
+    const dispatch = useDispatch();
     const [selectProduct, setSelectProduct] = useState<
         {
             name: string;
@@ -90,7 +93,23 @@ export default function ProductOrder({
 
     //TODO: 구매하기 함수
     const handleOnPayment = () => {
-        history.push('/order');
+        if (selectProduct.length > 0) {
+            const createOrderProduct = _.map(selectProduct, product => {
+                return {
+                    uuid,
+                    name: product.name,
+                    count: product.count,
+                    price,
+                    numberPrice,
+                    options: product.color ? product.color : product.wireless,
+                };
+            });
+
+            dispatch(createOrderProductAction({ orderProduct: createOrderProduct }));
+            history.push('/order');
+        } else {
+            _Alert_.default({ text: '상품을 선택해주세요.' });
+        }
     };
 
     const selectedOption = () => {
