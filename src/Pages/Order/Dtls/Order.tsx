@@ -123,7 +123,7 @@ export default function Order() {
             setMyInformation({
                 name: information.name,
                 address: {
-                    postCode: information.address.postcode,
+                    postCode: information.address.zipcode,
                     step1: information.address.step1,
                     step2: information.address.step2,
                 },
