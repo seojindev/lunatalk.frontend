@@ -34,6 +34,8 @@ export default function CartForm({ list, checkBoxOnChange, checkBox }: any) {
                                         cartId: number;
                                         productUuid: string;
                                         price: string;
+                                        numberPrice: number;
+                                        color: string;
                                         image: string;
                                         count: number;
                                         name: string;
@@ -46,7 +48,9 @@ export default function CartForm({ list, checkBoxOnChange, checkBox }: any) {
                                         productUuid={item.productUuid}
                                         name={item.name}
                                         price={item.price}
+                                        numberPrice={item.numberPrice}
                                         image={item.image}
+                                        color={item.color[0]}
                                         checkBox={checkBox}
                                         onChange={checkBoxOnChange}
                                     />

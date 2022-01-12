@@ -268,7 +268,10 @@ declare module 'CommonTypes' {
         cart_id: number;
         product_uuid: string;
         name: string;
-        options: string;
+        color: {
+            id: number;
+            name: string;
+        }[];
         price: {
             number: number;
             string: string;

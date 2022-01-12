@@ -1,27 +1,55 @@
 import React, { ChangeEvent, useState } from 'react';
 import _ from 'lodash';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { createOrderProductAction } from '@Store/Order';
+import history from '@Module/History';
+import _Alert_ from '@_Alert_';
 
 export default function TableItemBoxComponent({
     cartId,
     productUuid,
     price,
+    numberPrice,
     image,
     name,
+    color,
     onChange,
     checkBox,
 }: {
     cartId: number;
     productUuid: string;
     price: string;
+    numberPrice: number;
     image: string;
     name: string;
+    color: string;
     onChange: (e: ChangeEvent<HTMLInputElement>) => void;
     checkBox: number[];
 }) {
+    const dispatch = useDispatch();
     const [cartProductCount, setCartProductCount] = useState<number>(1);
     const cartCountOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setCartProductCount(Number(e.target.value));
+    };
+
+    const handleOnSingleCreateOrder = () => {
+        // 오더 리덕스 전달할때 배열 형태로 보내기.
+        const createOrderProduct: {
+            uuid: string;
+            name: string;
+            count: number;
+            price: string;
+            numberPrice: number;
+            options: string;
+        }[] = [{ uuid: productUuid, name, count: cartProductCount, price, numberPrice, options: color }];
+
+        if (createOrderProduct[0].uuid !== undefined) {
+            dispatch(createOrderProductAction({ orderProduct: createOrderProduct }));
+            history.push('/order');
+        } else {
+            _Alert_.default({ text: '서버에 오류가 발생하였습니다. 잠시후 시도해주세요.' });
+        }
     };
     return (
         <tr>
@@ -53,7 +81,9 @@ export default function TableItemBoxComponent({
             </td>
             <td className="product-subtotal">{price}원</td>
             <td className="product-wishlist-cart">
-                <a href="#">구매</a>
+                <button type="button" onClick={() => handleOnSingleCreateOrder()}>
+                    구매
+                </button>
             </td>
         </tr>
     );

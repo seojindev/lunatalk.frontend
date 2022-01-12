@@ -6,6 +6,9 @@ import { RootState } from 'StoreTypes';
 import { Cart as CartData } from 'CommonTypes';
 import { deleteCart } from '@API';
 import _Alert_ from '@_Alert_';
+import _ from 'lodash';
+import { createOrderProductAction } from '@Store/Order';
+import history from '@Module/History';
 
 export default function Cart() {
     const dispatch = useDispatch();
@@ -13,7 +16,16 @@ export default function Cart() {
         cartList: store.cart.list,
     }));
     const [cartData, setCartData] = useState<
-        { cartId: number; productUuid: string; price: string; name: string; image: string; count: number }[]
+        {
+            cartId: number;
+            productUuid: string;
+            price: string;
+            name: string;
+            image: string;
+            count: number;
+            numberPrice: number;
+            color: string[];
+        }[]
     >([]);
 
     const [checkBox, setCheckBox] = useState<number[]>([]);
@@ -39,6 +51,24 @@ export default function Cart() {
         }
     };
 
+    const handleAllOnPayment = () => {
+        const createOrderProduct = _.map(cartData, row => {
+            return {
+                uuid: row.productUuid,
+                name: row.name,
+                price: row.price,
+                numberPrice: row.numberPrice,
+                count: row.count,
+                options: row.color[0],
+            };
+        });
+        if (createOrderProduct.length > 0) {
+            dispatch(createOrderProductAction({ orderProduct: createOrderProduct }));
+            history.push('/order');
+        } else {
+            _Alert_.default({ text: '선택된 상품이 없습니다.' });
+        }
+    };
     useEffect(() => {
         if (cartList.length) {
             const cartResult = cartList.map((item: CartData) => {
@@ -47,8 +77,10 @@ export default function Cart() {
                     productUuid: item.product_uuid,
                     name: item.name,
                     price: item.price.string,
+                    numberPrice: item.price.number,
                     image: item.rep_image.url,
                     count: 1,
+                    color: _.map(item.color, color => color.name),
                 };
             });
             setCartData(cartResult);
@@ -71,6 +103,7 @@ export default function Cart() {
             _Alert_.default({ text: '장바구니가 비어있습니다.' });
         }
     };
+
     return (
         <div className="cart-main-area pt-90 pb-100">
             <div className="container">
@@ -86,7 +119,9 @@ export default function Cart() {
                             </button>
                         </div>
                         <div className="right">
-                            <button type="button">전체 구매</button>
+                            <button type="button" onClick={() => handleAllOnPayment()}>
+                                전체 구매
+                            </button>
                         </div>
                     </div>
                 </div>

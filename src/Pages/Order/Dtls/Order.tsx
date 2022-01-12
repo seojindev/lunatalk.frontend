@@ -340,7 +340,7 @@ export default function Order() {
                                         <div className="your-order-middle">
                                             <ul>
                                                 {products.map((product: OrderProduct) => (
-                                                    <li>
+                                                    <li key={product.uuid}>
                                                         <span className="order-middle-left">
                                                             {product.name}({product.options}) X {product.count}
                                                         </span>

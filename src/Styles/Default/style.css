@@ -14626,7 +14626,7 @@ h3.cart-page-title {
 .cart-table-content table tbody > tr td.product-remove a:hover {
     color: #a749ff;
 }
-.cart-table-content table tbody > tr td.product-wishlist-cart > a {
+.cart-table-content table tbody > tr td.product-wishlist-cart > button {
     background-color: #a749ff;
     border-radius: 50px;
     color: #fff;
@@ -14635,8 +14635,10 @@ h3.cart-page-title {
     line-height: 1;
     padding: 7px 12px;
     text-transform: uppercase;
+    outline: none;
+    border:none;
 }
-.cart-table-content table tbody > tr td.product-wishlist-cart > a:hover {
+.cart-table-content table tbody > tr td.product-wishlist-cart > button:hover {
     background-color: #333;
 }
 .cart-table-content table tbody > tr td {
