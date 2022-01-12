@@ -268,6 +268,7 @@ declare module 'CommonTypes' {
         cart_id: number;
         product_uuid: string;
         name: string;
+        options: string;
         price: {
             number: number;
             string: string;
@@ -300,7 +301,7 @@ declare module 'CommonTypes' {
         };
         name: string;
         address: {
-            postcode: string;
+            zipcode: string;
             step1: string;
             step2: string;
         };

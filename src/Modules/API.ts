@@ -190,9 +190,9 @@ export function updateMyInformation(payload: {
     authIndex: string | null;
     password: string;
     email: string;
-    postCode: string | null;
-    address1: string | null;
-    address2: string | null;
+    zipcode: string | null;
+    step1: string | null;
+    step2: string | null;
 }): Promise<ServiceResponse<{ message: string }>> {
     return _Axios_({
         method: 'post',
@@ -201,9 +201,9 @@ export function updateMyInformation(payload: {
             auth_index: payload.authIndex,
             password: payload.password,
             email: payload.email,
-            postCode: payload.postCode,
-            address1: payload.address1,
-            address2: payload.address2,
+            zipcode: payload.zipcode,
+            step1: payload.step1,
+            step2: payload.step2,
         },
     });
 }

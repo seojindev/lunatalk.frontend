@@ -11,7 +11,7 @@ import _Alert_ from '@_Alert_';
 import { getPhoneAuthRequestAction, phoneAuthConfirmAction } from '@Store/Auths';
 import { updateMyInformation } from '@API';
 
-const isProduction = process.env.REACT_APP_ENV === 'production' ? true : false;
+const isProduction = process.env.REACT_APP_ENV === 'production';
 
 export default function MyInformation() {
     const history = useHistory();
@@ -169,9 +169,9 @@ export default function MyInformation() {
                 authIndex: phoneAuthValue.authIndex === undefined ? null : phoneAuthValue.authIndex,
                 password: password.password,
                 email: `${myInformation.email.gubun1}@${myInformation.email.gubun2}`,
-                postCode: myInformation.address.postCode === '' ? null : myInformation.address.postCode,
-                address1: myInformation.address.step1 === '' ? null : myInformation.address.step1,
-                address2: myInformation.address.step2 === '' ? null : myInformation.address.step2,
+                zipcode: myInformation.address.postCode === '' ? null : myInformation.address.postCode,
+                step1: myInformation.address.step1 === '' ? null : myInformation.address.step1,
+                step2: myInformation.address.step2 === '' ? null : myInformation.address.step2,
             });
             if (response.status) {
                 _Alert_.default({ text: response.payload.message });
@@ -192,7 +192,7 @@ export default function MyInformation() {
                 name: information.name,
                 loginId: information.login_id,
                 address: {
-                    postCode: information.address.postcode,
+                    postCode: information.address.zipcode,
                     step1: information.address.step1,
                     step2: information.address.step2,
                 },

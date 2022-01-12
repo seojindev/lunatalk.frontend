@@ -27,7 +27,7 @@ const initialState: MyPageState = {
         },
         name: '',
         address: {
-            postcode: '',
+            zipcode: '',
             step1: '',
             step2: '',
         },
