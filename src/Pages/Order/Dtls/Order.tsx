@@ -183,17 +183,9 @@ export default function Order() {
     return (
         <>
             {isOpenPost ? (
-                <div className="postCodeWrap">
+                <div className="postCodeWrap" style={{ background: '#fff', zIndex: 1, border: '1px solid #000' }}>
                     <BsXLg className="close" onClick={() => setIsOpenPost(!isOpenPost)} />
-                    <DaumPostcode
-                        style={{
-                            width: '100%',
-                            height: '400px',
-                            zIndex: 1,
-                        }}
-                        autoClose
-                        onComplete={data => onCompletePost(data)}
-                    />
+                    <DaumPostcode autoClose onComplete={data => onCompletePost(data)} />
                 </div>
             ) : null}
             <div className="checkout-area pt-95 pb-100">
