@@ -7830,7 +7830,7 @@ a.default-btn {
     width: 100%;
 }
 .product-details-content .btn_wrap button {
-    background: #000;
+    background: #a749ff;
     color: #fff;
     padding: 15px 0;
     font-size: 18px;
@@ -7851,8 +7851,13 @@ a.default-btn {
     line-height: 20px;
 }
 @media only screen and (max-width: 767px) {
-    .product-details-content .pro-details-size-color {
+    .product-details-content .product-order-box {
+        width:100%;
         display: block;
+        position: fixed;
+        left:0;
+        bottom:50px;
+        background:#fff;
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -8006,6 +8011,17 @@ a.default-btn {
 @media only screen and (max-width: 767px) {
     .product-details-content .pro-details-quality .pro-details-cart {
         margin: 0 10px 0 10px;
+    }
+    .product-details-content .btn_wrap {
+        position: fixed;
+        bottom:0;
+        left:0;
+    }
+    .product-details-content .btn_wrap button.large {
+        width: 50%;
+    }
+    .product-details-content .btn_wrap button.large:first-child {
+        border-right: 1px solid #fff;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {

@@ -179,107 +179,109 @@ export default function ProductOrder({
                         <a href="#">{reviewCount} 리뷰</a>
                     </span>
                 </div>
-                <div className="pro-details-size-color">
-                    {color.length > 0 ? (
-                        <select
-                            name="color"
-                            onChange={e => onChangeSelectOption(e)}
-                            value={selectOption.color}
-                            // onClick={() => selectedOption()}
-                        >
-                            <option value="">색상을 선택해주세요.</option>
-                            {color.map((item: any) => (
-                                <option value={item.name} key={item.id}>
-                                    {item.name}
-                                </option>
-                            ))}
-                        </select>
-                    ) : null}
-                    {wireless.length > 0 ? (
-                        <select
-                            name="wireless"
-                            onChange={e => onChangeSelectOption(e)}
-                            value={selectOption.wireless}
-                            // onClick={() => selectedOption()}
-                        >
-                            <option value="">옵션을 선택해주세요.</option>
-                            {wireless.map((item: any) => (
-                                <option value={item.name} key={item.id}>
-                                    {item.name}
-                                </option>
-                            ))}
-                        </select>
-                    ) : null}
-                </div>
-                {selectProduct.length > 0
-                    ? selectProduct.map((product, i) => (
-                          <div key={i} style={{ border: '1px solid #ececec', padding: '10px' }}>
-                              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                  <p>
-                                      {product.color} {product.wireless}
-                                  </p>
-                                  <button
-                                      type="button"
-                                      onClick={() => deleteSelectProduct(product.name)}
-                                      style={{ background: '#fff', border: 'none' }}
-                                  >
-                                      <IoClose size={20} />
-                                  </button>
-                              </div>
-                              <div
-                                  style={{
-                                      display: 'flex',
-                                      justifyContent: 'space-between',
-                                      padding: '10px 0',
-                                      alignContent: 'center',
-                                  }}
-                              >
-                                  <input
-                                      type="text"
-                                      name="count"
-                                      value={product.count}
-                                      onChange={e => onChangeProductCountInput(product.name, e)}
-                                      style={{ width: '45px', paddingLeft: '0', textAlign: 'center' }}
-                                  />
-                                  <div>
+                <div className="product-order-box">
+                    <div className="pro-details-size-color">
+                        {color.length > 0 ? (
+                            <select
+                                name="color"
+                                onChange={e => onChangeSelectOption(e)}
+                                value={selectOption.color}
+                                // onClick={() => selectedOption()}
+                            >
+                                <option value="">색상을 선택해주세요.</option>
+                                {color.map((item: any) => (
+                                    <option value={item.name} key={item.id}>
+                                        {item.name}
+                                    </option>
+                                ))}
+                            </select>
+                        ) : null}
+                        {wireless.length > 0 ? (
+                            <select
+                                name="wireless"
+                                onChange={e => onChangeSelectOption(e)}
+                                value={selectOption.wireless}
+                                // onClick={() => selectedOption()}
+                            >
+                                <option value="">옵션을 선택해주세요.</option>
+                                {wireless.map((item: any) => (
+                                    <option value={item.name} key={item.id}>
+                                        {item.name}
+                                    </option>
+                                ))}
+                            </select>
+                        ) : null}
+                    </div>
+                    {selectProduct.length > 0
+                        ? selectProduct.map((product, i) => (
+                              <div key={i} style={{ border: '1px solid #ececec', padding: '10px' }}>
+                                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                      <p>
+                                          {product.color} {product.wireless}
+                                      </p>
                                       <button
                                           type="button"
-                                          onClick={() => productCountPlusOrMinus(product.name, 'plus')}
-                                          style={{ background: '#fff' }}
-                                          disabled={product.count === quantity}
+                                          onClick={() => deleteSelectProduct(product.name)}
+                                          style={{ background: '#fff', border: 'none' }}
                                       >
-                                          <AiOutlinePlus />
-                                      </button>
-                                      <button
-                                          type="button"
-                                          onClick={() => productCountPlusOrMinus(product.name, 'minus')}
-                                          style={{ background: '#fff' }}
-                                          disabled={product.count === 1}
-                                      >
-                                          <AiOutlineMinus />
+                                          <IoClose size={20} />
                                       </button>
                                   </div>
+                                  <div
+                                      style={{
+                                          display: 'flex',
+                                          justifyContent: 'space-between',
+                                          padding: '10px 0',
+                                          alignContent: 'center',
+                                      }}
+                                  >
+                                      <input
+                                          type="text"
+                                          name="count"
+                                          value={product.count}
+                                          onChange={e => onChangeProductCountInput(product.name, e)}
+                                          style={{ width: '45px', paddingLeft: '0', textAlign: 'center' }}
+                                      />
+                                      <div>
+                                          <button
+                                              type="button"
+                                              onClick={() => productCountPlusOrMinus(product.name, 'plus')}
+                                              style={{ background: '#fff' }}
+                                              disabled={product.count === quantity}
+                                          >
+                                              <AiOutlinePlus />
+                                          </button>
+                                          <button
+                                              type="button"
+                                              onClick={() => productCountPlusOrMinus(product.name, 'minus')}
+                                              style={{ background: '#fff' }}
+                                              disabled={product.count === 1}
+                                          >
+                                              <AiOutlineMinus />
+                                          </button>
+                                      </div>
+                                  </div>
                               </div>
-                          </div>
-                      ))
-                    : null}
-                <div
-                    style={{
-                        padding: '20px 0',
-                        borderTop: '1px solid #e4e4e5',
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                    }}
-                >
-                    <p>총 상품 가격</p>
-                    <p>
-                        {selectProduct.length > 0
-                            ? _.sumBy(selectProduct, product => {
-                                  return product.count * numberPrice;
-                              }).toLocaleString()
-                            : 0}
-                        원
-                    </p>
+                          ))
+                        : null}
+                    <div
+                        style={{
+                            padding: '20px 0',
+                            borderTop: '1px solid #e4e4e5',
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                        }}
+                    >
+                        <p>총 상품 가격</p>
+                        <p>
+                            {selectProduct.length > 0
+                                ? _.sumBy(selectProduct, product => {
+                                      return product.count * numberPrice;
+                                  }).toLocaleString()
+                                : 0}
+                            원
+                        </p>
+                    </div>
                 </div>
                 <div className="btn_wrap">
                     <button type="button" className="large btn-hover" onClick={() => handleOnPayment()}>
