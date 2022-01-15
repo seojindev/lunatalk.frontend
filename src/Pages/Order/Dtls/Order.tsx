@@ -5,16 +5,15 @@ import { RootState } from 'StoreTypes';
 import { CallPaymentOrderPayload, CodeItem, OrderProduct } from 'CommonTypes';
 import _ from 'lodash';
 import _Alert_ from '@_Alert_';
-import { getMyInformationAction } from '@Store/MyInformation';
 import { BsXLg } from 'react-icons/bs';
 import { callPaymentOrder } from '@API';
+import { getOrderMyInfoAction } from '@Store/Order';
 
 export default function Order() {
     const dispatch = useDispatch();
-    const { orderProducts, loginStatus, storeCommonCodes, information } = useSelector((store: RootState) => ({
-        information: store.my.information,
+    const { orderProducts, storeCommonCodes, information } = useSelector((store: RootState) => ({
+        information: store.order.info,
         orderProducts: store.order.product,
-        loginStatus: store.app.loginState,
         storeCommonCodes: store.app.common.codes,
     }));
     const [products, setProducts] = useState<OrderProduct[]>([]);
@@ -90,15 +89,7 @@ export default function Order() {
     }, [storeCommonCodes]);
 
     useEffect(() => {
-        if (!loginStatus) {
-            _Alert_.thenGoHome({ text: '로그인이 필요한 서비스입니다.' });
-        } else if (orderProducts.length === 0) {
-            _Alert_.default({ text: '상품이 선택 되지 않았습니다. 선택후 다시 이용해주세요.' });
-            history.back();
-        } else if (loginStatus) {
-            dispatch(getMyInformationAction());
-        }
-
+        dispatch(getOrderMyInfoAction());
         if (orderProducts) {
             setProducts(
                 _.map(orderProducts, product => {
@@ -123,18 +114,18 @@ export default function Order() {
             setMyInformation({
                 name: information.name,
                 address: {
-                    postCode: information.address.zipcode,
-                    step1: information.address.step1,
-                    step2: information.address.step2,
+                    postCode: information.zipcode,
+                    step1: information.address1,
+                    step2: information.address2,
                 },
                 email: {
-                    gubun1: information.email.gubun1.step1,
-                    gubun2: information.email.gubun1.step2,
+                    gubun1: information.email.gubun1,
+                    gubun2: information.email.gubun2,
                 },
                 phoneNumber: {
-                    step1: information.phone_number.step1,
-                    step2: information.phone_number.step2,
-                    step3: information.phone_number.step3,
+                    step1: information.phone.step1,
+                    step2: information.phone.step2,
+                    step3: information.phone.step3,
                 },
             });
         }

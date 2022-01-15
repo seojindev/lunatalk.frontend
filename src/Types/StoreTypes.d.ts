@@ -64,8 +64,16 @@ declare module 'StoreTypes' {
             zipcode: string;
             address1: string;
             address2: string;
-            phone: string;
-            email: string;
+            phone: {
+                step1: string;
+                step2: string;
+                step3: string;
+            };
+            email: {
+                full: string;
+                gubun1: string;
+                gubun2: string;
+            };
             message: string;
         };
         product: OrderProduct[];

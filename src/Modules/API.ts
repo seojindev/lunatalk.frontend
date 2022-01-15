@@ -17,6 +17,7 @@ import {
     CategoryProduct,
     NoticeDetailResponse,
     CallPaymentOrderPayload,
+    OrderMyInfoResponse,
 } from 'CommonTypes';
 
 // 서버 공지 사항 체크.
@@ -223,5 +224,13 @@ export function callPaymentOrder(payload: {
         method: 'post',
         url: '/api/front/v1/pages/product/order',
         payload: payload.paymentOrderData,
+    });
+}
+
+export function getOrderMyInfo(): Promise<ServiceResponse<OrderMyInfoResponse>> {
+    return _Axios_({
+        method: 'get',
+        url: '/api/front/v1/pages/my-page/my-order-info',
+        payload: { data: {} },
     });
 }
