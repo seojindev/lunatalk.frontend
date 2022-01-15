@@ -8,9 +8,11 @@ import _Alert_ from '@_Alert_';
 import { BsXLg } from 'react-icons/bs';
 import { callPaymentOrder } from '@API';
 import { getOrderMyInfoAction } from '@Store/Order';
+import { useHistory } from 'react-router-dom';
 
 export default function Order() {
     const dispatch = useDispatch();
+    const history = useHistory();
     const { orderProducts, storeCommonCodes, information } = useSelector((store: RootState) => ({
         information: store.order.info,
         orderProducts: store.order.product,
@@ -90,7 +92,7 @@ export default function Order() {
 
     useEffect(() => {
         dispatch(getOrderMyInfoAction());
-        if (orderProducts) {
+        if (orderProducts.length > 0) {
             setProducts(
                 _.map(orderProducts, product => {
                     return {
@@ -106,6 +108,9 @@ export default function Order() {
             _.each(orderProducts, product => {
                 setAllSumPrice(allSumPrice + product.numberPrice * Number(product.count));
             });
+        } else {
+            _Alert_.default({ text: '새로고침 되어 상품정보가 만료되었습니다. \n 다시 선택후 다시 이용해주세요.' });
+            history.goBack();
         }
     }, []);
 
