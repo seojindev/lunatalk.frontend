@@ -355,7 +355,8 @@ export default function Order() {
                                         className="btn-hover"
                                         onClick={() => callPaymentHandleOnClick()}
                                         style={{
-                                            padding: '10px 20px',
+                                            width: '100%',
+                                            padding: '15px 20px',
                                             backgroundColor: '#a749ff',
                                             border: 'medium none',
                                             color: '#fff',
