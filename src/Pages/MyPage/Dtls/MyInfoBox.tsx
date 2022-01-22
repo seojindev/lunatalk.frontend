@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function MyInfoBox() {
+export default function MyInfoBox({ name }: { name: string }) {
     return (
         <div className="my-page-info pt-20 pb-20 mb-30">
             {/*<div>*/}
@@ -15,7 +15,7 @@ export default function MyInfoBox() {
                 />
             </div>
             <span>
-                <strong>강경원</strong>님 안녕하세요.
+                <strong>{name}</strong>님 안녕하세요.
                 <br />
             </span>
             <span>회원님의 마이페이지 입니다.</span>

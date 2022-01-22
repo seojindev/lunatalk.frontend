@@ -18,6 +18,7 @@ import {
     NoticeDetailResponse,
     CallPaymentOrderPayload,
     OrderMyInfoResponse,
+    MyPageOrderInfoResponse,
 } from 'CommonTypes';
 
 // 서버 공지 사항 체크.
@@ -227,10 +228,20 @@ export function callPaymentOrder(payload: {
     });
 }
 
+// 오더페이지 정보 불러오기.
 export function getOrderMyInfo(): Promise<ServiceResponse<OrderMyInfoResponse>> {
     return _Axios_({
         method: 'get',
         url: '/api/front/v1/pages/my-page/my-order-info',
+        payload: { data: {} },
+    });
+}
+
+// 마이페이지 주문한 내역 불러오기
+export function geyMyPageOrderInfo(): Promise<ServiceResponse<MyPageOrderInfoResponse>> {
+    return _Axios_({
+        method: 'get',
+        url: '/api/front/v1/pages/my-page/my-order',
         payload: { data: {} },
     });
 }

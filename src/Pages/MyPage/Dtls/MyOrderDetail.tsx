@@ -1,6 +1,10 @@
 import React from 'react';
 
-export default function MyOrderDetail() {
+export default function MyOrderDetail({
+    state,
+}: {
+    state: { priceBefore: string; deliveryBefore: string; deliveryIng: string; deliveryEnd: string };
+}) {
     return (
         <div className="my-page-order-detail mb-30">
             <div className="head pb-10 pt-10">
@@ -10,25 +14,25 @@ export default function MyOrderDetail() {
                 <div className="item">
                     <strong>입금전</strong>
                     <span className="count">
-                        <span>1</span>
+                        <span>{state.priceBefore}</span>
                     </span>
                 </div>
                 <div className="item">
                     <strong>배송 준비중</strong>
                     <span className="count">
-                        <span>1</span>
+                        <span>{state.deliveryBefore}</span>
                     </span>
                 </div>
                 <div className="item">
                     <strong>배송중</strong>
                     <span className="count">
-                        <span>1</span>
+                        <span>{state.deliveryIng}</span>
                     </span>
                 </div>
                 <div className="item">
                     <strong>배송완료</strong>
                     <span className="count">
-                        <span>1</span>
+                        <span>{state.deliveryEnd}</span>
                     </span>
                 </div>
             </div>

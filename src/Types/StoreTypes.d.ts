@@ -15,6 +15,7 @@ declare module 'StoreTypes' {
         MyInformationResponse,
         CategoryProduct,
         OrderProduct,
+        MyPageOrderInfoResponse,
     } from 'CommonTypes';
 
     // App Store
@@ -56,6 +57,7 @@ declare module 'StoreTypes' {
     }
     export interface MyPageState {
         information: MyInformationResponse;
+        my: MyPageOrderInfoResponse;
     }
 
     export interface OrderState {

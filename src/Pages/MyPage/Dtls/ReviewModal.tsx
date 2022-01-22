@@ -3,10 +3,16 @@ import { _Alert_ } from '@Src/Utils';
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 
-export default function ReviewModal({ open, onChange }: { open: boolean; onChange: (bool: boolean) => void }) {
-    // TODO: uuid는 나중에 마이페이지 api에 나왔을때 변경하도록 함 지금은 하드 코딩
-    const [review, setReview] = useState<{ uuid: string; title: string; review: string }>({
-        uuid: '16673297-b6aa-4b37-b4a9-17cc09cb9001',
+export default function ReviewModal({
+    open,
+    onChange,
+    uuid,
+}: {
+    open: boolean;
+    onChange: (bool: boolean, uuid: string) => void;
+    uuid: string;
+}) {
+    const [review, setReview] = useState<{ title: string; review: string }>({
         title: '',
         review: '',
     });
@@ -15,11 +21,11 @@ export default function ReviewModal({ open, onChange }: { open: boolean; onChang
         if (review.title === '' || review.review === '') {
             _Alert_.default({ text: '제목과 내용을 입력해주세요.' });
         } else {
-            const response = await addReview({ productUuid: review.uuid, title: review.title, review: review.review });
+            const response = await addReview({ productUuid: uuid, title: review.title, review: review.review });
             if (response.status) {
                 _Alert_.default({ text: response.payload.message });
-                onChange(false);
-                setReview({ uuid: '', title: '', review: '' });
+                onChange(false, '');
+                setReview({ title: '', review: '' });
             } else {
                 _Alert_.default({ text: '일시적인 오류가 발생했습니다. 잠시후 이용해 주세요.' });
             }
@@ -36,7 +42,7 @@ export default function ReviewModal({ open, onChange }: { open: boolean; onChang
     return (
         <Modal
             isOpen={open}
-            onRequestClose={() => onChange(false)}
+            onRequestClose={() => onChange(false, '')}
             ariaHideApp={false}
             style={{
                 overlay: {
@@ -87,7 +93,7 @@ export default function ReviewModal({ open, onChange }: { open: boolean; onChang
                 </button>
                 <button
                     type="button"
-                    onClick={() => onChange(false)}
+                    onClick={() => onChange(false, '')}
                     style={{
                         background: '#fff',
                         color: '#a749ff',

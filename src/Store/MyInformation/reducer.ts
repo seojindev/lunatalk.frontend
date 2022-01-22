@@ -1,7 +1,7 @@
 import { createReducer } from 'typesafe-actions';
 import produce from 'immer';
-import { SagaAction, MyInformationResponse } from 'CommonTypes';
-import { GET_MY_INFORMATION_SUCCESS } from '@Store/MyInformation/types';
+import { SagaAction, MyInformationResponse, MyPageOrderInfoResponse } from 'CommonTypes';
+import { GET_MY_INFORMATION_SUCCESS, GET_MY_ORDER_INFORMATION_SUCCESS } from '@Store/MyInformation/types';
 import { MyPageState } from 'StoreTypes';
 
 // 스토어 init.
@@ -48,6 +48,23 @@ const initialState: MyPageState = {
             step3: '',
         },
     },
+    my: {
+        user_info: {
+            id: null,
+            uuid: '',
+            name: '',
+        },
+        order_state: {
+            price_before: '',
+            delivery_brfore: '',
+            delivery_ing: '',
+            delivery_end: '',
+        },
+        list: {
+            order: [],
+            cancel: [],
+        },
+    },
 };
 
 export const MyInformationSagaReducer = createReducer<MyPageState>(initialState, {
@@ -63,6 +80,11 @@ export const MyInformationSagaReducer = createReducer<MyPageState>(initialState,
     ) => {
         return produce(state, draft => {
             draft.information = action.payload.myInformation;
+        });
+    },
+    [GET_MY_ORDER_INFORMATION_SUCCESS]: (state: MyPageState, action: SagaAction<{ my: MyPageOrderInfoResponse }>) => {
+        return produce(state, draft => {
+            draft.my = action.payload.my;
         });
     },
 });

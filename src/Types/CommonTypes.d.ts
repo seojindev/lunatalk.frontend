@@ -389,4 +389,45 @@ declare module 'CommonTypes' {
             step3: string;
         };
     }
+
+    export interface MyPageOrderObj {
+        uuid: string;
+        order_name: string;
+        order_price: {
+            number: number;
+            string: string;
+        };
+        created_at: {
+            type1: string;
+            type2: string;
+            type3: string;
+        };
+        rep_image: {
+            id: number;
+            file_name: string;
+            url: string;
+        };
+        state: {
+            code_id: string;
+            code_name: string;
+        };
+    }
+
+    export interface MyPageOrderInfoResponse {
+        user_info: {
+            id: number | null;
+            uuid: string;
+            name: string;
+        };
+        order_state: {
+            price_before: string;
+            delivery_brfore: string;
+            delivery_ing: string;
+            delivery_end: string;
+        };
+        list: {
+            order: MyPageOrderObj[] | [];
+            cancel: MyPageOrderObj[] | [];
+        };
+    }
 }

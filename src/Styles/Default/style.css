@@ -16587,6 +16587,7 @@ h3.cart-page-title {
     background: #f9f9f9;
     color:#c5c5c5;
     font-size:16px;
+    cursor: pointer;
 }
 .my-page-wrap .my-page-order .head ul li.on {
     background:#fff;
@@ -16610,11 +16611,14 @@ h3.cart-page-title {
 .my-page-wrap .my-page-order .body {
     display:flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .my-page-wrap .my-page-order .body .item {
     width:100%;
     display:flex;
     justify-content: space-between;
+    padding:20px 0;
+    border-bottom: 1px solid #ccc;
 }
 
 .my-page-wrap .my-page-order .body .item > div {
@@ -16638,15 +16642,22 @@ h3.cart-page-title {
     margin-bottom: 0;
     text-align: center;
 }
+.my-page-wrap .my-page-order .body .item > div > p {
+    font-size:14px;
+    letter-spacing: -1px;
+}
 .my-page-wrap .my-page-order .body .item > div > .information {
    display: flex;
+    width:60%;
     align-items: center;
     flex-wrap: wrap;
 }
 .my-page-wrap .my-page-order .body .item > div > .information strong {
     display: block;
     width:100%;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
+    font-size:14px;
+    letter-spacing: -1px;
 }
 
 .my-page-wrap .my-page-order .body .item > div > .information p {
@@ -16726,9 +16737,10 @@ h3.cart-page-title {
 .my-page-wrap .my-page-order .mobile .item div.order-status {
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 .my-page-wrap .my-page-order .mobile .item div.order-status div {
-    width:48%;
+    /*width:48%;*/
 }
 .my-page-wrap .my-page-order .mobile .item div.order-status div button {
     width:100%;

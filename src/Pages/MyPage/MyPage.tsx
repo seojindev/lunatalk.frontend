@@ -14,7 +14,7 @@ export default function MyPage() {
         <HelmetProvider>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>:: {process.env.REACT_APP_TITLE} :: 메인 페이지</title>
+                <title>:: {process.env.REACT_APP_TITLE} :: 마이 페이지</title>
                 <link rel="canonical" href={`${globalThis.location.origin}${storeRouterLocation}`} />
             </Helmet>
             <Suspense fallback={<BodySpinner />}>
