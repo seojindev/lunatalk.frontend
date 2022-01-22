@@ -11,7 +11,7 @@ export default function MyOrderList({
     const [tabState, setTabState] = useState<string>('주문');
     const [tabOrderList, setTabOrderList] = useState<MyPageOrderObj[]>([]);
     const [reviewUuid, setReviewUuid] = useState<string>('');
-    console.log(list);
+
     useEffect(() => {
         setTabOrderList(list.order);
     }, [list]);
@@ -64,7 +64,7 @@ export default function MyOrderList({
                                 <img src={item.rep_image.url} alt="thumbnail" style={{ maxWidth: 96 }} />
                                 <div className="information">
                                     <strong>{item.order_name}</strong>
-                                    <p>옵션 : Yellow</p>
+                                    {/*<p>옵션 : Yellow</p>*/}
                                 </div>
                             </div>
                             <div className="order-date">
@@ -75,7 +75,7 @@ export default function MyOrderList({
                             </div>
                             <div className="order-count-price">
                                 <p className="price">
-                                    {item.order_price.string}원 <span>(1개)</span>
+                                    {item.order_price.string}원{/*<span>(1개)</span>*/}
                                 </p>
                             </div>
                             <div className="order-status">
@@ -107,7 +107,7 @@ export default function MyOrderList({
                                 <img src={item.rep_image.url} alt="thumbnail" style={{ maxWidth: 96 }} />
                                 <span className="information">
                                     <strong>{item.order_name}</strong>
-                                    <p>Yellow | 1개</p>
+                                    {/*<p>Yellow | 1개</p>*/}
                                     <p className="price">{item.order_price.string}원</p>
                                 </span>
                             </div>
