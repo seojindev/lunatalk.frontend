@@ -1,16 +1,47 @@
 import React, { useEffect, useState } from 'react';
-import ReviewModal from './ReviewModal';
-import { MyPageOrderObj } from 'CommonTypes';
+import { MyPageOrderObj, product } from 'CommonTypes';
+import { getMyPageOrderDetail } from '@API';
+import MyOrderDetailPopUp from '@Page/MyPage/Dtls/MyOrderDetailPopUp';
 
 export default function MyOrderList({
     list,
 }: {
     list: { order: MyPageOrderObj[] | []; cancel: MyPageOrderObj[] | [] };
 }) {
-    const [reviewModal, setReviewModal] = useState<boolean>(false);
     const [tabState, setTabState] = useState<string>('주문');
     const [tabOrderList, setTabOrderList] = useState<MyPageOrderObj[]>([]);
-    const [reviewUuid, setReviewUuid] = useState<string>('');
+    const [orderDetailPopUp, setOrderDetailPopUp] = useState<boolean>(false);
+    const [orderDetailInfo, setOrderDetailInfo] = useState<{
+        orderAddress: { zipcode: string; step1: string; step2: string };
+        orderInfo: {
+            delivery: string;
+            name: string;
+            email: string;
+            message: string;
+            orderName: string;
+            totalPrice: string;
+            uuid: string;
+            phone: string;
+        };
+        products: product[];
+    }>({
+        orderAddress: {
+            zipcode: '',
+            step1: '',
+            step2: '',
+        },
+        orderInfo: {
+            delivery: '',
+            name: '',
+            email: '',
+            message: '',
+            orderName: '',
+            totalPrice: '',
+            phone: '',
+            uuid: '',
+        },
+        products: [],
+    });
 
     useEffect(() => {
         setTabOrderList(list.order);
@@ -25,9 +56,31 @@ export default function MyOrderList({
         setTabState(value);
     };
 
-    const reviewModalOnChange = (bool: boolean, uuid: string) => {
-        setReviewModal(bool);
-        setReviewUuid(uuid);
+    const handleOrderDetailInfoOnClick = (orderUuid: string) => {
+        getMyPageOrderDetail({ orderUuid })
+            .then(r => {
+                const { payload } = r;
+                setOrderDetailInfo({
+                    orderAddress: {
+                        zipcode: payload.order_address.zipcode,
+                        step1: payload.order_address.step1,
+                        step2: payload.order_address.step2,
+                    },
+                    orderInfo: {
+                        delivery: payload.order_info.delivery.code_name,
+                        name: payload.order_info.name,
+                        email: payload.order_info.email,
+                        message: payload.order_info.message,
+                        orderName: payload.order_info.order_name,
+                        totalPrice: payload.order_info.order_price.string,
+                        phone: payload.order_info.phone.type2,
+                        uuid: payload.uuid,
+                    },
+                    products: payload.products,
+                });
+                setOrderDetailPopUp(true);
+            })
+            .catch(err => console.error(err));
     };
     return (
         <>
@@ -62,7 +115,11 @@ export default function MyOrderList({
                         <div className="item" key={item.uuid}>
                             <div className="product-info">
                                 <img src={item.rep_image.url} alt="thumbnail" style={{ maxWidth: 96 }} />
-                                <div className="information">
+                                <div
+                                    className="information"
+                                    onClick={() => handleOrderDetailInfoOnClick(item.uuid)}
+                                    style={{ cursor: 'pointer' }}
+                                >
                                     <strong>{item.order_name}</strong>
                                     {/*<p>옵션 : Yellow</p>*/}
                                 </div>
@@ -83,13 +140,6 @@ export default function MyOrderList({
                                     <p>{item.state.code_name}</p>
                                     <button type="button">배송조회</button>
                                 </div>
-                                {item.state.code_id === '5200020' ? (
-                                    <div className="review">
-                                        <button type="button" onClick={() => reviewModalOnChange(true, item.uuid)}>
-                                            리뷰작성
-                                        </button>
-                                    </div>
-                                ) : null}
                             </div>
                         </div>
                     ))}
@@ -105,7 +155,11 @@ export default function MyOrderList({
                             </div>
                             <div className="product-info">
                                 <img src={item.rep_image.url} alt="thumbnail" style={{ maxWidth: 96 }} />
-                                <span className="information">
+                                <span
+                                    className="information"
+                                    onClick={() => handleOrderDetailInfoOnClick(item.uuid)}
+                                    style={{ cursor: 'pointer' }}
+                                >
                                     <strong>{item.order_name}</strong>
                                     {/*<p>Yellow | 1개</p>*/}
                                     <p className="price">{item.order_price.string}원</p>
@@ -115,20 +169,16 @@ export default function MyOrderList({
                                 <div className="status">
                                     <button type="button">배송조회</button>
                                 </div>
-                                {/*배송완료때에만 노출*/}
-                                {item.state.code_id === '5200020' ? (
-                                    <div className="review">
-                                        <button type="button" onClick={() => reviewModalOnChange(true, item.uuid)}>
-                                            리뷰작성
-                                        </button>
-                                    </div>
-                                ) : null}
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
-            <ReviewModal open={reviewModal} onChange={reviewModalOnChange} uuid={reviewUuid} />
+            <MyOrderDetailPopUp
+                open={orderDetailPopUp}
+                onChange={() => setOrderDetailPopUp(false)}
+                detailInfo={orderDetailInfo}
+            />
         </>
     );
 }

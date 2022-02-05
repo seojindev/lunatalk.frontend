@@ -430,4 +430,82 @@ declare module 'CommonTypes' {
             cancel: MyPageOrderObj[] | [];
         };
     }
+    export interface product {
+        id: number;
+        uuid: string;
+        name: string;
+        quantity: {
+            number: number;
+            string: string;
+        };
+        original_price: {
+            number: number;
+            string: string;
+        };
+        price: {
+            number: number;
+            string: string;
+        };
+        category: {
+            id: number;
+            uuid: string;
+            name: string;
+        };
+        color:
+            | {
+                  id: number;
+                  name: string;
+              }[]
+            | [];
+        wireless:
+            | {
+                  id: number;
+                  name: string;
+              }[]
+            | null;
+        rep_images:
+            | {
+                  id: number;
+                  file_name: string;
+                  url: string;
+              }[]
+            | [];
+    }
+
+    export interface MyPageOrderInfoDetailResponse {
+        uuid: string;
+        order_info: {
+            name: string;
+            phone: {
+                type1: string;
+                type2: string;
+            };
+            email: string;
+            message: string;
+            order_name: string;
+            order_price: {
+                number: number;
+                string: string;
+            };
+            active: string;
+            state: {
+                code_id: string;
+                code_name: string;
+            };
+            delivery: {
+                code_id: string;
+                code_name: string;
+            };
+            receive: {
+                code_id: string;
+                code_name: string;
+            };
+        };
+        order_address: {
+            zipcode: string;
+            step1: string;
+            step2: string;
+        };
+        products: product[];
+    }
 }
