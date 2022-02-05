@@ -87,6 +87,24 @@ export default function MyOrderDetailPopUp({
                         </div>
                     </div>
                 </div>
+                <div style={{ background: '#fff', padding: '10px', marginBottom: '5px' }}>
+                    <div className="h3_wrap">
+                        <h3 style={{ fontSize: '18px', letterSpacing: '-1px' }}>주문 총 가격</h3>
+                        <div className="item" style={{ display: 'flex', justifyContent: 'space-between' }}>
+                            <p style={{ marginRight: '5px', color: '#6e6e6e', whiteSpace: 'nowrap' }}>가격</p>
+                            <p>{detailInfo.orderInfo.totalPrice}원</p>
+                        </div>
+                    </div>
+                </div>
+                <div style={{ background: '#fff', padding: '10px', marginBottom: '5px' }}>
+                    <div className="h3_wrap">
+                        <h3 style={{ fontSize: '18px', letterSpacing: '-1px' }}>주문 상태</h3>
+                        <div className="item" style={{ display: 'flex', justifyContent: 'space-between' }}>
+                            <p style={{ marginRight: '5px', color: '#6e6e6e', whiteSpace: 'nowrap' }}>상태</p>
+                            <p>{detailInfo.orderInfo.delivery}</p>
+                        </div>
+                    </div>
+                </div>
                 <div style={{ padding: '25px 10px', background: '#fff', marginBottom: '5px' }}>
                     <div className="h3_wrap">
                         <h3 style={{ fontSize: '18px', letterSpacing: '-1px' }}>배송지 정보</h3>
@@ -141,10 +159,9 @@ export default function MyOrderDetailPopUp({
                             >
                                 <strong>{product.name}</strong>
                                 {/*<p>Yellow | 1개</p>*/}
-                                <p style={{ marginBottom: 0 }}>{product.price.string}원</p>
-                                <p style={{ marginBottom: 0 }}>{product.quantity.string}개</p>
+                                <p style={{ marginBottom: 0 }}>1개</p>
                                 <p style={{ marginBottom: 0 }}>{product.color[0].name}</p>
-                                {detailInfo.orderInfo.delivery !== '배송완료' ? (
+                                {detailInfo.orderInfo.delivery === '배송완료' ? (
                                     <div className="review">
                                         <button
                                             type="button"
