@@ -4,9 +4,9 @@ import _ from 'lodash';
 import { IoClose } from 'react-icons/io5';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { addProductToCart } from '@API';
-import history from '@Module/History';
 import { useDispatch } from 'react-redux';
 import { createOrderProductAction } from '@Store/Order';
+import { useNavigate } from 'react-router-dom';
 
 export default function ProductOrder({
     uuid,
@@ -30,6 +30,7 @@ export default function ProductOrder({
     reviewCount: number;
 }) {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const [selectProduct, setSelectProduct] = useState<
         {
             name: string;
@@ -104,9 +105,8 @@ export default function ProductOrder({
                     options: product.color ? product.color : product.wireless,
                 };
             });
-
+            navigate('/order');
             dispatch(createOrderProductAction({ orderProduct: createOrderProduct }));
-            history.push('/order');
         } else {
             _Alert_.default({ text: '상품을 선택해주세요.' });
         }

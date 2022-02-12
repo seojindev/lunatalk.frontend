@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { RootState } from 'StoreTypes';
 import { ButtonSpinner } from '@Element/Spinners';
 import { loginAction, authResetAction } from '@Store/Auths';
@@ -9,7 +9,7 @@ import { isEmpty, cookieManager, getLocalToken } from '@Helper';
 
 export default function LoginFormBox() {
     const dispatch = useDispatch();
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const { storeLogin } = useSelector((store: RootState) => ({
         storeLogin: store.auths.login.tryLogin,
@@ -84,9 +84,7 @@ export default function LoginFormBox() {
     // 홈으로 이동
     useEffect(() => {
         if (loginCkResult === true || loginSuccess === true) {
-            history.push({
-                pathname: process.env.PUBLIC_URL + `/`,
-            });
+            navigate('/');
         }
 
         return () => {

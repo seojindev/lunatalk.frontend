@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useSelector } from 'react-redux';
-import { RootState } from 'StoreTypes';
 import TabButtonLinkBox from './TabButtonLinkBox';
 import LoginFormBox from './LoginFormBox';
 import RegisterFormBox from './RegisterFormBox';
 
 export default function LoginRegister() {
-    const { pathName } = useSelector((store: RootState) => ({
-        pathName: store.router.location.pathname,
-    }));
+    // const { pathName } = useSelector((store: RootState) => ({
+    //     pathName: store.router.location.pathname,
+    // }));
+    const pathName = '/auths/login';
 
     const [pageMode, setPageMode] = useState<'login' | 'register'>('register');
 

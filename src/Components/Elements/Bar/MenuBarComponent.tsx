@@ -5,12 +5,12 @@ import { useSelector } from 'react-redux';
 import { RootState } from 'StoreTypes';
 
 // TODO : 백엔드 개발 완료전 더미데이터로 메뉴를 보여줌.
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Categories } from 'CommonTypes';
 import { _Alert_ } from '@Src/Utils';
 
 export default function MenuBarComponent() {
-    const history = useHistory();
+    const navigate = useNavigate();
     const { storeLoginState, categories } = useSelector((store: RootState) => ({
         storeLoginState: store.app.loginState,
         categories: store.app.common.categories,
@@ -47,7 +47,7 @@ export default function MenuBarComponent() {
         if (!searchName) {
             _Alert_.default({ text: '검색할 이름을 입력해주세요.' });
         } else {
-            history.push(`/search/${searchName.searchName}`);
+            navigate(`/search/${searchName.searchName}`);
             setSearchName({ searchName: '' });
             handleSelected();
         }
@@ -55,7 +55,7 @@ export default function MenuBarComponent() {
 
     const pushKeySearchPage = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.key === 'Enter') {
-            history.push(`/search/${searchName.searchName}`);
+            navigate(`/search/${searchName.searchName}`);
             setSearchName({ searchName: '' });
             handleSelected();
         }

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { getNoticeDetail } from '@API';
 import { NoticeDetailResponse, ServiceResponse } from 'CommonTypes';
 
 export default function NoticeDetail() {
     const { uuid } = useParams<{ uuid: string }>();
-    const history = useHistory();
+    const navigate = useNavigate();
     const [noticeDetail, setNoticeDetail] = useState<{
         codeName: string;
         title: string;
@@ -24,20 +24,22 @@ export default function NoticeDetail() {
     }, []);
 
     const getDetail = async () => {
-        const response: ServiceResponse<NoticeDetailResponse> = await getNoticeDetail({ uuid });
-        if (response.status) {
-            setNoticeDetail({
-                codeName: response.payload.category.code_name,
-                title: response.payload.title,
-                content: response.payload.content,
-                image:
-                    response.payload.images.length > 0
-                        ? response.payload.images.map(item => {
-                              return item.url;
-                          })
-                        : [],
-                createdAt: response.payload.created_at.type2,
-            });
+        if (uuid) {
+            const response: ServiceResponse<NoticeDetailResponse> = await getNoticeDetail({ uuid });
+            if (response.status) {
+                setNoticeDetail({
+                    codeName: response.payload.category.code_name,
+                    title: response.payload.title,
+                    content: response.payload.content,
+                    image:
+                        response.payload.images.length > 0
+                            ? response.payload.images.map(item => {
+                                  return item.url;
+                              })
+                            : [],
+                    createdAt: response.payload.created_at.type2,
+                });
+            }
         }
     };
     return (
@@ -61,7 +63,7 @@ export default function NoticeDetail() {
                             : null}
                     </div>
                     <div className="btn_wrap">
-                        <button type="button" onClick={history.goBack}>
+                        <button type="button" onClick={() => navigate(-1)}>
                             뒤로가기
                         </button>
                     </div>

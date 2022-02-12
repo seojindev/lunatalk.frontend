@@ -16,7 +16,9 @@ export default function ProductList() {
     const [product, setProduct] = useState<product[]>([]);
     useEffect(() => {
         setProduct([]);
-        dispatch(categoryListAction({ categoryUuid: uuid }));
+        if (uuid) {
+            dispatch(categoryListAction({ categoryUuid: uuid }));
+        }
     }, [uuid]);
 
     useEffect(() => {

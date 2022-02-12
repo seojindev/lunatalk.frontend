@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { BodySpinner } from '@Element/Spinners';
 import { RootState } from 'StoreTypes';
 import { getLocalToken } from '@Helper';
@@ -9,7 +9,7 @@ import { logoutAction } from '@Store/Auths';
 
 export default function Logout() {
     const dispatch = useDispatch();
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const { storeLogout } = useSelector((store: RootState) => ({
         storeLogout: store.auths.logout.tryLogout,
@@ -28,9 +28,7 @@ export default function Logout() {
     // 홈으로 이동
     useEffect(() => {
         if (loginCkResult === false || logoutSuccess === true) {
-            history.push({
-                pathname: process.env.PUBLIC_URL + `/`,
-            });
+            navigate('/');
         }
 
         return () => {

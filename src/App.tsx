@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { Provider } from 'react-redux';
 import { createBrowserHistory } from 'history';
 import configureStore from '@Store/configureStore';
-import History from '@Module/History';
-import Routes from '@Module/Routes';
 import SplashComponent from '@Src/Components/SplashComponent';
+import RootRoutes from '@Module/RootRoutes';
 
 const history = createBrowserHistory();
 
@@ -30,7 +29,7 @@ function App() {
                     if (AppLoading === true) {
                         return <SplashComponent appLoading={handleAppLoading} />;
                     } else {
-                        return <Routes Routerhistory={History} />;
+                        return <RootRoutes />;
                     }
                 })()}
                 {/* <Routes Routerhistory={History} /> */}

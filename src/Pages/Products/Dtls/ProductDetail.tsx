@@ -117,8 +117,10 @@ export default function ProductDetail() {
                 },
             },
         });
-        dispatch(productDetailAction({ productUuid: uuid }));
-        dispatch(productRecommendAction({ productUuid: uuid }));
+        if (uuid) {
+            dispatch(productDetailAction({ productUuid: uuid }));
+            dispatch(productRecommendAction({ productUuid: uuid }));
+        }
     }, []);
 
     useEffect(() => {

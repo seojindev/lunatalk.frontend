@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { RootState } from 'StoreTypes';
 import { CodeItem } from 'CommonTypes';
 import { ButtonSpinner } from '@Element/Spinners';
@@ -11,11 +11,11 @@ import { isEmpty } from '@Helper';
 
 type checkBoxLeyType = 'agreeStep1' | 'agreeStep2' | 'agreeStep3' | 'agreeStep4' | 'agreeStep5';
 
-const isProduction = process.env.REACT_APP_ENV === 'production' ? true : false;
+const isProduction = process.env.REACT_APP_ENV === 'production';
 
 export default function RegisterFormBox() {
     const dispatch = useDispatch();
-    const history = useHistory();
+    const navigate = useNavigate();
     const { storeCommonCodes, storeGetAuthCodeRequest, storeAuthCodeConfirm, storetryRegister } = useSelector(
         (store: RootState) => ({
             storeCommonCodes: store.app.common.codes,
@@ -303,9 +303,7 @@ export default function RegisterFormBox() {
     useEffect(() => {
         const funcRegisterSuccess = () => {
             _Alert_.defaultInfo({ text: `회원 가입이 완료 되었습니다. 로그인 해 주세요.` });
-            history.push({
-                pathname: process.env.PUBLIC_URL + `login`,
-            });
+            navigate('/login');
         };
 
         if (storetryRegister.status === 'success') {

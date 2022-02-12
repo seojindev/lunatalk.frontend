@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { MenuBar, FooterBar } from '@Element/Bar';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Outlet } from 'react-router-dom';
 
-export default function MainLayoutComponent({ children }: { children: any }) {
+export default function MainLayoutComponent() {
     const { pathname } = useLocation();
 
     useEffect(() => {
@@ -11,7 +11,7 @@ export default function MainLayoutComponent({ children }: { children: any }) {
     return (
         <>
             <MenuBar />
-            {children}
+            <Outlet />
             <FooterBar />
         </>
     );

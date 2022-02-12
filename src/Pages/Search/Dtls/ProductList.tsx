@@ -6,7 +6,7 @@ import { CategoryProduct } from 'CommonTypes';
 import { product } from '@Element/Box/MainItemListBox';
 import { searchListAction } from '@Store/Category';
 import { useParams } from 'react-router-dom';
-import btoa from 'btoa';
+import { Buffer } from 'buffer';
 
 export default function ProductList() {
     const dispatch = useDispatch();
@@ -17,7 +17,10 @@ export default function ProductList() {
     const [product, setProduct] = useState<product[]>([]);
     useEffect(() => {
         setProduct([]);
-        dispatch(searchListAction({ name: btoa(unescape(encodeURIComponent(name))) }));
+        console.log(name);
+        if (name) {
+            dispatch(searchListAction({ name: Buffer.from(encodeURIComponent(name)).toString('base64') }));
+        }
     }, [name]);
 
     useEffect(() => {

@@ -21,7 +21,7 @@ export const axiosDefaultHeader: AxiosRequestConfig = {
     headers: {
         'Content-Type': 'application/json;charset=UTF-8',
         'Access-Control-Allow-Origin': '*',
-        'Request-Client-Type': process.env.REACT_APP_CLIENT_CODE,
+        'Request-Client-Type': process.env.REACT_APP_CLIENT_CODE || '',
         Accept: 'application/json',
         Authorization: '',
     },
@@ -69,7 +69,9 @@ const handleTokenRefresh = (): Promise<LocalTokenInterface> => {
  * @param access_token
  */
 const attachTokenToRequest = (request: AxiosRequestConfig, access_token: any) => {
-    request.headers['Authorization'] = 'Bearer ' + access_token;
+    if (request.headers) {
+        request.headers['Authorization'] = 'Bearer ' + access_token;
+    }
 };
 
 const shouldIntercept = (error: AxiosError) => {
@@ -236,7 +238,9 @@ export default ({ method = 'post', url, payload }: serviceInterface): any => {
     };
 
     const defaultHeaderToken: AccessTokenType = Helper.getAccessToken() ? 'Bearer ' + Helper.getAccessToken() : '';
-    axiosDefaultHeader.headers.Authorization = defaultHeaderToken;
+    if (axiosDefaultHeader.headers) {
+        axiosDefaultHeader.headers.Authorization = defaultHeaderToken;
+    }
 
     const _Axios_: AxiosInstance = axios.create(axiosDefaultHeader);
 

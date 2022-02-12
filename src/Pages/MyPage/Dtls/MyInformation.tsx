@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { CodeItem } from 'CommonTypes';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from 'StoreTypes';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import DaumPostcode from 'react-daum-postcode';
 import { BsXLg } from 'react-icons/bs';
 import { getMyInformationAction } from '@Store/MyInformation';
@@ -14,7 +14,7 @@ import { updateMyInformation } from '@API';
 const isProduction = process.env.REACT_APP_ENV === 'production';
 
 export default function MyInformation() {
-    const history = useHistory();
+    const navigate = useNavigate();
     const dispatch = useDispatch();
     const { information, storeGetAuthCodeRequest, storeAuthCodeConfirm } = useSelector((store: RootState) => ({
         information: store.my.information,
@@ -499,7 +499,7 @@ export default function MyInformation() {
                         <button type="button" onClick={() => handleOnClickMyInfoConfirm()}>
                             수정하기
                         </button>
-                        <button type="button" onClick={() => history.goBack()}>
+                        <button type="button" onClick={() => navigate(-1)}>
                             취소
                         </button>
                     </div>
