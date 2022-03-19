@@ -13,6 +13,7 @@ import MyInformationPage from '@Page/MyPage/MyInformationPage';
 import SearchListPage from '@Page/Search/SearchListPage';
 import NoticePage from '@Page/Notice/NoticePage';
 import OrderPage from '@Page/Order/OrderPage';
+import IdPasswordFindPage from '@Page/Auths/IdPasswordFindPage';
 
 const RootRoutes = () => {
     return (
@@ -22,6 +23,8 @@ const RootRoutes = () => {
                     <Route path="/" element={<MainPage />} />
                     <Route path="/auths/login" element={<LoginRegisterPage />} />
                     <Route path="/auths/register" element={<LoginRegisterPage />} />
+                    <Route path="/auths/find/id" element={<IdPasswordFindPage />} />
+                    <Route path="/auths/find/password" element={<IdPasswordFindPage />} />
                     <Route path="/auths/logout" element={<LoginOutPage />} />
                     <Route path="/category/:uuid" element={<ProductListPage />} />
                     <Route path="/product/:uuid" element={<ProductDetailPage />} />

@@ -4,7 +4,7 @@ export default function TabButtonLinkBox({
     modeChange,
     modeState,
 }: {
-    modeChange: (mdoe: 'login' | 'register') => void;
+    modeChange: (mode: 'login' | 'register') => void;
     modeState: 'login' | 'register';
 }) {
     const [activeClass, setActiveClass] = useState({
@@ -26,7 +26,6 @@ export default function TabButtonLinkBox({
                 });
             }
         };
-
         setModeClass(modeState);
     }, [modeState]);
     return (

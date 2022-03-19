@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { RootState } from 'StoreTypes';
 import { ButtonSpinner } from '@Element/Spinners';
 import { loginAction, authResetAction } from '@Store/Auths';
@@ -46,7 +46,7 @@ export default function LoginFormBox() {
 
     // 기억하기? 체크박스 처리.
     const handleChangeCheckBoxOptionRemember = () => {
-        setOptionRemember(optionRemember ? false : true);
+        setOptionRemember(!optionRemember);
     };
 
     // submit 처리.
@@ -83,15 +83,15 @@ export default function LoginFormBox() {
 
     // 홈으로 이동
     useEffect(() => {
-        if (loginCkResult === true || loginSuccess === true) {
+        if (loginCkResult || loginSuccess) {
             navigate('/');
         }
 
         return () => {
-            if (loginCkResult === true) {
+            if (loginCkResult) {
                 _Alert_.default({ text: `이미 로그인 되어 있습니다.` });
                 dispatch(authResetAction());
-            } else if (loginSuccess === true) {
+            } else if (loginSuccess) {
                 _Alert_.default({ text: `로그인이 완료 되었습니다.` });
                 dispatch(authResetAction());
             }
@@ -152,11 +152,11 @@ export default function LoginFormBox() {
                         <div className="login-toggle-btn">
                             <input
                                 type="checkbox"
-                                checked={optionRemember === true}
+                                checked={optionRemember}
                                 onChange={() => handleChangeCheckBoxOptionRemember()}
                             />
                             <label>아이디 저장</label>
-                            <a href="#">아이디/비밀번호 찾기</a>
+                            <Link to={'/auths/find/id'}>아이디 / 비밀번호 찾기</Link>
                         </div>
                         {storeLogin.status === 'loading' ? (
                             <button>

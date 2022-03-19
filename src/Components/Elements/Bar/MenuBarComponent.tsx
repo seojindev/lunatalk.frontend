@@ -145,23 +145,23 @@ export default function MenuBarComponent() {
                                     style={toggleAccount ? { display: 'block' } : { display: 'none' }}
                                 >
                                     <ul>
-                                        {loginCkResult === false && (
+                                        {!loginCkResult && (
                                             <>
-                                                <li>
+                                                <li onClick={() => handleAccounted()}>
                                                     <Link to="/auths/login">로그인</Link>
                                                 </li>
-                                                <li>
+                                                <li onClick={() => handleAccounted()}>
                                                     <Link to="/auths/register">회원가입</Link>
                                                 </li>
                                             </>
                                         )}
-                                        <li>
+                                        <li onClick={() => handleAccounted()}>
                                             <Link to="/cart">장바구니</Link>
                                         </li>
-                                        <li>
+                                        <li onClick={() => handleAccounted()}>
                                             <Link to="/mypage">마이페이지</Link>
                                         </li>
-                                        {loginCkResult === true && (
+                                        {loginCkResult && (
                                             <>
                                                 <li>
                                                     <Link to="/auths/logout">로그아웃</Link>
