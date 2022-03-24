@@ -49,7 +49,7 @@ export default function MainSliderBox() {
                 {mainSlide.map((item: any, n: number) => (
                     <div className="slider-height-1" key={n}>
                         <Link to={item.link}>
-                            <img src={item.url} alt="img" style={{ width: '100%', margin: '0 auto' }} />
+                            <img src={item.url} alt="img" style={{ margin: '0 auto' }} />
                         </Link>
                     </div>
                 ))}
