@@ -154,11 +154,7 @@ export default function RegisterFormBox() {
 
     // 회원 가입 버튼 클릭 처리.
     const handleClickRegisterButton = () => {
-        if (
-            agreeCheckBox.agreeStep1 === false ||
-            agreeCheckBox.agreeStep2 === false ||
-            agreeCheckBox.agreeStep3 === false
-        ) {
+        if (!agreeCheckBox.agreeStep1 || !agreeCheckBox.agreeStep2 || !agreeCheckBox.agreeStep3) {
             _Alert_.defaultInfo({ text: `필수 동의를 체크해 주세요.` });
             return;
         }
@@ -169,8 +165,8 @@ export default function RegisterFormBox() {
             user_password_confirm: registerInputValue.user_password_confirm,
             user_name: registerInputValue.user_name,
             user_email: `${registerEmail.emailStep1}@${registerEmail.emailStep2}`,
-            user_select_email: agreeCheckBox.agreeStep4 === true ? 'Y' : 'N',
-            user_select_message: agreeCheckBox.agreeStep5 === true ? 'Y' : 'N',
+            user_select_email: agreeCheckBox.agreeStep4 ? 'Y' : 'N',
+            user_select_message: agreeCheckBox.agreeStep5 ? 'Y' : 'N',
         };
 
         dispatch(tryRegisterAction(registerPayload));
@@ -218,7 +214,7 @@ export default function RegisterFormBox() {
 
     // 약관 동의 전체 체크 처리.
     const handleCheckAgreeAllCheckBox = () => {
-        const check = agreeAllCheckBox ? false : true;
+        const check = !agreeAllCheckBox;
 
         setAgreeAllCheckBox(check);
 
@@ -241,7 +237,7 @@ export default function RegisterFormBox() {
         const nameType: checkBoxLeyType = eTargetName as checkBoxLeyType;
         setAgreeCheckBox({
             ...agreeCheckBox,
-            [nameType]: agreeCheckBox[nameType] ? false : true,
+            [nameType]: !agreeCheckBox[nameType],
         });
     };
 
@@ -251,12 +247,12 @@ export default function RegisterFormBox() {
             let count = 0;
             Object.keys(agreeCheckBox).forEach(function (key) {
                 const keyName: checkBoxLeyType = key as checkBoxLeyType;
-                if (agreeCheckBox[keyName] === true) {
+                if (agreeCheckBox[keyName]) {
                     count++;
                 }
             });
 
-            if (count === 5 && agreeAllCheckBox === false) {
+            if (count === 5 && !agreeAllCheckBox) {
                 setAgreeAllCheckBox(true);
             } else {
                 setAgreeAllCheckBox(false);
@@ -303,7 +299,7 @@ export default function RegisterFormBox() {
     useEffect(() => {
         const funcRegisterSuccess = () => {
             _Alert_.defaultInfo({ text: `회원 가입이 완료 되었습니다. 로그인 해 주세요.` });
-            navigate('/login');
+            navigate('/auths/login');
         };
 
         if (storetryRegister.status === 'success') {
@@ -489,7 +485,7 @@ export default function RegisterFormBox() {
                                     type="checkbox"
                                     className="f_all"
                                     name="agreeStepAll"
-                                    checked={agreeAllCheckBox === true}
+                                    checked={agreeAllCheckBox}
                                     onChange={() => handleCheckAgreeAllCheckBox()}
                                 />
                             </span>
@@ -502,7 +498,7 @@ export default function RegisterFormBox() {
                                         type="checkbox"
                                         className="f_agree1"
                                         name="agreeStep1"
-                                        checked={agreeCheckBox.agreeStep1 === true}
+                                        checked={agreeCheckBox.agreeStep1}
                                         onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                                             handleCheckAgreeCheckBox(e)
                                         }
@@ -520,7 +516,7 @@ export default function RegisterFormBox() {
                                         type="checkbox"
                                         className="f_agree2"
                                         name="agreeStep2"
-                                        checked={agreeCheckBox.agreeStep2 === true}
+                                        checked={agreeCheckBox.agreeStep2}
                                         onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                                             handleCheckAgreeCheckBox(e)
                                         }
@@ -537,7 +533,7 @@ export default function RegisterFormBox() {
                                         type="checkbox"
                                         className="f_agree3"
                                         name="agreeStep3"
-                                        checked={agreeCheckBox.agreeStep3 === true}
+                                        checked={agreeCheckBox.agreeStep3}
                                         onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                                             handleCheckAgreeCheckBox(e)
                                         }
@@ -551,7 +547,7 @@ export default function RegisterFormBox() {
                                         type="checkbox"
                                         className="f_agree4"
                                         name="agreeStep4"
-                                        checked={agreeCheckBox.agreeStep4 === true}
+                                        checked={agreeCheckBox.agreeStep4}
                                         onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                                             handleCheckAgreeCheckBox(e)
                                         }
@@ -565,7 +561,7 @@ export default function RegisterFormBox() {
                                         type="checkbox"
                                         className="f_agree5"
                                         name="agreeStep5"
-                                        checked={agreeCheckBox.agreeStep5 === true}
+                                        checked={agreeCheckBox.agreeStep5}
                                         onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                                             handleCheckAgreeCheckBox(e)
                                         }

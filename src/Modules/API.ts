@@ -256,3 +256,23 @@ export function getMyPageOrderDetail(payload: {
         payload: { data: {} },
     });
 }
+
+// 아이디 찾기
+export function sendLoginIdByEmail(payload: { email: string | null }): Promise<ServiceResponse<{ message: string }>> {
+    return _Axios_({
+        method: 'post',
+        url: '/api/front/v1/auth/findId',
+        payload: { email: payload.email },
+    });
+}
+
+export function sendPasswordResetByEmail(payload: {
+    email: string;
+    login_id: string;
+}): Promise<ServiceResponse<{ message: string }>> {
+    return _Axios_({
+        method: 'post',
+        url: '/api/front/v1/auth/resetPassword',
+        payload: { email: payload.email, login_id: payload.login_id },
+    });
+}

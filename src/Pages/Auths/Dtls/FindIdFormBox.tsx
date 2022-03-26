@@ -1,17 +1,37 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { sendLoginIdByEmail } from '@API';
+import _Alert_ from '@_Alert_';
 
 export default function FindIdFormBox() {
+    const navigate = useNavigate();
     const [sendEmail, setSendEmail] = useState<{ email: string }>({ email: '' });
 
     const handleChangeInputValue = (e: React.ChangeEvent<HTMLInputElement>): void => {
         const { value } = e.target;
         setSendEmail({ email: value });
     };
+
+    const handleOnFindLoginId = async (e: React.SyntheticEvent) => {
+        e.preventDefault();
+        if (sendEmail.email !== '') {
+            const response = await sendLoginIdByEmail({ email: sendEmail.email });
+            if (response.status) {
+                _Alert_.default({ text: '이메일로 전송 되었습니다.' });
+                setSendEmail({ email: '' });
+                navigate('/auths/login');
+            } else {
+                _Alert_.default({ text: response.message });
+                setSendEmail({ email: '' });
+            }
+        } else {
+            _Alert_.default({ text: '이메일을 입력 해주세요.' });
+        }
+    };
     return (
         <div className="login-form-container">
             <div className="login-register-form">
-                <form onSubmit={() => console.log('test')}>
+                <form onSubmit={(event: React.SyntheticEvent) => handleOnFindLoginId(event)}>
                     <input
                         type="text"
                         name="email"
