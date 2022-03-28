@@ -1,22 +1,6 @@
 declare module 'CommonTypes' {
     export type DefaultStatus = 'idle' | 'loading' | 'success' | 'failure';
-    export type PostsGubunItem = 'posts' | 'scribble' | 'blog' | 'mingun';
-    export type SectionGubunItem = 'scribble' | 'blog' | 'mingun';
-    export type PostButtonAction = 'idle' | 'exit' | 'save' | 'update' | 'publish' | 'hide';
     export type defaultYesNo = 'Y' | 'N';
-
-    export interface editorTagsItem {
-        id: string;
-        text: string;
-    }
-
-    export interface DimensionsResult {
-        state: 'loading' | 'success' | 'error';
-        data: {
-            width: number;
-            height: number;
-        };
-    }
 
     // 사가 기본 타입.
     export interface SagaAction<T> {
@@ -24,166 +8,504 @@ declare module 'CommonTypes' {
         payload: T;
     }
 
+    // 토큰
     export type AccessTokenType = string;
-    export interface LayouTypes {
-        layoutColor: 'main' | 'view';
-        menuActive?: 'true' | 'false';
-        mobileMenuOpen?: 'true' | 'false';
-    }
 
+    // 토큰 저장 인터페이스.
     export interface LocalTokenInterface {
         access_token: string;
         refresh_token: string;
-        expires_in: number;
     }
 
-    // 공통 코드 item.
+    // 공통 코드 세부
     export interface CodeItem {
         code_id: string;
         code_name: string;
     }
 
-    // 공통 코드들.
+    // 공통 코드.
     export interface Codes {
         code_name: any;
         code_group: {
-            S01: CodeItem[];
-            S02: CodeItem[];
-            S03: CodeItem[];
-            S04: CodeItem[];
-            S05: CodeItem[];
+            '110': CodeItem[];
+            '120': CodeItem[];
+            '130': CodeItem[];
+            '210': CodeItem[];
+            '300': CodeItem[];
+            '400': CodeItem[];
+            '010': CodeItem[];
         };
     }
 
-    // 날짜 아이템.
-    export interface WeatherItem {
-        time: string;
-        vilage_name: string;
-        sky_icon: string;
-        temperature: string;
-        sky: string;
-        wind: string;
-        humidity: string;
-    }
-
-    export interface CovidItem {
-        defcnt: string;
-        isolclearcnt: string;
-        deathcnt: string;
-        incdec: string;
-    }
-
-    export interface TagItem {
-        tag_id: string;
-        tag_text: string;
-    }
-
-    export interface PostListItem {
-        post_id: number;
-        post_uuid: string;
-        user: {
-            user_uuid: string;
-            user_type: CodeItem;
-            user_level: CodeItem;
-            name: string;
-            nickname: string;
-            email: string;
-            active: defaultYesNo;
+    export interface MainCategory {
+        name: string;
+        uuid: string;
+        image: {
+            file_name: string;
+            url: string;
+            width: number;
+            height: number;
         };
-        post_title: string;
-        slug_title: string;
-        thumb_url: string;
-        list_contents: string;
-        markdown: defaultYesNo;
-        tags: TagItem[];
-        view_count: number;
-        post_active: defaultYesNo;
-        post_publish: defaultYesNo;
-        list_created: string;
     }
 
-    export interface PostCardItem {
-        post_title: string;
-        post_uuid: string;
-        list_contents: string;
-        tags: TagItem[];
-        slug_title: string;
-        thumb_url: string;
-        list_created: string;
+    // category Menu 코드.
+    export interface Categories {
+        uuid: string;
+        name: string;
     }
 
-    export interface PostDetailItem {
-        post_uuid: string;
-        user: {
-            user_uuid: string;
-            user_type: {
-                code_id: string;
-                code_name: string;
-            };
-            user_level: {
-                code_id: string;
-                code_name: string;
-            };
-            name: string;
-            nickname: string;
-            email: string;
-            active: defaultYesNo;
-        };
-        post_title: string;
-        slug_title: string;
-        contents_html: string;
-        contents_text: string;
-        markdown: defaultYesNo;
-        tags: TagItem[];
-        view_count: number;
-        post_active: defaultYesNo;
-        post_publish: defaultYesNo;
-        detail_created: string;
-        detail_updated: string;
-    }
-
-    export interface EditorTagsItem {
-        id: string;
-        text: string;
-    }
-    export interface EditorTag extends Array<EditorTagsItem> {}
-
-    export interface EditorData {
-        title: string;
-        tags: editorTagItem[];
-        content: string;
-    }
-
-    export interface DefaultPostSaveResult {
-        post_uuid: string;
-        slug_title: string;
-        post_active: defaultYesNo;
-        post_publish: defaultYesNo;
-    }
-
-    // 기시전 글 아이템.
-    export interface WaitingPostResultItem {
-        post_uuid: string;
-        post_title: string;
-    }
-
-    export interface SectionPostItem {
-        post_uuid: string;
-        contents_html: string;
-        contents_text: string;
-        markdown: defaultYesNo;
-        created: string;
-    }
-
-    export interface TagGroupItem {
-        value: string;
-        count: number;
-    }
-
-    export interface PostSearchAction {
-        state: DefaultStatus;
-        payload: PostListItem[] | null;
+    // 기본 api 리턴 인테페이스
+    export interface ServiceResponse<T> {
+        status: boolean;
         message: string;
-        error: Error | null;
+        payload: T;
+    }
+
+    // 기본 데이터들.
+    export interface AppBase {
+        codes: Codes[];
+        product_category: Categories[];
+    }
+
+    export interface Login {
+        access_token: string;
+        refresh_token: string;
+    }
+
+    export interface Logout {
+        message: string;
+    }
+
+    export interface Register {
+        id: number;
+        user_uuid: string;
+        login_id: string;
+        name: string;
+        user_type: string;
+        user_level: string;
+        user_state: string;
+    }
+
+    export interface PhoneAuthResponse {
+        phone_number: string;
+        auth_index: number;
+        auth_code: string;
+    }
+
+    export interface PhoneAuthConfirmResponse {
+        auth_index: number;
+        phone_number: string;
+    }
+
+    export interface Banner {
+        click_code: string;
+        product_name: string;
+        product_uuid: string;
+        product_image: string;
+    }
+    export interface ListItem {
+        uuid: string;
+        product: {
+            uuid: string;
+            name: string;
+            original_price: {
+                number: number;
+                string: string;
+            };
+            price: {
+                number: number;
+                string: string;
+            };
+            color: Array<{ id: number; name: string }>;
+            review_count: {
+                number: number;
+                string: string;
+            };
+            rep_image: {
+                file_name: string;
+                url: string;
+            };
+            badge:
+                | Array<{
+                      id: number;
+                      name: string;
+                      image: {
+                          id: number;
+                          file_name: string;
+                          url: string;
+                      };
+                  }>
+                | Array;
+        };
+        error_message: string;
+    }
+    export interface CategoryItem {
+        uuid?: string;
+        products: CategoryProduct[];
+    }
+    export interface CategoryProduct {
+        uuid: string;
+        name: string;
+        original_price: {
+            number: number;
+            string: string;
+        };
+        price: {
+            number: number;
+            string: string;
+        };
+        color: Array<{ id: number; name: string }>;
+        review_count: {
+            number: number;
+            string: string;
+        };
+        rep_image: {
+            file_name: string;
+            url: string;
+        };
+        badge:
+            | Array<{
+                  id: number;
+                  name: string;
+                  image: {
+                      id: number;
+                      file_name: string;
+                      url: string;
+                  };
+              }>
+            | Array;
+    }
+    export interface Category {
+        click_code: string;
+        product_name: string;
+        product_uuid: string;
+        product_image: string;
+        product_thumb_image: string;
+    }
+    export interface Categories {
+        acc: Category;
+        bag: Category;
+        stationery: Category;
+        wallet: Category;
+        CUSTOM_ITEM: Category;
+    }
+
+    export interface MainSlide {
+        name: string;
+        image: {
+            file_name: string;
+            url: string;
+            width: number;
+            height: number;
+        };
+        url: {
+            product_uuid: string;
+            slide_url: string;
+        };
+    }
+    export interface MainNotice {
+        uuid: string;
+        title: string;
+        category: {
+            code_id: string;
+            code_name: string;
+        };
+        created_at: string;
+    }
+
+    export interface ProductDetail {
+        uuid: string;
+        category: {
+            uuid: string;
+            name: string;
+        };
+        name: string;
+        barcode: string;
+        original_price: {
+            number: number;
+            string: string;
+        };
+        price: {
+            number: number;
+            string: string;
+        };
+        quantity: {
+            number: number;
+            string: string;
+        };
+        reviews: [];
+        options: {
+            color: {
+                id: number;
+                name: string;
+            }[];
+            wireless: {
+                id: number;
+                name: string;
+            }[];
+        };
+        image: {
+            rep: {
+                id: number;
+                file_name: string;
+                url: string;
+            }[];
+            detail: {
+                id: number;
+                file_name: string;
+                url: string;
+            }[];
+        };
+        sale: string;
+        active: string;
+        created_at: {
+            type1: string;
+            type2: string;
+            type3: string;
+        };
+    }
+    export interface Cart {
+        cart_id: number;
+        product_uuid: string;
+        name: string;
+        color: {
+            id: number;
+            name: string;
+        }[];
+        price: {
+            number: number;
+            string: string;
+        };
+        rep_image: {
+            id: number;
+            file_name: string;
+            url: string;
+        };
+    }
+
+    export interface MyInformationResponse {
+        uuid: string;
+        login_id: string;
+        client: {
+            code_id: string;
+            code_name: string;
+        };
+        type: {
+            code_id: string;
+            code_name: string;
+        };
+        level: {
+            code_id: string;
+            code_name: string;
+        };
+        status: {
+            code_id: string;
+            code_name: string;
+        };
+        name: string;
+        address: {
+            zipcode: string;
+            step1: string;
+            step2: string;
+        };
+        email: {
+            full_email: string;
+            gubun1: {
+                step1: string;
+                step2: string;
+            };
+            gubun2: {
+                step1: string;
+                step2: string;
+            };
+        };
+        phone_number: {
+            step1: string;
+            step2: string;
+            step3: string;
+        };
+    }
+    export interface NoticeDetailResponse {
+        id: number;
+        uuid: string;
+        category: {
+            code_id: string;
+            code_name: string;
+        };
+        title: string;
+        content: string;
+        images:
+            | []
+            | {
+                  file_name: string;
+                  url: string;
+              }[];
+        created_at: {
+            type1: string;
+            type2: string;
+        };
+    }
+
+    export interface OrderProduct {
+        uuid: string;
+        name: string;
+        count: number;
+        price: string;
+        numberPrice: number;
+        options: string | undefined;
+    }
+    export interface CallPaymentOrderPayload {
+        name: string;
+        zipcode: string;
+        address1: string;
+        address2: string;
+        phone: string;
+        email: string;
+        message: string | undefined;
+        product: string[];
+    }
+
+    export interface OrderMyInfoResponse {
+        name: string;
+        address: {
+            zipcode: string;
+            step1: string;
+            step2: string;
+        };
+        email: {
+            full_email: string;
+            gubun1: {
+                step1: string;
+                step2: string;
+            };
+            gubun2: {
+                step1: string;
+                step2: string;
+            };
+        };
+        phone_number: {
+            step1: string;
+            step2: string;
+            step3: string;
+        };
+    }
+
+    export interface MyPageOrderObj {
+        uuid: string;
+        order_name: string;
+        order_price: {
+            number: number;
+            string: string;
+        };
+        created_at: {
+            type1: string;
+            type2: string;
+            type3: string;
+        };
+        rep_image: {
+            id: number;
+            file_name: string;
+            url: string;
+        };
+        state: {
+            code_id: string;
+            code_name: string;
+        };
+    }
+
+    export interface MyPageOrderInfoResponse {
+        user_info: {
+            id: number | null;
+            uuid: string;
+            name: string;
+        };
+        order_state: {
+            price_before: string;
+            delivery_brfore: string;
+            delivery_ing: string;
+            delivery_end: string;
+        };
+        list: {
+            order: MyPageOrderObj[] | [];
+            cancel: MyPageOrderObj[] | [];
+        };
+    }
+    export interface product {
+        id: number;
+        uuid: string;
+        name: string;
+        quantity: {
+            number: number;
+            string: string;
+        };
+        original_price: {
+            number: number;
+            string: string;
+        };
+        price: {
+            number: number;
+            string: string;
+        };
+        category: {
+            id: number;
+            uuid: string;
+            name: string;
+        };
+        color:
+            | {
+                  id: number;
+                  name: string;
+              }[]
+            | [];
+        wireless:
+            | {
+                  id: number;
+                  name: string;
+              }[]
+            | null;
+        rep_images:
+            | {
+                  id: number;
+                  file_name: string;
+                  url: string;
+              }[]
+            | [];
+    }
+
+    export interface MyPageOrderInfoDetailResponse {
+        uuid: string;
+        order_info: {
+            name: string;
+            phone: {
+                type1: string;
+                type2: string;
+            };
+            email: string;
+            message: string;
+            order_name: string;
+            order_price: {
+                number: number;
+                string: string;
+            };
+            active: string;
+            state: {
+                code_id: string;
+                code_name: string;
+            };
+            delivery: {
+                code_id: string;
+                code_name: string;
+            };
+            receive: {
+                code_id: string;
+                code_name: string;
+            };
+        };
+        order_address: {
+            zipcode: string;
+            step1: string;
+            step2: string;
+        };
+        products: product[];
     }
 }

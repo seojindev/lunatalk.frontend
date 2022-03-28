@@ -1,5 +1,9 @@
 import React from 'react';
 
 export default function DefaultPage() {
-    return <>DefaultPage</>;
+    return (
+        <>
+            <p>defaultPage</p>
+        </>
+    );
 }

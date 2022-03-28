@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// CSS Import
+import '@Style/Default/common.css';
+import '@Style/Default/style.css';
+
 ReactDOM.render(
-    <React.StrictMode>
+    <React.Fragment>
         <App />
-    </React.StrictMode>,
+    </React.Fragment>,
     document.getElementById('root')
 );
 

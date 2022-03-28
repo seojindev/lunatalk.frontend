@@ -8,20 +8,11 @@ import { History } from 'history';
 import { RootState } from 'StoreTypes';
 import { rootSaga, createRootReducer } from '@Stores';
 
-/**
- * 2021-06-12 15:15 psmever
- * 최초에 스토어가 히스토리 밖에 없기 때문에 스테이트를 추가 하면 소스 변경 필요.
- *
- * export default function configureStore(history: History): Store<RootState> { -> export default function configureStore(history: History, initialState: RootState): Store<RootState> {
- *
- * const store = createStore(createRootReducer(history), compose); -> const store = createStore(createRootReducer(history), initialState, compose);
- */
-
-export default function configureStore(history: History): Store<RootState> {
+export default function configureStore(history: History, initialState: any): Store<RootState> {
     let compose;
 
     const isDevelopment = process.env.REACT_APP_ENV === 'production' ? false : true;
-    const useReduxLogger = false;
+    const useReduxLogger = process.env.REACT_APP_USE_REDUX_LOGGER === 'TRUE' ? true : false;
 
     const composeEnhancers = composeWithDevTools({});
     const sagaMiddleware = createSagaMiddleware();
@@ -36,7 +27,7 @@ export default function configureStore(history: History): Store<RootState> {
         compose = applyMiddleware(routerMiddleware(history), sagaMiddleware);
     }
 
-    const store = createStore(createRootReducer(history), compose);
+    const store = createStore(createRootReducer(history), initialState, compose);
     sagaMiddleware.run(rootSaga);
 
     return store;

@@ -1,0 +1,69 @@
+{
+    "MainLayout": [
+        {
+            "name": "메인",
+            "routeName": "/",
+            "componentName": "Mains/MainPage"
+        },
+        {
+            "name": "로그인",
+            "routeName": "/auths/login",
+            "componentName": "Auths/LoginRegisterPage"
+        },
+        {
+            "name": "회원가입",
+            "routeName": "/auths/register",
+            "componentName": "Auths/LoginRegisterPage"
+        },
+        {
+            "name": "로그아웃",
+            "routeName": "/auths/logout",
+            "componentName": "Auths/LogoutPage"
+        },
+        {
+            "name": "상품 리스트",
+            "routeName": "/category/:uuid",
+            "componentName": "Products/ProductListPage"
+        },
+        {
+            "name": "상품 디테일",
+            "routeName": "/product/:uuid",
+            "componentName": "Products/ProductDetailPage"
+        },
+        {
+            "name": "위시 리스트",
+            "routeName": "/wishlist",
+            "componentName": "WishList/WishListPage"
+        },
+        {
+            "name": "장바구니",
+            "routeName": "/cart",
+            "componentName": "Cart/CartPage"
+        },
+        {
+            "name": "마이페이지",
+            "routeName": "/myPage",
+            "componentName": "MyPage/MyPage"
+        },
+        {
+            "name": "회원정보",
+            "routeName": "/myPage/information",
+            "componentName": "MyPage/MyInformationPage"
+        },
+        {
+            "name": "검색페이지",
+            "routeName": "/search/:name",
+            "componentName": "Search/SearchListPage"
+        },
+        {
+            "name": "공지사항",
+            "routeName": "/notice/:uuid",
+            "componentName": "Notice/NoticePage"
+        },
+        {
+            "name": "주문",
+            "routeName": "/order",
+            "componentName": "Order/OrderPage"
+        }
+    ]
+}
