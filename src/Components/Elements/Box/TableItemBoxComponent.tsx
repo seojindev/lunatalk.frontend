@@ -1,9 +1,8 @@
 import React, { ChangeEvent, useState } from 'react';
 import _ from 'lodash';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { createOrderProductAction } from '@Store/Order';
-import history from '@Module/History';
 import _Alert_ from '@_Alert_';
 
 export default function TableItemBoxComponent({
@@ -28,6 +27,7 @@ export default function TableItemBoxComponent({
     checkBox: number[];
 }) {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const [cartProductCount, setCartProductCount] = useState<number>(1);
     const cartCountOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setCartProductCount(Number(e.target.value));
@@ -46,7 +46,7 @@ export default function TableItemBoxComponent({
 
         if (createOrderProduct[0].uuid !== undefined) {
             dispatch(createOrderProductAction({ orderProduct: createOrderProduct }));
-            history.push('/order');
+            navigate('/order');
         } else {
             _Alert_.default({ text: '서버에 오류가 발생하였습니다. 잠시후 시도해주세요.' });
         }

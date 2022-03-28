@@ -8,10 +8,11 @@ import { deleteCart } from '@API';
 import _Alert_ from '@_Alert_';
 import _ from 'lodash';
 import { createOrderProductAction } from '@Store/Order';
-import history from '@Module/History';
+import { useNavigate } from 'react-router-dom';
 
 export default function Cart() {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const { cartList } = useSelector((store: RootState) => ({
         cartList: store.cart.list,
     }));
@@ -64,7 +65,7 @@ export default function Cart() {
         });
         if (createOrderProduct.length > 0) {
             dispatch(createOrderProductAction({ orderProduct: createOrderProduct }));
-            history.push('/order');
+            navigate('/order');
         } else {
             _Alert_.default({ text: '선택된 상품이 없습니다.' });
         }
