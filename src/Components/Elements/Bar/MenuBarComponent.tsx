@@ -85,6 +85,11 @@ export default function MenuBarComponent() {
         funcCheckLogin();
     }, [storeLoginState]);
 
+    const logoSrc =
+        process.env.REACT_APP_ENV === 'production'
+            ? 'http://admin.lunatalk.co.kr/static/media/logo.e0e49014f4ed6f070031.jpg'
+            : 'http://dev.admin.lunatalk.co.kr/static/media/logo.e0e49014.jpg';
+
     return (
         <header className="header-area header-padding-1 sticky-bar header-res-padding clearfix">
             <div className="container-fluid">
@@ -92,11 +97,7 @@ export default function MenuBarComponent() {
                     <div className="col-xl-2 col-lg-2 col-md-6 col-4">
                         <div className="logo" style={{ marginBottom: '10px' }}>
                             <Link to="/" style={{ display: 'block', width: '100%' }}>
-                                <img
-                                    className="shopieal-logo"
-                                    alt=""
-                                    src="http://dev.admin.lunatalk.co.kr/static/media/logo.e0e49014.jpg"
-                                />
+                                <img className="shopieal-logo" alt="" src={logoSrc} />
                             </Link>
                         </div>
                     </div>
