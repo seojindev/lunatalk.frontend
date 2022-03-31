@@ -461,7 +461,7 @@
     background: #fff none repeat scroll 0 0;
     -webkit-box-shadow: 0 1px 7px -2px rgba(0, 0, 0, 0.3);
     box-shadow: 0 1px 7px -2px rgba(0, 0, 0, 0.3);
-    left: 0;
+    /*left: 0;*/
     padding: 8px 12px 10px;
     position: absolute;
     text-align: left;
@@ -484,12 +484,12 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .header-right-wrap .same-style .account-dropdown {
-        left: -40px;
+        /*left: -40px;*/
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
     .header-right-wrap .same-style .account-dropdown {
-        left: -34px;
+        /*left: -34px;*/
     }
 }
 .header-right-wrap .same-style .account-dropdown ul li a {
