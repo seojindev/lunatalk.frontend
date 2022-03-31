@@ -25,7 +25,7 @@ export default function Main() {
                 <div className="container">
                     <div className="customer_center">
                         <h3>CUSTOMER CENTER</h3>
-                        <p className="df-ft-tel">032-684-1550</p>
+                        <p className="df-ft-tel">032-684-1565</p>
                         <strong>운영시간</strong>
                         <p className="df-rep-cstime">
                             평일 오전 09:00 ~ 오후 06:00
