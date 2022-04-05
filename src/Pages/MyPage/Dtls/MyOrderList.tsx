@@ -138,7 +138,7 @@ export default function MyOrderList({
                             <div className="order-status">
                                 <div className="status">
                                     <p>{item.state.code_name}</p>
-                                    <button type="button">배송조회</button>
+                                    {/*<button type="button">배송조회</button>*/}
                                 </div>
                             </div>
                         </div>
