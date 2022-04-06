@@ -6,7 +6,6 @@ import { CategoryProduct } from 'CommonTypes';
 import { product } from '@Element/Box/MainItemListBox';
 import { searchListAction } from '@Store/Category';
 import { useParams } from 'react-router-dom';
-import { Buffer } from 'buffer';
 
 export default function ProductList() {
     const dispatch = useDispatch();
@@ -19,7 +18,7 @@ export default function ProductList() {
         setProduct([]);
         console.log(name);
         if (name) {
-            dispatch(searchListAction({ name: Buffer.from(encodeURIComponent(name)).toString('base64') }));
+            dispatch(searchListAction({ name: encodeURIComponent(name) }));
         }
     }, [name]);
 
