@@ -7,8 +7,9 @@ import { GET_CATEGORY_LIST_START, GET_SEARCH_LIST_START } from '@Store/Category/
 
 export const categoryListAction = createAction(
     GET_CATEGORY_LIST_START,
-    ({ categoryUuid }: { categoryUuid: string }) => ({
+    ({ categoryUuid, orderNumber }: { categoryUuid: string; orderNumber: string }) => ({
         categoryUuid,
+        orderNumber,
     })
 )();
 

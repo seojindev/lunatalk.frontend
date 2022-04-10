@@ -1,6 +1,6 @@
 import { takeLatest, fork, put, call } from 'redux-saga/effects';
 import * as COMMON_TYPES from 'CommonTypes';
-import { getCategoryListItem, getSearchProduct } from '@API';
+import { getCategoryProductByOrder, getSearchProduct } from '@API';
 import {
     GET_CATEGORY_LIST_FAILURE,
     GET_CATEGORY_LIST_START,
@@ -10,10 +10,11 @@ import {
     GET_SEARCH_LIST_SUCCESS,
 } from '@Store/Category/types';
 
-function* getCategoryListSaga({ payload }: { payload: { categoryUuid: string } }) {
+function* getCategoryListSaga({ payload }: { payload: { categoryUuid: string; orderNumber: string } }) {
     try {
-        const response: COMMON_TYPES.ServiceResponse<COMMON_TYPES.ListItem[]> = yield call(getCategoryListItem, {
+        const response: COMMON_TYPES.ServiceResponse<COMMON_TYPES.ListItem[]> = yield call(getCategoryProductByOrder, {
             categoryUuid: payload.categoryUuid,
+            order: payload.orderNumber,
         });
         yield put({ type: GET_CATEGORY_LIST_SUCCESS, payload: { category: response.payload } });
     } catch (e) {

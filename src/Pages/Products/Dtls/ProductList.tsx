@@ -14,13 +14,27 @@ export default function ProductList() {
         products: store.category.products?.products,
     }));
     const [product, setProduct] = useState<product[]>([]);
+    const [order, setOrder] = useState<{ category: string | undefined; orderNumber: string }>({
+        orderNumber: '6000010',
+        category: uuid,
+    });
     useEffect(() => {
         setProduct([]);
         if (uuid) {
-            dispatch(categoryListAction({ categoryUuid: uuid }));
+            setOrder({ ...order, category: uuid });
         }
     }, [uuid]);
 
+    useEffect(() => {
+        if (order.category)
+            dispatch(categoryListAction({ categoryUuid: order.category, orderNumber: order.orderNumber }));
+    }, [order]);
+
+    const handlerOrderSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        const { value } = e.target;
+        setOrder({ ...order, orderNumber: value });
+    };
+    console.log(order);
     useEffect(() => {
         if (products) {
             const resultProductList = products.map((product: CategoryProduct) => {
@@ -46,12 +60,11 @@ export default function ProductList() {
                         <div className="shop-top-bar mb-35">
                             <div className="select-shoing-wrap">
                                 <div className="shop-select">
-                                    <select>
-                                        <option>별점순</option>
-                                        <option>이름순</option>
-                                        <option>최신순</option>
-                                        <option>낮은 가격순</option>
-                                        <option>높은 가격순</option>
+                                    <select value={order.orderNumber} onChange={e => handlerOrderSelect(e)}>
+                                        <option value="6000010">이름순</option>
+                                        <option value="6000020">최신순</option>
+                                        <option value="6000030">낮은 가격순</option>
+                                        <option value="6000040">높은 가격순</option>
                                     </select>
                                 </div>
                             </div>

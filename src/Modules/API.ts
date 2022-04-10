@@ -276,3 +276,15 @@ export function sendPasswordResetByEmail(payload: {
         payload: { email: payload.email, login_id: payload.login_id },
     });
 }
+
+// 카테고리 정렬
+export function getCategoryProductByOrder(payload: {
+    categoryUuid: string;
+    order: string;
+}): Promise<ServiceResponse<ListItem[]>> {
+    return _Axios_({
+        method: 'get',
+        url: `/api/front/v1/pages/product-category/${payload.categoryUuid}/${payload.order}/list`,
+        payload: { data: {} },
+    });
+}
