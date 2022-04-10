@@ -21,7 +21,7 @@ export default function ProductList() {
     useEffect(() => {
         setProduct([]);
         if (uuid) {
-            setOrder({ ...order, category: uuid });
+            setOrder({ orderNumber: '6000010', category: uuid });
         }
     }, [uuid]);
 
@@ -34,7 +34,6 @@ export default function ProductList() {
         const { value } = e.target;
         setOrder({ ...order, orderNumber: value });
     };
-    console.log(order);
     useEffect(() => {
         if (products) {
             const resultProductList = products.map((product: CategoryProduct) => {
