@@ -6,6 +6,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from 'StoreTypes';
 import { getMyOrderInfoAction } from '@Store/MyInformation';
 import { MyPageOrderObj } from 'CommonTypes';
+import { getAccessToken } from '@Src/Utils/Helper';
+import { useNavigate } from 'react-router-dom';
 
 export default function My() {
     const { my } = useSelector((store: RootState) => ({
@@ -22,10 +24,18 @@ export default function My() {
         order: [],
         cancel: [],
     });
+
+    const navigate = useNavigate();
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(getMyOrderInfoAction());
+        const isLogin = getAccessToken();
+
+        if (!isLogin) {
+            navigate('/auths/login');
+        } else {
+            dispatch(getMyOrderInfoAction());
+        }
     }, []);
 
     useEffect(() => {

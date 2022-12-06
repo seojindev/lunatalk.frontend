@@ -9,6 +9,7 @@ import _Alert_ from '@_Alert_';
 import _ from 'lodash';
 import { createOrderProductAction } from '@Store/Order';
 import { useNavigate } from 'react-router-dom';
+import { getAccessToken } from '@Src/Utils/Helper';
 
 export default function Cart() {
     const dispatch = useDispatch();
@@ -32,7 +33,13 @@ export default function Cart() {
     const [checkBox, setCheckBox] = useState<number[]>([]);
 
     useEffect(() => {
-        dispatch(getCartListAction());
+        const isLogin = getAccessToken();
+
+        if (!isLogin) {
+            navigate('/auths/login');
+        } else {
+            dispatch(getCartListAction());
+        }
     }, []);
 
     const checkBoxOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
